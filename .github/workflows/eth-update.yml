@@ -38,6 +38,12 @@ jobs:
       - name: Analyze historical waves
         run: python eth_wave_v42.py
 
+      - name: Analyze intraday extrema
+        run: python eth_extrema_v42.py
+
+      - name: Test first-touch baseline
+        run: python eth_touch_v42.py
+
       - name: Save updated data
         run: |
           git config user.name "github-actions[bot]"
