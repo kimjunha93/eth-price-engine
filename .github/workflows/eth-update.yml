@@ -47,6 +47,9 @@ jobs:
       - name: Audit alignment and test historical neighbors
         run: python eth_research_v42.py
 
+      - name: Evaluate chronological wave models
+        run: python eth_walkforward_v42.py
+
       - name: Save updated data
         run: |
           git config user.name "github-actions[bot]"
