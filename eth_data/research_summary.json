@@ -1,0 +1,189 @@
+{
+  "version": "quality-neighbors-0.1",
+  "generated_utc": "2026-11-26 17:21:00.779961+00:00",
+  "quality": {
+    "Upbit_ETHKRW": {
+      "0": {
+        "daily_rows": 3346,
+        "missing_daily_slots": 3,
+        "overlap": 3278,
+        "metrics": {
+          "open": {
+            "n": 3278,
+            "match_fraction": 1.0
+          },
+          "high": {
+            "n": 3278,
+            "match_fraction": 1.0
+          },
+          "low": {
+            "n": 3278,
+            "match_fraction": 1.0
+          },
+          "close": {
+            "n": 3278,
+            "match_fraction": 1.0
+          },
+          "volume_eth": {
+            "n": 3278,
+            "match_fraction": 0.9911531421598536
+          }
+        }
+      }
+    },
+    "Bithumb_ETHKRW": {
+      "0": {
+        "daily_rows": 1267,
+        "missing_daily_slots": 12,
+        "overlap": 1226,
+        "metrics": {
+          "open": {
+            "n": 1226,
+            "match_fraction": 0.9347471451876019
+          },
+          "high": {
+            "n": 1226,
+            "match_fraction": 0.9388254486133768
+          },
+          "low": {
+            "n": 1226,
+            "match_fraction": 0.9380097879282219
+          },
+          "close": {
+            "n": 1226,
+            "match_fraction": 0.933931484502447
+          },
+          "volume_eth": {
+            "n": 1226,
+            "match_fraction": 0.9600326264274062
+          }
+        }
+      },
+      "15": {
+        "daily_rows": 2399,
+        "missing_daily_slots": 0,
+        "overlap": 0,
+        "metrics": {
+          "open": {
+            "n": 0,
+            "match_fraction": null
+          },
+          "high": {
+            "n": 0,
+            "match_fraction": null
+          },
+          "low": {
+            "n": 0,
+            "match_fraction": null
+          },
+          "close": {
+            "n": 0,
+            "match_fraction": null
+          },
+          "volume_eth": {
+            "n": 0,
+            "match_fraction": null
+          }
+        }
+      }
+    },
+    "Bitstamp_ETHUSD": {
+      "0": {
+        "daily_rows": 3304,
+        "missing_daily_slots": 0,
+        "overlap": 3108,
+        "metrics": {
+          "open": {
+            "n": 3108,
+            "match_fraction": 0.7442084942084942
+          },
+          "high": {
+            "n": 3108,
+            "match_fraction": 0.9948519948519948
+          },
+          "low": {
+            "n": 3108,
+            "match_fraction": 0.9951737451737451
+          },
+          "close": {
+            "n": 3108,
+            "match_fraction": 0.999034749034749
+          },
+          "volume_eth": {
+            "n": 3108,
+            "match_fraction": 0.7290862290862291
+          }
+        }
+      }
+    },
+    "Kraken_ETHUSD": {
+      "0": {
+        "daily_rows": 720,
+        "missing_daily_slots": 0,
+        "overlap": 29,
+        "metrics": {
+          "open": {
+            "n": 29,
+            "match_fraction": 1.0
+          },
+          "high": {
+            "n": 29,
+            "match_fraction": 1.0
+          },
+          "low": {
+            "n": 29,
+            "match_fraction": 1.0
+          },
+          "close": {
+            "n": 29,
+            "match_fraction": 1.0
+          },
+          "volume_eth": {
+            "n": 29,
+            "match_fraction": 1.0
+          }
+        }
+      }
+    }
+  },
+  "neighbors": {
+    "Upbit_ETHKRW": {
+      "train": 77,
+      "test": 37,
+      "mae_pct_of_anchor_low_high": {
+        "current": [
+          14.823842994887615,
+          13.930832315028358
+        ],
+        "median": [
+          8.338315363891946,
+          11.853001983730808
+        ],
+        "knn15": [
+          10.397616336384031,
+          11.840914705693779
+        ]
+      },
+      "status": "exploratory_fixed_28day_not_wave_extrema"
+    },
+    "Bitstamp_ETHUSD": {
+      "train": 76,
+      "test": 37,
+      "mae_pct_of_anchor_low_high": {
+        "current": [
+          14.420502818460974,
+          14.762056533955098
+        ],
+        "median": [
+          8.469699617615973,
+          11.51152944971124
+        ],
+        "knn15": [
+          8.741871007587639,
+          10.32899331997923
+        ]
+      },
+      "status": "exploratory_fixed_28day_not_wave_extrema"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "version": "touch-exploratory-0.1",
+  "generated_utc": "2026-11-26 17:21:00.153694+00:00",
+  "status": "symmetric benchmark only, not current target probabilities",
+  "markets": {
+    "Upbit_ETHKRW": {
+      "0.05": {
+        "train": {
+          "up": 48,
+          "down": 32,
+          "neither": 0,
+          "unknown": 0,
+          "gap": 1
+        },
+        "test": {
+          "up": 21,
+          "down": 16,
+          "neither": 0,
+          "unknown": 0,
+          "gap": 0
+        },
+        "empirical_baseline_multiclass_brier": 0.49297297297297293,
+        "test_scored": 37
+      },
+      "0.1": {
+        "train": {
+          "up": 43,
+          "down": 28,
+          "neither": 8,
+          "unknown": 1,
+          "gap": 1
+        },
+        "test": {
+          "up": 16,
+          "down": 21,
+          "neither": 0,
+          "unknown": 0,
+          "gap": 0
+        },
+        "empirical_baseline_multiclass_brier": 0.5590666776374196,
+        "test_scored": 37
+      }
+    },
+    "Bitstamp_ETHUSD": {
+      "0.05": {
+        "train": {
+          "up": 41,
+          "down": 38,
+          "neither": 0,
+          "unknown": 1,
+          "gap": 0
+        },
+        "test": {
+          "up": 19,
+          "down": 17,
+          "neither": 0,
+          "unknown": 0,
+          "gap": 0
+        },
+        "empirical_baseline_multiclass_brier": 0.49861133365379484,
+        "test_scored": 36
+      },
+      "0.1": {
+        "train": {
+          "up": 38,
+          "down": 36,
+          "neither": 6,
+          "unknown": 0,
+          "gap": 0
+        },
+        "test": {
+          "up": 22,
+          "down": 12,
+          "neither": 2,
+          "unknown": 0,
+          "gap": 0
+        },
+        "empirical_baseline_multiclass_brier": 0.5448611111111112,
+        "test_scored": 36
+      }
+    }
+  }
+}

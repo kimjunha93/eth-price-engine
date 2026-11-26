@@ -1,0 +1,75 @@
+{
+  "version": "walkforward-exploratory-0.1",
+  "status": "no_production_forecast",
+  "label": "10% close-confirmed leg extreme after observable entry; not intraday",
+  "markets": {
+    "Upbit_ETHKRW": {
+      "-1": {
+        "n": 37,
+        "years": {
+          "2022": 11,
+          "2023": 3,
+          "2024": 9,
+          "2025": 9,
+          "2026": 5
+        },
+        "mae_pct_anchor": {
+          "current": 10.994417443443247,
+          "median": 9.42020081431771,
+          "knn15": 9.336667280747188
+        },
+        "adoption": "blocked_no_untouched_test"
+      },
+      "1": {
+        "n": 38,
+        "years": {
+          "2022": 11,
+          "2023": 4,
+          "2024": 8,
+          "2025": 9,
+          "2026": 6
+        },
+        "mae_pct_anchor": {
+          "current": 15.936943758068415,
+          "median": 14.668604565876032,
+          "knn15": 15.064537812554851
+        },
+        "adoption": "blocked_no_untouched_test"
+      }
+    },
+    "Bitstamp_ETHUSD": {
+      "-1": {
+        "n": 43,
+        "years": {
+          "2022": 12,
+          "2023": 4,
+          "2024": 10,
+          "2025": 12,
+          "2026": 5
+        },
+        "mae_pct_anchor": {
+          "current": 10.777060353172105,
+          "median": 8.635749970099164,
+          "knn15": 9.04445001493409
+        },
+        "adoption": "blocked_no_untouched_test"
+      },
+      "1": {
+        "n": 44,
+        "years": {
+          "2022": 12,
+          "2023": 5,
+          "2024": 9,
+          "2025": 12,
+          "2026": 6
+        },
+        "mae_pct_anchor": {
+          "current": 15.337714081388159,
+          "median": 13.960237157985283,
+          "knn15": 15.788095562050627
+        },
+        "adoption": "blocked_no_untouched_test"
+      }
+    }
+  }
+}
