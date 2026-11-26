@@ -32,6 +32,9 @@ jobs:
       - name: Collect ETH data
         run: python eth_collect_v12.py
 
+      - name: Analyze ETH data
+        run: python eth_analyze_v42.py
+
       - name: Save updated data
         run: |
           git config user.name "github-actions[bot]"
