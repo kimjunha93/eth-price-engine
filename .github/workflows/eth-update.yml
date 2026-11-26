@@ -35,6 +35,9 @@ jobs:
       - name: Analyze ETH data
         run: python eth_analyze_v42.py
 
+      - name: Analyze historical waves
+        run: python eth_wave_v42.py
+
       - name: Save updated data
         run: |
           git config user.name "github-actions[bot]"
