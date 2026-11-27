@@ -1,0 +1,70 @@
+{
+  "version": "v43-early-reference-audit-1",
+  "status": "reference_only_not_exchange_verified",
+  "source": "https://github.com/RobKuebler/datasets/blob/main/ETH-USD.csv",
+  "rows": 2298,
+  "first": "2015-08-07",
+  "last": "2021-11-24",
+  "invalid": [
+    "2020-04-17",
+    "2020-10-09",
+    "2020-10-12",
+    "2020-10-13"
+  ],
+  "duplicate": 0,
+  "zero_volume": 0,
+  "missing_days": 4,
+  "early": {
+    "rows": 825,
+    "first": "2015-08-07",
+    "last": "2017-11-08",
+    "low": 0.420897,
+    "high": 414.756012,
+    "waves": {
+      "0.2": {
+        "pivots": 57,
+        "up": 28,
+        "down": 28,
+        "median_rise": 1.657842912700001,
+        "median_drop": 0.5801032594249615
+      },
+      "0.3": {
+        "pivots": 31,
+        "up": 15,
+        "down": 15,
+        "median_rise": 2.916805527712969,
+        "median_drop": 0.5196733887812844
+      },
+      "0.4": {
+        "pivots": 19,
+        "up": 9,
+        "down": 9,
+        "median_rise": 3.1956749513538942,
+        "median_drop": 0.4626685280951164
+      },
+      "0.5": {
+        "pivots": 11,
+        "up": 5,
+        "down": 5,
+        "median_rise": 3.594902024981286,
+        "median_drop": 0.3810386420402014
+      }
+    }
+  },
+  "overlap": {
+    "n": 1473,
+    "first": "2017-11-09",
+    "last": "2021-11-24",
+    "close_abs_pct_quantiles": [
+      0.3013705780452236,
+      1.412747108992453,
+      3.032650476788858
+    ],
+    "close_abs_pct_max": 5.778174585635365,
+    "daily_log_return_correlation": 0.9933790928264121,
+    "n_returns": 1469
+  },
+  "policy": "Unknown original exchange and volume unit. No merging, no use in production models, no raw redistribution. Descriptive OHLC only; overlap correlation is not source provenance or independence.",
+  "source_blob": "404a494ced002c1981a186fe92a298cbe07ffd62",
+  "bitstamp_blob": "bdef4c90c035a139a18ee85167365c11817545d9"
+}
