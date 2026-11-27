@@ -1,0 +1,12 @@
+# Hourly support/resistance sensitivity v2 — 2026-11-27
+Executed using local uploaded Upbit snapshots; naive date strings interpreted as UTC in line with repository daily boundary. Daily 3346 rows, last open 2026-11-25 00:00 UTC, SHA256 44991322abdc79e5fd7d440632155e0d0a7c7f5bcc3ed0c66368bcdca41fbf12. Hourly 80137 rows, last open 2026-11-26 14:00 UTC, SHA256 dd49b032fbb9d00da52bc027a4ee4ffaedd71bcbdbe7059a02645800786ace0a. Validated finite positive OHLC, high/low relationships, duplicate-free aligned timestamps; no imputation. 141 eligible origins across history; 58 raw and 31 alternate-grid origins per side since 2023; 10 distance-matched alternate-grid origins per side.
+Algorithm: see sr_reaction_hourly_spec.md; same close-only 10% pivot scan, origin after 180 contiguous days on 10-day grid, both nearest levels eligible at 2–20% distance and 365-day pivot age, placebo close squared divided by opposite level, match real/placebo distance ratio 0.8–1.25. Zone intersection +/-0.5%, first 240 hours, response +/-3% within subsequent 120 hours. Ambiguous if touch hour reaches either threshold, or later hour reaches both; any missing hour before resolution censored. Alternate-grid origins spaced >=20 days within continuous segments; no market pooling.
+2023+ outcomes (R=reaction, B=break, N=no touch, A=touch ambiguity, C0=censor before touch, C1=censor after touch, U=no outcome; all unlisted categories zero):
+support raw real R9 B11 N26 A5 C0=7; placebo R9 B10 N27 A5 C0=6 U1.
+support independent real R5 B6 N13 A3 C0=4; placebo R4 B6 N13 A4 C0=3 U1.
+support matched real R2 B2 N4 A1 C0=1; placebo R1 B2 N4 A2 C0=1.
+resistance raw real R8 B12 N25 A4 C0=6 C1=1 U2; placebo R10 B5 N32 A5 C0=6.
+resistance independent real R5 B8 N9 A3 C0=4 C1=1 U1; placebo R6 B2 N14 A5 C0=4.
+resistance matched real R1 B2 N4 A2 C0=1; placebo R1 N4 A4 C0=1.
+Daily v1 results saved separately (2c66f44). Independent real support touch-bar ambiguous 14 daily vs 3 hourly, but response clock and input end differ, so not identical endpoint comparison. Independent resolved counts all below preregistered 30; no calibrated probability and no model promotion. Hourly USD not executed. Local code executed in Python; repository stores result and method, not local Python source. Actual volume profile not measured. No production model or instructions changed.
+Workflow status checked before research: 45930867214 completed success; integrated path scoring workflow executed, no evidence of live forecast entries from this check.
