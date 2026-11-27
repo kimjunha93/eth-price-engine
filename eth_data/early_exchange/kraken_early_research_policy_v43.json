@@ -1,0 +1,39 @@
+{
+  "version": "kraken-early-research-policy-1",
+  "date": "2026-11-27",
+  "status": "research_only_no_production_change",
+  "sources": {
+    "daily": "e4ff8f864d12492b8e8b2ed8790b663e4f5ab9b6",
+    "hourly": "9bf5a1d8cd63eb65be33589ac19147ace3fa464a",
+    "bitstamp_daily": "bdef4c90c035a139a18ee85167365c11817545d9"
+  },
+  "complete_utc_day_check": {
+    "daily_rows": 873,
+    "complete_24h_days": 555,
+    "complete_by_year": {
+      "2015": 0,
+      "2016": 215,
+      "2017": 340
+    },
+    "ohlc_match": 555,
+    "volume_match": 555,
+    "trades_match": 555,
+    "observed_daily_incomplete_hour_coverage": 318,
+    "rtol": 1e-9,
+    "atol": 1e-8,
+    "raw_completeness": "unverified; no-trade versus retrieval gap unresolved"
+  },
+  "model_policy": {
+    "production": "unchanged",
+    "daily_close_20pct": "research challenger, full early history with unit weight; fails test adoption gate; no forecast change",
+    "daily_close_other_thresholds": "baseline retained in tested median model; not blanket exclusion from other models",
+    "hourly": "no events crossing missing bars; verify independent exchange overlap before adoption",
+    "long_cycle": "archive available for research; no validated improvement claim",
+    "validation": "2023 onward reused retrospectively, not untouched holdout; future prospective events required for independent adoption",
+    "trade_volume_profile": "raw SQLite not available to assistant; no execution-derived profile from candle volume"
+  },
+  "artifacts": [
+    "research/kraken_early_weight_sensitivity.cjs",
+    "eth_data/early_exchange/kraken_early_weight_sensitivity_v43.json"
+  ]
+}
