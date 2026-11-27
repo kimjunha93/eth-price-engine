@@ -1,0 +1,3858 @@
+{
+  "version": "sr-reaction-v1",
+  "status": "exploratory_reused_history",
+  "markets": {
+    "Upbit_ETHKRW": {
+      "rows": 3347,
+      "origins": 141,
+      "groups": {
+        "earlier_support_raw": {
+          "coincidence": 10,
+          "real": {
+            "n": 83,
+            "touches": 43,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 40,
+              "touch_bar_ambiguous": 43,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.0854342102523875
+          },
+          "placebo": {
+            "n": 83,
+            "touches": 43,
+            "counts": {
+              "reaction": 0,
+              "break": 2,
+              "no_outcome": 0,
+              "no_touch": 40,
+              "touch_bar_ambiguous": 40,
+              "order_unknown": 1,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 2,
+            "reaction_fraction": 0,
+            "mean_distance": 0.07684603395894067
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 25,
+                "touches": 18,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 7,
+                  "touch_bar_ambiguous": 18,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.03297505063366385
+              },
+              "placebo": {
+                "n": 24,
+                "touches": 18,
+                "counts": {
+                  "reaction": 0,
+                  "break": 1,
+                  "no_outcome": 0,
+                  "no_touch": 6,
+                  "touch_bar_ambiguous": 17,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 1,
+                "reaction_fraction": 0,
+                "mean_distance": 0.03323471202334413
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 29,
+                "touches": 18,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 11,
+                  "touch_bar_ambiguous": 18,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.07366731056294737
+              },
+              "placebo": {
+                "n": 31,
+                "touches": 14,
+                "counts": {
+                  "reaction": 0,
+                  "break": 1,
+                  "no_outcome": 0,
+                  "no_touch": 17,
+                  "touch_bar_ambiguous": 13,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 1,
+                "reaction_fraction": 0,
+                "mean_distance": 0.07108339338647528
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 29,
+                "touches": 7,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 22,
+                  "touch_bar_ambiguous": 7,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.1424245234062446
+              },
+              "placebo": {
+                "n": 26,
+                "touches": 10,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 16,
+                  "touch_bar_ambiguous": 10,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.12835322782576372
+              }
+            }
+          ],
+          "placebo_outside_strata": 2
+        },
+        "earlier_support_independent": {
+          "coincidence": 4,
+          "real": {
+            "n": 42,
+            "touches": 24,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 18,
+              "touch_bar_ambiguous": 24,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.07960098401714344
+          },
+          "placebo": {
+            "n": 42,
+            "touches": 24,
+            "counts": {
+              "reaction": 0,
+              "break": 1,
+              "no_outcome": 0,
+              "no_touch": 18,
+              "touch_bar_ambiguous": 23,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 1,
+            "reaction_fraction": 0,
+            "mean_distance": 0.06981498443173953
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 12,
+                "touches": 9,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 3,
+                  "touch_bar_ambiguous": 9,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.030316766082042413
+              },
+              "placebo": {
+                "n": 17,
+                "touches": 13,
+                "counts": {
+                  "reaction": 0,
+                  "break": 1,
+                  "no_outcome": 0,
+                  "no_touch": 4,
+                  "touch_bar_ambiguous": 12,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 1,
+                "reaction_fraction": 0,
+                "mean_distance": 0.030338111915548655
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 17,
+                "touches": 10,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 7,
+                  "touch_bar_ambiguous": 10,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.07710990624285682
+              },
+              "placebo": {
+                "n": 13,
+                "touches": 7,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 6,
+                  "touch_bar_ambiguous": 7,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.07552511299381064
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 13,
+                "touches": 5,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 8,
+                  "touch_bar_ambiguous": 5,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.12835167150822685
+              },
+              "placebo": {
+                "n": 12,
+                "touches": 4,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 8,
+                  "touch_bar_ambiguous": 4,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.11955458122076619
+              }
+            }
+          ],
+          "placebo_outside_strata": 0
+        },
+        "earlier_support_matched_independent": {
+          "coincidence": 1,
+          "real": {
+            "n": 7,
+            "touches": 4,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 3,
+              "touch_bar_ambiguous": 4,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.0835616816328731
+          },
+          "placebo": {
+            "n": 7,
+            "touches": 3,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 4,
+              "touch_bar_ambiguous": 3,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.08707478771783442
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 2,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 1,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.03349400370611283
+              },
+              "placebo": {
+                "n": 2,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 1,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.035102839526348795
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 3,
+                "touches": 3,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 3,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.0926320642868979
+              },
+              "placebo": {
+                "n": 1,
+                "touches": 0,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 1,
+                  "touch_bar_ambiguous": 0,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.08481492276304281
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 2,
+                "touches": 0,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 2,
+                  "touch_bar_ambiguous": 0,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.12002378557859616
+              },
+              "placebo": {
+                "n": 4,
+                "touches": 2,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 2,
+                  "touch_bar_ambiguous": 2,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.11362572805227514
+              }
+            }
+          ],
+          "placebo_outside_strata": 0
+        },
+        "earlier_resistance_raw": {
+          "coincidence": 7,
+          "real": {
+            "n": 83,
+            "touches": 42,
+            "counts": {
+              "reaction": 1,
+              "break": 3,
+              "no_outcome": 0,
+              "no_touch": 41,
+              "touch_bar_ambiguous": 38,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 4,
+            "reaction_fraction": 0.25,
+            "mean_distance": 0.08539466905046117
+          },
+          "placebo": {
+            "n": 83,
+            "touches": 43,
+            "counts": {
+              "reaction": 0,
+              "break": 3,
+              "no_outcome": 1,
+              "no_touch": 40,
+              "touch_bar_ambiguous": 39,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 3,
+            "reaction_fraction": 0,
+            "mean_distance": 0.0967001161015996
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 23,
+                "touches": 20,
+                "counts": {
+                  "reaction": 1,
+                  "break": 3,
+                  "no_outcome": 0,
+                  "no_touch": 3,
+                  "touch_bar_ambiguous": 16,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 4,
+                "reaction_fraction": 0.25,
+                "mean_distance": 0.03107148326420576
+              },
+              "placebo": {
+                "n": 25,
+                "touches": 17,
+                "counts": {
+                  "reaction": 0,
+                  "break": 2,
+                  "no_outcome": 0,
+                  "no_touch": 8,
+                  "touch_bar_ambiguous": 15,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 2,
+                "reaction_fraction": 0,
+                "mean_distance": 0.03418133871714232
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 31,
+                "touches": 17,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 14,
+                  "touch_bar_ambiguous": 17,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.07166242226792245
+              },
+              "placebo": {
+                "n": 23,
+                "touches": 13,
+                "counts": {
+                  "reaction": 0,
+                  "break": 1,
+                  "no_outcome": 1,
+                  "no_touch": 10,
+                  "touch_bar_ambiguous": 11,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 1,
+                "reaction_fraction": 0,
+                "mean_distance": 0.07303834796824185
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 29,
+                "touches": 5,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 24,
+                  "touch_bar_ambiguous": 5,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.14315787330365343
+              },
+              "placebo": {
+                "n": 29,
+                "touches": 10,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 19,
+                  "touch_bar_ambiguous": 10,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.1413490314621419
+              }
+            }
+          ],
+          "placebo_outside_strata": 6
+        },
+        "earlier_resistance_independent": {
+          "coincidence": 3,
+          "real": {
+            "n": 42,
+            "touches": 21,
+            "counts": {
+              "reaction": 1,
+              "break": 2,
+              "no_outcome": 0,
+              "no_touch": 21,
+              "touch_bar_ambiguous": 18,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 3,
+            "reaction_fraction": 0.3333333333333333,
+            "mean_distance": 0.0768948068553114
+          },
+          "placebo": {
+            "n": 42,
+            "touches": 21,
+            "counts": {
+              "reaction": 0,
+              "break": 2,
+              "no_outcome": 0,
+              "no_touch": 21,
+              "touch_bar_ambiguous": 19,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 2,
+            "reaction_fraction": 0,
+            "mean_distance": 0.08870171771574012
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 15,
+                "touches": 13,
+                "counts": {
+                  "reaction": 1,
+                  "break": 2,
+                  "no_outcome": 0,
+                  "no_touch": 2,
+                  "touch_bar_ambiguous": 10,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 3,
+                "reaction_fraction": 0.3333333333333333,
+                "mean_distance": 0.028809399125016826
+              },
+              "placebo": {
+                "n": 12,
+                "touches": 10,
+                "counts": {
+                  "reaction": 0,
+                  "break": 1,
+                  "no_outcome": 0,
+                  "no_touch": 2,
+                  "touch_bar_ambiguous": 9,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 1,
+                "reaction_fraction": 0,
+                "mean_distance": 0.03133137120100384
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 13,
+                "touches": 6,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 7,
+                  "touch_bar_ambiguous": 6,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.07399638291598151
+              },
+              "placebo": {
+                "n": 12,
+                "touches": 7,
+                "counts": {
+                  "reaction": 0,
+                  "break": 1,
+                  "no_outcome": 0,
+                  "no_touch": 5,
+                  "touch_bar_ambiguous": 6,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 1,
+                "reaction_fraction": 0,
+                "mean_distance": 0.07455848591592623
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 14,
+                "touches": 2,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 12,
+                  "touch_bar_ambiguous": 2,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.13110628022429047
+              },
+              "placebo": {
+                "n": 18,
+                "touches": 4,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 14,
+                  "touch_bar_ambiguous": 4,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.13637743659210694
+              }
+            }
+          ],
+          "placebo_outside_strata": 0
+        },
+        "earlier_resistance_matched_independent": {
+          "coincidence": 1,
+          "real": {
+            "n": 6,
+            "touches": 3,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 3,
+              "touch_bar_ambiguous": 3,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.09767495627096871
+          },
+          "placebo": {
+            "n": 6,
+            "touches": 3,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 3,
+              "touch_bar_ambiguous": 3,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.08875610064904423
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 2,
+                "touches": 2,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 2,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.03646300289056259
+              },
+              "placebo": {
+                "n": 2,
+                "touches": 2,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 2,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.03467878446546435
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 0,
+                "touches": 0,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 0,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": null
+              },
+              "placebo": {
+                "n": 1,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.09579831932773097
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 4,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 3,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.12828093296117177
+              },
+              "placebo": {
+                "n": 3,
+                "touches": 0,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 3,
+                  "touch_bar_ambiguous": 0,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.1224602385452019
+              }
+            }
+          ],
+          "placebo_outside_strata": 0
+        },
+        "2023plus_support_raw": {
+          "coincidence": 3,
+          "real": {
+            "n": 58,
+            "touches": 25,
+            "counts": {
+              "reaction": 1,
+              "break": 1,
+              "no_outcome": 0,
+              "no_touch": 33,
+              "touch_bar_ambiguous": 23,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 2,
+            "reaction_fraction": 0.5,
+            "mean_distance": 0.07788063893997568
+          },
+          "placebo": {
+            "n": 58,
+            "touches": 26,
+            "counts": {
+              "reaction": 1,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 32,
+              "touch_bar_ambiguous": 25,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 1,
+            "reaction_fraction": 1,
+            "mean_distance": 0.06992947249320426
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 16,
+                "touches": 11,
+                "counts": {
+                  "reaction": 1,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 5,
+                  "touch_bar_ambiguous": 10,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 1,
+                "reaction_fraction": 1,
+                "mean_distance": 0.03570961303458336
+              },
+              "placebo": {
+                "n": 22,
+                "touches": 13,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 9,
+                  "touch_bar_ambiguous": 13,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.03385364256661182
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 27,
+                "touches": 11,
+                "counts": {
+                  "reaction": 0,
+                  "break": 1,
+                  "no_outcome": 0,
+                  "no_touch": 16,
+                  "touch_bar_ambiguous": 10,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 1,
+                "reaction_fraction": 0,
+                "mean_distance": 0.07346557472397743
+              },
+              "placebo": {
+                "n": 23,
+                "touches": 9,
+                "counts": {
+                  "reaction": 1,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 14,
+                  "touch_bar_ambiguous": 8,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 1,
+                "reaction_fraction": 1,
+                "mean_distance": 0.06936850764833391
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 15,
+                "touches": 3,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 12,
+                  "touch_bar_ambiguous": 3,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.13081018216119095
+              },
+              "placebo": {
+                "n": 13,
+                "touches": 4,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 9,
+                  "touch_bar_ambiguous": 4,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.13197335324836207
+              }
+            }
+          ],
+          "placebo_outside_strata": 0
+        },
+        "2023plus_support_independent": {
+          "coincidence": 2,
+          "real": {
+            "n": 31,
+            "touches": 14,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 17,
+              "touch_bar_ambiguous": 14,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.07981930733520402
+          },
+          "placebo": {
+            "n": 31,
+            "touches": 16,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 15,
+              "touch_bar_ambiguous": 16,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.07024473623708088
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 8,
+                "touches": 7,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 1,
+                  "touch_bar_ambiguous": 7,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.035005839356063814
+              },
+              "placebo": {
+                "n": 13,
+                "touches": 8,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 5,
+                  "touch_bar_ambiguous": 8,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.03277951020391892
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 16,
+                "touches": 5,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 11,
+                  "touch_bar_ambiguous": 5,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.07597615774800812
+              },
+              "placebo": {
+                "n": 10,
+                "touches": 5,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 5,
+                  "touch_bar_ambiguous": 5,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.07502724520917936
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 7,
+                "touches": 2,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 5,
+                  "touch_bar_ambiguous": 2,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.13981904122495484
+              },
+              "placebo": {
+                "n": 8,
+                "touches": 3,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 5,
+                  "touch_bar_ambiguous": 3,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.12514759232584602
+              }
+            }
+          ],
+          "placebo_outside_strata": 0
+        },
+        "2023plus_support_matched_independent": {
+          "coincidence": 2,
+          "real": {
+            "n": 10,
+            "touches": 5,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 5,
+              "touch_bar_ambiguous": 5,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.08941216211910805
+          },
+          "placebo": {
+            "n": 10,
+            "touches": 5,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 5,
+              "touch_bar_ambiguous": 5,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.08819741471344227
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 2,
+                "touches": 2,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 2,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.037367815640205415
+              },
+              "placebo": {
+                "n": 1,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.026660839160839278
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 4,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 3,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.07487212320221953
+              },
+              "placebo": {
+                "n": 6,
+                "touches": 3,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 3,
+                  "touch_bar_ambiguous": 3,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.07577815673324546
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 4,
+                "touches": 2,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 2,
+                  "touch_bar_ambiguous": 2,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.1299743742754479
+              },
+              "placebo": {
+                "n": 3,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 2,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.13354812252470352
+              }
+            }
+          ],
+          "placebo_outside_strata": 0
+        },
+        "2023plus_resistance_raw": {
+          "coincidence": 7,
+          "real": {
+            "n": 58,
+            "touches": 28,
+            "counts": {
+              "reaction": 1,
+              "break": 0,
+              "no_outcome": 2,
+              "no_touch": 30,
+              "touch_bar_ambiguous": 25,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 1,
+            "reaction_fraction": 1,
+            "mean_distance": 0.07718991065942518
+          },
+          "placebo": {
+            "n": 58,
+            "touches": 23,
+            "counts": {
+              "reaction": 1,
+              "break": 1,
+              "no_outcome": 0,
+              "no_touch": 35,
+              "touch_bar_ambiguous": 21,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 2,
+            "reaction_fraction": 0.5,
+            "mean_distance": 0.08639600517790837
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 21,
+                "touches": 15,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 2,
+                  "no_touch": 6,
+                  "touch_bar_ambiguous": 13,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.03435250478814997
+              },
+              "placebo": {
+                "n": 14,
+                "touches": 9,
+                "counts": {
+                  "reaction": 1,
+                  "break": 1,
+                  "no_outcome": 0,
+                  "no_touch": 5,
+                  "touch_bar_ambiguous": 7,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 2,
+                "reaction_fraction": 0.5,
+                "mean_distance": 0.03516091140377142
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 22,
+                "touches": 9,
+                "counts": {
+                  "reaction": 1,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 13,
+                  "touch_bar_ambiguous": 8,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 1,
+                "reaction_fraction": 1,
+                "mean_distance": 0.07094201063338378
+              },
+              "placebo": {
+                "n": 27,
+                "touches": 11,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 16,
+                  "touch_bar_ambiguous": 11,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.07574035853400966
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 15,
+                "touches": 4,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 11,
+                  "touch_bar_ambiguous": 4,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.1463258655840713
+              },
+              "placebo": {
+                "n": 15,
+                "touches": 3,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 12,
+                  "touch_bar_ambiguous": 3,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.1357772584118166
+              }
+            }
+          ],
+          "placebo_outside_strata": 2
+        },
+        "2023plus_resistance_independent": {
+          "coincidence": 4,
+          "real": {
+            "n": 31,
+            "touches": 19,
+            "counts": {
+              "reaction": 1,
+              "break": 0,
+              "no_outcome": 1,
+              "no_touch": 12,
+              "touch_bar_ambiguous": 17,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 1,
+            "reaction_fraction": 1,
+            "mean_distance": 0.07760062158916087
+          },
+          "placebo": {
+            "n": 31,
+            "touches": 15,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 16,
+              "touch_bar_ambiguous": 15,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.08890177848415017
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 13,
+                "touches": 11,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 1,
+                  "no_touch": 2,
+                  "touch_bar_ambiguous": 10,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.033941159695713166
+              },
+              "placebo": {
+                "n": 6,
+                "touches": 4,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 2,
+                  "touch_bar_ambiguous": 4,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.03162695379120691
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 8,
+                "touches": 5,
+                "counts": {
+                  "reaction": 1,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 3,
+                  "touch_bar_ambiguous": 4,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 1,
+                "reaction_fraction": 1,
+                "mean_distance": 0.07554662934807721
+              },
+              "placebo": {
+                "n": 17,
+                "touches": 10,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 7,
+                  "touch_bar_ambiguous": 10,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.0775622249569447
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 10,
+                "touches": 3,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 7,
+                  "touch_bar_ambiguous": 3,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.13600111584350988
+              },
+              "placebo": {
+                "n": 6,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 5,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.13509476698716316
+              }
+            }
+          ],
+          "placebo_outside_strata": 2
+        },
+        "2023plus_resistance_matched_independent": {
+          "coincidence": 1,
+          "real": {
+            "n": 10,
+            "touches": 6,
+            "counts": {
+              "reaction": 1,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 4,
+              "touch_bar_ambiguous": 5,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 1,
+            "reaction_fraction": 1,
+            "mean_distance": 0.09842707785007299
+          },
+          "placebo": {
+            "n": 10,
+            "touches": 6,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 4,
+              "touch_bar_ambiguous": 6,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.10062298906153093
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 1,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.02739110911540199
+              },
+              "placebo": {
+                "n": 1,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.027214022140221505
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 6,
+                "touches": 4,
+                "counts": {
+                  "reaction": 1,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 2,
+                  "touch_bar_ambiguous": 3,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 1,
+                "reaction_fraction": 1,
+                "mean_distance": 0.0821467677736899
+              },
+              "placebo": {
+                "n": 5,
+                "touches": 4,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 1,
+                  "touch_bar_ambiguous": 4,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.07491438933985232
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 3,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 2,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.15466635424772948
+              },
+              "placebo": {
+                "n": 3,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 2,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.12528800752543354
+              }
+            }
+          ],
+          "placebo_outside_strata": 1
+        }
+      }
+    },
+    "Bitstamp_ETHUSD": {
+      "rows": 3305,
+      "origins": 137,
+      "groups": {
+        "earlier_support_raw": {
+          "coincidence": 5,
+          "real": {
+            "n": 66,
+            "touches": 41,
+            "counts": {
+              "reaction": 1,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 25,
+              "touch_bar_ambiguous": 40,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 1,
+            "reaction_fraction": 1,
+            "mean_distance": 0.07852549798975443
+          },
+          "placebo": {
+            "n": 66,
+            "touches": 43,
+            "counts": {
+              "reaction": 0,
+              "break": 3,
+              "no_outcome": 0,
+              "no_touch": 23,
+              "touch_bar_ambiguous": 40,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 3,
+            "reaction_fraction": 0,
+            "mean_distance": 0.07495487676234379
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 19,
+                "touches": 15,
+                "counts": {
+                  "reaction": 1,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 4,
+                  "touch_bar_ambiguous": 14,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 1,
+                "reaction_fraction": 1,
+                "mean_distance": 0.033608530332312966
+              },
+              "placebo": {
+                "n": 23,
+                "touches": 20,
+                "counts": {
+                  "reaction": 0,
+                  "break": 2,
+                  "no_outcome": 0,
+                  "no_touch": 3,
+                  "touch_bar_ambiguous": 18,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 2,
+                "reaction_fraction": 0,
+                "mean_distance": 0.03452255591510457
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 28,
+                "touches": 19,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 9,
+                  "touch_bar_ambiguous": 19,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.07284895353238201
+              },
+              "placebo": {
+                "n": 23,
+                "touches": 12,
+                "counts": {
+                  "reaction": 0,
+                  "break": 1,
+                  "no_outcome": 0,
+                  "no_touch": 11,
+                  "touch_bar_ambiguous": 11,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 1,
+                "reaction_fraction": 0,
+                "mean_distance": 0.07400984987282103
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 19,
+                "touches": 7,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 12,
+                  "touch_bar_ambiguous": 7,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.13180789958437628
+              },
+              "placebo": {
+                "n": 19,
+                "touches": 10,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 9,
+                  "touch_bar_ambiguous": 10,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.12793768918012627
+              }
+            }
+          ],
+          "placebo_outside_strata": 1
+        },
+        "earlier_support_independent": {
+          "coincidence": 5,
+          "real": {
+            "n": 35,
+            "touches": 21,
+            "counts": {
+              "reaction": 1,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 14,
+              "touch_bar_ambiguous": 20,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 1,
+            "reaction_fraction": 1,
+            "mean_distance": 0.07683135880643727
+          },
+          "placebo": {
+            "n": 35,
+            "touches": 22,
+            "counts": {
+              "reaction": 0,
+              "break": 3,
+              "no_outcome": 0,
+              "no_touch": 13,
+              "touch_bar_ambiguous": 19,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 3,
+            "reaction_fraction": 0,
+            "mean_distance": 0.07204474947162404
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 11,
+                "touches": 9,
+                "counts": {
+                  "reaction": 1,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 2,
+                  "touch_bar_ambiguous": 8,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 1,
+                "reaction_fraction": 1,
+                "mean_distance": 0.03361776685348923
+              },
+              "placebo": {
+                "n": 12,
+                "touches": 10,
+                "counts": {
+                  "reaction": 0,
+                  "break": 2,
+                  "no_outcome": 0,
+                  "no_touch": 2,
+                  "touch_bar_ambiguous": 8,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 2,
+                "reaction_fraction": 0,
+                "mean_distance": 0.0313915983617998
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 14,
+                "touches": 9,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 5,
+                  "touch_bar_ambiguous": 9,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.0702982067864147
+              },
+              "placebo": {
+                "n": 14,
+                "touches": 8,
+                "counts": {
+                  "reaction": 0,
+                  "break": 1,
+                  "no_outcome": 0,
+                  "no_touch": 6,
+                  "touch_bar_ambiguous": 7,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 1,
+                "reaction_fraction": 0,
+                "mean_distance": 0.07266592257940685
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 10,
+                "touches": 3,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 7,
+                  "touch_bar_ambiguous": 3,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.13351272278271176
+              },
+              "placebo": {
+                "n": 9,
+                "touches": 4,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 5,
+                  "touch_bar_ambiguous": 4,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.12528268167261647
+              }
+            }
+          ],
+          "placebo_outside_strata": 0
+        },
+        "earlier_support_matched_independent": {
+          "coincidence": 3,
+          "real": {
+            "n": 4,
+            "touches": 3,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 1,
+              "touch_bar_ambiguous": 3,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.0642019697446948
+          },
+          "placebo": {
+            "n": 4,
+            "touches": 3,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 1,
+              "touch_bar_ambiguous": 3,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.0626980777114326
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 0,
+                "touches": 0,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 0,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": null
+              },
+              "placebo": {
+                "n": 1,
+                "touches": 0,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 1,
+                  "touch_bar_ambiguous": 0,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.04618231964000563
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 4,
+                "touches": 3,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 1,
+                  "touch_bar_ambiguous": 3,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.0642019697446948
+              },
+              "placebo": {
+                "n": 3,
+                "touches": 3,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 3,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.06820333040190825
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 0,
+                "touches": 0,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 0,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": null
+              },
+              "placebo": {
+                "n": 0,
+                "touches": 0,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 0,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": null
+              }
+            }
+          ],
+          "placebo_outside_strata": 0
+        },
+        "earlier_resistance_raw": {
+          "coincidence": 6,
+          "real": {
+            "n": 66,
+            "touches": 35,
+            "counts": {
+              "reaction": 1,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 31,
+              "touch_bar_ambiguous": 34,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 1,
+            "reaction_fraction": 1,
+            "mean_distance": 0.08312654448649757
+          },
+          "placebo": {
+            "n": 66,
+            "touches": 34,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 32,
+              "touch_bar_ambiguous": 34,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.0874991214319276
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 21,
+                "touches": 16,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 5,
+                  "touch_bar_ambiguous": 16,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.03296494558977793
+              },
+              "placebo": {
+                "n": 17,
+                "touches": 11,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 6,
+                  "touch_bar_ambiguous": 11,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.03293931739286927
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 23,
+                "touches": 13,
+                "counts": {
+                  "reaction": 1,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 10,
+                  "touch_bar_ambiguous": 12,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 1,
+                "reaction_fraction": 1,
+                "mean_distance": 0.07290718035885087
+              },
+              "placebo": {
+                "n": 25,
+                "touches": 14,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 11,
+                  "touch_bar_ambiguous": 14,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.07114410329539879
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 22,
+                "touches": 6,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 16,
+                  "touch_bar_ambiguous": 6,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.14169195138499696
+              },
+              "placebo": {
+                "n": 21,
+                "touches": 8,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 13,
+                  "touch_bar_ambiguous": 8,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.1323524841706819
+              }
+            }
+          ],
+          "placebo_outside_strata": 3
+        },
+        "earlier_resistance_independent": {
+          "coincidence": 6,
+          "real": {
+            "n": 35,
+            "touches": 18,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 17,
+              "touch_bar_ambiguous": 18,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.07958347903340598
+          },
+          "placebo": {
+            "n": 35,
+            "touches": 18,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 17,
+              "touch_bar_ambiguous": 18,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.08571321517541791
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 12,
+                "touches": 9,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 3,
+                  "touch_bar_ambiguous": 9,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.03245391027216619
+              },
+              "placebo": {
+                "n": 10,
+                "touches": 6,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 4,
+                  "touch_bar_ambiguous": 6,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.033290322643929574
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 13,
+                "touches": 6,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 7,
+                  "touch_bar_ambiguous": 6,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.07638246025868303
+              },
+              "placebo": {
+                "n": 13,
+                "touches": 7,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 6,
+                  "touch_bar_ambiguous": 7,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.06902503149357372
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 10,
+                "touches": 3,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 7,
+                  "touch_bar_ambiguous": 3,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.1403002859540336
+              },
+              "placebo": {
+                "n": 10,
+                "touches": 4,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 6,
+                  "touch_bar_ambiguous": 4,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.13189011721581784
+              }
+            }
+          ],
+          "placebo_outside_strata": 2
+        },
+        "earlier_resistance_matched_independent": {
+          "coincidence": 4,
+          "real": {
+            "n": 4,
+            "touches": 1,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 3,
+              "touch_bar_ambiguous": 1,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.06709386738490336
+          },
+          "placebo": {
+            "n": 4,
+            "touches": 1,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 3,
+              "touch_bar_ambiguous": 1,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.0686993819638963
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 1,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.048418393358545586
+              },
+              "placebo": {
+                "n": 0,
+                "touches": 0,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 0,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": null
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 3,
+                "touches": 0,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 3,
+                  "touch_bar_ambiguous": 0,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.07331902539368929
+              },
+              "placebo": {
+                "n": 4,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 3,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.0686993819638963
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 0,
+                "touches": 0,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 0,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": null
+              },
+              "placebo": {
+                "n": 0,
+                "touches": 0,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 0,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": null
+              }
+            }
+          ],
+          "placebo_outside_strata": 0
+        },
+        "2023plus_support_raw": {
+          "coincidence": 9,
+          "real": {
+            "n": 71,
+            "touches": 26,
+            "counts": {
+              "reaction": 1,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 44,
+              "touch_bar_ambiguous": 25,
+              "order_unknown": 0,
+              "censor_before_touch": 1,
+              "censor_after_touch": 0
+            },
+            "resolved": 1,
+            "reaction_fraction": 1,
+            "mean_distance": 0.08423674765073197
+          },
+          "placebo": {
+            "n": 71,
+            "touches": 34,
+            "counts": {
+              "reaction": 1,
+              "break": 2,
+              "no_outcome": 0,
+              "no_touch": 36,
+              "touch_bar_ambiguous": 31,
+              "order_unknown": 0,
+              "censor_before_touch": 1,
+              "censor_after_touch": 0
+            },
+            "resolved": 3,
+            "reaction_fraction": 0.3333333333333333,
+            "mean_distance": 0.07259931726097896
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 15,
+                "touches": 12,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 3,
+                  "touch_bar_ambiguous": 12,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.03429039956806692
+              },
+              "placebo": {
+                "n": 26,
+                "touches": 19,
+                "counts": {
+                  "reaction": 1,
+                  "break": 2,
+                  "no_outcome": 0,
+                  "no_touch": 7,
+                  "touch_bar_ambiguous": 16,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 3,
+                "reaction_fraction": 0.3333333333333333,
+                "mean_distance": 0.03541450120441589
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 29,
+                "touches": 11,
+                "counts": {
+                  "reaction": 1,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 17,
+                  "touch_bar_ambiguous": 10,
+                  "order_unknown": 0,
+                  "censor_before_touch": 1,
+                  "censor_after_touch": 0
+                },
+                "resolved": 1,
+                "reaction_fraction": 1,
+                "mean_distance": 0.06633199361484442
+              },
+              "placebo": {
+                "n": 27,
+                "touches": 13,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 13,
+                  "touch_bar_ambiguous": 13,
+                  "order_unknown": 0,
+                  "censor_before_touch": 1,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.06933682493921517
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 27,
+                "touches": 3,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 24,
+                  "touch_bar_ambiguous": 3,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.131215750920388
+              },
+              "placebo": {
+                "n": 18,
+                "touches": 2,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 16,
+                  "touch_bar_ambiguous": 2,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.1312044567142158
+              }
+            }
+          ],
+          "placebo_outside_strata": 0
+        },
+        "2023plus_support_independent": {
+          "coincidence": 6,
+          "real": {
+            "n": 37,
+            "touches": 15,
+            "counts": {
+              "reaction": 1,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 21,
+              "touch_bar_ambiguous": 14,
+              "order_unknown": 0,
+              "censor_before_touch": 1,
+              "censor_after_touch": 0
+            },
+            "resolved": 1,
+            "reaction_fraction": 1,
+            "mean_distance": 0.08106574553936029
+          },
+          "placebo": {
+            "n": 37,
+            "touches": 21,
+            "counts": {
+              "reaction": 1,
+              "break": 1,
+              "no_outcome": 0,
+              "no_touch": 15,
+              "touch_bar_ambiguous": 19,
+              "order_unknown": 0,
+              "censor_before_touch": 1,
+              "censor_after_touch": 0
+            },
+            "resolved": 2,
+            "reaction_fraction": 0.5,
+            "mean_distance": 0.07064123707562078
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 10,
+                "touches": 8,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 2,
+                  "touch_bar_ambiguous": 8,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.0355228883060625
+              },
+              "placebo": {
+                "n": 14,
+                "touches": 10,
+                "counts": {
+                  "reaction": 1,
+                  "break": 1,
+                  "no_outcome": 0,
+                  "no_touch": 4,
+                  "touch_bar_ambiguous": 8,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 2,
+                "reaction_fraction": 0.5,
+                "mean_distance": 0.035171244113947384
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 14,
+                "touches": 5,
+                "counts": {
+                  "reaction": 1,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 8,
+                  "touch_bar_ambiguous": 4,
+                  "order_unknown": 0,
+                  "censor_before_touch": 1,
+                  "censor_after_touch": 0
+                },
+                "resolved": 1,
+                "reaction_fraction": 1,
+                "mean_distance": 0.06429521711791282
+              },
+              "placebo": {
+                "n": 15,
+                "touches": 10,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 4,
+                  "touch_bar_ambiguous": 10,
+                  "order_unknown": 0,
+                  "censor_before_touch": 1,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.07301541104314908
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 13,
+                "touches": 2,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 11,
+                  "touch_bar_ambiguous": 2,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.13415928171114813
+              },
+              "placebo": {
+                "n": 8,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 7,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.1282621485694337
+              }
+            }
+          ],
+          "placebo_outside_strata": 0
+        },
+        "2023plus_support_matched_independent": {
+          "coincidence": 2,
+          "real": {
+            "n": 5,
+            "touches": 2,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 2,
+              "touch_bar_ambiguous": 2,
+              "order_unknown": 0,
+              "censor_before_touch": 1,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.0723330410155062
+          },
+          "placebo": {
+            "n": 5,
+            "touches": 2,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 2,
+              "touch_bar_ambiguous": 2,
+              "order_unknown": 0,
+              "censor_before_touch": 1,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.07017924270695582
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 1,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.027283805531179928
+              },
+              "placebo": {
+                "n": 2,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 1,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.03972847867416279
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 3,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 1,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 1,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.05948053534656531
+              },
+              "placebo": {
+                "n": 2,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 1,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.06195661140217035
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 1,
+                "touches": 0,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 1,
+                  "touch_bar_ambiguous": 0,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.1559397935066551
+              },
+              "placebo": {
+                "n": 1,
+                "touches": 0,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 1,
+                  "touch_bar_ambiguous": 0,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.1475260333821128
+              }
+            }
+          ],
+          "placebo_outside_strata": 0
+        },
+        "2023plus_resistance_raw": {
+          "coincidence": 9,
+          "real": {
+            "n": 71,
+            "touches": 35,
+            "counts": {
+              "reaction": 2,
+              "break": 2,
+              "no_outcome": 0,
+              "no_touch": 36,
+              "touch_bar_ambiguous": 31,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 4,
+            "reaction_fraction": 0.5,
+            "mean_distance": 0.08037907557632737
+          },
+          "placebo": {
+            "n": 71,
+            "touches": 31,
+            "counts": {
+              "reaction": 0,
+              "break": 1,
+              "no_outcome": 1,
+              "no_touch": 40,
+              "touch_bar_ambiguous": 29,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 1,
+            "reaction_fraction": 0,
+            "mean_distance": 0.09445748683495746
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 24,
+                "touches": 17,
+                "counts": {
+                  "reaction": 2,
+                  "break": 2,
+                  "no_outcome": 0,
+                  "no_touch": 7,
+                  "touch_bar_ambiguous": 13,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 4,
+                "reaction_fraction": 0.5,
+                "mean_distance": 0.0355235853180939
+              },
+              "placebo": {
+                "n": 13,
+                "touches": 8,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 1,
+                  "no_touch": 5,
+                  "touch_bar_ambiguous": 7,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.03314341936992449
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 27,
+                "touches": 13,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 14,
+                  "touch_bar_ambiguous": 13,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.07086164035479739
+              },
+              "placebo": {
+                "n": 30,
+                "touches": 18,
+                "counts": {
+                  "reaction": 0,
+                  "break": 1,
+                  "no_outcome": 0,
+                  "no_touch": 12,
+                  "touch_bar_ambiguous": 17,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 1,
+                "reaction_fraction": 0,
+                "mean_distance": 0.06875757532979912
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 20,
+                "touches": 5,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 15,
+                  "touch_bar_ambiguous": 5,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.14705420143527292
+              },
+              "placebo": {
+                "n": 25,
+                "touches": 4,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 21,
+                  "touch_bar_ambiguous": 4,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.1413118451259543
+              }
+            }
+          ],
+          "placebo_outside_strata": 3
+        },
+        "2023plus_resistance_independent": {
+          "coincidence": 4,
+          "real": {
+            "n": 37,
+            "touches": 20,
+            "counts": {
+              "reaction": 1,
+              "break": 2,
+              "no_outcome": 0,
+              "no_touch": 17,
+              "touch_bar_ambiguous": 17,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 3,
+            "reaction_fraction": 0.3333333333333333,
+            "mean_distance": 0.07782823953839148
+          },
+          "placebo": {
+            "n": 37,
+            "touches": 17,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 1,
+              "no_touch": 20,
+              "touch_bar_ambiguous": 16,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.09078534564294607
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 13,
+                "touches": 10,
+                "counts": {
+                  "reaction": 1,
+                  "break": 2,
+                  "no_outcome": 0,
+                  "no_touch": 3,
+                  "touch_bar_ambiguous": 7,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 3,
+                "reaction_fraction": 0.3333333333333333,
+                "mean_distance": 0.0353816445638777
+              },
+              "placebo": {
+                "n": 8,
+                "touches": 6,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 1,
+                  "no_touch": 2,
+                  "touch_bar_ambiguous": 5,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.03326696427855069
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 15,
+                "touches": 8,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 7,
+                  "touch_bar_ambiguous": 8,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.07550268098594747
+              },
+              "placebo": {
+                "n": 16,
+                "touches": 10,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 6,
+                  "touch_bar_ambiguous": 10,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.06669345464453307
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 9,
+                "touches": 2,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 7,
+                  "touch_bar_ambiguous": 2,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.14301591875565134
+              },
+              "placebo": {
+                "n": 12,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 11,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.14940431360836087
+              }
+            }
+          ],
+          "placebo_outside_strata": 1
+        },
+        "2023plus_resistance_matched_independent": {
+          "coincidence": 4,
+          "real": {
+            "n": 5,
+            "touches": 5,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 0,
+              "touch_bar_ambiguous": 5,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.07762234972575346
+          },
+          "placebo": {
+            "n": 5,
+            "touches": 5,
+            "counts": {
+              "reaction": 0,
+              "break": 0,
+              "no_outcome": 0,
+              "no_touch": 0,
+              "touch_bar_ambiguous": 5,
+              "order_unknown": 0,
+              "censor_before_touch": 0,
+              "censor_after_touch": 0
+            },
+            "resolved": 0,
+            "reaction_fraction": null,
+            "mean_distance": 0.08052828283675698
+          },
+          "strata": [
+            {
+              "range": [
+                0.02,
+                0.05
+              ],
+              "real": {
+                "n": 1,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.031017150440776575
+              },
+              "placebo": {
+                "n": 1,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.028049091488683286
+              }
+            },
+            {
+              "range": [
+                0.05,
+                0.1
+              ],
+              "real": {
+                "n": 3,
+                "touches": 3,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 3,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.061346082631888565
+              },
+              "placebo": {
+                "n": 3,
+                "touches": 3,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 3,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.06328090441316858
+              }
+            },
+            {
+              "range": [
+                0.1,
+                0.200000001
+              ],
+              "real": {
+                "n": 1,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.17305635029232502
+              },
+              "placebo": {
+                "n": 1,
+                "touches": 1,
+                "counts": {
+                  "reaction": 0,
+                  "break": 0,
+                  "no_outcome": 0,
+                  "no_touch": 0,
+                  "touch_bar_ambiguous": 1,
+                  "order_unknown": 0,
+                  "censor_before_touch": 0,
+                  "censor_after_touch": 0
+                },
+                "resolved": 0,
+                "reaction_fraction": null,
+                "mean_distance": 0.18474960945559582
+              }
+            }
+          ],
+          "placebo_outside_strata": 0
+        }
+      }
+    }
+  }
+}
