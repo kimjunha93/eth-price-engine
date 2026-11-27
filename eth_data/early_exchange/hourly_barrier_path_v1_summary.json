@@ -1,0 +1,314 @@
+{
+  "version": "hourly_barrier_path_v1_summary",
+  "status": "exploratory_no_promotion",
+  "code_blob": "3a7e5d5be804025948d347564d87e5aa91760906",
+  "code_matches_executed": true,
+  "input": {
+    "Upbit": {
+      "rows": 80137,
+      "sha256": "dd49b032fbb9d00da52bc027a4ee4ffaedd71bcbdbe7059a02645800786ace0a",
+      "first_utc": "2017-09-25T03:00:00Z",
+      "last_closed_utc": "2026-11-26T15:00:00Z",
+      "note": "local historical project snapshot, not current remote head"
+    },
+    "Kraken": {
+      "rows": 17647,
+      "sha256": "8949688211777944dbd3652496ea1fdfdf3609ca86c840fb941aad0de103ebc4",
+      "first_utc": "2015-08-07T14:00:00Z",
+      "last_closed_utc": "2018-01-01T00:00:00Z"
+    }
+  },
+  "scales": [
+    0.05,
+    0.1,
+    0.15,
+    0.2
+  ],
+  "outcome_columns": [
+    "UUU",
+    "UUD",
+    "UDU",
+    "UDD",
+    "DUU",
+    "DUD",
+    "DDU",
+    "DDD",
+    "timeout",
+    "gap",
+    "ambiguous",
+    "end_censored"
+  ],
+  "Upbit": {
+    "outcome_counts": [
+      [
+        11,
+        16,
+        16,
+        15,
+        14,
+        14,
+        16,
+        21,
+        0,
+        9,
+        33,
+        0
+      ],
+      [
+        5,
+        3,
+        7,
+        7,
+        7,
+        5,
+        7,
+        15,
+        3,
+        20,
+        5,
+        1
+      ],
+      [
+        3,
+        0,
+        3,
+        4,
+        2,
+        2,
+        8,
+        3,
+        13,
+        24,
+        1,
+        1
+      ],
+      [
+        2,
+        0,
+        2,
+        1,
+        1,
+        0,
+        3,
+        2,
+        18,
+        23,
+        1,
+        1
+      ]
+    ],
+    "first_known_U_D": [
+      [
+        72,
+        91
+      ],
+      [
+        35,
+        41
+      ],
+      [
+        19,
+        26
+      ],
+      [
+        10,
+        22
+      ]
+    ],
+    "internal_n": [
+      58,
+      25,
+      10,
+      3
+    ],
+    "internal_correct_joint_marginal_regime": [
+      [
+        7,
+        6,
+        5
+      ],
+      [
+        6,
+        6,
+        6
+      ],
+      [
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        0,
+        2
+      ]
+    ],
+    "evaluation_n": [
+      21,
+      9,
+      8,
+      6
+    ],
+    "evaluation_correct_joint_marginal_regime": [
+      [
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        2
+      ],
+      [
+        4,
+        2,
+        4
+      ],
+      [
+        6,
+        0,
+        6
+      ]
+    ],
+    "evaluation_complete_n": [
+      21,
+      7,
+      4,
+      0
+    ],
+    "evaluation_complete_correct_joint_marginal_regime": [
+      [
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "evaluation_excluded": [
+      {
+        "ambiguous": 2,
+        "gap": 2
+      },
+      {
+        "gap": 4,
+        "end_censored": 1
+      },
+      {
+        "gap": 4,
+        "end_censored": 1
+      },
+      {
+        "gap": 5,
+        "end_censored": 1
+      }
+    ],
+    "selection": [
+      "joint",
+      "joint",
+      "joint",
+      "joint"
+    ],
+    "prefix_check": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "Kraken": {
+    "outcome_counts": [
+      [
+        4,
+        3,
+        3,
+        7,
+        7,
+        5,
+        5,
+        5,
+        0,
+        2,
+        24,
+        0
+      ],
+      [
+        3,
+        1,
+        3,
+        6,
+        4,
+        3,
+        4,
+        2,
+        1,
+        3,
+        6,
+        1
+      ],
+      [
+        5,
+        0,
+        4,
+        2,
+        0,
+        1,
+        5,
+        1,
+        1,
+        3,
+        1,
+        1
+      ],
+      [
+        3,
+        1,
+        0,
+        1,
+        4,
+        1,
+        1,
+        0,
+        2,
+        3,
+        0,
+        1
+      ]
+    ],
+    "first_known_U_D": [
+      [
+        27,
+        38
+      ],
+      [
+        19,
+        16
+      ],
+      [
+        13,
+        7
+      ],
+      [
+        6,
+        8
+      ]
+    ],
+    "note": "Descriptive only; no 2020+ observations, prefix test trivial."
+  },
+  "policy": "See executable code. Three fixed symmetric percentage barrier visits, not pivot confirmations. 720h cap for validation only. Separate markets, no pooled samples. Prior evaluation reused. Data gaps, order ambiguity, end-censor excluded from market prediction training and scoring; timeout retained. No full-cycle prediction or live scenario change.",
+  "full_local_result_sha256": "31b367aa0fcf55bb79b04c97b0ea963d86897d8271fafd8914d5fe03108cd4b6"
+}
