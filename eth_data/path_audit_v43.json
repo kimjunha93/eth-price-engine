@@ -1,12 +1,12 @@
 {
   "version": "v4.3-path-audit-1",
-  "generated_utc": "2026-11-27 00:59:57.052173+00:00",
+  "generated_utc": "2026-11-27 02:52:50.832500+00:00",
   "status": "exploratory_only",
   "markets": {
     "Upbit_ETHKRW": {
       "1h": {
-        "bars": 80146,
-        "last_closed": "2026-11-27 00:00:00+00:00",
+        "bars": 80148,
+        "last_closed": "2026-11-27 02:00:00+00:00",
         "scales": {
           "0.05": {
             "confirmed_waves": 1472,
@@ -403,8 +403,8 @@
     },
     "Bitstamp_ETHUSD": {
       "1h": {
-        "bars": 74642,
-        "last_closed": "2026-11-27 00:00:00+00:00",
+        "bars": 74644,
+        "last_closed": "2026-11-27 02:00:00+00:00",
         "scales": {
           "0.05": {
             "confirmed_waves": 1596,

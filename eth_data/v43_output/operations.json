@@ -1,0 +1,20 @@
+{
+  "version": "v43-operations-1",
+  "generated_utc": "2026-11-27 02:53:10.052790+00:00",
+  "snapshot_sha256": "141b6e8f77f63e7951605b5b5985050c96b6033a85940727c3ec16fd7a93ff79",
+  "freshness_pass": true,
+  "synthetic_tests_passed": 12,
+  "registered_live": 0,
+  "scores": [],
+  "charts": [
+    "A_Bitstamp_ETHUSD.png",
+    "A_Upbit_ETHKRW.png",
+    "B_Bitstamp_ETHUSD.png",
+    "B_Upbit_ETHKRW.png",
+    "C_Bitstamp_ETHUSD.png",
+    "C_Upbit_ETHKRW.png",
+    "D_tracking.png"
+  ],
+  "status": "descriptive_only_no_automatic_forecast",
+  "limits": "Barrier scoring only, no actual extreme or full-path score; charts show independent references, not a linked prediction; no automatic registration."
+}

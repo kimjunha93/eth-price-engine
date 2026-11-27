@@ -20,7 +20,7 @@
   {
     "market": "Upbit",
     "tf": "1h",
-    "rows": 80146,
+    "rows": 80148,
     "invalid": 0,
     "duplicates": 0,
     "volume_excluded": false
@@ -38,7 +38,7 @@
   {
     "market": "Bithumb",
     "tf": "1h",
-    "rows": 82318,
+    "rows": 82320,
     "invalid": 0,
     "duplicates": 0,
     "volume_excluded": false
@@ -64,7 +64,7 @@
   {
     "market": "Bitstamp",
     "tf": "1h",
-    "rows": 74642,
+    "rows": 74644,
     "invalid": 0,
     "duplicates": 0,
     "volume_excluded": true
@@ -90,7 +90,7 @@
   {
     "market": "Kraken",
     "tf": "1h",
-    "rows": 728,
+    "rows": 730,
     "invalid": 0,
     "duplicates": 0,
     "volume_excluded": false
