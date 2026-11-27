@@ -33,6 +33,11 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
       - name: Install dependencies
         run: pip install requests pandas matplotlib
 
@@ -56,8 +61,10 @@ jobs:
             python v43/path_audit.py
             python v43/structure_snapshot.py
             python v43/operations.py
+            node v43/path_operations.cjs --test
+            node v43/path_operations.cjs --score
             python -c 'import json; from pathlib import Path; p=Path("eth_data"); a=json.loads((p/"audit.json").read_text()); assert a and not any("error" in x for x in a), "collection error"; s=json.loads((p/"structure_snapshot_v43.json").read_text()); assert s["freshness_pass"], "stale structure snapshot"'
-            git add -A -- eth_data ':!eth_data/forecast_ledger_v43.jsonl' ':!eth_data/forecast_ledger_v43.jsonl.lock' ':!eth_data/path_ledger_v43.jsonl'
+            git add -A -- eth_data ':!eth_data/forecast_ledger_v43.jsonl' ':!eth_data/forecast_ledger_v43.jsonl.lock' ':!eth_data/path_ledger_v43.jsonl' ':!eth_data/path_ledger_v43.jsonl.lock'
             if git diff --cached --quiet; then exit 0; fi
             git commit -m "Auto update ETH data"
             if git push origin HEAD:main; then exit 0; fi
