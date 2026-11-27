@@ -1,0 +1,2264 @@
+{
+  "version": "v43-hierarchy-audit-1",
+  "rules": {
+    "pairs": [
+      [
+        0.05,
+        0.2
+      ],
+      [
+        0.1,
+        0.2
+      ],
+      [
+        0.1,
+        0.3
+      ],
+      [
+        0.15,
+        0.3
+      ],
+      [
+        0.2,
+        0.4
+      ],
+      [
+        0.3,
+        0.5
+      ]
+    ],
+    "cut": "2023-01-01",
+    "min_train_per_direction": 30,
+    "neighbors": 15,
+    "label": "next child pivot extreme after child confirmation close, confirmed by close reversal; parent state sampled at same confirmation close, not future parent pivot; daily bars only; gaps reset; opposite confirmation-bar extreme excluded",
+    "containment": "descriptive count of confirmed child pivots strictly inside completed parent extreme dates, known by parent confirmation; not predictive feature",
+    "status": "exploratory reused holdout; no promotion; parent thresholds not timeframes; no full-cycle path claim",
+    "models": "B0 confirmation close, B1 directional historical median, M_child prior swing nearest neighbors, M_parent_regime conditional alignment, M_joint prior swing + parent distance + alignment penalty fixed 0.25"
+  },
+  "markets": {
+    "Upbit_ETHKRW": {
+      "rows": 3347,
+      "first": "2017-09-25T00:00:00.000Z",
+      "last": "2026-11-26T00:00:00.000Z",
+      "gaps": 1,
+      "pairs": {
+        "0.05_0.2": {
+          "completed": 711,
+          "censored": 2,
+          "prefix_ok": true,
+          "groups": {
+            "up_unknown": {
+              "n": 4,
+              "median_return": 4.641036642421925,
+              "parent_change_count": 0
+            },
+            "down_unknown": {
+              "n": 4,
+              "median_return": -1.910117661148325,
+              "parent_change_count": 0
+            },
+            "up_aligned": {
+              "n": 207,
+              "median_return": 5.768692243069173,
+              "parent_change_count": 14
+            },
+            "down_aligned": {
+              "n": 123,
+              "median_return": -6.434171397675048,
+              "parent_change_count": 11
+            },
+            "up_opposed": {
+              "n": 145,
+              "median_return": 6.717850287907878,
+              "parent_change_count": 36
+            },
+            "down_opposed": {
+              "n": 228,
+              "median_return": -4.994725325634053,
+              "parent_change_count": 33
+            }
+          },
+          "containment": {
+            "n": 94,
+            "up": 47,
+            "down": 47,
+            "child_count_quantiles": [
+              2,
+              4,
+              8
+            ],
+            "opposite_count_quantiles": [
+              1,
+              2,
+              4
+            ]
+          },
+          "audit": {
+            "n": 219,
+            "skipped": 0,
+            "metrics": {
+              "B0": {
+                "mape": 7.427727047546496,
+                "coverage50": 0.0045662100456621,
+                "pinball": 3.782457148298304
+              },
+              "B1": {
+                "mape": 5.175415707910467,
+                "coverage50": 0.5388127853881278,
+                "pinball": 1.9914567259073268
+              },
+              "M_child": {
+                "mape": 5.373035768254395,
+                "coverage50": 0.4748858447488584,
+                "pinball": 2.0371238181940896
+              },
+              "M_parent_regime": {
+                "mape": 5.20434426849376,
+                "coverage50": 0.547945205479452,
+                "pinball": 2.0249644590206595
+              },
+              "M_joint": {
+                "mape": 5.554346576940879,
+                "coverage50": 0.502283105022831,
+                "pinball": 2.0932221928209964
+              }
+            },
+            "by_direction": {
+              "up": {
+                "n": 110,
+                "mape": {
+                  "B0": 6.8141402715322155,
+                  "B1": 5.26146831907949,
+                  "M_child": 5.5199536199032115,
+                  "M_parent_regime": 5.263402224947222,
+                  "M_joint": 5.895970965632058
+                }
+              },
+              "down": {
+                "n": 109,
+                "mape": {
+                  "B0": 8.046943060037961,
+                  "B1": 5.0885736232444785,
+                  "M_child": 5.224770046406966,
+                  "M_parent_regime": 5.144744495926052,
+                  "M_joint": 5.209588019546108
+                }
+              }
+            }
+          },
+          "current": {
+            "child": {
+              "seg": 2,
+              "state": -1,
+              "ext": 2198000,
+              "dist": 0.04231314789433777
+            },
+            "parent": {
+              "seg": 2,
+              "state": -1,
+              "ext": 2125000,
+              "dist": 0.07608920149938732
+            },
+            "last_child_pivot": {
+              "seg": 2,
+              "type": "H",
+              "price": 2505000,
+              "t": 1795392000000,
+              "known": 1795478400000,
+              "index": 3343,
+              "close": 2336000
+            },
+            "last_parent_pivot": {
+              "seg": 2,
+              "type": "H",
+              "price": 3777000,
+              "t": 1789948800000,
+              "known": 1793404800000,
+              "index": 3319,
+              "close": 3021000
+            }
+          }
+        },
+        "0.1_0.2": {
+          "completed": 282,
+          "censored": 1,
+          "prefix_ok": true,
+          "groups": {
+            "up_opposed": {
+              "n": 75,
+              "median_return": 9.062377402903099,
+              "parent_change_count": 39
+            },
+            "down_opposed": {
+              "n": 93,
+              "median_return": -9.130246646473383,
+              "parent_change_count": 35
+            },
+            "up_aligned": {
+              "n": 66,
+              "median_return": 9.633475905080434,
+              "parent_change_count": 9
+            },
+            "down_aligned": {
+              "n": 48,
+              "median_return": -12.670084947087478,
+              "parent_change_count": 6
+            }
+          },
+          "containment": {
+            "n": 94,
+            "up": 47,
+            "down": 47,
+            "child_count_quantiles": [
+              0,
+              1,
+              3.75
+            ],
+            "opposite_count_quantiles": [
+              0,
+              1,
+              1.75
+            ]
+          },
+          "audit": {
+            "n": 78,
+            "skipped": 0,
+            "metrics": {
+              "B0": {
+                "mape": 12.455901209350069,
+                "coverage50": 0,
+                "pinball": 6.572390790203889
+              },
+              "B1": {
+                "mape": 9.171988395024902,
+                "coverage50": 0.47435897435897434,
+                "pinball": 3.6616063145488407
+              },
+              "M_child": {
+                "mape": 9.837587372446007,
+                "coverage50": 0.44871794871794873,
+                "pinball": 3.8798046652613287
+              },
+              "M_parent_regime": {
+                "mape": 9.155746656718266,
+                "coverage50": 0.46153846153846156,
+                "pinball": 3.670439252611186
+              },
+              "M_joint": {
+                "mape": 10.170510543466436,
+                "coverage50": 0.48717948717948717,
+                "pinball": 3.9808660950046453
+              }
+            },
+            "by_direction": {
+              "up": {
+                "n": 39,
+                "mape": {
+                  "B0": 11.55254940542397,
+                  "B1": 9.672909803399161,
+                  "M_child": 11.211552800422453,
+                  "M_parent_regime": 9.77139761113684,
+                  "M_joint": 11.20827184238838
+                }
+              },
+              "down": {
+                "n": 39,
+                "mape": {
+                  "B0": 13.359253013276167,
+                  "B1": 8.671066986650647,
+                  "M_child": 8.463621944469566,
+                  "M_parent_regime": 8.540095702299693,
+                  "M_joint": 9.132749244544488
+                }
+              }
+            }
+          },
+          "current": {
+            "child": {
+              "seg": 2,
+              "state": 1,
+              "ext": 2505000,
+              "dist": -0.08842773066106074
+            },
+            "parent": {
+              "seg": 2,
+              "state": -1,
+              "ext": 2125000,
+              "dist": 0.07608920149938732
+            },
+            "last_child_pivot": {
+              "seg": 2,
+              "type": "L",
+              "price": 2125000,
+              "t": 1795219200000,
+              "known": 1795392000000,
+              "index": 3342,
+              "close": 2352000
+            },
+            "last_parent_pivot": {
+              "seg": 2,
+              "type": "H",
+              "price": 3777000,
+              "t": 1789948800000,
+              "known": 1793404800000,
+              "index": 3319,
+              "close": 3021000
+            }
+          }
+        },
+        "0.1_0.3": {
+          "completed": 282,
+          "censored": 1,
+          "prefix_ok": true,
+          "groups": {
+            "up_aligned": {
+              "n": 88,
+              "median_return": 9.633475905080434,
+              "parent_change_count": 4
+            },
+            "down_opposed": {
+              "n": 102,
+              "median_return": -9.20830039101812,
+              "parent_change_count": 19
+            },
+            "up_opposed": {
+              "n": 53,
+              "median_return": 8.378292605522052,
+              "parent_change_count": 18
+            },
+            "down_aligned": {
+              "n": 39,
+              "median_return": -12.325415434804777,
+              "parent_change_count": 3
+            }
+          },
+          "containment": {
+            "n": 44,
+            "up": 22,
+            "down": 22,
+            "child_count_quantiles": [
+              2,
+              4,
+              8
+            ],
+            "opposite_count_quantiles": [
+              1,
+              2,
+              4
+            ]
+          },
+          "audit": {
+            "n": 78,
+            "skipped": 0,
+            "metrics": {
+              "B0": {
+                "mape": 12.455901209350069,
+                "coverage50": 0,
+                "pinball": 6.572390790203889
+              },
+              "B1": {
+                "mape": 9.171988395024902,
+                "coverage50": 0.47435897435897434,
+                "pinball": 3.6616063145488407
+              },
+              "M_child": {
+                "mape": 9.837587372446007,
+                "coverage50": 0.44871794871794873,
+                "pinball": 3.8798046652613287
+              },
+              "M_parent_regime": {
+                "mape": 9.321693432718336,
+                "coverage50": 0.48717948717948717,
+                "pinball": 3.6843126022943133
+              },
+              "M_joint": {
+                "mape": 9.646702056610355,
+                "coverage50": 0.41025641025641024,
+                "pinball": 3.7257847217456854
+              }
+            },
+            "by_direction": {
+              "up": {
+                "n": 39,
+                "mape": {
+                  "B0": 11.55254940542397,
+                  "B1": 9.672909803399161,
+                  "M_child": 11.211552800422453,
+                  "M_parent_regime": 9.8815968429647,
+                  "M_joint": 10.175034058022613
+                }
+              },
+              "down": {
+                "n": 39,
+                "mape": {
+                  "B0": 13.359253013276167,
+                  "B1": 8.671066986650647,
+                  "M_child": 8.463621944469566,
+                  "M_parent_regime": 8.761790022471967,
+                  "M_joint": 9.118370055198097
+                }
+              }
+            }
+          },
+          "current": {
+            "child": {
+              "seg": 2,
+              "state": 1,
+              "ext": 2505000,
+              "dist": -0.08842773066106074
+            },
+            "parent": {
+              "seg": 2,
+              "state": -1,
+              "ext": 2125000,
+              "dist": 0.07608920149938732
+            },
+            "last_child_pivot": {
+              "seg": 2,
+              "type": "L",
+              "price": 2125000,
+              "t": 1795219200000,
+              "known": 1795392000000,
+              "index": 3342,
+              "close": 2352000
+            },
+            "last_parent_pivot": {
+              "seg": 2,
+              "type": "H",
+              "price": 3777000,
+              "t": 1789948800000,
+              "known": 1794614400000,
+              "index": 3333,
+              "close": 2631000
+            }
+          }
+        },
+        "0.15_0.3": {
+          "completed": 151,
+          "censored": 1,
+          "prefix_ok": true,
+          "groups": {
+            "up_aligned": {
+              "n": 38,
+              "median_return": 17.818515072519638,
+              "parent_change_count": 3
+            },
+            "down_opposed": {
+              "n": 54,
+              "median_return": -11.052326020862369,
+              "parent_change_count": 19
+            },
+            "up_opposed": {
+              "n": 38,
+              "median_return": 12.997414553502097,
+              "parent_change_count": 20
+            },
+            "down_aligned": {
+              "n": 21,
+              "median_return": -11.486486486486491,
+              "parent_change_count": 1
+            }
+          },
+          "containment": {
+            "n": 44,
+            "up": 22,
+            "down": 22,
+            "child_count_quantiles": [
+              0,
+              2,
+              4
+            ],
+            "opposite_count_quantiles": [
+              0,
+              1,
+              2
+            ]
+          },
+          "audit": {
+            "n": 36,
+            "skipped": 0,
+            "metrics": {
+              "B0": {
+                "mape": 17.273086820864364,
+                "coverage50": 0,
+                "pinball": 9.762799432574285
+              },
+              "B1": {
+                "mape": 14.29556361621941,
+                "coverage50": 0.5,
+                "pinball": 5.630070355976287
+              },
+              "M_child": {
+                "mape": 16.435504373248612,
+                "coverage50": 0.4722222222222222,
+                "pinball": 6.332685043888126
+              },
+              "M_parent_regime": {
+                "mape": 14.666406627996407,
+                "coverage50": 0.5,
+                "pinball": 5.683593692813941
+              },
+              "M_joint": {
+                "mape": 15.861696309807725,
+                "coverage50": 0.4722222222222222,
+                "pinball": 6.091387070113083
+              }
+            },
+            "by_direction": {
+              "down": {
+                "n": 18,
+                "mape": {
+                  "B0": 18.641339659658975,
+                  "B1": 11.285048853214258,
+                  "M_child": 13.145069919218827,
+                  "M_parent_regime": 11.388602365098441,
+                  "M_joint": 12.3955567990334
+                }
+              },
+              "up": {
+                "n": 18,
+                "mape": {
+                  "B0": 15.90483398206976,
+                  "B1": 17.306078379224562,
+                  "M_child": 19.725938827278398,
+                  "M_parent_regime": 17.94421089089437,
+                  "M_joint": 19.327835820582045
+                }
+              }
+            }
+          },
+          "current": {
+            "child": {
+              "seg": 2,
+              "state": -1,
+              "ext": 2125000,
+              "dist": 0.07608920149938732
+            },
+            "parent": {
+              "seg": 2,
+              "state": -1,
+              "ext": 2125000,
+              "dist": 0.07608920149938732
+            },
+            "last_child_pivot": {
+              "seg": 2,
+              "type": "H",
+              "price": 3777000,
+              "t": 1789948800000,
+              "known": 1792713600000,
+              "index": 3311,
+              "close": 3196000
+            },
+            "last_parent_pivot": {
+              "seg": 2,
+              "type": "H",
+              "price": 3777000,
+              "t": 1789948800000,
+              "known": 1794614400000,
+              "index": 3333,
+              "close": 2631000
+            }
+          }
+        },
+        "0.2_0.4": {
+          "completed": 93,
+          "censored": 1,
+          "prefix_ok": true,
+          "groups": {
+            "up_aligned": {
+              "n": 27,
+              "median_return": 27.627627627627625,
+              "parent_change_count": 4
+            },
+            "down_opposed": {
+              "n": 33,
+              "median_return": -12.910284463894971,
+              "parent_change_count": 10
+            },
+            "down_aligned": {
+              "n": 13,
+              "median_return": -23.519506034240813,
+              "parent_change_count": 1
+            },
+            "up_opposed": {
+              "n": 20,
+              "median_return": 15.997032195783767,
+              "parent_change_count": 11
+            }
+          },
+          "containment": {
+            "n": 28,
+            "up": 14,
+            "down": 14,
+            "child_count_quantiles": [
+              0,
+              2,
+              4
+            ],
+            "opposite_count_quantiles": [
+              0,
+              1,
+              2
+            ]
+          },
+          "audit": {
+            "n": 23,
+            "skipped": 0,
+            "metrics": {
+              "B0": {
+                "mape": 22.422700113827833,
+                "coverage50": 0,
+                "pinball": 13.557228471835371
+              },
+              "B1": {
+                "mape": 18.37295499277504,
+                "coverage50": 0.4782608695652174,
+                "pinball": 7.395969800544675
+              },
+              "M_child": {
+                "mape": 18.089662541086884,
+                "coverage50": 0.4782608695652174,
+                "pinball": 7.19288690164892
+              },
+              "M_parent_regime": {
+                "mape": 18.796876402122408,
+                "coverage50": 0.4782608695652174,
+                "pinball": 7.374863962484653
+              },
+              "M_joint": {
+                "mape": 18.976807012048056,
+                "coverage50": 0.391304347826087,
+                "pinball": 7.495976517846382
+              }
+            },
+            "by_direction": {
+              "up": {
+                "n": 12,
+                "mape": {
+                  "B0": 21.81438855712382,
+                  "B1": 21.47017463036903,
+                  "M_child": 19.180704195455636,
+                  "M_parent_regime": 22.464574160533644,
+                  "M_joint": 23.64415335293693
+                }
+              },
+              "down": {
+                "n": 11,
+                "mape": {
+                  "B0": 23.0863127211413,
+                  "B1": 14.994169933581595,
+                  "M_child": 16.899435281775524,
+                  "M_parent_regime": 14.795751574764688,
+                  "M_joint": 13.885156458351105
+                }
+              }
+            }
+          },
+          "current": {
+            "child": {
+              "seg": 2,
+              "state": -1,
+              "ext": 2125000,
+              "dist": 0.07608920149938732
+            },
+            "parent": {
+              "seg": 2,
+              "state": -1,
+              "ext": 2125000,
+              "dist": 0.07608920149938732
+            },
+            "last_child_pivot": {
+              "seg": 2,
+              "type": "H",
+              "price": 3777000,
+              "t": 1789948800000,
+              "known": 1793404800000,
+              "index": 3319,
+              "close": 3021000
+            },
+            "last_parent_pivot": {
+              "seg": 2,
+              "type": "H",
+              "price": 3777000,
+              "t": 1789948800000,
+              "known": 1795219200000,
+              "index": 3340,
+              "close": 2237000
+            }
+          }
+        },
+        "0.3_0.5": {
+          "completed": 43,
+          "censored": 1,
+          "prefix_ok": true,
+          "groups": {
+            "up_aligned": {
+              "n": 9,
+              "median_return": 48.20396885204723,
+              "parent_change_count": 1
+            },
+            "down_opposed": {
+              "n": 16,
+              "median_return": -30.10484075465203,
+              "parent_change_count": 8
+            },
+            "down_aligned": {
+              "n": 5,
+              "median_return": -23.519506034240813,
+              "parent_change_count": 0
+            },
+            "up_opposed": {
+              "n": 13,
+              "median_return": 41.415721548689866,
+              "parent_change_count": 9
+            }
+          },
+          "containment": {
+            "n": 17,
+            "up": 8,
+            "down": 9,
+            "child_count_quantiles": [
+              0,
+              2,
+              2
+            ],
+            "opposite_count_quantiles": [
+              0,
+              1,
+              1
+            ]
+          },
+          "audit": {
+            "n": 0,
+            "skipped": 9,
+            "metrics": {},
+            "by_direction": {}
+          },
+          "current": {
+            "child": {
+              "seg": 2,
+              "state": -1,
+              "ext": 2125000,
+              "dist": 0.07608920149938732
+            },
+            "parent": {
+              "seg": 2,
+              "state": 1,
+              "ext": 3777000,
+              "dist": -0.4990690398545523
+            },
+            "last_child_pivot": {
+              "seg": 2,
+              "type": "H",
+              "price": 3777000,
+              "t": 1789948800000,
+              "known": 1794614400000,
+              "index": 3333,
+              "close": 2631000
+            },
+            "last_parent_pivot": {
+              "seg": 2,
+              "type": "L",
+              "price": 2300000,
+              "t": 1780704000000,
+              "known": 1787356800000,
+              "index": 3249,
+              "close": 3452000
+            }
+          }
+        }
+      }
+    },
+    "Bitstamp_ETHUSD": {
+      "rows": 3305,
+      "first": "2017-11-09T00:00:00.000Z",
+      "last": "2026-11-26T00:00:00.000Z",
+      "gaps": 0,
+      "pairs": {
+        "0.05_0.2": {
+          "completed": 865,
+          "censored": 1,
+          "prefix_ok": true,
+          "groups": {
+            "down_opposed": {
+              "n": 300,
+              "median_return": -4.932483312901126,
+              "parent_change_count": 36
+            },
+            "up_aligned": {
+              "n": 274,
+              "median_return": 4.894749541191956,
+              "parent_change_count": 18
+            },
+            "up_opposed": {
+              "n": 158,
+              "median_return": 5.705527366841201,
+              "parent_change_count": 44
+            },
+            "down_aligned": {
+              "n": 133,
+              "median_return": -5.4848414718815075,
+              "parent_change_count": 10
+            }
+          },
+          "containment": {
+            "n": 108,
+            "up": 54,
+            "down": 54,
+            "child_count_quantiles": [
+              2,
+              4.5,
+              9.25
+            ],
+            "opposite_count_quantiles": [
+              1,
+              2,
+              4.25
+            ]
+          },
+          "audit": {
+            "n": 257,
+            "skipped": 0,
+            "metrics": {
+              "B0": {
+                "mape": 7.511684662703859,
+                "coverage50": 0.007782101167315175,
+                "pinball": 3.7699986819546782
+              },
+              "B1": {
+                "mape": 5.3285276029351465,
+                "coverage50": 0.5525291828793775,
+                "pinball": 2.0014511497578793
+              },
+              "M_child": {
+                "mape": 5.695619045403402,
+                "coverage50": 0.45136186770428016,
+                "pinball": 2.071633819760269
+              },
+              "M_parent_regime": {
+                "mape": 5.323998630964706,
+                "coverage50": 0.5447470817120622,
+                "pinball": 2.009657392942044
+              },
+              "M_joint": {
+                "mape": 5.74307548750981,
+                "coverage50": 0.48638132295719844,
+                "pinball": 2.125128350475971
+              }
+            },
+            "by_direction": {
+              "down": {
+                "n": 129,
+                "mape": {
+                  "B0": 8.23347964427816,
+                  "B1": 5.752313010948614,
+                  "M_child": 6.1355151740550165,
+                  "M_parent_regime": 5.7666029995592,
+                  "M_joint": 6.183107578287275
+                }
+              },
+              "up": {
+                "n": 128,
+                "mape": {
+                  "B0": 6.784250657836014,
+                  "B1": 4.901431371421579,
+                  "M_child": 5.252286228246689,
+                  "M_parent_regime": 4.877936415740569,
+                  "M_joint": 5.299605646023149
+                }
+              }
+            }
+          },
+          "current": {
+            "child": {
+              "seg": 1,
+              "state": 1,
+              "ext": 1727.72,
+              "dist": -0.023566328372945613
+            },
+            "parent": {
+              "seg": 1,
+              "state": -1,
+              "ext": 1536,
+              "dist": 0.09405465711698183
+            },
+            "last_child_pivot": {
+              "seg": 1,
+              "type": "L",
+              "price": 1606.59,
+              "t": 1795564800000,
+              "known": 1795651200000,
+              "index": 3303,
+              "close": 1691
+            },
+            "last_parent_pivot": {
+              "seg": 1,
+              "type": "H",
+              "price": 2806.89,
+              "t": 1789948800000,
+              "known": 1793404800000,
+              "index": 3277,
+              "close": 2241.12
+            }
+          }
+        },
+        "0.1_0.2": {
+          "completed": 330,
+          "censored": 1,
+          "prefix_ok": true,
+          "groups": {
+            "up_aligned": {
+              "n": 93,
+              "median_return": 9.619304721502942,
+              "parent_change_count": 10
+            },
+            "down_opposed": {
+              "n": 117,
+              "median_return": -8.493687021974027,
+              "parent_change_count": 42
+            },
+            "up_opposed": {
+              "n": 72,
+              "median_return": 9.412834572057616,
+              "parent_change_count": 37
+            },
+            "down_aligned": {
+              "n": 48,
+              "median_return": -10.637193354141905,
+              "parent_change_count": 12
+            }
+          },
+          "containment": {
+            "n": 108,
+            "up": 54,
+            "down": 54,
+            "child_count_quantiles": [
+              0,
+              2,
+              2.25
+            ],
+            "opposite_count_quantiles": [
+              0,
+              1,
+              1
+            ]
+          },
+          "audit": {
+            "n": 96,
+            "skipped": 0,
+            "metrics": {
+              "B0": {
+                "mape": 12.309142325661329,
+                "coverage50": 0,
+                "pinball": 6.347345333022802
+              },
+              "B1": {
+                "mape": 9.145703529448578,
+                "coverage50": 0.4375,
+                "pinball": 3.560075699802432
+              },
+              "M_child": {
+                "mape": 9.59180699121796,
+                "coverage50": 0.40625,
+                "pinball": 3.766255257323989
+              },
+              "M_parent_regime": {
+                "mape": 9.223516018725652,
+                "coverage50": 0.4375,
+                "pinball": 3.605522128104745
+              },
+              "M_joint": {
+                "mape": 9.529851405124107,
+                "coverage50": 0.3958333333333333,
+                "pinball": 3.6751204772911166
+              }
+            },
+            "by_direction": {
+              "up": {
+                "n": 48,
+                "mape": {
+                  "B0": 10.948970913692314,
+                  "B1": 9.036880125931651,
+                  "M_child": 9.61831695848488,
+                  "M_parent_regime": 9.138009426572408,
+                  "M_joint": 9.661582920636965
+                }
+              },
+              "down": {
+                "n": 48,
+                "mape": {
+                  "B0": 13.669313737630345,
+                  "B1": 9.25452693296551,
+                  "M_child": 9.565297023951041,
+                  "M_parent_regime": 9.30902261087891,
+                  "M_joint": 9.398119889611253
+                }
+              }
+            }
+          },
+          "current": {
+            "child": {
+              "seg": 1,
+              "state": 1,
+              "ext": 1842.94,
+              "dist": -0.08812583069943467
+            },
+            "parent": {
+              "seg": 1,
+              "state": -1,
+              "ext": 1536,
+              "dist": 0.09405465711698183
+            },
+            "last_child_pivot": {
+              "seg": 1,
+              "type": "L",
+              "price": 1536,
+              "t": 1795219200000,
+              "known": 1795392000000,
+              "index": 3300,
+              "close": 1721.67
+            },
+            "last_parent_pivot": {
+              "seg": 1,
+              "type": "H",
+              "price": 2806.89,
+              "t": 1789948800000,
+              "known": 1793404800000,
+              "index": 3277,
+              "close": 2241.12
+            }
+          }
+        },
+        "0.1_0.3": {
+          "completed": 330,
+          "censored": 1,
+          "prefix_ok": true,
+          "groups": {
+            "up_aligned": {
+              "n": 110,
+              "median_return": 9.489473532706484,
+              "parent_change_count": 4
+            },
+            "down_opposed": {
+              "n": 125,
+              "median_return": -8.493687021974027,
+              "parent_change_count": 19
+            },
+            "up_opposed": {
+              "n": 55,
+              "median_return": 9.793680297397778,
+              "parent_change_count": 19
+            },
+            "down_aligned": {
+              "n": 40,
+              "median_return": -12.823038581748492,
+              "parent_change_count": 2
+            }
+          },
+          "containment": {
+            "n": 44,
+            "up": 22,
+            "down": 22,
+            "child_count_quantiles": [
+              3,
+              5.5,
+              10
+            ],
+            "opposite_count_quantiles": [
+              1.75,
+              2.5,
+              5
+            ]
+          },
+          "audit": {
+            "n": 96,
+            "skipped": 0,
+            "metrics": {
+              "B0": {
+                "mape": 12.309142325661329,
+                "coverage50": 0,
+                "pinball": 6.347345333022802
+              },
+              "B1": {
+                "mape": 9.145703529448578,
+                "coverage50": 0.4375,
+                "pinball": 3.560075699802432
+              },
+              "M_child": {
+                "mape": 9.59180699121796,
+                "coverage50": 0.40625,
+                "pinball": 3.766255257323989
+              },
+              "M_parent_regime": {
+                "mape": 9.123959777487972,
+                "coverage50": 0.4270833333333333,
+                "pinball": 3.5706314584889918
+              },
+              "M_joint": {
+                "mape": 9.517332522839896,
+                "coverage50": 0.3854166666666667,
+                "pinball": 3.801365785138963
+              }
+            },
+            "by_direction": {
+              "up": {
+                "n": 48,
+                "mape": {
+                  "B0": 10.948970913692314,
+                  "B1": 9.036880125931651,
+                  "M_child": 9.61831695848488,
+                  "M_parent_regime": 9.038979683307128,
+                  "M_joint": 9.710011461931431
+                }
+              },
+              "down": {
+                "n": 48,
+                "mape": {
+                  "B0": 13.669313737630345,
+                  "B1": 9.25452693296551,
+                  "M_child": 9.565297023951041,
+                  "M_parent_regime": 9.208939871668829,
+                  "M_joint": 9.324653583748358
+                }
+              }
+            }
+          },
+          "current": {
+            "child": {
+              "seg": 1,
+              "state": 1,
+              "ext": 1842.94,
+              "dist": -0.08812583069943467
+            },
+            "parent": {
+              "seg": 1,
+              "state": -1,
+              "ext": 1536,
+              "dist": 0.09405465711698183
+            },
+            "last_child_pivot": {
+              "seg": 1,
+              "type": "L",
+              "price": 1536,
+              "t": 1795219200000,
+              "known": 1795392000000,
+              "index": 3300,
+              "close": 1721.67
+            },
+            "last_parent_pivot": {
+              "seg": 1,
+              "type": "H",
+              "price": 2806.89,
+              "t": 1789948800000,
+              "known": 1794614400000,
+              "index": 3291,
+              "close": 1928.02
+            }
+          }
+        },
+        "0.15_0.3": {
+          "completed": 181,
+          "censored": 1,
+          "prefix_ok": true,
+          "groups": {
+            "up_aligned": {
+              "n": 49,
+              "median_return": 12.816601519051707,
+              "parent_change_count": 3
+            },
+            "down_opposed": {
+              "n": 65,
+              "median_return": -9.673107980174866,
+              "parent_change_count": 19
+            },
+            "down_aligned": {
+              "n": 25,
+              "median_return": -14.560690126928632,
+              "parent_change_count": 1
+            },
+            "up_opposed": {
+              "n": 42,
+              "median_return": 12.368959043648475,
+              "parent_change_count": 20
+            }
+          },
+          "containment": {
+            "n": 44,
+            "up": 22,
+            "down": 22,
+            "child_count_quantiles": [
+              1.75,
+              2,
+              4.25
+            ],
+            "opposite_count_quantiles": [
+              0.75,
+              1,
+              2.25
+            ]
+          },
+          "audit": {
+            "n": 46,
+            "skipped": 0,
+            "metrics": {
+              "B0": {
+                "mape": 16.231452942311144,
+                "coverage50": 0,
+                "pinball": 9.233494294427631
+              },
+              "B1": {
+                "mape": 11.699945209786897,
+                "coverage50": 0.5217391304347826,
+                "pinball": 5.016860846451887
+              },
+              "M_child": {
+                "mape": 13.19026607305699,
+                "coverage50": 0.5,
+                "pinball": 5.152395076150817
+              },
+              "M_parent_regime": {
+                "mape": 11.941832944658257,
+                "coverage50": 0.5434782608695652,
+                "pinball": 5.051689836184078
+              },
+              "M_joint": {
+                "mape": 13.430379861127324,
+                "coverage50": 0.5217391304347826,
+                "pinball": 5.37195479139396
+              }
+            },
+            "by_direction": {
+              "down": {
+                "n": 23,
+                "mape": {
+                  "B0": 16.77407903506896,
+                  "B1": 9.352606464662184,
+                  "M_child": 9.89184605507105,
+                  "M_parent_regime": 9.035346014190871,
+                  "M_joint": 9.402589426112696
+                }
+              },
+              "up": {
+                "n": 23,
+                "mape": {
+                  "B0": 15.688826849553324,
+                  "B1": 14.0472839549116,
+                  "M_child": 16.488686091042933,
+                  "M_parent_regime": 14.848319875125645,
+                  "M_joint": 17.458170296141958
+                }
+              }
+            }
+          },
+          "current": {
+            "child": {
+              "seg": 1,
+              "state": -1,
+              "ext": 1536,
+              "dist": 0.09405465711698183
+            },
+            "parent": {
+              "seg": 1,
+              "state": -1,
+              "ext": 1536,
+              "dist": 0.09405465711698183
+            },
+            "last_child_pivot": {
+              "seg": 1,
+              "type": "H",
+              "price": 2806.89,
+              "t": 1789948800000,
+              "known": 1792800000000,
+              "index": 3270,
+              "close": 2384.4
+            },
+            "last_parent_pivot": {
+              "seg": 1,
+              "type": "H",
+              "price": 2806.89,
+              "t": 1789948800000,
+              "known": 1794614400000,
+              "index": 3291,
+              "close": 1928.02
+            }
+          }
+        },
+        "0.2_0.4": {
+          "completed": 107,
+          "censored": 1,
+          "prefix_ok": true,
+          "groups": {
+            "up_aligned": {
+              "n": 28,
+              "median_return": 19.0064063567168,
+              "parent_change_count": 2
+            },
+            "down_opposed": {
+              "n": 37,
+              "median_return": -17.438023995937325,
+              "parent_change_count": 11
+            },
+            "up_opposed": {
+              "n": 26,
+              "median_return": 19.151479668122274,
+              "parent_change_count": 12
+            },
+            "down_aligned": {
+              "n": 16,
+              "median_return": -19.60951889316722,
+              "parent_change_count": 0
+            }
+          },
+          "containment": {
+            "n": 26,
+            "up": 13,
+            "down": 13,
+            "child_count_quantiles": [
+              0.25,
+              2,
+              5.75
+            ],
+            "opposite_count_quantiles": [
+              0.25,
+              1,
+              2.75
+            ]
+          },
+          "audit": {
+            "n": 30,
+            "skipped": 0,
+            "metrics": {
+              "B0": {
+                "mape": 17.92529829812214,
+                "coverage50": 0,
+                "pinball": 10.725182234393762
+              },
+              "B1": {
+                "mape": 17.6834080562864,
+                "coverage50": 0.3333333333333333,
+                "pinball": 7.01319494372345
+              },
+              "M_child": {
+                "mape": 22.0474345097632,
+                "coverage50": 0.3,
+                "pinball": 7.665514548462536
+              },
+              "M_parent_regime": {
+                "mape": 18.76690733176719,
+                "coverage50": 0.3333333333333333,
+                "pinball": 7.312071086380844
+              },
+              "M_joint": {
+                "mape": 20.790115052194082,
+                "coverage50": 0.3333333333333333,
+                "pinball": 7.489068497041729
+              }
+            },
+            "by_direction": {
+              "down": {
+                "n": 15,
+                "mape": {
+                  "B0": 18.805959173011047,
+                  "B1": 14.456444285579636,
+                  "M_child": 16.08375167209066,
+                  "M_parent_regime": 14.769763748525559,
+                  "M_joint": 15.843721756111059
+                }
+              },
+              "up": {
+                "n": 15,
+                "mape": {
+                  "B0": 17.044637423233233,
+                  "B1": 20.91037182699317,
+                  "M_child": 28.01111734743575,
+                  "M_parent_regime": 22.76405091500883,
+                  "M_joint": 25.7365083482771
+                }
+              }
+            }
+          },
+          "current": {
+            "child": {
+              "seg": 1,
+              "state": -1,
+              "ext": 1536,
+              "dist": 0.09405465711698183
+            },
+            "parent": {
+              "seg": 1,
+              "state": -1,
+              "ext": 1536,
+              "dist": 0.09405465711698183
+            },
+            "last_child_pivot": {
+              "seg": 1,
+              "type": "H",
+              "price": 2806.89,
+              "t": 1789948800000,
+              "known": 1793404800000,
+              "index": 3277,
+              "close": 2241.12
+            },
+            "last_parent_pivot": {
+              "seg": 1,
+              "type": "H",
+              "price": 2806.89,
+              "t": 1789948800000,
+              "known": 1795219200000,
+              "index": 3298,
+              "close": 1619.23
+            }
+          }
+        },
+        "0.3_0.5": {
+          "completed": 43,
+          "censored": 1,
+          "prefix_ok": true,
+          "groups": {
+            "up_aligned": {
+              "n": 10,
+              "median_return": 91.27267961389917,
+              "parent_change_count": 2
+            },
+            "down_opposed": {
+              "n": 16,
+              "median_return": -26.872727903324822,
+              "parent_change_count": 8
+            },
+            "up_opposed": {
+              "n": 12,
+              "median_return": 32.57895916456066,
+              "parent_change_count": 8
+            },
+            "down_aligned": {
+              "n": 5,
+              "median_return": -22.754211893187716,
+              "parent_change_count": 0
+            }
+          },
+          "containment": {
+            "n": 19,
+            "up": 9,
+            "down": 10,
+            "child_count_quantiles": [
+              0,
+              1,
+              2
+            ],
+            "opposite_count_quantiles": [
+              0,
+              0,
+              1
+            ]
+          },
+          "audit": {
+            "n": 0,
+            "skipped": 11,
+            "metrics": {},
+            "by_direction": {}
+          },
+          "current": {
+            "child": {
+              "seg": 1,
+              "state": -1,
+              "ext": 1536,
+              "dist": 0.09405465711698183
+            },
+            "parent": {
+              "seg": 1,
+              "state": 1,
+              "ext": 2806.89,
+              "dist": -0.5088408170245
+            },
+            "last_child_pivot": {
+              "seg": 1,
+              "type": "H",
+              "price": 2806.89,
+              "t": 1789948800000,
+              "known": 1794614400000,
+              "index": 3291,
+              "close": 1928.02
+            },
+            "last_parent_pivot": {
+              "seg": 1,
+              "type": "L",
+              "price": 1505.12,
+              "t": 1780704000000,
+              "known": 1787270400000,
+              "index": 3206,
+              "close": 2325.97
+            }
+          }
+        }
+      }
+    },
+    "Bithumb_ETHKRW": {
+      "rows": 3666,
+      "first": "2017-05-22T00:00:00.000Z",
+      "last": "2026-11-25T15:00:00.000Z",
+      "gaps": 406,
+      "pairs": {
+        "0.05_0.2": {
+          "completed": 668,
+          "censored": 3,
+          "prefix_ok": true,
+          "groups": {
+            "up_opposed": {
+              "n": 134,
+              "median_return": 6.840522156253681,
+              "parent_change_count": 36
+            },
+            "down_opposed": {
+              "n": 221,
+              "median_return": -4.657933042212514,
+              "parent_change_count": 29
+            },
+            "up_aligned": {
+              "n": 198,
+              "median_return": 5.235261906997168,
+              "parent_change_count": 13
+            },
+            "down_aligned": {
+              "n": 111,
+              "median_return": -6.072106261859577,
+              "parent_change_count": 6
+            },
+            "up_unknown": {
+              "n": 3,
+              "median_return": 17.57624398073836,
+              "parent_change_count": 0
+            },
+            "down_unknown": {
+              "n": 1,
+              "median_return": -11.179645335389365,
+              "parent_change_count": 0
+            }
+          },
+          "containment": {
+            "n": 82,
+            "up": 41,
+            "down": 41,
+            "child_count_quantiles": [
+              2,
+              4,
+              10
+            ],
+            "opposite_count_quantiles": [
+              1,
+              2,
+              5
+            ]
+          },
+          "audit": {
+            "n": 219,
+            "skipped": 0,
+            "metrics": {
+              "B0": {
+                "mape": 7.535585637922131,
+                "coverage50": 0.0045662100456621,
+                "pinball": 3.83795981715447
+              },
+              "B1": {
+                "mape": 5.395917773440512,
+                "coverage50": 0.5296803652968036,
+                "pinball": 2.084137847610643
+              },
+              "M_child": {
+                "mape": 5.645194810474423,
+                "coverage50": 0.5251141552511416,
+                "pinball": 2.235822310905966
+              },
+              "M_parent_regime": {
+                "mape": 5.315646164934291,
+                "coverage50": 0.5616438356164384,
+                "pinball": 2.0713128135162586
+              },
+              "M_joint": {
+                "mape": 5.612046380793174,
+                "coverage50": 0.4931506849315068,
+                "pinball": 2.1670873227044067
+              }
+            },
+            "by_direction": {
+              "up": {
+                "n": 110,
+                "mape": {
+                  "B0": 7.0133909285318925,
+                  "B1": 5.065596721540865,
+                  "M_child": 5.3280818025762064,
+                  "M_parent_regime": 4.937404662130944,
+                  "M_joint": 5.61215685502599
+                }
+              },
+              "down": {
+                "n": 109,
+                "mape": {
+                  "B0": 8.062571124462735,
+                  "B1": 5.729269293706206,
+                  "M_child": 5.965217112023084,
+                  "M_parent_regime": 5.6973577732679415,
+                  "M_joint": 5.611934893035292
+                }
+              }
+            }
+          },
+          "current": {
+            "child": {
+              "seg": 407,
+              "state": -1,
+              "ext": 2199000,
+              "dist": 0.04577559872706677
+            },
+            "parent": {
+              "seg": 407,
+              "state": -1,
+              "ext": 2126000,
+              "dist": 0.07953603037993467
+            },
+            "last_child_pivot": {
+              "seg": 407,
+              "type": "H",
+              "price": 2505000,
+              "t": 1795359600000,
+              "known": 1795532400000,
+              "index": 3663,
+              "close": 2312000
+            },
+            "last_parent_pivot": {
+              "seg": 407,
+              "type": "H",
+              "price": 3780000,
+              "t": 1790002800000,
+              "known": 1793372400000,
+              "index": 3638,
+              "close": 3013000
+            }
+          }
+        },
+        "0.1_0.2": {
+          "completed": 254,
+          "censored": 3,
+          "prefix_ok": true,
+          "groups": {
+            "up_opposed": {
+              "n": 65,
+              "median_return": 8.357467935457175,
+              "parent_change_count": 33
+            },
+            "down_opposed": {
+              "n": 85,
+              "median_return": -9.139784946236562,
+              "parent_change_count": 34
+            },
+            "up_aligned": {
+              "n": 60,
+              "median_return": 11.882690267048911,
+              "parent_change_count": 7
+            },
+            "down_aligned": {
+              "n": 41,
+              "median_return": -13.26080564539841,
+              "parent_change_count": 5
+            },
+            "up_unknown": {
+              "n": 2,
+              "median_return": 56.622750445304334,
+              "parent_change_count": 0
+            },
+            "down_unknown": {
+              "n": 1,
+              "median_return": -5.45746388443018,
+              "parent_change_count": 0
+            }
+          },
+          "containment": {
+            "n": 82,
+            "up": 41,
+            "down": 41,
+            "child_count_quantiles": [
+              0,
+              2,
+              2.75
+            ],
+            "opposite_count_quantiles": [
+              0,
+              1,
+              1.75
+            ]
+          },
+          "audit": {
+            "n": 64,
+            "skipped": 0,
+            "metrics": {
+              "B0": {
+                "mape": 15.113270492874529,
+                "coverage50": 0,
+                "pinball": 7.987799866048535
+              },
+              "B1": {
+                "mape": 10.476029536916794,
+                "coverage50": 0.5625,
+                "pinball": 4.166070834978887
+              },
+              "M_child": {
+                "mape": 10.999314676948817,
+                "coverage50": 0.546875,
+                "pinball": 4.339679192749999
+              },
+              "M_parent_regime": {
+                "mape": 10.229809955171719,
+                "coverage50": 0.53125,
+                "pinball": 4.146147964178565
+              },
+              "M_joint": {
+                "mape": 10.638101082117899,
+                "coverage50": 0.515625,
+                "pinball": 4.24502094361991
+              }
+            },
+            "by_direction": {
+              "up": {
+                "n": 32,
+                "mape": {
+                  "B0": 14.007886199933209,
+                  "B1": 9.896045446647479,
+                  "M_child": 10.77918473394482,
+                  "M_parent_regime": 9.873171273363162,
+                  "M_joint": 10.208927262461753
+                }
+              },
+              "down": {
+                "n": 32,
+                "mape": {
+                  "B0": 16.21865478581584,
+                  "B1": 11.056013627186104,
+                  "M_child": 11.219444619952814,
+                  "M_parent_regime": 10.586448636980277,
+                  "M_joint": 11.067274901774041
+                }
+              }
+            }
+          },
+          "current": {
+            "child": {
+              "seg": 407,
+              "state": 1,
+              "ext": 2446000,
+              "dist": -0.06067572696528971
+            },
+            "parent": {
+              "seg": 407,
+              "state": -1,
+              "ext": 2126000,
+              "dist": 0.07953603037993467
+            },
+            "last_child_pivot": {
+              "seg": 407,
+              "type": "L",
+              "price": 2126000,
+              "t": 1795186800000,
+              "known": 1795446000000,
+              "index": 3662,
+              "close": 2420000
+            },
+            "last_parent_pivot": {
+              "seg": 407,
+              "type": "H",
+              "price": 3780000,
+              "t": 1790002800000,
+              "known": 1793372400000,
+              "index": 3638,
+              "close": 3013000
+            }
+          }
+        },
+        "0.1_0.3": {
+          "completed": 254,
+          "censored": 3,
+          "prefix_ok": true,
+          "groups": {
+            "up_opposed": {
+              "n": 50,
+              "median_return": 8.060592692432177,
+              "parent_change_count": 17
+            },
+            "down_opposed": {
+              "n": 90,
+              "median_return": -9.64541649491074,
+              "parent_change_count": 19
+            },
+            "up_aligned": {
+              "n": 73,
+              "median_return": 12.091603053435108,
+              "parent_change_count": 2
+            },
+            "down_aligned": {
+              "n": 35,
+              "median_return": -13.32282223098148,
+              "parent_change_count": 3
+            },
+            "up_unknown": {
+              "n": 4,
+              "median_return": 40.901031090514216,
+              "parent_change_count": 0
+            },
+            "down_unknown": {
+              "n": 2,
+              "median_return": -4.492789274078368,
+              "parent_change_count": 0
+            }
+          },
+          "containment": {
+            "n": 40,
+            "up": 19,
+            "down": 21,
+            "child_count_quantiles": [
+              2,
+              4,
+              6
+            ],
+            "opposite_count_quantiles": [
+              1,
+              2,
+              3
+            ]
+          },
+          "audit": {
+            "n": 64,
+            "skipped": 0,
+            "metrics": {
+              "B0": {
+                "mape": 15.113270492874529,
+                "coverage50": 0,
+                "pinball": 7.987799866048535
+              },
+              "B1": {
+                "mape": 10.476029536916794,
+                "coverage50": 0.5625,
+                "pinball": 4.166070834978887
+              },
+              "M_child": {
+                "mape": 10.999314676948817,
+                "coverage50": 0.546875,
+                "pinball": 4.339679192749999
+              },
+              "M_parent_regime": {
+                "mape": 10.42211064924234,
+                "coverage50": 0.546875,
+                "pinball": 4.203202424105364
+              },
+              "M_joint": {
+                "mape": 11.149069474196942,
+                "coverage50": 0.5,
+                "pinball": 4.259715704323764
+              }
+            },
+            "by_direction": {
+              "up": {
+                "n": 32,
+                "mape": {
+                  "B0": 14.007886199933209,
+                  "B1": 9.896045446647479,
+                  "M_child": 10.77918473394482,
+                  "M_parent_regime": 10.05853922259925,
+                  "M_joint": 10.241609160026385
+                }
+              },
+              "down": {
+                "n": 32,
+                "mape": {
+                  "B0": 16.21865478581584,
+                  "B1": 11.056013627186104,
+                  "M_child": 11.219444619952814,
+                  "M_parent_regime": 10.785682075885427,
+                  "M_joint": 12.056529788367497
+                }
+              }
+            }
+          },
+          "current": {
+            "child": {
+              "seg": 407,
+              "state": 1,
+              "ext": 2446000,
+              "dist": -0.06067572696528971
+            },
+            "parent": {
+              "seg": 407,
+              "state": -1,
+              "ext": 2126000,
+              "dist": 0.07953603037993467
+            },
+            "last_child_pivot": {
+              "seg": 407,
+              "type": "L",
+              "price": 2126000,
+              "t": 1795186800000,
+              "known": 1795446000000,
+              "index": 3662,
+              "close": 2420000
+            },
+            "last_parent_pivot": {
+              "seg": 407,
+              "type": "H",
+              "price": 3780000,
+              "t": 1790002800000,
+              "known": 1794668400000,
+              "index": 3653,
+              "close": 2548000
+            }
+          }
+        },
+        "0.15_0.3": {
+          "completed": 136,
+          "censored": 3,
+          "prefix_ok": true,
+          "groups": {
+            "up_aligned": {
+              "n": 37,
+              "median_return": 14.508370213584755,
+              "parent_change_count": 5
+            },
+            "down_opposed": {
+              "n": 47,
+              "median_return": -11.630558722919037,
+              "parent_change_count": 15
+            },
+            "down_aligned": {
+              "n": 20,
+              "median_return": -12.62685593082069,
+              "parent_change_count": 3
+            },
+            "up_opposed": {
+              "n": 31,
+              "median_return": 11.71477079796266,
+              "parent_change_count": 16
+            },
+            "up_unknown": {
+              "n": 1,
+              "median_return": 68.4390243902439,
+              "parent_change_count": 0
+            }
+          },
+          "containment": {
+            "n": 40,
+            "up": 19,
+            "down": 21,
+            "child_count_quantiles": [
+              0,
+              2,
+              3.25
+            ],
+            "opposite_count_quantiles": [
+              0,
+              1,
+              1.25
+            ]
+          },
+          "audit": {
+            "n": 34,
+            "skipped": 0,
+            "metrics": {
+              "B0": {
+                "mape": 19.457941328801496,
+                "coverage50": 0,
+                "pinball": 10.529152294557619
+              },
+              "B1": {
+                "mape": 15.62912148019589,
+                "coverage50": 0.47058823529411764,
+                "pinball": 5.824069571271276
+              },
+              "M_child": {
+                "mape": 17.086481189000175,
+                "coverage50": 0.4117647058823529,
+                "pinball": 5.732842371408296
+              },
+              "M_parent_regime": {
+                "mape": 16.10536667311125,
+                "coverage50": 0.4117647058823529,
+                "pinball": 5.881753408970475
+              },
+              "M_joint": {
+                "mape": 16.448489762625826,
+                "coverage50": 0.4117647058823529,
+                "pinball": 5.867176386087083
+              }
+            },
+            "by_direction": {
+              "down": {
+                "n": 17,
+                "mape": {
+                  "B0": 20.82817433094988,
+                  "B1": 15.866017662964817,
+                  "M_child": 16.409782273611132,
+                  "M_parent_regime": 16.506865184268953,
+                  "M_joint": 16.890195893705
+                }
+              },
+              "up": {
+                "n": 17,
+                "mape": {
+                  "B0": 18.087708326653097,
+                  "B1": 15.392225297426966,
+                  "M_child": 17.763180104389228,
+                  "M_parent_regime": 15.70386816195354,
+                  "M_joint": 16.006783631546654
+                }
+              }
+            }
+          },
+          "current": {
+            "child": {
+              "seg": 407,
+              "state": -1,
+              "ext": 2126000,
+              "dist": 0.07953603037993467
+            },
+            "parent": {
+              "seg": 407,
+              "state": -1,
+              "ext": 2126000,
+              "dist": 0.07953603037993467
+            },
+            "last_child_pivot": {
+              "seg": 407,
+              "type": "H",
+              "price": 3780000,
+              "t": 1790002800000,
+              "known": 1792854000000,
+              "index": 3632,
+              "close": 3151000
+            },
+            "last_parent_pivot": {
+              "seg": 407,
+              "type": "H",
+              "price": 3780000,
+              "t": 1790002800000,
+              "known": 1794668400000,
+              "index": 3653,
+              "close": 2548000
+            }
+          }
+        },
+        "0.2_0.4": {
+          "completed": 80,
+          "censored": 3,
+          "prefix_ok": true,
+          "groups": {
+            "up_unknown": {
+              "n": 1,
+              "median_return": 103.7578288100209,
+              "parent_change_count": 0
+            },
+            "down_opposed": {
+              "n": 26,
+              "median_return": -13.711181165738818,
+              "parent_change_count": 11
+            },
+            "up_opposed": {
+              "n": 21,
+              "median_return": 22.42555831265509,
+              "parent_change_count": 13
+            },
+            "down_aligned": {
+              "n": 13,
+              "median_return": -20.360110803324105,
+              "parent_change_count": 1
+            },
+            "up_aligned": {
+              "n": 19,
+              "median_return": 20.6446235065296,
+              "parent_change_count": 5
+            }
+          },
+          "containment": {
+            "n": 30,
+            "up": 14,
+            "down": 16,
+            "child_count_quantiles": [
+              0,
+              1,
+              2
+            ],
+            "opposite_count_quantiles": [
+              0,
+              0,
+              1
+            ]
+          },
+          "audit": {
+            "n": 19,
+            "skipped": 0,
+            "metrics": {
+              "B0": {
+                "mape": 28.15870367036798,
+                "coverage50": 0,
+                "pinball": 16.136204770083513
+              },
+              "B1": {
+                "mape": 21.360870403752948,
+                "coverage50": 0.47368421052631576,
+                "pinball": 8.08517597499256
+              },
+              "M_child": {
+                "mape": 21.6968258957727,
+                "coverage50": 0.42105263157894735,
+                "pinball": 7.953578988678513
+              },
+              "M_parent_regime": {
+                "mape": 21.90888538447045,
+                "coverage50": 0.3684210526315789,
+                "pinball": 8.030820617238549
+              },
+              "M_joint": {
+                "mape": 23.02519627451177,
+                "coverage50": 0.5263157894736842,
+                "pinball": 7.832211881119863
+              }
+            },
+            "by_direction": {
+              "up": {
+                "n": 10,
+                "mape": {
+                  "B0": 25.901170392474548,
+                  "B1": 22.133485724107533,
+                  "M_child": 21.70815607521383,
+                  "M_parent_regime": 22.982009226397327,
+                  "M_joint": 23.0658590369472
+                }
+              },
+              "down": {
+                "n": 9,
+                "mape": {
+                  "B0": 30.667073979138454,
+                  "B1": 20.502408936692294,
+                  "M_child": 21.68423680750478,
+                  "M_parent_regime": 20.716525560107264,
+                  "M_joint": 22.980015427361305
+                }
+              }
+            }
+          },
+          "current": {
+            "child": {
+              "seg": 407,
+              "state": -1,
+              "ext": 2126000,
+              "dist": 0.07953603037993467
+            },
+            "parent": {
+              "seg": 407,
+              "state": -1,
+              "ext": 2217000,
+              "dist": 0.0376233796655164
+            },
+            "last_child_pivot": {
+              "seg": 407,
+              "type": "H",
+              "price": 3780000,
+              "t": 1790002800000,
+              "known": 1793372400000,
+              "index": 3638,
+              "close": 3013000
+            },
+            "last_parent_pivot": {
+              "seg": 407,
+              "type": "H",
+              "price": 3780000,
+              "t": 1790002800000,
+              "known": 1795618800000,
+              "index": 3664,
+              "close": 2247000
+            }
+          }
+        },
+        "0.3_0.5": {
+          "completed": 37,
+          "censored": 3,
+          "prefix_ok": true,
+          "groups": {
+            "up_unknown": {
+              "n": 1,
+              "median_return": 103.7578288100209,
+              "parent_change_count": 0
+            },
+            "down_opposed": {
+              "n": 14,
+              "median_return": -34.66761074866229,
+              "parent_change_count": 8
+            },
+            "up_aligned": {
+              "n": 8,
+              "median_return": 89.99787494906437,
+              "parent_change_count": 2
+            },
+            "down_aligned": {
+              "n": 4,
+              "median_return": -30.011566916328825,
+              "parent_change_count": 0
+            },
+            "up_opposed": {
+              "n": 10,
+              "median_return": 24.16322812870375,
+              "parent_change_count": 8
+            }
+          },
+          "containment": {
+            "n": 17,
+            "up": 7,
+            "down": 10,
+            "child_count_quantiles": [
+              0,
+              0,
+              2
+            ],
+            "opposite_count_quantiles": [
+              0,
+              0,
+              1
+            ]
+          },
+          "audit": {
+            "n": 0,
+            "skipped": 9,
+            "metrics": {},
+            "by_direction": {}
+          },
+          "current": {
+            "child": {
+              "seg": 407,
+              "state": -1,
+              "ext": 2126000,
+              "dist": 0.07953603037993467
+            },
+            "parent": {
+              "seg": 407,
+              "state": 1,
+              "ext": 3780000,
+              "dist": -0.49594569933180543
+            },
+            "last_child_pivot": {
+              "seg": 407,
+              "type": "H",
+              "price": 3780000,
+              "t": 1790002800000,
+              "known": 1794668400000,
+              "index": 3653,
+              "close": 2548000
+            },
+            "last_parent_pivot": {
+              "seg": 407,
+              "type": "L",
+              "price": 2300000,
+              "t": 1780671600000,
+              "known": 1787583600000,
+              "index": 3571,
+              "close": 3455000
+            }
+          }
+        }
+      }
+    }
+  }
+}
