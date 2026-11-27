@@ -36,50 +36,32 @@ jobs:
       - name: Install dependencies
         run: pip install requests pandas matplotlib
 
-      - name: Collect ETH data
-        run: python eth_collect_v12.py
-
-      - name: Analyze ETH data
-        run: python eth_analyze_v42.py
-
-      - name: Analyze historical waves
-        run: python eth_wave_v42.py
-
-      - name: Analyze intraday extrema
-        run: python eth_extrema_v42.py
-
-      - name: Test first-touch baseline
-        run: python eth_touch_v42.py
-
-      - name: Audit alignment and test historical neighbors
-        run: python eth_research_v42.py
-
-      - name: Evaluate chronological wave models
-        run: python eth_walkforward_v42.py
-
-      - name: Generate guarded forecast diagnostics
-        run: python eth_diagnostics_v42.py
-
-      - name: Run V4.3 guarded path audit
-        run: python v43/path_audit.py
-
-      - name: Generate V4.3 guarded structure snapshot
-        run: python v43/structure_snapshot.py
-
-      - name: Generate V4.3 charts and score registered forecasts
-        run: python v43/operations.py
-
-      - name: Save updated data
+      - name: Regenerate from latest main and publish without force
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add eth_data
-          if ! git diff --cached --quiet; then
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            python eth_collect_v12.py
+            python eth_analyze_v42.py
+            python eth_wave_v42.py
+            python eth_extrema_v42.py
+            python eth_touch_v42.py
+            python eth_research_v42.py
+            python eth_walkforward_v42.py
+            python eth_diagnostics_v42.py
+            python v43/path_audit.py
+            python v43/structure_snapshot.py
+            python v43/operations.py
+            python -c 'import json; from pathlib import Path; p=Path("eth_data"); a=json.loads((p/"audit.json").read_text()); assert a and not any("error" in x for x in a), "collection error"; s=json.loads((p/"structure_snapshot_v43.json").read_text()); assert s["freshness_pass"], "stale structure snapshot"'
+            git add -A -- eth_data ':!eth_data/forecast_ledger_v43.jsonl' ':!eth_data/forecast_ledger_v43.jsonl.lock' ':!eth_data/path_ledger_v43.jsonl'
+            if git diff --cached --quiet; then exit 0; fi
             git commit -m "Auto update ETH data"
-            for attempt in 1 2 3; do
-              git fetch origin main
-              git rebase origin/main
-              if git push origin HEAD:main; then exit 0; fi
-            done
-            exit 1
-          fi
+            if git push origin HEAD:main; then exit 0; fi
+            echo "Publish rejected; regenerate from latest remote, attempt $attempt"
+            sleep "$((attempt * 3))"
+          done
+          exit 1
