@@ -1,0 +1,2433 @@
+{
+  "version": "v43-bottom-landmarks-1",
+  "rules": {
+    "K": [
+      0.1,
+      0.15,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    "ages": [
+      0,
+      3,
+      7,
+      14,
+      21,
+      28
+    ],
+    "min_train": 20,
+    "neighbors": 12,
+    "evaluation_from": "2023-01-01",
+    "label": "minimum from trigger close through first daily close >= running low*(1+k); gap and end censored; no intraday ordering inferred; one snapshot per episode per landmark; trigger bar low excluded because prior high/low order unknown",
+    "status": "exploratory reused holdout, not promotion; separate scales and markets",
+    "feature_names": [
+      "log drawdown",
+      "log rebound",
+      "ATR14/close",
+      "log return7",
+      "relative volume21"
+    ]
+  },
+  "markets": {
+    "Upbit_ETHKRW": {
+      "rows": 3347,
+      "invalid": 0,
+      "dup": 0,
+      "gaps": 1,
+      "first": "2017-09-25T00:00:00.000Z",
+      "last": "2026-11-26T00:00:00.000Z",
+      "scales": {
+        "0.1": {
+          "completed": 142,
+          "censored": 1,
+          "prefix_ok": true,
+          "live": null,
+          "evaluations": [
+            {
+              "age": 0,
+              "complete": 142,
+              "censored": 1,
+              "n": 39,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 13.359253013276167,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 5.3218003696380825
+                },
+                "B1": {
+                  "mape": 8.667132053832892,
+                  "coverage50": 0.5128205128205128,
+                  "width50": 12.043748660361597,
+                  "pinball": 2.512668684797986
+                },
+                "M3": {
+                  "mape": 9.6961720933235,
+                  "coverage50": 0.358974358974359,
+                  "width50": 10.526890015085355,
+                  "pinball": 2.836964658833789
+                },
+                "M4": {
+                  "mape": 8.667132053832892,
+                  "coverage50": 0.5128205128205128,
+                  "width50": 12.043748660361597,
+                  "pinball": 2.512668684797986
+                }
+              }
+            },
+            {
+              "age": 3,
+              "complete": 89,
+              "censored": 0,
+              "n": 28,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 11.845555559988528,
+                  "coverage50": 0.32142857142857145,
+                  "width50": 0,
+                  "pinball": 4.579572973593345
+                },
+                "B1": {
+                  "mape": 10.366466361030588,
+                  "coverage50": 0.6071428571428571,
+                  "width50": 10.491397048808068,
+                  "pinball": 2.7665563079236652
+                },
+                "M3": {
+                  "mape": 10.16883320472976,
+                  "coverage50": 0.42857142857142855,
+                  "width50": 13.69223015474555,
+                  "pinball": 3.086771245879948
+                },
+                "M4": {
+                  "mape": 10.423702122098154,
+                  "coverage50": 0.42857142857142855,
+                  "width50": 10.131271361931708,
+                  "pinball": 2.8405640033656474
+                }
+              }
+            },
+            {
+              "age": 7,
+              "complete": 59,
+              "censored": 0,
+              "n": 26,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 9.92706001147579,
+                  "coverage50": 0.4230769230769231,
+                  "width50": 0,
+                  "pinball": 3.846886180992219
+                },
+                "B1": {
+                  "mape": 9.87766896134924,
+                  "coverage50": 0.6538461538461539,
+                  "width50": 9.438702516885956,
+                  "pinball": 2.622893928906409
+                },
+                "M3": {
+                  "mape": 10.385984089364134,
+                  "coverage50": 0.5769230769230769,
+                  "width50": 11.681144817361277,
+                  "pinball": 2.673503779129965
+                },
+                "M4": {
+                  "mape": 8.913520956262948,
+                  "coverage50": 0.6923076923076923,
+                  "width50": 7.5828957815403,
+                  "pinball": 2.5761038019215667
+                }
+              }
+            },
+            {
+              "age": 14,
+              "complete": 22,
+              "censored": 0,
+              "n": 2,
+              "skipped": 10,
+              "metrics": {
+                "B0": {
+                  "mape": 14.939089278889973,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 6.072481451022161
+                },
+                "B1": {
+                  "mape": 12.747806925291595,
+                  "coverage50": 0.5,
+                  "width50": 15.522875816993466,
+                  "pinball": 3.202011158311325
+                },
+                "M3": {
+                  "mape": 13.104516538213636,
+                  "coverage50": 0.5,
+                  "width50": 17.191344551485074,
+                  "pinball": 3.214513013035276
+                },
+                "M4": {
+                  "mape": 12.747806925291595,
+                  "coverage50": 0.5,
+                  "width50": 15.522875816993466,
+                  "pinball": 3.202011158311325
+                }
+              }
+            },
+            {
+              "age": 21,
+              "complete": 12,
+              "censored": 0,
+              "n": 0,
+              "skipped": 7,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 28,
+              "complete": 4,
+              "censored": 0,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            }
+          ]
+        },
+        "0.15": {
+          "completed": 76,
+          "censored": 1,
+          "prefix_ok": true,
+          "live": {
+            "age": 35,
+            "low": 2125000,
+            "start": "2026-10-22T00:00:00.000Z",
+            "reference": null
+          },
+          "evaluations": [
+            {
+              "age": 0,
+              "complete": 76,
+              "censored": 1,
+              "n": 18,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 18.641339659658975,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 7.032732656987434
+                },
+                "B1": {
+                  "mape": 11.28458550517619,
+                  "coverage50": 0.6111111111111112,
+                  "width50": 19.458800652317432,
+                  "pinball": 3.127314070526543
+                },
+                "M3": {
+                  "mape": 11.69146741374634,
+                  "coverage50": 0.6666666666666666,
+                  "width50": 16.327321181858675,
+                  "pinball": 3.1835797595534427
+                },
+                "M4": {
+                  "mape": 11.28458550517619,
+                  "coverage50": 0.6111111111111112,
+                  "width50": 19.458800652317432,
+                  "pinball": 3.127314070526543
+                }
+              }
+            },
+            {
+              "age": 3,
+              "complete": 57,
+              "censored": 1,
+              "n": 17,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 12.500995234197758,
+                  "coverage50": 0.4117647058823529,
+                  "width50": 0,
+                  "pinball": 4.5329720299585805
+                },
+                "B1": {
+                  "mape": 12.042350994542083,
+                  "coverage50": 0.7058823529411765,
+                  "width50": 12.153405571276435,
+                  "pinball": 3.0877146126508217
+                },
+                "M3": {
+                  "mape": 12.128785322907774,
+                  "coverage50": 0.6470588235294118,
+                  "width50": 15.766503145460637,
+                  "pinball": 3.048857996152379
+                },
+                "M4": {
+                  "mape": 10.823506333249888,
+                  "coverage50": 0.6470588235294118,
+                  "width50": 18.543364530522656,
+                  "pinball": 3.1906880935147237
+                }
+              }
+            },
+            {
+              "age": 7,
+              "complete": 45,
+              "censored": 1,
+              "n": 16,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 8.711037167030016,
+                  "coverage50": 0.5625,
+                  "width50": 0,
+                  "pinball": 3.252549856734158
+                },
+                "B1": {
+                  "mape": 8.878702119975708,
+                  "coverage50": 0.8125,
+                  "width50": 20.610015052601884,
+                  "pinball": 2.878602021795868
+                },
+                "M3": {
+                  "mape": 8.262015541363272,
+                  "coverage50": 0.8125,
+                  "width50": 20.340496926004537,
+                  "pinball": 2.7675066831522157
+                },
+                "M4": {
+                  "mape": 7.486164295268468,
+                  "coverage50": 0.875,
+                  "width50": 17.918720492901517,
+                  "pinball": 2.3439196536907425
+                }
+              }
+            },
+            {
+              "age": 14,
+              "complete": 29,
+              "censored": 1,
+              "n": 9,
+              "skipped": 2,
+              "metrics": {
+                "B0": {
+                  "mape": 6.375814886453185,
+                  "coverage50": 0.8888888888888888,
+                  "width50": 0,
+                  "pinball": 2.0255815012062452
+                },
+                "B1": {
+                  "mape": 6.375814886453185,
+                  "coverage50": 0.8888888888888888,
+                  "width50": 22.22623451143926,
+                  "pinball": 2.779187139848008
+                },
+                "M3": {
+                  "mape": 6.652798110535383,
+                  "coverage50": 0.8888888888888888,
+                  "width50": 17.185922117249845,
+                  "pinball": 2.951300106051573
+                },
+                "M4": {
+                  "mape": 6.375814886453185,
+                  "coverage50": 0.8888888888888888,
+                  "width50": 2.2859284839349154,
+                  "pinball": 2.166489890948046
+                }
+              }
+            },
+            {
+              "age": 21,
+              "complete": 10,
+              "censored": 1,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 28,
+              "complete": 9,
+              "censored": 1,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            }
+          ]
+        },
+        "0.2": {
+          "completed": 47,
+          "censored": 1,
+          "prefix_ok": true,
+          "live": {
+            "age": 27,
+            "low": 2125000,
+            "start": "2026-10-30T00:00:00.000Z",
+            "reference": null
+          },
+          "evaluations": [
+            {
+              "age": 0,
+              "complete": 47,
+              "censored": 1,
+              "n": 11,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 23.0863127211413,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 8.368352346799352
+                },
+                "B1": {
+                  "mape": 14.924553798431754,
+                  "coverage50": 0.45454545454545453,
+                  "width50": 23.84439624752565,
+                  "pinball": 3.760884635273003
+                },
+                "M3": {
+                  "mape": 15.059264576590301,
+                  "coverage50": 0.2727272727272727,
+                  "width50": 15.216328866946226,
+                  "pinball": 4.343896331062412
+                },
+                "M4": {
+                  "mape": 14.924553798431754,
+                  "coverage50": 0.45454545454545453,
+                  "width50": 23.84439624752565,
+                  "pinball": 3.760884635273003
+                }
+              }
+            },
+            {
+              "age": 3,
+              "complete": 39,
+              "censored": 1,
+              "n": 11,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 11.924606879878375,
+                  "coverage50": 0.36363636363636365,
+                  "width50": 0,
+                  "pinball": 4.567632777316332
+                },
+                "B1": {
+                  "mape": 12.039261068287374,
+                  "coverage50": 0.9090909090909091,
+                  "width50": 23.65163467197955,
+                  "pinball": 3.1473533715615476
+                },
+                "M3": {
+                  "mape": 15.651924937432968,
+                  "coverage50": 0.36363636363636365,
+                  "width50": 26.30905669736901,
+                  "pinball": 3.959513634532935
+                },
+                "M4": {
+                  "mape": 12.094920484273661,
+                  "coverage50": 0.5454545454545454,
+                  "width50": 18.078269538388245,
+                  "pinball": 3.373610952165364
+                }
+              }
+            },
+            {
+              "age": 7,
+              "complete": 34,
+              "censored": 1,
+              "n": 11,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 9.081860360779078,
+                  "coverage50": 0.6363636363636364,
+                  "width50": 0,
+                  "pinball": 3.392218896711998
+                },
+                "B1": {
+                  "mape": 10.161460530522856,
+                  "coverage50": 0.9090909090909091,
+                  "width50": 23.39970359684888,
+                  "pinball": 3.0437807221438122
+                },
+                "M3": {
+                  "mape": 11.460633508288218,
+                  "coverage50": 0.6363636363636364,
+                  "width50": 21.94777565401819,
+                  "pinball": 3.053320947886657
+                },
+                "M4": {
+                  "mape": 8.854773189605888,
+                  "coverage50": 0.7272727272727273,
+                  "width50": 11.140053343064055,
+                  "pinball": 2.2554127738957885
+                }
+              }
+            },
+            {
+              "age": 14,
+              "complete": 25,
+              "censored": 1,
+              "n": 5,
+              "skipped": 4,
+              "metrics": {
+                "B0": {
+                  "mape": 7.730471543144266,
+                  "coverage50": 0.6,
+                  "width50": 0,
+                  "pinball": 3.191023872507547
+                },
+                "B1": {
+                  "mape": 7.988433648894665,
+                  "coverage50": 0.8,
+                  "width50": 16.88469947160246,
+                  "pinball": 2.399877770368132
+                },
+                "M3": {
+                  "mape": 7.498897170194537,
+                  "coverage50": 0.8,
+                  "width50": 15.180425372949125,
+                  "pinball": 2.335887054984729
+                },
+                "M4": {
+                  "mape": 7.539731631880871,
+                  "coverage50": 0.8,
+                  "width50": 8.759038322488603,
+                  "pinball": 2.1961025431753183
+                }
+              }
+            },
+            {
+              "age": 21,
+              "complete": 19,
+              "censored": 1,
+              "n": 0,
+              "skipped": 7,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 28,
+              "complete": 19,
+              "censored": 0,
+              "n": 0,
+              "skipped": 7,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            }
+          ]
+        },
+        "0.3": {
+          "completed": 22,
+          "censored": 1,
+          "prefix_ok": true,
+          "live": {
+            "age": 13,
+            "low": 2125000,
+            "start": "2026-11-13T00:00:00.000Z",
+            "reference": null
+          },
+          "evaluations": [
+            {
+              "age": 0,
+              "complete": 22,
+              "censored": 1,
+              "n": 2,
+              "skipped": 2,
+              "metrics": {
+                "B0": {
+                  "mape": 43.75239214369648,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 12.485604630069659
+                },
+                "B1": {
+                  "mape": 29.860327337655846,
+                  "coverage50": 0.5,
+                  "width50": 36.95341919230609,
+                  "pinball": 5.427769243250394
+                },
+                "M3": {
+                  "mape": 29.056113849297482,
+                  "coverage50": 0.5,
+                  "width50": 33.27722762510477,
+                  "pinball": 6.370352337253074
+                },
+                "M4": {
+                  "mape": 29.860327337655846,
+                  "coverage50": 0.5,
+                  "width50": 36.95341919230609,
+                  "pinball": 5.427769243250394
+                }
+              }
+            },
+            {
+              "age": 3,
+              "complete": 19,
+              "censored": 1,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 7,
+              "complete": 17,
+              "censored": 1,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 14,
+              "complete": 15,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 21,
+              "complete": 14,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 28,
+              "complete": 13,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            }
+          ]
+        },
+        "0.4": {
+          "completed": 14,
+          "censored": 1,
+          "prefix_ok": true,
+          "live": {
+            "age": 6,
+            "low": 2125000,
+            "start": "2026-11-20T00:00:00.000Z",
+            "reference": null
+          },
+          "evaluations": [
+            {
+              "age": 0,
+              "complete": 14,
+              "censored": 1,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 3,
+              "complete": 11,
+              "censored": 1,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 7,
+              "complete": 10,
+              "censored": 0,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 14,
+              "complete": 10,
+              "censored": 0,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 21,
+              "complete": 9,
+              "censored": 0,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 28,
+              "complete": 9,
+              "censored": 0,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            }
+          ]
+        },
+        "0.5": {
+          "completed": 9,
+          "censored": 0,
+          "prefix_ok": true,
+          "live": null,
+          "evaluations": [
+            {
+              "age": 0,
+              "complete": 9,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 3,
+              "complete": 9,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 7,
+              "complete": 9,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 14,
+              "complete": 9,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 21,
+              "complete": 8,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 28,
+              "complete": 6,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            }
+          ]
+        }
+      }
+    },
+    "Bitstamp_ETHUSD": {
+      "rows": 3305,
+      "invalid": 0,
+      "dup": 0,
+      "gaps": 0,
+      "first": "2017-11-09T00:00:00.000Z",
+      "last": "2026-11-26T00:00:00.000Z",
+      "scales": {
+        "0.1": {
+          "completed": 166,
+          "censored": 0,
+          "prefix_ok": true,
+          "live": null,
+          "evaluations": [
+            {
+              "age": 0,
+              "complete": 166,
+              "censored": 0,
+              "n": 48,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 13.669313737630345,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 5.394662630170757
+                },
+                "B1": {
+                  "mape": 9.282080892106999,
+                  "coverage50": 0.4375,
+                  "width50": 13.066331449164638,
+                  "pinball": 2.5991876135323717
+                },
+                "M3": {
+                  "mape": 9.570630766432247,
+                  "coverage50": 0.4166666666666667,
+                  "width50": 12.03835004717787,
+                  "pinball": 2.7849530396716395
+                },
+                "M4": {
+                  "mape": 9.282080892106999,
+                  "coverage50": 0.4375,
+                  "width50": 13.066331449164638,
+                  "pinball": 2.5991876135323717
+                }
+              }
+            },
+            {
+              "age": 3,
+              "complete": 101,
+              "censored": 0,
+              "n": 39,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 10.654010465900072,
+                  "coverage50": 0.38461538461538464,
+                  "width50": 0,
+                  "pinball": 4.067456908153483
+                },
+                "B1": {
+                  "mape": 10.074627932125955,
+                  "coverage50": 0.6923076923076923,
+                  "width50": 11.216012144597487,
+                  "pinball": 2.670784418404035
+                },
+                "M3": {
+                  "mape": 10.712302091771559,
+                  "coverage50": 0.6153846153846154,
+                  "width50": 11.007453779815016,
+                  "pinball": 3.030093319596942
+                },
+                "M4": {
+                  "mape": 9.713726026583144,
+                  "coverage50": 0.7692307692307693,
+                  "width50": 11.488853209052174,
+                  "pinball": 2.671174500631881
+                }
+              }
+            },
+            {
+              "age": 7,
+              "complete": 49,
+              "censored": 0,
+              "n": 26,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 9.539120338778817,
+                  "coverage50": 0.46153846153846156,
+                  "width50": 0,
+                  "pinball": 3.6393801520362965
+                },
+                "B1": {
+                  "mape": 9.536953889033809,
+                  "coverage50": 0.6923076923076923,
+                  "width50": 8.695504270301155,
+                  "pinball": 2.6317015540044038
+                },
+                "M3": {
+                  "mape": 8.745374676126556,
+                  "coverage50": 0.7692307692307693,
+                  "width50": 9.890008174089902,
+                  "pinball": 2.5764868609046783
+                },
+                "M4": {
+                  "mape": 8.488869651326814,
+                  "coverage50": 0.6153846153846154,
+                  "width50": 4.443575307021858,
+                  "pinball": 2.6178952370491566
+                }
+              }
+            },
+            {
+              "age": 14,
+              "complete": 15,
+              "censored": 0,
+              "n": 0,
+              "skipped": 9,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 21,
+              "complete": 6,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 28,
+              "complete": 3,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            }
+          ]
+        },
+        "0.15": {
+          "completed": 91,
+          "censored": 1,
+          "prefix_ok": true,
+          "live": {
+            "age": 34,
+            "low": 1536,
+            "start": "2026-10-23T00:00:00.000Z",
+            "reference": null
+          },
+          "evaluations": [
+            {
+              "age": 0,
+              "complete": 91,
+              "censored": 1,
+              "n": 23,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 16.77407903506896,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 6.5462144795989845
+                },
+                "B1": {
+                  "mape": 9.46666587974372,
+                  "coverage50": 0.6086956521739131,
+                  "width50": 15.892767800328992,
+                  "pinball": 2.700458994890316
+                },
+                "M3": {
+                  "mape": 8.965846075567544,
+                  "coverage50": 0.6521739130434783,
+                  "width50": 15.941679724835877,
+                  "pinball": 2.80570804600795
+                },
+                "M4": {
+                  "mape": 9.46666587974372,
+                  "coverage50": 0.6086956521739131,
+                  "width50": 15.892767800328992,
+                  "pinball": 2.700458994890316
+                }
+              }
+            },
+            {
+              "age": 3,
+              "complete": 67,
+              "censored": 1,
+              "n": 20,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 9.58706138379009,
+                  "coverage50": 0.55,
+                  "width50": 0,
+                  "pinball": 3.4952033390415354
+                },
+                "B1": {
+                  "mape": 9.878290206879035,
+                  "coverage50": 0.8,
+                  "width50": 11.771583349637993,
+                  "pinball": 2.7438329572204716
+                },
+                "M3": {
+                  "mape": 9.3664316813813,
+                  "coverage50": 0.65,
+                  "width50": 11.507081239643828,
+                  "pinball": 2.605786024700943
+                },
+                "M4": {
+                  "mape": 9.780589904835885,
+                  "coverage50": 0.55,
+                  "width50": 6.701197246159738,
+                  "pinball": 2.800689552758911
+                }
+              }
+            },
+            {
+              "age": 7,
+              "complete": 42,
+              "censored": 1,
+              "n": 15,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 9.124752651943902,
+                  "coverage50": 0.5333333333333333,
+                  "width50": 0,
+                  "pinball": 3.498458965037005
+                },
+                "B1": {
+                  "mape": 9.295532048142611,
+                  "coverage50": 0.8,
+                  "width50": 16.47263499418418,
+                  "pinball": 2.6912069044647335
+                },
+                "M3": {
+                  "mape": 8.051065709627077,
+                  "coverage50": 0.6666666666666666,
+                  "width50": 9.582914913305597,
+                  "pinball": 2.2157491485017498
+                },
+                "M4": {
+                  "mape": 8.33836335408287,
+                  "coverage50": 0.8,
+                  "width50": 13.802266616825808,
+                  "pinball": 2.4371301209292793
+                }
+              }
+            },
+            {
+              "age": 14,
+              "complete": 23,
+              "censored": 1,
+              "n": 3,
+              "skipped": 7,
+              "metrics": {
+                "B0": {
+                  "mape": 15.023014801325802,
+                  "coverage50": 0.3333333333333333,
+                  "width50": 0,
+                  "pinball": 5.366960846808282
+                },
+                "B1": {
+                  "mape": 14.388992015937015,
+                  "coverage50": 0.6666666666666666,
+                  "width50": 11.242516404213552,
+                  "pinball": 3.59522197999136
+                },
+                "M3": {
+                  "mape": 13.520846694033699,
+                  "coverage50": 0.6666666666666666,
+                  "width50": 13.059679178419751,
+                  "pinball": 3.615055693810744
+                },
+                "M4": {
+                  "mape": 14.457227307220151,
+                  "coverage50": 0.6666666666666666,
+                  "width50": 10.719207257046344,
+                  "pinball": 3.743278855619831
+                }
+              }
+            },
+            {
+              "age": 21,
+              "complete": 13,
+              "censored": 1,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 28,
+              "complete": 9,
+              "censored": 1,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            }
+          ]
+        },
+        "0.2": {
+          "completed": 54,
+          "censored": 1,
+          "prefix_ok": true,
+          "live": {
+            "age": 27,
+            "low": 1536,
+            "start": "2026-10-30T00:00:00.000Z",
+            "reference": null
+          },
+          "evaluations": [
+            {
+              "age": 0,
+              "complete": 54,
+              "censored": 1,
+              "n": 15,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 18.805959173011047,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 6.926743728437668
+                },
+                "B1": {
+                  "mape": 14.488455752550765,
+                  "coverage50": 0.4,
+                  "width50": 20.16646881148658,
+                  "pinball": 3.895395928080896
+                },
+                "M3": {
+                  "mape": 15.429138386218762,
+                  "coverage50": 0.3333333333333333,
+                  "width50": 25.964705655602813,
+                  "pinball": 4.603394927188648
+                },
+                "M4": {
+                  "mape": 14.488455752550765,
+                  "coverage50": 0.4,
+                  "width50": 20.16646881148658,
+                  "pinball": 3.895395928080896
+                }
+              }
+            },
+            {
+              "age": 3,
+              "complete": 44,
+              "censored": 1,
+              "n": 14,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 10.530485472679663,
+                  "coverage50": 0.5,
+                  "width50": 0,
+                  "pinball": 3.8392255467400855
+                },
+                "B1": {
+                  "mape": 12.745564022301876,
+                  "coverage50": 0.2857142857142857,
+                  "width50": 16.069949778900973,
+                  "pinball": 3.3708882049913282
+                },
+                "M3": {
+                  "mape": 12.951005348201637,
+                  "coverage50": 0.14285714285714285,
+                  "width50": 17.81608469822114,
+                  "pinball": 3.8947853647574533
+                },
+                "M4": {
+                  "mape": 12.94433794218372,
+                  "coverage50": 0.5,
+                  "width50": 13.525553697112995,
+                  "pinball": 3.3319745372082683
+                }
+              }
+            },
+            {
+              "age": 7,
+              "complete": 38,
+              "censored": 1,
+              "n": 13,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 9.266707302512028,
+                  "coverage50": 0.6153846153846154,
+                  "width50": 0,
+                  "pinball": 3.29227992183144
+                },
+                "B1": {
+                  "mape": 11.39507671610065,
+                  "coverage50": 0.8461538461538461,
+                  "width50": 22.99946061299601,
+                  "pinball": 3.196003643268484
+                },
+                "M3": {
+                  "mape": 12.345168670357909,
+                  "coverage50": 0.5384615384615384,
+                  "width50": 28.249009011813353,
+                  "pinball": 3.790851488692857
+                },
+                "M4": {
+                  "mape": 10.27811982649882,
+                  "coverage50": 0.7692307692307693,
+                  "width50": 13.90854399879919,
+                  "pinball": 2.8673441412222185
+                }
+              }
+            },
+            {
+              "age": 14,
+              "complete": 26,
+              "censored": 1,
+              "n": 6,
+              "skipped": 3,
+              "metrics": {
+                "B0": {
+                  "mape": 19.78454456874599,
+                  "coverage50": 0.5,
+                  "width50": 0,
+                  "pinball": 6.9879461033961325
+                },
+                "B1": {
+                  "mape": 19.715373865032394,
+                  "coverage50": 0.5,
+                  "width50": 16.574445762547114,
+                  "pinball": 4.168044258539612
+                },
+                "M3": {
+                  "mape": 20.133639188302606,
+                  "coverage50": 0.5,
+                  "width50": 15.881045250344215,
+                  "pinball": 4.431496119524428
+                },
+                "M4": {
+                  "mape": 19.78454456874599,
+                  "coverage50": 0.6666666666666666,
+                  "width50": 20.430503125754818,
+                  "pinball": 4.159066788983702
+                }
+              }
+            },
+            {
+              "age": 21,
+              "complete": 13,
+              "censored": 1,
+              "n": 0,
+              "skipped": 5,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 28,
+              "complete": 13,
+              "censored": 0,
+              "n": 0,
+              "skipped": 5,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            }
+          ]
+        },
+        "0.3": {
+          "completed": 22,
+          "censored": 1,
+          "prefix_ok": true,
+          "live": {
+            "age": 13,
+            "low": 1536,
+            "start": "2026-11-13T00:00:00.000Z",
+            "reference": null
+          },
+          "evaluations": [
+            {
+              "age": 0,
+              "complete": 22,
+              "censored": 1,
+              "n": 2,
+              "skipped": 3,
+              "metrics": {
+                "B0": {
+                  "mape": 46.92694168103575,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 12.982033776192425
+                },
+                "B1": {
+                  "mape": 31.043622149156704,
+                  "coverage50": 0,
+                  "width50": 31.44635774270714,
+                  "pinball": 6.367958011766872
+                },
+                "M3": {
+                  "mape": 30.8995333169594,
+                  "coverage50": 0,
+                  "width50": 28.066520123556177,
+                  "pinball": 5.8497649586176586
+                },
+                "M4": {
+                  "mape": 31.043622149156704,
+                  "coverage50": 0,
+                  "width50": 31.44635774270714,
+                  "pinball": 6.367958011766872
+                }
+              }
+            },
+            {
+              "age": 3,
+              "complete": 21,
+              "censored": 1,
+              "n": 1,
+              "skipped": 3,
+              "metrics": {
+                "B0": {
+                  "mape": 0,
+                  "coverage50": 1,
+                  "width50": 0,
+                  "pinball": 0
+                },
+                "B1": {
+                  "mape": 15.900364619450858,
+                  "coverage50": 0,
+                  "width50": 44.36332653658768,
+                  "pinball": 5.001000734337424
+                },
+                "M3": {
+                  "mape": 10.949349481391902,
+                  "coverage50": 1,
+                  "width50": 46.4994170690966,
+                  "pinball": 4.44827655597845
+                },
+                "M4": {
+                  "mape": 14.069639199621864,
+                  "coverage50": 0,
+                  "width50": 25.421648271123722,
+                  "pinball": 3.8200673470443056
+                }
+              }
+            },
+            {
+              "age": 7,
+              "complete": 19,
+              "censored": 1,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 14,
+              "complete": 16,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 21,
+              "complete": 13,
+              "censored": 0,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 28,
+              "complete": 12,
+              "censored": 0,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            }
+          ]
+        },
+        "0.4": {
+          "completed": 13,
+          "censored": 1,
+          "prefix_ok": true,
+          "live": {
+            "age": 6,
+            "low": 1536,
+            "start": "2026-11-20T00:00:00.000Z",
+            "reference": null
+          },
+          "evaluations": [
+            {
+              "age": 0,
+              "complete": 13,
+              "censored": 1,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 3,
+              "complete": 12,
+              "censored": 1,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 7,
+              "complete": 10,
+              "censored": 0,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 14,
+              "complete": 10,
+              "censored": 0,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 21,
+              "complete": 9,
+              "censored": 0,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 28,
+              "complete": 8,
+              "censored": 0,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            }
+          ]
+        },
+        "0.5": {
+          "completed": 10,
+          "censored": 0,
+          "prefix_ok": true,
+          "live": null,
+          "evaluations": [
+            {
+              "age": 0,
+              "complete": 10,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 3,
+              "complete": 9,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 7,
+              "complete": 8,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 14,
+              "complete": 8,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 21,
+              "complete": 7,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 28,
+              "complete": 6,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            }
+          ]
+        }
+      }
+    },
+    "Bithumb_ETHKRW": {
+      "rows": 3666,
+      "invalid": 0,
+      "dup": 0,
+      "gaps": 406,
+      "first": "2017-05-22T00:00:00.000Z",
+      "last": "2026-11-25T15:00:00.000Z",
+      "scales": {
+        "0.1": {
+          "completed": 130,
+          "censored": 0,
+          "prefix_ok": true,
+          "live": null,
+          "evaluations": [
+            {
+              "age": 0,
+              "complete": 125,
+              "censored": 0,
+              "n": 32,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 16.21865478581584,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 6.233134720887933
+                },
+                "B1": {
+                  "mape": 11.056013627186104,
+                  "coverage50": 0.5,
+                  "width50": 15.166186601466402,
+                  "pinball": 2.9005305999698696
+                },
+                "M3": {
+                  "mape": 12.449408419548556,
+                  "coverage50": 0.46875,
+                  "width50": 13.270805702201292,
+                  "pinball": 3.29498473517677
+                },
+                "M4": {
+                  "mape": 11.056013627186104,
+                  "coverage50": 0.5,
+                  "width50": 15.166186601466402,
+                  "pinball": 2.9005305999698696
+                }
+              }
+            },
+            {
+              "age": 3,
+              "complete": 85,
+              "censored": 0,
+              "n": 28,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 14.199385610386349,
+                  "coverage50": 0.21428571428571427,
+                  "width50": 0,
+                  "pinball": 5.447177235661423
+                },
+                "B1": {
+                  "mape": 12.17392049987375,
+                  "coverage50": 0.6428571428571429,
+                  "width50": 13.349560585578491,
+                  "pinball": 3.057880332840686
+                },
+                "M3": {
+                  "mape": 11.915183567767528,
+                  "coverage50": 0.5357142857142857,
+                  "width50": 14.908813077923918,
+                  "pinball": 3.179518377825213
+                },
+                "M4": {
+                  "mape": 11.30136734636866,
+                  "coverage50": 0.5357142857142857,
+                  "width50": 12.75470709660164,
+                  "pinball": 3.003616359601047
+                }
+              }
+            },
+            {
+              "age": 7,
+              "complete": 57,
+              "censored": 0,
+              "n": 26,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 12.23378580918807,
+                  "coverage50": 0.38461538461538464,
+                  "width50": 0,
+                  "pinball": 4.632237025064066
+                },
+                "B1": {
+                  "mape": 11.756227654408907,
+                  "coverage50": 0.6538461538461539,
+                  "width50": 13.035556293501546,
+                  "pinball": 2.9613175989080878
+                },
+                "M3": {
+                  "mape": 11.430665410872775,
+                  "coverage50": 0.5384615384615384,
+                  "width50": 12.065459653806787,
+                  "pinball": 3.2798607391214762
+                },
+                "M4": {
+                  "mape": 10.872172775011723,
+                  "coverage50": 0.5769230769230769,
+                  "width50": 12.867589128451765,
+                  "pinball": 2.9928412103489204
+                }
+              }
+            },
+            {
+              "age": 14,
+              "complete": 26,
+              "censored": 0,
+              "n": 6,
+              "skipped": 11,
+              "metrics": {
+                "B0": {
+                  "mape": 19.281784332692876,
+                  "coverage50": 0.3333333333333333,
+                  "width50": 0,
+                  "pinball": 7.3595961887438905
+                },
+                "B1": {
+                  "mape": 18.79891468776731,
+                  "coverage50": 0.3333333333333333,
+                  "width50": 13.449123245751087,
+                  "pinball": 3.966820376356812
+                },
+                "M3": {
+                  "mape": 18.692019450925784,
+                  "coverage50": 0.3333333333333333,
+                  "width50": 12.385375088455428,
+                  "pinball": 4.221926499687006
+                },
+                "M4": {
+                  "mape": 15.983387583145914,
+                  "coverage50": 0.3333333333333333,
+                  "width50": 14.85374786017154,
+                  "pinball": 3.661829195826654
+                }
+              }
+            },
+            {
+              "age": 21,
+              "complete": 14,
+              "censored": 0,
+              "n": 0,
+              "skipped": 11,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 28,
+              "complete": 5,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            }
+          ]
+        },
+        "0.15": {
+          "completed": 70,
+          "censored": 2,
+          "prefix_ok": true,
+          "live": {
+            "age": 33,
+            "low": 2126000,
+            "start": "2026-10-23T15:00:00.000Z",
+            "reference": null
+          },
+          "evaluations": [
+            {
+              "age": 0,
+              "complete": 68,
+              "censored": 2,
+              "n": 17,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 20.82817433094988,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 7.23094830525349
+                },
+                "B1": {
+                  "mape": 15.885091110992919,
+                  "coverage50": 0.4117647058823529,
+                  "width50": 20.861976673900703,
+                  "pinball": 3.880118863837011
+                },
+                "M3": {
+                  "mape": 16.793697128903517,
+                  "coverage50": 0.35294117647058826,
+                  "width50": 22.866400361246683,
+                  "pinball": 4.221590223283052
+                },
+                "M4": {
+                  "mape": 15.885091110992919,
+                  "coverage50": 0.4117647058823529,
+                  "width50": 20.861976673900703,
+                  "pinball": 3.880118863837011
+                }
+              }
+            },
+            {
+              "age": 3,
+              "complete": 50,
+              "censored": 2,
+              "n": 17,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 14.10114864727295,
+                  "coverage50": 0.47058823529411764,
+                  "width50": 0,
+                  "pinball": 4.867510882064341
+                },
+                "B1": {
+                  "mape": 13.748005149852235,
+                  "coverage50": 0.7058823529411765,
+                  "width50": 17.55077422570318,
+                  "pinball": 3.5205727935284834
+                },
+                "M3": {
+                  "mape": 14.025989795901708,
+                  "coverage50": 0.6470588235294118,
+                  "width50": 19.266828544458292,
+                  "pinball": 3.491103000286728
+                },
+                "M4": {
+                  "mape": 14.150249079986942,
+                  "coverage50": 0.5882352941176471,
+                  "width50": 20.196028418480132,
+                  "pinball": 3.7832527680434502
+                }
+              }
+            },
+            {
+              "age": 7,
+              "complete": 39,
+              "censored": 2,
+              "n": 15,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 12.027807164640167,
+                  "coverage50": 0.6,
+                  "width50": 0,
+                  "pinball": 4.037624838580512
+                },
+                "B1": {
+                  "mape": 12.574401413735027,
+                  "coverage50": 0.8666666666666667,
+                  "width50": 28.468275702856886,
+                  "pinball": 3.5308608441120186
+                },
+                "M3": {
+                  "mape": 9.902507870851917,
+                  "coverage50": 0.6666666666666666,
+                  "width50": 25.336999686195835,
+                  "pinball": 3.0221467157096256
+                },
+                "M4": {
+                  "mape": 9.988356228196533,
+                  "coverage50": 0.8,
+                  "width50": 18.92815738484317,
+                  "pinball": 2.7918408087404334
+                }
+              }
+            },
+            {
+              "age": 14,
+              "complete": 26,
+              "censored": 2,
+              "n": 6,
+              "skipped": 2,
+              "metrics": {
+                "B0": {
+                  "mape": 23.394454788630316,
+                  "coverage50": 0.5,
+                  "width50": 0,
+                  "pinball": 7.253957421520141
+                },
+                "B1": {
+                  "mape": 23.418378233606393,
+                  "coverage50": 0.6666666666666666,
+                  "width50": 27.48716461818306,
+                  "pinball": 4.651742874838529
+                },
+                "M3": {
+                  "mape": 21.868476165117286,
+                  "coverage50": 0.8333333333333334,
+                  "width50": 24.66818968048794,
+                  "pinball": 5.24736781641266
+                },
+                "M4": {
+                  "mape": 23.394454788630316,
+                  "coverage50": 0.5,
+                  "width50": 8.471276506854165,
+                  "pinball": 4.742615516885388
+                }
+              }
+            },
+            {
+              "age": 21,
+              "complete": 13,
+              "censored": 2,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 28,
+              "complete": 8,
+              "censored": 1,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            }
+          ]
+        },
+        "0.2": {
+          "completed": 42,
+          "censored": 2,
+          "prefix_ok": true,
+          "live": {
+            "age": 27,
+            "low": 2126000,
+            "start": "2026-10-29T15:00:00.000Z",
+            "reference": null
+          },
+          "evaluations": [
+            {
+              "age": 0,
+              "complete": 41,
+              "censored": 2,
+              "n": 9,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 30.667073979138454,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 9.555199714149854
+                },
+                "B1": {
+                  "mape": 20.502408936692294,
+                  "coverage50": 0.4444444444444444,
+                  "width50": 20.522736936491256,
+                  "pinball": 4.664493970212471
+                },
+                "M3": {
+                  "mape": 22.531889838224767,
+                  "coverage50": 0.5555555555555556,
+                  "width50": 31.200049612876114,
+                  "pinball": 5.149061204769889
+                },
+                "M4": {
+                  "mape": 20.502408936692294,
+                  "coverage50": 0.4444444444444444,
+                  "width50": 20.522736936491256,
+                  "pinball": 4.664493970212471
+                }
+              }
+            },
+            {
+              "age": 3,
+              "complete": 34,
+              "censored": 2,
+              "n": 9,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 21.153155770816475,
+                  "coverage50": 0.3333333333333333,
+                  "width50": 0,
+                  "pinball": 6.49392181747295
+                },
+                "B1": {
+                  "mape": 17.33575816476886,
+                  "coverage50": 0.8888888888888888,
+                  "width50": 21.827084681439498,
+                  "pinball": 4.0814078198094235
+                },
+                "M3": {
+                  "mape": 17.425373709731424,
+                  "coverage50": 0.7777777777777778,
+                  "width50": 29.051465292682558,
+                  "pinball": 4.1373916703688955
+                },
+                "M4": {
+                  "mape": 18.86115005882252,
+                  "coverage50": 0.6666666666666666,
+                  "width50": 17.492730554191876,
+                  "pinball": 4.539039656226507
+                }
+              }
+            },
+            {
+              "age": 7,
+              "complete": 29,
+              "censored": 2,
+              "n": 9,
+              "skipped": 0,
+              "metrics": {
+                "B0": {
+                  "mape": 16.80966116850295,
+                  "coverage50": 0.5555555555555556,
+                  "width50": 0,
+                  "pinball": 4.672822551381848
+                },
+                "B1": {
+                  "mape": 17.080550949588204,
+                  "coverage50": 0.8888888888888888,
+                  "width50": 24.62638699629855,
+                  "pinball": 4.006302756168785
+                },
+                "M3": {
+                  "mape": 18.18506927907934,
+                  "coverage50": 0.8888888888888888,
+                  "width50": 28.234680199516507,
+                  "pinball": 3.7405762119078108
+                },
+                "M4": {
+                  "mape": 17.09842698693849,
+                  "coverage50": 0.8888888888888888,
+                  "width50": 17.83243412121459,
+                  "pinball": 3.9255630342604246
+                }
+              }
+            },
+            {
+              "age": 14,
+              "complete": 22,
+              "censored": 2,
+              "n": 2,
+              "skipped": 6,
+              "metrics": {
+                "B0": {
+                  "mape": 5.490890688259109,
+                  "coverage50": 0.5,
+                  "width50": 0,
+                  "pinball": 2.4737802097583224
+                },
+                "B1": {
+                  "mape": 5.611884172306603,
+                  "coverage50": 1,
+                  "width50": 15.28269467507165,
+                  "pinball": 2.243445830007669
+                },
+                "M3": {
+                  "mape": 0.944693989351042,
+                  "coverage50": 1,
+                  "width50": 24.0843179715239,
+                  "pinball": 1.9021535446730475
+                },
+                "M4": {
+                  "mape": 5.215058775481207,
+                  "coverage50": 1,
+                  "width50": 14.395231522925311,
+                  "pinball": 2.1613189121131096
+                }
+              }
+            },
+            {
+              "age": 21,
+              "complete": 14,
+              "censored": 1,
+              "n": 0,
+              "skipped": 5,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 28,
+              "complete": 13,
+              "censored": 0,
+              "n": 0,
+              "skipped": 5,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            }
+          ]
+        },
+        "0.3": {
+          "completed": 21,
+          "censored": 1,
+          "prefix_ok": true,
+          "live": {
+            "age": 12,
+            "low": 2126000,
+            "start": "2026-11-13T15:00:00.000Z",
+            "reference": null
+          },
+          "evaluations": [
+            {
+              "age": 0,
+              "complete": 20,
+              "censored": 1,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 3,
+              "complete": 18,
+              "censored": 1,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 7,
+              "complete": 16,
+              "censored": 1,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 14,
+              "complete": 14,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 21,
+              "complete": 14,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 28,
+              "complete": 13,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            }
+          ]
+        },
+        "0.4": {
+          "completed": 16,
+          "censored": 1,
+          "prefix_ok": true,
+          "live": {
+            "age": 1,
+            "low": 2217000,
+            "start": "2026-11-24T15:00:00.000Z",
+            "reference": null
+          },
+          "evaluations": [
+            {
+              "age": 0,
+              "complete": 16,
+              "censored": 1,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 3,
+              "complete": 14,
+              "censored": 0,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 7,
+              "complete": 13,
+              "censored": 0,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 14,
+              "complete": 13,
+              "censored": 0,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 21,
+              "complete": 12,
+              "censored": 0,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 28,
+              "complete": 10,
+              "censored": 0,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            }
+          ]
+        },
+        "0.5": {
+          "completed": 10,
+          "censored": 0,
+          "prefix_ok": true,
+          "live": null,
+          "evaluations": [
+            {
+              "age": 0,
+              "complete": 10,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 3,
+              "complete": 9,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 7,
+              "complete": 8,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 14,
+              "complete": 8,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 21,
+              "complete": 8,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            },
+            {
+              "age": 28,
+              "complete": 6,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {
+                "B0": null,
+                "B1": null,
+                "M3": null,
+                "M4": null
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
