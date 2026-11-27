@@ -1,0 +1,189 @@
+{
+  "version": "crash-regime-v2",
+  "date": "2026-11-28",
+  "status": "retrospective_research_only_no_promotion",
+  "source": {
+    "file": "Upbit_ETHKRW_1d.csv",
+    "sha256": "44991322abdc79e5fd7d440632155e0d0a7c7f5bcc3ed0c66368bcdca41fbf12",
+    "rows": 3346,
+    "first": "2017-09-25",
+    "last": "2026-11-25",
+    "gap_breaks": 1
+  },
+  "protocol": {
+    "trigger": "5/10/15% closing decline from running peak; reset after episode; 90-day warmup",
+    "target": "additional intraday decline >=25% or >=40% before 15% closing rebound from running trough; 120 calendar day cap; nonoverlap within scale, scales not independent",
+    "models": [
+      "B1 Laplace-smoothed frequency",
+      "volatility logistic",
+      "structure logistic",
+      "momentum-volume logistic",
+      "combined logistic"
+    ],
+    "features": [
+      "ATR14 SMA / close",
+      "14-day log-return volatility",
+      "90-day drawdown",
+      "60-day MA distance",
+      "14-day lower-low frequency",
+      "7-day return",
+      "7-day return acceleration",
+      "log relative volume"
+    ],
+    "fit": "train-only standardization; fixed regularization C=0.3; >=15 completed training episodes and >=3 each class",
+    "selection": "2020-2022; min 10 events and 5 positives/negatives, >=5% improvement in Brier and log loss",
+    "test": "2023 onward, reused historical period; min 30 events, >=5 positives/negatives, >=5% both losses and positive paired block bootstrap lower bound",
+    "warning_threshold": 0.5
+  },
+  "results": [
+    {
+      "trigger": 0.05,
+      "target": 0.25,
+      "completed": 85,
+      "positives": 20,
+      "censored": 1,
+      "test_n": 25,
+      "test_positive": 6,
+      "B1": 0.1848,
+      "best_test_model": "combined",
+      "best_test_brier": 0.1832,
+      "selected": "B1"
+    },
+    {
+      "trigger": 0.05,
+      "target": 0.4,
+      "completed": 85,
+      "positives": 10,
+      "censored": 1,
+      "test_n": 25,
+      "test_positive": 2,
+      "B1": 0.0776,
+      "best_test_model": "structure",
+      "best_test_brier": 0.0769,
+      "selected": "B1"
+    },
+    {
+      "trigger": 0.1,
+      "target": 0.25,
+      "completed": 63,
+      "positives": 18,
+      "censored": 1,
+      "test_n": 20,
+      "test_positive": 6,
+      "B1": 0.2138,
+      "best_test_model": "B1",
+      "best_test_brier": 0.2138,
+      "selected": "B1"
+    },
+    {
+      "trigger": 0.1,
+      "target": 0.4,
+      "completed": 63,
+      "positives": 10,
+      "censored": 1,
+      "test_n": 20,
+      "test_positive": 2,
+      "B1": 0.0986,
+      "best_test_model": "structure",
+      "best_test_brier": 0.0934,
+      "selected": "B1"
+    },
+    {
+      "trigger": 0.15,
+      "target": 0.25,
+      "completed": 44,
+      "positives": 15,
+      "censored": 1,
+      "test_n": 12,
+      "test_positive": 5,
+      "B1": 0.2557,
+      "best_test_model": "momentum_volume",
+      "best_test_brier": 0.2367,
+      "selected": "B1"
+    },
+    {
+      "trigger": 0.15,
+      "target": 0.4,
+      "completed": 44,
+      "positives": 8,
+      "censored": 1,
+      "test_n": 12,
+      "test_positive": 0,
+      "B1": 0.0531,
+      "best_test_model": "momentum_volume",
+      "best_test_brier": 0.0461,
+      "selected": "B1"
+    }
+  ],
+  "sensitivity": {
+    "description": "Post-hoc include censored episodes whose downside threshold already touched as known positive; unresolved remain excluded",
+    "test_rows": [
+      [
+        0.05,
+        0.25,
+        26,
+        7,
+        0.19983,
+        0.19964
+      ],
+      [
+        0.05,
+        0.4,
+        25,
+        2,
+        0.07763,
+        0.0769
+      ],
+      [
+        0.1,
+        0.25,
+        21,
+        7,
+        0.2275,
+        0.2275
+      ],
+      [
+        0.1,
+        0.4,
+        20,
+        2,
+        0.09865,
+        0.09342
+      ],
+      [
+        0.15,
+        0.25,
+        13,
+        6,
+        0.26874,
+        0.24414
+      ],
+      [
+        0.15,
+        0.4,
+        12,
+        0,
+        0.05313,
+        0.04613
+      ]
+    ],
+    "columns": [
+      "trigger",
+      "target",
+      "n",
+      "positives",
+      "B1_brier",
+      "lowest_test_brier_descriptive"
+    ],
+    "result": "No gate passed"
+  },
+  "limitations": [
+    "At fixed 0.5 threshold all candidates and baseline produced zero positive alerts in all test rows; no validated crash alarm.",
+    "Lowest test score is descriptive, not a selected model.",
+    "No independent prospective evaluation; repeated historical exploration.",
+    "Only archived Upbit daily data, no refreshed data, no hourly or independent USD replication.",
+    "Completed-only evaluation is subject to censoring; sensitivity included known positives only.",
+    "Summary metrics rounded; full executable scripts and event logs are separate chat artifacts, not committed here."
+  ],
+  "production": "unchanged; no new probability claims or forecast changes"
+}
