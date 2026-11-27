@@ -1,0 +1,28 @@
+{
+  "version": "bitstamp_volume_unit_audit_v1",
+  "blob": "bdef4c90c035a139a18ee85167365c11817545d9",
+  "rows": 3305,
+  "both_positive": 2305,
+  "only_eth_column_or_other": 1000,
+  "direct": {
+    "n": 2193,
+    "first": "2018-02-28",
+    "last": "2024-03-01"
+  },
+  "reversed": {
+    "n": 111,
+    "first": "2017-11-09",
+    "last": "2018-02-27"
+  },
+  "ambiguous": {
+    "n": 0,
+    "first": null,
+    "last": null
+  },
+  "neither": {
+    "n": 1,
+    "first": "2021-03-09",
+    "last": "2021-03-09"
+  },
+  "rule": "Implied volume-weighted price must lie in daily high-low range. Test both orientations only when both columns positive. This is unit plausibility evidence, not proof of source accuracy. No changes to raw or production."
+}
