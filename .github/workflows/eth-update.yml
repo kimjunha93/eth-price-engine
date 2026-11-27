@@ -25,6 +25,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -71,5 +73,10 @@ jobs:
           git add eth_data
           if ! git diff --cached --quiet; then
             git commit -m "Auto update ETH data"
-            git push
+            for attempt in 1 2 3; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
           fi
