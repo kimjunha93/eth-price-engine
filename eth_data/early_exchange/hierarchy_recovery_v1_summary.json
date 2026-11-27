@@ -1,0 +1,188 @@
+{
+  "version": "eth-hierarchy-v1-summary",
+  "source_code_sha256": "b299a75110bec4ce0492e3e0c540953c4925f2fe9b391115c62dbc22c937ed62",
+  "full_result_sha256": "4e2ca9ceeda50d3e009fdc56b76b54ed45e33a6de4b591620cd9f736051fccc9",
+  "design": {
+    "small": "5% hourly directional change low, confirmed by hourly close",
+    "targets": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "target": "recovery from confirmed low vs revisit low; already touched through confirmation skipped; dual touch ambiguous",
+    "features": "independent larger scale directional state at confirmation",
+    "cap_hours": 2160,
+    "selection": "2020-22 internal, minimum 20 evaluation cases, minimum 5% Brier improvement, state subgroup min 15 else baseline; train only previously ended outcomes; Laplace smoothing, 3 outcomes",
+    "evaluation": "2023 onward previously reused, exploratory",
+    "policy": "No cross-market pooling; missing hour and ambiguous/end events excluded from fit and scoring, counted separately. Containment is retrospective geometry of confirmed low-high small legs inside same-segment confirmed large legs; not predictive input. No production promotion."
+  },
+  "markets": {
+    "Upbit": {
+      "rows": 80137,
+      "gap_transitions": 67,
+      "sha256": "dd49b032fbb9d00da52bc027a4ee4ffaedd71bcbdbe7059a02645800786ace0a",
+      "last_closed_unix": 1795705200,
+      "scales": [
+        {
+          "p": 0.1,
+          "total": 630,
+          "skipped": 69,
+          "outcomes": {
+            "up": 365,
+            "retest": 242,
+            "gap": 22,
+            "end": 1
+          },
+          "containment": {
+            "inside_up": 360,
+            "inside_down": 186,
+            "outside_or_unconfirmed": 188,
+            "total": 734
+          },
+          "internal": {
+            "n": 253,
+            "brier_base": 0.4853072128936746,
+            "brier_state": 0.4839314806921405,
+            "correct_base": 150,
+            "correct_state": 150
+          },
+          "evaluation": {
+            "n": 144,
+            "brier_base": 0.4908135418613575,
+            "brier_state": 0.4976720851382496,
+            "correct_base": 83,
+            "correct_state": 83
+          },
+          "chosen": "base"
+        },
+        {
+          "p": 0.2,
+          "total": 480,
+          "skipped": 5,
+          "outcomes": {
+            "up": 145,
+            "retest": 291,
+            "gap": 43,
+            "end": 1
+          },
+          "containment": {
+            "inside_up": 111,
+            "inside_down": 107,
+            "outside_or_unconfirmed": 516,
+            "total": 734
+          },
+          "internal": {
+            "n": 177,
+            "brier_base": 0.4678659947580626,
+            "brier_state": 0.4736983805368145,
+            "correct_base": 112,
+            "correct_state": 112
+          },
+          "evaluation": {
+            "n": 95,
+            "brier_base": 0.40782056511343057,
+            "brier_state": 0.410840374809506,
+            "correct_base": 69,
+            "correct_state": 69
+          },
+          "chosen": "base"
+        },
+        {
+          "p": 0.3,
+          "total": 363,
+          "skipped": 2,
+          "outcomes": {
+            "up": 71,
+            "retest": 244,
+            "gap": 47,
+            "end": 1
+          },
+          "containment": {
+            "inside_up": 40,
+            "inside_down": 68,
+            "outside_or_unconfirmed": 626,
+            "total": 734
+          },
+          "internal": {
+            "n": 131,
+            "brier_base": 0.37913181340692365,
+            "brier_state": 0.3873777940089891,
+            "correct_base": 98,
+            "correct_state": 98
+          },
+          "evaluation": {
+            "n": 67,
+            "brier_base": 0.2557255344639066,
+            "brier_state": 0.2617187987861213,
+            "correct_base": 58,
+            "correct_state": 58
+          },
+          "chosen": "base"
+        }
+      ]
+    },
+    "Kraken": {
+      "rows": 17647,
+      "gap_transitions": 831,
+      "sha256": "8949688211777944dbd3652496ea1fdfdf3609ca86c840fb941aad0de103ebc4",
+      "last_closed_unix": 1514764800,
+      "scales": [
+        {
+          "p": 0.1,
+          "total": 298,
+          "skipped": 103,
+          "outcomes": {
+            "up": 175,
+            "retest": 101,
+            "gap": 21,
+            "ambiguous": 1
+          },
+          "containment": {
+            "inside_up": 205,
+            "inside_down": 96,
+            "outside_or_unconfirmed": 87,
+            "total": 388
+          }
+        },
+        {
+          "p": 0.2,
+          "total": 286,
+          "skipped": 14,
+          "outcomes": {
+            "up": 94,
+            "retest": 153,
+            "gap": 38,
+            "end": 1
+          },
+          "containment": {
+            "inside_up": 136,
+            "inside_down": 110,
+            "outside_or_unconfirmed": 142,
+            "total": 388
+          }
+        },
+        {
+          "p": 0.3,
+          "total": 227,
+          "skipped": 5,
+          "outcomes": {
+            "up": 53,
+            "retest": 129,
+            "gap": 43,
+            "ambiguous": 1,
+            "end": 1
+          },
+          "containment": {
+            "inside_up": 104,
+            "inside_down": 103,
+            "outside_or_unconfirmed": 181,
+            "total": 388
+          }
+        }
+      ],
+      "note": "Descriptive only, no post-2020 observations"
+    }
+  },
+  "prefix_check": "passed for pivots and completed events before 2023-01-01; trivial for early Kraken archive",
+  "status": "exploratory, retain existing model"
+}
