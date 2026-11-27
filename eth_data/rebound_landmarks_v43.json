@@ -1,0 +1,4111 @@
+{
+  "version": "v43-rebound-landmarks-1",
+  "rules": {
+    "ks": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    "ages": [
+      0,
+      3,
+      7,
+      14,
+      21,
+      28,
+      42
+    ],
+    "qs": [
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      0.9
+    ],
+    "cutoff": "2023-01-01",
+    "min_train": 20,
+    "neighbors": 12,
+    "label": "peak AFTER low-confirmation close, starting at that close, ending on first close down k from running high; confirmation bar high excluded; no same-bar ordering assumed; gap/end censored",
+    "benchmark": "current close and observed peak",
+    "status": "exploratory only, evaluation interval previously reused; no model promotion or calibrated probabilities",
+    "feature_names": [
+      "prior drawdown log",
+      "rebound log",
+      "distance from observed high log",
+      "ATR14/close",
+      "7d log return",
+      "relative volume21"
+    ]
+  },
+  "markets": {
+    "Upbit_ETHKRW": {
+      "rows": 3347,
+      "invalid": 0,
+      "duplicate": 0,
+      "gaps": 1,
+      "first": "2017-09-25T00:00:00.000Z",
+      "last": "2026-11-26T00:00:00.000Z",
+      "scales": {
+        "0.05": {
+          "completed": 356,
+          "censored": 1,
+          "prefix_ok": true,
+          "live": null,
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 354,
+              "censored": 1,
+              "n": 110,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 6.8141402715322155,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 4.060224615766161,
+                  "interval_score50": 32.481796926129284
+                },
+                "B1_observed_high": {
+                  "mape": 6.8141402715322155,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 4.060224615766161,
+                  "interval_score50": 32.481796926129284
+                },
+                "B2_historical": {
+                  "mape": 5.26146831907949,
+                  "coverage50": 0.5272727272727272,
+                  "width50": 12.206637362242185,
+                  "pinball": 2.3851765474813886,
+                  "interval_score50": 21.580239095067444
+                },
+                "M3_neighbors": {
+                  "mape": 5.788871519434954,
+                  "coverage50": 0.5454545454545454,
+                  "width50": 11.405237379675269,
+                  "pinball": 2.4909861098413013,
+                  "interval_score50": 22.679308517364657
+                },
+                "M4_drawdown_regime": {
+                  "mape": 5.244718603460453,
+                  "coverage50": 0.5545454545454546,
+                  "width50": 12.350635699965617,
+                  "pinball": 2.38578278891608,
+                  "interval_score50": 21.61071764194632
+                }
+              }
+            },
+            {
+              "age": 3,
+              "completed": 184,
+              "censored": 0,
+              "n": 66,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 7.376101613148196,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 4.287996781709922,
+                  "interval_score50": 34.30397425367938
+                },
+                "B1_observed_high": {
+                  "mape": 5.229469778234073,
+                  "coverage50": 0.2878787878787879,
+                  "width50": 0,
+                  "pinball": 3.161586942435991,
+                  "interval_score50": 25.292695539487926
+                },
+                "B2_historical": {
+                  "mape": 4.911296117076847,
+                  "coverage50": 0.8333333333333334,
+                  "width50": 10.855848793837593,
+                  "pinball": 2.238236748140986,
+                  "interval_score50": 20.077930875548336
+                },
+                "M3_neighbors": {
+                  "mape": 5.486977964334882,
+                  "coverage50": 0.5606060606060606,
+                  "width50": 9.059063799223622,
+                  "pinball": 2.4328543607209947,
+                  "interval_score50": 21.988109141631075
+                },
+                "M4_drawdown_regime": {
+                  "mape": 4.919117412786986,
+                  "coverage50": 0.8333333333333334,
+                  "width50": 10.956529624683006,
+                  "pinball": 2.239701045062336,
+                  "interval_score50": 20.08655882167408
+                }
+              }
+            },
+            {
+              "age": 7,
+              "completed": 83,
+              "censored": 0,
+              "n": 33,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 8.109539697405237,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 4.884734860711276,
+                  "interval_score50": 39.07787888569021
+                },
+                "B1_observed_high": {
+                  "mape": 5.700786424239979,
+                  "coverage50": 0.2727272727272727,
+                  "width50": 0,
+                  "pinball": 3.6105407022306806,
+                  "interval_score50": 28.884325617845445
+                },
+                "B2_historical": {
+                  "mape": 5.380314804207933,
+                  "coverage50": 0.7575757575757576,
+                  "width50": 8.589701870371005,
+                  "pinball": 2.7638988546000434,
+                  "interval_score50": 24.217510369203918
+                },
+                "M3_neighbors": {
+                  "mape": 6.210265355774143,
+                  "coverage50": 0.6666666666666666,
+                  "width50": 10.372564610642128,
+                  "pinball": 2.991932191179896,
+                  "interval_score50": 25.142201588473615
+                },
+                "M4_drawdown_regime": {
+                  "mape": 5.380314804207933,
+                  "coverage50": 0.7575757575757576,
+                  "width50": 8.589701870371005,
+                  "pinball": 2.7638988546000434,
+                  "interval_score50": 24.217510369203918
+                }
+              }
+            },
+            {
+              "age": 14,
+              "completed": 21,
+              "censored": 0,
+              "n": 1,
+              "skipped": 11,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 3.8125496425734706,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 1.9062748212867353,
+                  "interval_score50": 15.250198570293882
+                },
+                "B1_observed_high": {
+                  "mape": 0,
+                  "coverage50": 1,
+                  "width50": 0,
+                  "pinball": 0,
+                  "interval_score50": 0
+                },
+                "B2_historical": {
+                  "mape": 3.4556480750032925,
+                  "coverage50": 1,
+                  "width50": 23.156852332844945,
+                  "pinball": 2.108642041464108,
+                  "interval_score50": 23.156852332844945
+                },
+                "M3_neighbors": {
+                  "mape": 1.5065502183406076,
+                  "coverage50": 1,
+                  "width50": 10.148627205810069,
+                  "pinball": 1.1116691145707944,
+                  "interval_score50": 10.148627205810069
+                },
+                "M4_drawdown_regime": {
+                  "mape": 3.4556480750032925,
+                  "coverage50": 1,
+                  "width50": 23.156852332844945,
+                  "pinball": 2.108642041464108,
+                  "interval_score50": 23.156852332844945
+                }
+              }
+            },
+            {
+              "age": 21,
+              "completed": 5,
+              "censored": 0,
+              "n": 0,
+              "skipped": 3,
+              "metrics": {}
+            },
+            {
+              "age": 28,
+              "completed": 3,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {}
+            },
+            {
+              "age": 42,
+              "completed": 0,
+              "censored": 0,
+              "n": 0,
+              "skipped": 0,
+              "metrics": {}
+            }
+          ]
+        },
+        "0.1": {
+          "completed": 141,
+          "censored": 1,
+          "prefix_ok": true,
+          "live": {
+            "age": 4,
+            "observed_high": 2505000,
+            "confirmed_low": 2125000,
+            "reference": {
+              "landmark_age": 3,
+              "asof": "2026-11-26T00:00:00.000Z",
+              "train": 119,
+              "observed_high": 2505000,
+              "confirmed_low": 2125000,
+              "prices": {
+                "B0_current_close": [
+                  2298000,
+                  2298000,
+                  2298000,
+                  2298000,
+                  2298000
+                ],
+                "B1_observed_high": [
+                  2505000,
+                  2505000,
+                  2505000,
+                  2505000,
+                  2505000
+                ],
+                "B2_historical": [
+                  2505000,
+                  2505000,
+                  2618315.69,
+                  2984941.25,
+                  3569347.81
+                ],
+                "M3_neighbors": [
+                  2505000,
+                  2505000,
+                  2505000,
+                  2555649.48,
+                  2690700.69
+                ],
+                "M4_drawdown_regime": [
+                  2505000,
+                  2505000,
+                  2618315.69,
+                  2984941.25,
+                  3569347.81
+                ]
+              }
+            }
+          },
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 141,
+              "censored": 1,
+              "n": 39,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 11.55254940542397,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 7.822981210769693,
+                  "interval_score50": 62.58384968615754
+                },
+                "B1_observed_high": {
+                  "mape": 11.55254940542397,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 7.822981210769693,
+                  "interval_score50": 62.58384968615754
+                },
+                "B2_historical": {
+                  "mape": 9.672909803399161,
+                  "coverage50": 0.4358974358974359,
+                  "width50": 19.459495742499517,
+                  "pinball": 4.8068784056735465,
+                  "interval_score50": 44.107707597399305
+                },
+                "M3_neighbors": {
+                  "mape": 13.569122246213563,
+                  "coverage50": 0.4358974358974359,
+                  "width50": 22.64837408983687,
+                  "pinball": 5.598802213588686,
+                  "interval_score50": 50.02189300341235
+                },
+                "M4_drawdown_regime": {
+                  "mape": 9.76780801156984,
+                  "coverage50": 0.41025641025641024,
+                  "width50": 19.10391159734551,
+                  "pinball": 4.717943374280294,
+                  "interval_score50": 43.55041921255123
+                }
+              }
+            },
+            {
+              "age": 3,
+              "completed": 119,
+              "censored": 1,
+              "n": 37,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 12.789074560029347,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 8.116830395936713,
+                  "interval_score50": 64.9346431674937
+                },
+                "B1_observed_high": {
+                  "mape": 8.962540206734628,
+                  "coverage50": 0.2702702702702703,
+                  "width50": 0,
+                  "pinball": 6.079633554734648,
+                  "interval_score50": 48.63706843787718
+                },
+                "B2_historical": {
+                  "mape": 8.712466107027312,
+                  "coverage50": 0.7567567567567568,
+                  "width50": 17.678587751797373,
+                  "pinball": 4.323517417870045,
+                  "interval_score50": 38.88893986159086
+                },
+                "M3_neighbors": {
+                  "mape": 10.052903832330628,
+                  "coverage50": 0.5945945945945946,
+                  "width50": 20.237812368624123,
+                  "pinball": 4.461348664219641,
+                  "interval_score50": 41.12501889257504
+                },
+                "M4_drawdown_regime": {
+                  "mape": 8.851663135710952,
+                  "coverage50": 0.7837837837837838,
+                  "width50": 18.24632336374799,
+                  "pinball": 4.324140970647167,
+                  "interval_score50": 38.900974086946825
+                }
+              }
+            },
+            {
+              "age": 7,
+              "completed": 83,
+              "censored": 0,
+              "n": 30,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 11.974628602848432,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 7.631910403987027,
+                  "interval_score50": 61.05528323189622
+                },
+                "B1_observed_high": {
+                  "mape": 8.323346067703516,
+                  "coverage50": 0.3333333333333333,
+                  "width50": 0,
+                  "pinball": 5.664136870977322,
+                  "interval_score50": 45.31309496781858
+                },
+                "B2_historical": {
+                  "mape": 8.370364488869402,
+                  "coverage50": 0.8333333333333334,
+                  "width50": 20.534969916703513,
+                  "pinball": 4.355755718655287,
+                  "interval_score50": 40.75616584760243
+                },
+                "M3_neighbors": {
+                  "mape": 9.567685225139963,
+                  "coverage50": 0.6,
+                  "width50": 21.04624653156727,
+                  "pinball": 4.9953783982754265,
+                  "interval_score50": 43.68394915389715
+                },
+                "M4_drawdown_regime": {
+                  "mape": 8.374648388873162,
+                  "coverage50": 0.8333333333333334,
+                  "width50": 21.90454806587353,
+                  "pinball": 4.393135754709034,
+                  "interval_score50": 41.37910550608621
+                }
+              }
+            },
+            {
+              "age": 14,
+              "completed": 49,
+              "censored": 0,
+              "n": 23,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 12.243917790440253,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 7.698118605780644,
+                  "interval_score50": 61.584948846245155
+                },
+                "B1_observed_high": {
+                  "mape": 8.251698955327724,
+                  "coverage50": 0.43478260869565216,
+                  "width50": 0,
+                  "pinball": 5.598570764743448,
+                  "interval_score50": 44.78856611794757
+                },
+                "B2_historical": {
+                  "mape": 9.458748070276268,
+                  "coverage50": 0.782608695652174,
+                  "width50": 24.791113451462,
+                  "pinball": 4.3932480182537486,
+                  "interval_score50": 42.96623943084524
+                },
+                "M3_neighbors": {
+                  "mape": 10.716011681183481,
+                  "coverage50": 0.5217391304347826,
+                  "width50": 23.389176853292973,
+                  "pinball": 4.314614899400418,
+                  "interval_score50": 40.62682979204689
+                },
+                "M4_drawdown_regime": {
+                  "mape": 9.879640324905976,
+                  "coverage50": 0.782608695652174,
+                  "width50": 26.678179170635413,
+                  "pinball": 4.448186763131672,
+                  "interval_score50": 43.18803242946408
+                }
+              }
+            },
+            {
+              "age": 21,
+              "completed": 25,
+              "censored": 0,
+              "n": 5,
+              "skipped": 9,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 14.319102965740779,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 8.666382655354846,
+                  "interval_score50": 69.33106124283877
+                },
+                "B1_observed_high": {
+                  "mape": 9.215096064365733,
+                  "coverage50": 0.6,
+                  "width50": 0,
+                  "pinball": 5.992154119275442,
+                  "interval_score50": 47.93723295420354
+                },
+                "B2_historical": {
+                  "mape": 13.30619113564229,
+                  "coverage50": 0.6,
+                  "width50": 24.710240175040457,
+                  "pinball": 4.009834298894681,
+                  "interval_score50": 32.547466101420596
+                },
+                "M3_neighbors": {
+                  "mape": 9.407941166658516,
+                  "coverage50": 0.8,
+                  "width50": 20.109371923396658,
+                  "pinball": 3.605320039290118,
+                  "interval_score50": 32.774353814756005
+                },
+                "M4_drawdown_regime": {
+                  "mape": 13.30619113564229,
+                  "coverage50": 0.6,
+                  "width50": 24.710240175040457,
+                  "pinball": 4.009834298894681,
+                  "interval_score50": 32.547466101420596
+                }
+              }
+            },
+            {
+              "age": 28,
+              "completed": 16,
+              "censored": 0,
+              "n": 0,
+              "skipped": 9,
+              "metrics": {}
+            },
+            {
+              "age": 42,
+              "completed": 10,
+              "censored": 0,
+              "n": 0,
+              "skipped": 5,
+              "metrics": {}
+            }
+          ]
+        },
+        "0.15": {
+          "completed": 76,
+          "censored": 0,
+          "prefix_ok": true,
+          "live": null,
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 76,
+              "censored": 0,
+              "n": 18,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 15.90483398206976,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 12.492866208161132,
+                  "interval_score50": 99.94292966528906
+                },
+                "B1_observed_high": {
+                  "mape": 15.90483398206976,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 12.492866208161132,
+                  "interval_score50": 99.94292966528906
+                },
+                "B2_historical": {
+                  "mape": 17.306078379224562,
+                  "coverage50": 0.3888888888888889,
+                  "width50": 42.71955261703224,
+                  "pinball": 8.12887575361095,
+                  "interval_score50": 72.88137626857774
+                },
+                "M3_neighbors": {
+                  "mape": 22.56794507277782,
+                  "coverage50": 0.2777777777777778,
+                  "width50": 38.13407650935096,
+                  "pinball": 9.030170706814761,
+                  "interval_score50": 80.17020293421169
+                },
+                "M4_drawdown_regime": {
+                  "mape": 17.174086543837095,
+                  "coverage50": 0.3333333333333333,
+                  "width50": 40.396315098852156,
+                  "pinball": 7.688476989894097,
+                  "interval_score50": 69.17689733881372
+                }
+              }
+            },
+            {
+              "age": 3,
+              "completed": 70,
+              "censored": 0,
+              "n": 17,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 17.62251807042269,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 13.009808180942528,
+                  "interval_score50": 104.07846544754022
+                },
+                "B1_observed_high": {
+                  "mape": 14.334152684654041,
+                  "coverage50": 0.23529411764705882,
+                  "width50": 0,
+                  "pinball": 11.153220636205152,
+                  "interval_score50": 89.22576508964121
+                },
+                "B2_historical": {
+                  "mape": 15.337038742592954,
+                  "coverage50": 0.7058823529411765,
+                  "width50": 37.19765751668878,
+                  "pinball": 7.268270566796527,
+                  "interval_score50": 66.96025854018505
+                },
+                "M3_neighbors": {
+                  "mape": 17.526089512354204,
+                  "coverage50": 0.29411764705882354,
+                  "width50": 26.58756558260732,
+                  "pinball": 8.005520843588785,
+                  "interval_score50": 70.18479587063787
+                },
+                "M4_drawdown_regime": {
+                  "mape": 15.677082842141541,
+                  "coverage50": 0.6470588235294118,
+                  "width50": 34.7879885674182,
+                  "pinball": 7.313968587435167,
+                  "interval_score50": 65.71529335022734
+                }
+              }
+            },
+            {
+              "age": 7,
+              "completed": 59,
+              "censored": 0,
+              "n": 16,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 18.500195148569105,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 13.520664141884566,
+                  "interval_score50": 108.16531313507653
+                },
+                "B1_observed_high": {
+                  "mape": 14.202292067632062,
+                  "coverage50": 0.4375,
+                  "width50": 0,
+                  "pinball": 11.152842000391438,
+                  "interval_score50": 89.2227360031315
+                },
+                "B2_historical": {
+                  "mape": 15.264057773601946,
+                  "coverage50": 0.625,
+                  "width50": 31.216399018001027,
+                  "pinball": 7.42581571047187,
+                  "interval_score50": 70.22070832459049
+                },
+                "M3_neighbors": {
+                  "mape": 19.20175305801439,
+                  "coverage50": 0.5625,
+                  "width50": 32.435481461233294,
+                  "pinball": 7.542386382371947,
+                  "interval_score50": 69.88746903638102
+                },
+                "M4_drawdown_regime": {
+                  "mape": 15.025317549830124,
+                  "coverage50": 0.6875,
+                  "width50": 32.80146523945879,
+                  "pinball": 7.49585421447854,
+                  "interval_score50": 68.88460762366141
+                }
+              }
+            },
+            {
+              "age": 14,
+              "completed": 39,
+              "censored": 0,
+              "n": 13,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 21.39760894832919,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 14.983596044612039,
+                  "interval_score50": 119.86876835689631
+                },
+                "B1_observed_high": {
+                  "mape": 15.875526859786799,
+                  "coverage50": 0.46153846153846156,
+                  "width50": 0,
+                  "pinball": 11.83878441804696,
+                  "interval_score50": 94.71027534437567
+                },
+                "B2_historical": {
+                  "mape": 18.00584442669915,
+                  "coverage50": 0.6923076923076923,
+                  "width50": 35.68016215633291,
+                  "pinball": 6.925434011494267,
+                  "interval_score50": 62.42730591024934
+                },
+                "M3_neighbors": {
+                  "mape": 17.39716502641668,
+                  "coverage50": 0.5384615384615384,
+                  "width50": 32.36448563409629,
+                  "pinball": 7.162736903602868,
+                  "interval_score50": 66.53966763145644
+                },
+                "M4_drawdown_regime": {
+                  "mape": 18.11540838603016,
+                  "coverage50": 0.6153846153846154,
+                  "width50": 38.31037560312542,
+                  "pinball": 6.626832334522584,
+                  "interval_score50": 59.04464587071236
+                }
+              }
+            },
+            {
+              "age": 21,
+              "completed": 31,
+              "censored": 0,
+              "n": 10,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 21.69434749323042,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 14.602790819477502,
+                  "interval_score50": 116.82232655582004
+                },
+                "B1_observed_high": {
+                  "mape": 16.839857407934765,
+                  "coverage50": 0.3,
+                  "width50": 0,
+                  "pinball": 11.783511221343687,
+                  "interval_score50": 94.2680897707495
+                },
+                "B2_historical": {
+                  "mape": 13.887844539856937,
+                  "coverage50": 0.8,
+                  "width50": 31.57032294118006,
+                  "pinball": 5.949566273477134,
+                  "interval_score50": 56.201007898896776
+                },
+                "M3_neighbors": {
+                  "mape": 11.678371773905516,
+                  "coverage50": 0.8,
+                  "width50": 31.61611370901495,
+                  "pinball": 6.187623379346341,
+                  "interval_score50": 60.704649774790084
+                },
+                "M4_drawdown_regime": {
+                  "mape": 13.837845985135768,
+                  "coverage50": 0.8,
+                  "width50": 34.60281312019317,
+                  "pinball": 5.868637004917657,
+                  "interval_score50": 54.18528127650872
+                }
+              }
+            },
+            {
+              "age": 28,
+              "completed": 23,
+              "censored": 0,
+              "n": 3,
+              "skipped": 6,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 24.049446554056185,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 15.427951782150203,
+                  "interval_score50": 123.42361425720163
+                },
+                "B1_observed_high": {
+                  "mape": 20.494728562878603,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 13.277261022575905,
+                  "interval_score50": 106.21808818060724
+                },
+                "B2_historical": {
+                  "mape": 10.562821276489169,
+                  "coverage50": 1,
+                  "width50": 37.1777120664726,
+                  "pinball": 4.967675065601188,
+                  "interval_score50": 46.74174192148231
+                },
+                "M3_neighbors": {
+                  "mape": 6.070230454710194,
+                  "coverage50": 1,
+                  "width50": 31.400286672670955,
+                  "pinball": 3.7628331925979874,
+                  "interval_score50": 39.37625565122716
+                },
+                "M4_drawdown_regime": {
+                  "mape": 10.562821276489169,
+                  "coverage50": 1,
+                  "width50": 37.434281675160776,
+                  "pinball": 5.014176542918097,
+                  "interval_score50": 47.074296167168846
+                }
+              }
+            },
+            {
+              "age": 42,
+              "completed": 15,
+              "censored": 0,
+              "n": 0,
+              "skipped": 9,
+              "metrics": {}
+            }
+          ]
+        },
+        "0.2": {
+          "completed": 47,
+          "censored": 0,
+          "prefix_ok": true,
+          "live": null,
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 47,
+              "censored": 0,
+              "n": 12,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 21.81438855712382,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 18.313698253118385,
+                  "interval_score50": 146.50958602494708
+                },
+                "B1_observed_high": {
+                  "mape": 21.81438855712382,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 18.313698253118385,
+                  "interval_score50": 146.50958602494708
+                },
+                "B2_historical": {
+                  "mape": 21.47017463036903,
+                  "coverage50": 0.5,
+                  "width50": 58.06744506598178,
+                  "pinball": 10.711101051779401,
+                  "interval_score50": 99.15659170479915
+                },
+                "M3_neighbors": {
+                  "mape": 25.789010929609727,
+                  "coverage50": 0.25,
+                  "width50": 51.06551736179579,
+                  "pinball": 11.015710785169114,
+                  "interval_score50": 104.46432495755819
+                },
+                "M4_drawdown_regime": {
+                  "mape": 22.10203761112857,
+                  "coverage50": 0.5833333333333334,
+                  "width50": 53.03925263358079,
+                  "pinball": 9.861020493194696,
+                  "interval_score50": 85.95939463902833
+                }
+              }
+            },
+            {
+              "age": 3,
+              "completed": 45,
+              "censored": 0,
+              "n": 12,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 22.86069147614151,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 17.917598267927833,
+                  "interval_score50": 143.34078614342266
+                },
+                "B1_observed_high": {
+                  "mape": 18.455078639471324,
+                  "coverage50": 0.25,
+                  "width50": 0,
+                  "pinball": 15.445802012053404,
+                  "interval_score50": 123.56641609642723
+                },
+                "B2_historical": {
+                  "mape": 20.24875030200538,
+                  "coverage50": 0.8333333333333334,
+                  "width50": 51.61698661002185,
+                  "pinball": 9.783555428765114,
+                  "interval_score50": 85.83212925369185
+                },
+                "M3_neighbors": {
+                  "mape": 17.388160305555868,
+                  "coverage50": 0.6666666666666666,
+                  "width50": 50.01066389175755,
+                  "pinball": 8.859443006384335,
+                  "interval_score50": 78.61713044498983
+                },
+                "M4_drawdown_regime": {
+                  "mape": 21.257302531411906,
+                  "coverage50": 0.75,
+                  "width50": 44.96787094044459,
+                  "pinball": 9.380923630344354,
+                  "interval_score50": 80.80202347598971
+                }
+              }
+            },
+            {
+              "age": 7,
+              "completed": 39,
+              "censored": 0,
+              "n": 11,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 23.426072702690487,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 18.178713144016175,
+                  "interval_score50": 145.4297051521294
+                },
+                "B1_observed_high": {
+                  "mape": 18.95540159733126,
+                  "coverage50": 0.36363636363636365,
+                  "width50": 0,
+                  "pinball": 15.587955025274796,
+                  "interval_score50": 124.70364020219837
+                },
+                "B2_historical": {
+                  "mape": 20.32067112630149,
+                  "coverage50": 0.9090909090909091,
+                  "width50": 49.14314524995976,
+                  "pinball": 9.599011802209743,
+                  "interval_score50": 82.03422082600426
+                },
+                "M3_neighbors": {
+                  "mape": 18.15391644472285,
+                  "coverage50": 0.6363636363636364,
+                  "width50": 45.85567316907599,
+                  "pinball": 9.100234789870573,
+                  "interval_score50": 79.99141570562621
+                },
+                "M4_drawdown_regime": {
+                  "mape": 20.42223770039342,
+                  "coverage50": 0.6363636363636364,
+                  "width50": 52.080696987759666,
+                  "pinball": 9.495393928873817,
+                  "interval_score50": 82.71011918687721
+                }
+              }
+            },
+            {
+              "age": 14,
+              "completed": 32,
+              "censored": 0,
+              "n": 11,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 23.97905442122495,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 18.145415029219496,
+                  "interval_score50": 145.16332023375597
+                },
+                "B1_observed_high": {
+                  "mape": 18.0200826053861,
+                  "coverage50": 0.36363636363636365,
+                  "width50": 0,
+                  "pinball": 14.682121741121529,
+                  "interval_score50": 117.45697392897223
+                },
+                "B2_historical": {
+                  "mape": 19.69815341647615,
+                  "coverage50": 0.9090909090909091,
+                  "width50": 47.93111922511492,
+                  "pinball": 9.461397908940544,
+                  "interval_score50": 81.5591050198293
+                },
+                "M3_neighbors": {
+                  "mape": 16.30649106678852,
+                  "coverage50": 0.8181818181818182,
+                  "width50": 67.68373920212565,
+                  "pinball": 9.627038892652504,
+                  "interval_score50": 91.50389873430905
+                },
+                "M4_drawdown_regime": {
+                  "mape": 17.833926603679895,
+                  "coverage50": 0.9090909090909091,
+                  "width50": 44.788222134806105,
+                  "pinball": 8.941524400501088,
+                  "interval_score50": 77.84809271779264
+                }
+              }
+            },
+            {
+              "age": 21,
+              "completed": 27,
+              "censored": 0,
+              "n": 7,
+              "skipped": 3,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 17.64522601185511,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 10.557399999795246,
+                  "interval_score50": 84.45919999836197
+                },
+                "B1_observed_high": {
+                  "mape": 10.83406876418884,
+                  "coverage50": 0.2857142857142857,
+                  "width50": 0,
+                  "pinball": 6.945945709512569,
+                  "interval_score50": 55.567565676100536
+                },
+                "B2_historical": {
+                  "mape": 13.61805802999828,
+                  "coverage50": 1,
+                  "width50": 56.379860032336055,
+                  "pinball": 7.414495399688969,
+                  "interval_score50": 62.88105752582282
+                },
+                "M3_neighbors": {
+                  "mape": 10.889740461295334,
+                  "coverage50": 0.8571428571428571,
+                  "width50": 70.3841960783776,
+                  "pinball": 8.40730325677959,
+                  "interval_score50": 86.68093191187856
+                },
+                "M4_drawdown_regime": {
+                  "mape": 9.151116747202881,
+                  "coverage50": 1,
+                  "width50": 54.37375847277498,
+                  "pinball": 6.728675295470914,
+                  "interval_score50": 60.5654541478019
+                }
+              }
+            },
+            {
+              "age": 28,
+              "completed": 22,
+              "censored": 0,
+              "n": 2,
+              "skipped": 7,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 19.582269053700646,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 12.19393630738719,
+                  "interval_score50": 97.55149045909752
+                },
+                "B1_observed_high": {
+                  "mape": 13.338634401942612,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 8.558140419020342,
+                  "interval_score50": 68.46512335216275
+                },
+                "B2_historical": {
+                  "mape": 12.727375044014094,
+                  "coverage50": 1,
+                  "width50": 49.87380528592606,
+                  "pinball": 6.924357410824703,
+                  "interval_score50": 56.6919629956154
+                },
+                "M3_neighbors": {
+                  "mape": 15.650233928689978,
+                  "coverage50": 0.5,
+                  "width50": 74.65946651548423,
+                  "pinball": 8.576944197420362,
+                  "interval_score50": 86.71823893958651
+                },
+                "M4_drawdown_regime": {
+                  "mape": 12.727375044014094,
+                  "coverage50": 1,
+                  "width50": 49.87380528592606,
+                  "pinball": 6.924357410824703,
+                  "interval_score50": 56.6919629956154
+                }
+              }
+            },
+            {
+              "age": 42,
+              "completed": 19,
+              "censored": 0,
+              "n": 0,
+              "skipped": 9,
+              "metrics": {}
+            }
+          ]
+        },
+        "0.3": {
+          "completed": 22,
+          "censored": 0,
+          "prefix_ok": true,
+          "live": null,
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 22,
+              "censored": 0,
+              "n": 2,
+              "skipped": 3,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 11.11862144670529,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 6.59435499603171,
+                  "interval_score50": 52.75483996825368
+                },
+                "B1_observed_high": {
+                  "mape": 11.11862144670529,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 6.59435499603171,
+                  "interval_score50": 52.75483996825368
+                },
+                "B2_historical": {
+                  "mape": 36.77030105816573,
+                  "coverage50": 0.5,
+                  "width50": 102.04214810914341,
+                  "pinball": 14.571789165914556,
+                  "interval_score50": 131.60895620479855
+                },
+                "M3_neighbors": {
+                  "mape": 35.37877326504302,
+                  "coverage50": 0.5,
+                  "width50": 98.24977630286175,
+                  "pinball": 14.541021903015308,
+                  "interval_score50": 136.65397040693864
+                },
+                "M4_drawdown_regime": {
+                  "mape": 30.33420279327238,
+                  "coverage50": 0.5,
+                  "width50": 97.50705020065635,
+                  "pinball": 13.686941243954656,
+                  "interval_score50": 126.66964692846211
+                }
+              }
+            },
+            {
+              "age": 3,
+              "completed": 21,
+              "censored": 0,
+              "n": 1,
+              "skipped": 4,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 12.205454064072018,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 6.617858168245766,
+                  "interval_score50": 52.942865345966126
+                },
+                "B1_observed_high": {
+                  "mape": 7.783955520254171,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 4.220499569336777,
+                  "interval_score50": 33.76399655469422
+                },
+                "B2_historical": {
+                  "mape": 35.55093900508424,
+                  "coverage50": 1,
+                  "width50": 118.0470373611603,
+                  "pinball": 14.114122435612074,
+                  "interval_score50": 128.0113867680455
+                },
+                "M3_neighbors": {
+                  "mape": 65.86567828386882,
+                  "coverage50": 0,
+                  "width50": 117.07880446246983,
+                  "pinball": 22.057696551028485,
+                  "interval_score50": 210.03755624914953
+                },
+                "M4_drawdown_regime": {
+                  "mape": 21.445237149665285,
+                  "coverage50": 1,
+                  "width50": 96.5181259366488,
+                  "pinball": 11.478057717081768,
+                  "interval_score50": 104.66522011562517
+                }
+              }
+            },
+            {
+              "age": 7,
+              "completed": 21,
+              "censored": 0,
+              "n": 1,
+              "skipped": 4,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 7.757479481069629,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 4.19170243204578,
+                  "interval_score50": 33.53361945636624
+                },
+                "B1_observed_high": {
+                  "mape": 7.4662430500397114,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 4.034334763948499,
+                  "interval_score50": 32.274678111587995
+                },
+                "B2_historical": {
+                  "mape": 19.56480862496295,
+                  "coverage50": 1,
+                  "width50": 108.24091310056714,
+                  "pinball": 11.540000319608252,
+                  "interval_score50": 116.97451467263006
+                },
+                "M3_neighbors": {
+                  "mape": 38.98937713674078,
+                  "coverage50": 0,
+                  "width50": 101.76115345263716,
+                  "pinball": 13.220446325413219,
+                  "interval_score50": 112.14828464751415
+                },
+                "M4_drawdown_regime": {
+                  "mape": 11.554794851811545,
+                  "coverage50": 1,
+                  "width50": 86.86497654782141,
+                  "pinball": 9.56494129995679,
+                  "interval_score50": 93.87382444095036
+                }
+              }
+            },
+            {
+              "age": 14,
+              "completed": 20,
+              "censored": 0,
+              "n": 0,
+              "skipped": 5,
+              "metrics": {}
+            },
+            {
+              "age": 21,
+              "completed": 19,
+              "censored": 0,
+              "n": 0,
+              "skipped": 5,
+              "metrics": {}
+            },
+            {
+              "age": 28,
+              "completed": 18,
+              "censored": 0,
+              "n": 0,
+              "skipped": 5,
+              "metrics": {}
+            },
+            {
+              "age": 42,
+              "completed": 16,
+              "censored": 0,
+              "n": 0,
+              "skipped": 5,
+              "metrics": {}
+            }
+          ]
+        },
+        "0.4": {
+          "completed": 14,
+          "censored": 0,
+          "prefix_ok": true,
+          "live": null,
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 14,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            },
+            {
+              "age": 3,
+              "completed": 14,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            },
+            {
+              "age": 7,
+              "completed": 14,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            },
+            {
+              "age": 14,
+              "completed": 14,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            },
+            {
+              "age": 21,
+              "completed": 13,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            },
+            {
+              "age": 28,
+              "completed": 13,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            },
+            {
+              "age": 42,
+              "completed": 12,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            }
+          ]
+        },
+        "0.5": {
+          "completed": 8,
+          "censored": 1,
+          "prefix_ok": true,
+          "live": {
+            "age": 97,
+            "observed_high": 3777000,
+            "confirmed_low": 2300000,
+            "reference": null
+          },
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 8,
+              "censored": 1,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            },
+            {
+              "age": 3,
+              "completed": 8,
+              "censored": 1,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            },
+            {
+              "age": 7,
+              "completed": 8,
+              "censored": 1,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            },
+            {
+              "age": 14,
+              "completed": 8,
+              "censored": 1,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            },
+            {
+              "age": 21,
+              "completed": 8,
+              "censored": 1,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            },
+            {
+              "age": 28,
+              "completed": 8,
+              "censored": 1,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            },
+            {
+              "age": 42,
+              "completed": 7,
+              "censored": 1,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            }
+          ]
+        }
+      }
+    },
+    "Bitstamp_ETHUSD": {
+      "rows": 3305,
+      "invalid": 0,
+      "duplicate": 0,
+      "gaps": 0,
+      "first": "2017-11-09T00:00:00.000Z",
+      "last": "2026-11-26T00:00:00.000Z",
+      "scales": {
+        "0.05": {
+          "completed": 432,
+          "censored": 1,
+          "prefix_ok": true,
+          "live": {
+            "age": 1,
+            "observed_high": 1727.72,
+            "confirmed_low": 1606.59,
+            "reference": {
+              "landmark_age": 0,
+              "asof": "2026-11-26T00:00:00.000Z",
+              "train": 432,
+              "observed_high": 1691,
+              "confirmed_low": 1606.59,
+              "prices": {
+                "B0_current_close": [
+                  1691,
+                  1691,
+                  1691,
+                  1691,
+                  1691
+                ],
+                "B1_observed_high": [
+                  1691,
+                  1691,
+                  1691,
+                  1691,
+                  1691
+                ],
+                "B2_historical": [
+                  1703.92,
+                  1728.25,
+                  1778.7,
+                  1893.55,
+                  2075.26
+                ],
+                "M3_neighbors": [
+                  1705.06,
+                  1707.89,
+                  1744.52,
+                  1831.55,
+                  1866.69
+                ],
+                "M4_drawdown_regime": [
+                  1703.92,
+                  1727.93,
+                  1777.45,
+                  1892.13,
+                  2071.49
+                ]
+              }
+            }
+          },
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 432,
+              "censored": 1,
+              "n": 128,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 6.784250657836014,
+                  "coverage50": 0.015625,
+                  "width50": 0,
+                  "pinball": 4.021771449077485,
+                  "interval_score50": 32.17417159261988
+                },
+                "B1_observed_high": {
+                  "mape": 6.784250657836014,
+                  "coverage50": 0.015625,
+                  "width50": 0,
+                  "pinball": 4.021771449077485,
+                  "interval_score50": 32.17417159261988
+                },
+                "B2_historical": {
+                  "mape": 4.901431371421579,
+                  "coverage50": 0.5859375,
+                  "width50": 9.361257262937764,
+                  "pinball": 2.2458361146530454,
+                  "interval_score50": 19.932903509707998
+                },
+                "M3_neighbors": {
+                  "mape": 5.181852698124903,
+                  "coverage50": 0.4921875,
+                  "width50": 9.25288121589709,
+                  "pinball": 2.3164301950740533,
+                  "interval_score50": 20.739652749059694
+                },
+                "M4_drawdown_regime": {
+                  "mape": 4.886229727487868,
+                  "coverage50": 0.59375,
+                  "width50": 9.250637910336449,
+                  "pinball": 2.24236091687786,
+                  "interval_score50": 19.904284671153686
+                }
+              }
+            },
+            {
+              "age": 3,
+              "completed": 193,
+              "censored": 0,
+              "n": 75,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 7.267593505829033,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 4.265295269764849,
+                  "interval_score50": 34.12236215811878
+                },
+                "B1_observed_high": {
+                  "mape": 5.001153929904071,
+                  "coverage50": 0.3466666666666667,
+                  "width50": 0,
+                  "pinball": 3.0793882639350487,
+                  "interval_score50": 24.63510611148039
+                },
+                "B2_historical": {
+                  "mape": 4.722863244263121,
+                  "coverage50": 0.7866666666666666,
+                  "width50": 6.391158219589506,
+                  "pinball": 2.3197483110432615,
+                  "interval_score50": 20.66134932994606
+                },
+                "M3_neighbors": {
+                  "mape": 4.919669643232849,
+                  "coverage50": 0.6266666666666667,
+                  "width50": 7.54278904329177,
+                  "pinball": 2.4357326564576485,
+                  "interval_score50": 21.810998331025168
+                },
+                "M4_drawdown_regime": {
+                  "mape": 4.722863244263121,
+                  "coverage50": 0.7866666666666666,
+                  "width50": 6.391158219589506,
+                  "pinball": 2.3197483110432615,
+                  "interval_score50": 20.66134932994606
+                }
+              }
+            },
+            {
+              "age": 7,
+              "completed": 62,
+              "censored": 0,
+              "n": 34,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 8.97628430620492,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 5.443997686269369,
+                  "interval_score50": 43.55198149015495
+                },
+                "B1_observed_high": {
+                  "mape": 6.401502304474078,
+                  "coverage50": 0.35294117647058826,
+                  "width50": 0,
+                  "pinball": 4.073752718933547,
+                  "interval_score50": 32.59002175146838
+                },
+                "B2_historical": {
+                  "mape": 6.21225072527089,
+                  "coverage50": 0.7352941176470589,
+                  "width50": 8.236018097878885,
+                  "pinball": 3.082670433897267,
+                  "interval_score50": 27.125025306033695
+                },
+                "M3_neighbors": {
+                  "mape": 6.216839486624244,
+                  "coverage50": 0.7058823529411765,
+                  "width50": 9.418983517775684,
+                  "pinball": 3.1974505539854987,
+                  "interval_score50": 27.762518891612512
+                },
+                "M4_drawdown_regime": {
+                  "mape": 6.21225072527089,
+                  "coverage50": 0.7352941176470589,
+                  "width50": 8.236018097878885,
+                  "pinball": 3.082670433897267,
+                  "interval_score50": 27.125025306033695
+                }
+              }
+            },
+            {
+              "age": 14,
+              "completed": 17,
+              "censored": 0,
+              "n": 0,
+              "skipped": 12,
+              "metrics": {}
+            },
+            {
+              "age": 21,
+              "completed": 5,
+              "censored": 0,
+              "n": 0,
+              "skipped": 5,
+              "metrics": {}
+            },
+            {
+              "age": 28,
+              "completed": 4,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            },
+            {
+              "age": 42,
+              "completed": 0,
+              "censored": 0,
+              "n": 0,
+              "skipped": 0,
+              "metrics": {}
+            }
+          ]
+        },
+        "0.1": {
+          "completed": 165,
+          "censored": 1,
+          "prefix_ok": true,
+          "live": {
+            "age": 4,
+            "observed_high": 1842.94,
+            "confirmed_low": 1536,
+            "reference": {
+              "landmark_age": 3,
+              "asof": "2026-11-26T00:00:00.000Z",
+              "train": 136,
+              "observed_high": 1842.94,
+              "confirmed_low": 1536,
+              "prices": {
+                "B0_current_close": [
+                  1691,
+                  1691,
+                  1691,
+                  1691,
+                  1691
+                ],
+                "B1_observed_high": [
+                  1842.94,
+                  1842.94,
+                  1842.94,
+                  1842.94,
+                  1842.94
+                ],
+                "B2_historical": [
+                  1842.94,
+                  1842.94,
+                  1931.49,
+                  2150.84,
+                  2580.93
+                ],
+                "M3_neighbors": [
+                  1842.94,
+                  1842.94,
+                  1842.94,
+                  1900.5,
+                  1983.89
+                ],
+                "M4_drawdown_regime": [
+                  1842.94,
+                  1842.94,
+                  1842.94,
+                  1907.88,
+                  1979.34
+                ]
+              }
+            }
+          },
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 165,
+              "censored": 1,
+              "n": 48,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 10.948970913692314,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 7.300028035874843,
+                  "interval_score50": 58.40022428699874
+                },
+                "B1_observed_high": {
+                  "mape": 10.948970913692314,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 7.300028035874843,
+                  "interval_score50": 58.40022428699874
+                },
+                "B2_historical": {
+                  "mape": 9.036880125931651,
+                  "coverage50": 0.4375,
+                  "width50": 15.853674744335878,
+                  "pinball": 4.522225391746345,
+                  "interval_score50": 41.36718758340215
+                },
+                "M3_neighbors": {
+                  "mape": 10.942675971247342,
+                  "coverage50": 0.4583333333333333,
+                  "width50": 22.728866931975105,
+                  "pinball": 4.895178347958779,
+                  "interval_score50": 44.57763708858457
+                },
+                "M4_drawdown_regime": {
+                  "mape": 9.177270385090443,
+                  "coverage50": 0.4375,
+                  "width50": 16.107500291091704,
+                  "pinball": 4.528626434251568,
+                  "interval_score50": 41.322180505344015
+                }
+              }
+            },
+            {
+              "age": 3,
+              "completed": 136,
+              "censored": 1,
+              "n": 44,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 11.865636429930255,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 7.4583596921124276,
+                  "interval_score50": 59.66687753689942
+                },
+                "B1_observed_high": {
+                  "mape": 8.073859327682747,
+                  "coverage50": 0.38636363636363635,
+                  "width50": 0,
+                  "pinball": 5.4609780125643255,
+                  "interval_score50": 43.687824100514604
+                },
+                "B2_historical": {
+                  "mape": 7.935954724258424,
+                  "coverage50": 0.7954545454545454,
+                  "width50": 16.21666602046888,
+                  "pinball": 4.050086224392398,
+                  "interval_score50": 36.49928331798686
+                },
+                "M3_neighbors": {
+                  "mape": 8.481248231643526,
+                  "coverage50": 0.5681818181818182,
+                  "width50": 18.65678574189985,
+                  "pinball": 4.196884662497131,
+                  "interval_score50": 38.57479406391806
+                },
+                "M4_drawdown_regime": {
+                  "mape": 8.12228805715434,
+                  "coverage50": 0.7954545454545454,
+                  "width50": 17.382858541684897,
+                  "pinball": 4.091689466010342,
+                  "interval_score50": 37.118832696859116
+                }
+              }
+            },
+            {
+              "age": 7,
+              "completed": 93,
+              "censored": 0,
+              "n": 36,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 11.696736729871242,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 7.3680541251202145,
+                  "interval_score50": 58.944433000961716
+                },
+                "B1_observed_high": {
+                  "mape": 7.543348924750859,
+                  "coverage50": 0.4166666666666667,
+                  "width50": 0,
+                  "pinball": 5.158738822599501,
+                  "interval_score50": 41.26991058079601
+                },
+                "B2_historical": {
+                  "mape": 7.812029370501206,
+                  "coverage50": 0.8611111111111112,
+                  "width50": 17.886177336672034,
+                  "pinball": 4.021994150289904,
+                  "interval_score50": 37.59868059127322
+                },
+                "M3_neighbors": {
+                  "mape": 9.9676710184149,
+                  "coverage50": 0.7777777777777778,
+                  "width50": 25.05779545065797,
+                  "pinball": 4.873790640551495,
+                  "interval_score50": 43.649635478255966
+                },
+                "M4_drawdown_regime": {
+                  "mape": 8.024187152317666,
+                  "coverage50": 0.8611111111111112,
+                  "width50": 18.574954613559836,
+                  "pinball": 4.060928778459955,
+                  "interval_score50": 37.94661869819641
+                }
+              }
+            },
+            {
+              "age": 14,
+              "completed": 49,
+              "censored": 0,
+              "n": 23,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 11.771123479642567,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 7.4797303024636665,
+                  "interval_score50": 59.83784241970933
+                },
+                "B1_observed_high": {
+                  "mape": 8.03640164134275,
+                  "coverage50": 0.391304347826087,
+                  "width50": 0,
+                  "pinball": 5.50378807110154,
+                  "interval_score50": 44.03030456881232
+                },
+                "B2_historical": {
+                  "mape": 10.622773704449742,
+                  "coverage50": 0.6956521739130435,
+                  "width50": 18.956298561616308,
+                  "pinball": 4.429445625685486,
+                  "interval_score50": 40.70022138159664
+                },
+                "M3_neighbors": {
+                  "mape": 11.942369405051553,
+                  "coverage50": 0.4782608695652174,
+                  "width50": 19.269296192879782,
+                  "pinball": 4.91603335246499,
+                  "interval_score50": 46.70659521223357
+                },
+                "M4_drawdown_regime": {
+                  "mape": 11.318487189623296,
+                  "coverage50": 0.6086956521739131,
+                  "width50": 19.064224133560845,
+                  "pinball": 4.479027677949721,
+                  "interval_score50": 40.778738313428846
+                }
+              }
+            },
+            {
+              "age": 21,
+              "completed": 25,
+              "censored": 0,
+              "n": 5,
+              "skipped": 6,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 19.464345458567152,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 13.24923998237423,
+                  "interval_score50": 105.99391985899383
+                },
+                "B1_observed_high": {
+                  "mape": 16.363240567779474,
+                  "coverage50": 0.4,
+                  "width50": 0,
+                  "pinball": 11.432851471116777,
+                  "interval_score50": 91.46281176893422
+                },
+                "B2_historical": {
+                  "mape": 16.52208770359792,
+                  "coverage50": 0.4,
+                  "width50": 18.702441980616467,
+                  "pinball": 7.187835795143679,
+                  "interval_score50": 60.536434932062676
+                },
+                "M3_neighbors": {
+                  "mape": 17.94244413725419,
+                  "coverage50": 0,
+                  "width50": 18.524682729688042,
+                  "pinball": 7.465430996499487,
+                  "interval_score50": 61.19191258515987
+                },
+                "M4_drawdown_regime": {
+                  "mape": 16.672309135067618,
+                  "coverage50": 0.2,
+                  "width50": 18.865884313445765,
+                  "pinball": 7.1532213837322045,
+                  "interval_score50": 60.16711194412587
+                }
+              }
+            },
+            {
+              "age": 28,
+              "completed": 16,
+              "censored": 0,
+              "n": 0,
+              "skipped": 9,
+              "metrics": {}
+            },
+            {
+              "age": 42,
+              "completed": 7,
+              "censored": 0,
+              "n": 0,
+              "skipped": 5,
+              "metrics": {}
+            }
+          ]
+        },
+        "0.15": {
+          "completed": 91,
+          "censored": 0,
+          "prefix_ok": true,
+          "live": null,
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 91,
+              "censored": 0,
+              "n": 23,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 15.688826849553324,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 11.920774109256278,
+                  "interval_score50": 95.36619287405023
+                },
+                "B1_observed_high": {
+                  "mape": 15.688826849553324,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 11.920774109256278,
+                  "interval_score50": 95.36619287405023
+                },
+                "B2_historical": {
+                  "mape": 14.0472839549116,
+                  "coverage50": 0.43478260869565216,
+                  "width50": 27.69020675063107,
+                  "pinball": 7.326325960799858,
+                  "interval_score50": 69.03739527110301
+                },
+                "M3_neighbors": {
+                  "mape": 21.31129147198759,
+                  "coverage50": 0.391304347826087,
+                  "width50": 40.261751341505054,
+                  "pinball": 8.819156585535001,
+                  "interval_score50": 80.36029757044575
+                },
+                "M4_drawdown_regime": {
+                  "mape": 14.137472706476817,
+                  "coverage50": 0.391304347826087,
+                  "width50": 39.16954314876467,
+                  "pinball": 7.43766003802944,
+                  "interval_score50": 69.61307137650539
+                }
+              }
+            },
+            {
+              "age": 3,
+              "completed": 82,
+              "censored": 0,
+              "n": 23,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 16.47587062219669,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 11.780407418758292,
+                  "interval_score50": 94.24325935006634
+                },
+                "B1_observed_high": {
+                  "mape": 12.571959790220115,
+                  "coverage50": 0.21739130434782608,
+                  "width50": 0,
+                  "pinball": 9.615061447832774,
+                  "interval_score50": 76.9204915826622
+                },
+                "B2_historical": {
+                  "mape": 12.637764106913233,
+                  "coverage50": 0.7391304347826086,
+                  "width50": 29.285269672785347,
+                  "pinball": 6.787475402611369,
+                  "interval_score50": 63.71186708091543
+                },
+                "M3_neighbors": {
+                  "mape": 16.522283906142103,
+                  "coverage50": 0.6086956521739131,
+                  "width50": 32.77905362153603,
+                  "pinball": 7.913861753996508,
+                  "interval_score50": 69.15748573002666
+                },
+                "M4_drawdown_regime": {
+                  "mape": 12.76283875342348,
+                  "coverage50": 0.6521739130434783,
+                  "width50": 39.33350434429597,
+                  "pinball": 6.872541749610958,
+                  "interval_score50": 64.88891565442609
+                }
+              }
+            },
+            {
+              "age": 7,
+              "completed": 72,
+              "censored": 0,
+              "n": 21,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 16.7158581995348,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 12.019159482770059,
+                  "interval_score50": 96.15327586216047
+                },
+                "B1_observed_high": {
+                  "mape": 12.564257234590828,
+                  "coverage50": 0.2857142857142857,
+                  "width50": 0,
+                  "pinball": 9.68217596908154,
+                  "interval_score50": 77.45740775265232
+                },
+                "B2_historical": {
+                  "mape": 12.617705855566694,
+                  "coverage50": 0.7142857142857143,
+                  "width50": 29.20712362827829,
+                  "pinball": 6.8335181242644865,
+                  "interval_score50": 63.9103018438712
+                },
+                "M3_neighbors": {
+                  "mape": 13.739064264943895,
+                  "coverage50": 0.5714285714285714,
+                  "width50": 28.268955138078212,
+                  "pinball": 7.369573360188879,
+                  "interval_score50": 68.02825047569996
+                },
+                "M4_drawdown_regime": {
+                  "mape": 13.280357634995545,
+                  "coverage50": 0.7619047619047619,
+                  "width50": 36.693239869587764,
+                  "pinball": 7.041360438885381,
+                  "interval_score50": 65.15792286687358
+                }
+              }
+            },
+            {
+              "age": 14,
+              "completed": 48,
+              "censored": 0,
+              "n": 19,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 17.25832441144385,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 12.129683841633817,
+                  "interval_score50": 97.03747073307053
+                },
+                "B1_observed_high": {
+                  "mape": 12.297713743804955,
+                  "coverage50": 0.47368421052631576,
+                  "width50": 0,
+                  "pinball": 9.347172960253824,
+                  "interval_score50": 74.77738368203059
+                },
+                "B2_historical": {
+                  "mape": 14.98403649511908,
+                  "coverage50": 0.6842105263157895,
+                  "width50": 28.039570751337585,
+                  "pinball": 6.6210885416949665,
+                  "interval_score50": 61.54449193849984
+                },
+                "M3_neighbors": {
+                  "mape": 13.86324808517828,
+                  "coverage50": 0.5263157894736842,
+                  "width50": 22.005678557877378,
+                  "pinball": 7.400006649079816,
+                  "interval_score50": 64.20515563226432
+                },
+                "M4_drawdown_regime": {
+                  "mape": 16.296048141828226,
+                  "coverage50": 0.47368421052631576,
+                  "width50": 29.771443064907963,
+                  "pinball": 6.925815979362795,
+                  "interval_score50": 61.179808063490256
+                }
+              }
+            },
+            {
+              "age": 21,
+              "completed": 31,
+              "censored": 0,
+              "n": 11,
+              "skipped": 2,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 22.882697238840198,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 15.662957058667065,
+                  "interval_score50": 125.30365646933652
+                },
+                "B1_observed_high": {
+                  "mape": 16.868154678121886,
+                  "coverage50": 0.36363636363636365,
+                  "width50": 0,
+                  "pinball": 12.302621037637419,
+                  "interval_score50": 98.42096830109935
+                },
+                "B2_historical": {
+                  "mape": 16.24138763842832,
+                  "coverage50": 0.6363636363636364,
+                  "width50": 25.286917562794986,
+                  "pinball": 6.602868831998987,
+                  "interval_score50": 65.35172231470293
+                },
+                "M3_neighbors": {
+                  "mape": 14.233310307336302,
+                  "coverage50": 0.7272727272727273,
+                  "width50": 33.88993356497614,
+                  "pinball": 6.038302935985811,
+                  "interval_score50": 53.37124433169412
+                },
+                "M4_drawdown_regime": {
+                  "mape": 16.614291753448644,
+                  "coverage50": 0.6363636363636364,
+                  "width50": 28.418058776615535,
+                  "pinball": 6.560735235570595,
+                  "interval_score50": 62.63692286696908
+                }
+              }
+            },
+            {
+              "age": 28,
+              "completed": 23,
+              "censored": 0,
+              "n": 3,
+              "skipped": 9,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 19.37286917479326,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 13.128270372578777,
+                  "interval_score50": 105.02616298063022
+                },
+                "B1_observed_high": {
+                  "mape": 14.031815867689685,
+                  "coverage50": 0.3333333333333333,
+                  "width50": 0,
+                  "pinball": 10.110027447825468,
+                  "interval_score50": 80.88021958260374
+                },
+                "B2_historical": {
+                  "mape": 17.689581518925852,
+                  "coverage50": 0.3333333333333333,
+                  "width50": 28.283834212505184,
+                  "pinball": 6.567680329352945,
+                  "interval_score50": 62.88232917248831
+                },
+                "M3_neighbors": {
+                  "mape": 21.810482589964398,
+                  "coverage50": 0.3333333333333333,
+                  "width50": 32.211703409584864,
+                  "pinball": 7.4914471562689116,
+                  "interval_score50": 72.62564251599524
+                },
+                "M4_drawdown_regime": {
+                  "mape": 18.963565375595383,
+                  "coverage50": 0.3333333333333333,
+                  "width50": 31.46905877642533,
+                  "pinball": 7.004729093308789,
+                  "interval_score50": 67.95646551797708
+                }
+              }
+            },
+            {
+              "age": 42,
+              "completed": 17,
+              "censored": 0,
+              "n": 0,
+              "skipped": 10,
+              "metrics": {}
+            }
+          ]
+        },
+        "0.2": {
+          "completed": 54,
+          "censored": 0,
+          "prefix_ok": true,
+          "live": null,
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 54,
+              "censored": 0,
+              "n": 15,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 17.044637423233233,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 14.523620740349854,
+                  "interval_score50": 116.18896592279883
+                },
+                "B1_observed_high": {
+                  "mape": 17.044637423233233,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 14.523620740349854,
+                  "interval_score50": 116.18896592279883
+                },
+                "B2_historical": {
+                  "mape": 20.91037182699317,
+                  "coverage50": 0.3333333333333333,
+                  "width50": 50.10151877110315,
+                  "pinball": 10.08391177713211,
+                  "interval_score50": 92.5136243329427
+                },
+                "M3_neighbors": {
+                  "mape": 24.002834829968513,
+                  "coverage50": 0.26666666666666666,
+                  "width50": 50.66813731547428,
+                  "pinball": 11.214581134068482,
+                  "interval_score50": 100.98928262033957
+                },
+                "M4_drawdown_regime": {
+                  "mape": 27.296244189690746,
+                  "coverage50": 0.2,
+                  "width50": 46.15035107854775,
+                  "pinball": 10.876524620450615,
+                  "interval_score50": 97.92675278716504
+                }
+              }
+            },
+            {
+              "age": 3,
+              "completed": 52,
+              "censored": 0,
+              "n": 15,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 20.68669040767031,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 16.288514223720053,
+                  "interval_score50": 130.30811378976043
+                },
+                "B1_observed_high": {
+                  "mape": 15.777636131432077,
+                  "coverage50": 0.26666666666666666,
+                  "width50": 0,
+                  "pinball": 13.560043020771133,
+                  "interval_score50": 108.48034416616906
+                },
+                "B2_historical": {
+                  "mape": 18.041304199579493,
+                  "coverage50": 0.6,
+                  "width50": 45.675439310975236,
+                  "pinball": 9.467168492889533,
+                  "interval_score50": 88.45149745550393
+                },
+                "M3_neighbors": {
+                  "mape": 21.32200871181972,
+                  "coverage50": 0.5333333333333333,
+                  "width50": 54.728212326103865,
+                  "pinball": 10.427631759460885,
+                  "interval_score50": 94.2486328676361
+                },
+                "M4_drawdown_regime": {
+                  "mape": 20.994820440504622,
+                  "coverage50": 0.4,
+                  "width50": 42.69560938470461,
+                  "pinball": 9.896585623213378,
+                  "interval_score50": 91.74458860759047
+                }
+              }
+            },
+            {
+              "age": 7,
+              "completed": 49,
+              "censored": 0,
+              "n": 14,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 21.76350823287664,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 16.80129585649782,
+                  "interval_score50": 134.41036685198256
+                },
+                "B1_observed_high": {
+                  "mape": 15.800505371927793,
+                  "coverage50": 0.42857142857142855,
+                  "width50": 0,
+                  "pinball": 13.498569342034546,
+                  "interval_score50": 107.98855473627637
+                },
+                "B2_historical": {
+                  "mape": 17.173913690548407,
+                  "coverage50": 0.7142857142857143,
+                  "width50": 44.13702573678351,
+                  "pinball": 9.249826152932929,
+                  "interval_score50": 85.77925639636132
+                },
+                "M3_neighbors": {
+                  "mape": 21.792705798703903,
+                  "coverage50": 0.42857142857142855,
+                  "width50": 46.42578925586215,
+                  "pinball": 9.17273012707557,
+                  "interval_score50": 78.97010193331353
+                },
+                "M4_drawdown_regime": {
+                  "mape": 19.313479179653946,
+                  "coverage50": 0.5714285714285714,
+                  "width50": 38.00769211670023,
+                  "pinball": 9.638555305471263,
+                  "interval_score50": 86.77852456827203
+                }
+              }
+            },
+            {
+              "age": 14,
+              "completed": 36,
+              "censored": 0,
+              "n": 13,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 21.40381974757497,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 15.30485684232623,
+                  "interval_score50": 122.43885473860983
+                },
+                "B1_observed_high": {
+                  "mape": 14.920805852698539,
+                  "coverage50": 0.46153846153846156,
+                  "width50": 0,
+                  "pinball": 11.715326206102013,
+                  "interval_score50": 93.7226096488161
+                },
+                "B2_historical": {
+                  "mape": 18.27102256092242,
+                  "coverage50": 0.8461538461538461,
+                  "width50": 49.56883222017143,
+                  "pinball": 8.04625557299993,
+                  "interval_score50": 68.61370996479933
+                },
+                "M3_neighbors": {
+                  "mape": 22.1167489899759,
+                  "coverage50": 0.8461538461538461,
+                  "width50": 59.90253997609803,
+                  "pinball": 8.874923057559112,
+                  "interval_score50": 75.26529619022327
+                },
+                "M4_drawdown_regime": {
+                  "mape": 18.283854278387192,
+                  "coverage50": 0.5384615384615384,
+                  "width50": 46.57006709038308,
+                  "pinball": 8.199607123060098,
+                  "interval_score50": 73.30896527356444
+                }
+              }
+            },
+            {
+              "age": 21,
+              "completed": 29,
+              "censored": 0,
+              "n": 9,
+              "skipped": 3,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 21.910796445916038,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 14.48570086497382,
+                  "interval_score50": 115.88560691979056
+                },
+                "B1_observed_high": {
+                  "mape": 14.914568073393788,
+                  "coverage50": 0.4444444444444444,
+                  "width50": 0,
+                  "pinball": 10.672409039275445,
+                  "interval_score50": 85.37927231420358
+                },
+                "B2_historical": {
+                  "mape": 16.08542062168984,
+                  "coverage50": 1,
+                  "width50": 53.29133431432879,
+                  "pinball": 7.525344889134873,
+                  "interval_score50": 62.42296937288633
+                },
+                "M3_neighbors": {
+                  "mape": 18.12203857846251,
+                  "coverage50": 0.8888888888888888,
+                  "width50": 68.3246945421595,
+                  "pinball": 8.617965746554926,
+                  "interval_score50": 84.02390529824781
+                },
+                "M4_drawdown_regime": {
+                  "mape": 15.825663758960275,
+                  "coverage50": 1,
+                  "width50": 53.653556518782324,
+                  "pinball": 7.47714271289819,
+                  "interval_score50": 62.905168322388754
+                }
+              }
+            },
+            {
+              "age": 28,
+              "completed": 24,
+              "censored": 0,
+              "n": 4,
+              "skipped": 6,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 22.314847498828698,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 13.912730325991237,
+                  "interval_score50": 111.3018426079299
+                },
+                "B1_observed_high": {
+                  "mape": 15.1799124966742,
+                  "coverage50": 0.25,
+                  "width50": 0,
+                  "pinball": 9.949911142736845,
+                  "interval_score50": 79.59928914189476
+                },
+                "B2_historical": {
+                  "mape": 13.782444430633364,
+                  "coverage50": 1,
+                  "width50": 53.80778548755313,
+                  "pinball": 7.031242222581857,
+                  "interval_score50": 63.376021640661456
+                },
+                "M3_neighbors": {
+                  "mape": 16.994460686344922,
+                  "coverage50": 1,
+                  "width50": 68.45407813988949,
+                  "pinball": 8.331946006599976,
+                  "interval_score50": 79.9674845224609
+                },
+                "M4_drawdown_regime": {
+                  "mape": 14.528989555099185,
+                  "coverage50": 1,
+                  "width50": 51.57600468850299,
+                  "pinball": 6.874402645927323,
+                  "interval_score50": 60.569488613499125
+                }
+              }
+            },
+            {
+              "age": 42,
+              "completed": 20,
+              "censored": 0,
+              "n": 0,
+              "skipped": 9,
+              "metrics": {}
+            }
+          ]
+        },
+        "0.3": {
+          "completed": 22,
+          "censored": 0,
+          "prefix_ok": true,
+          "live": null,
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 22,
+              "censored": 0,
+              "n": 2,
+              "skipped": 4,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 12.17717042059584,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 7.361392965039693,
+                  "interval_score50": 58.891143720317544
+                },
+                "B1_observed_high": {
+                  "mape": 12.17717042059584,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 7.361392965039693,
+                  "interval_score50": 58.891143720317544
+                },
+                "B2_historical": {
+                  "mape": 34.648434114646584,
+                  "coverage50": 0.5,
+                  "width50": 111.51277649332641,
+                  "pinball": 14.901790168299325,
+                  "interval_score50": 145.0469048959668
+                },
+                "M3_neighbors": {
+                  "mape": 33.02060132004581,
+                  "coverage50": 0.5,
+                  "width50": 69.99564835362399,
+                  "pinball": 14.246431878627408,
+                  "interval_score50": 135.076009877353
+                },
+                "M4_drawdown_regime": {
+                  "mape": 34.648434114646584,
+                  "coverage50": 0.5,
+                  "width50": 111.89456866537265,
+                  "pinball": 14.912960541492808,
+                  "interval_score50": 139.45107012886263
+                }
+              }
+            },
+            {
+              "age": 3,
+              "completed": 22,
+              "censored": 0,
+              "n": 2,
+              "skipped": 4,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 13.493772797209559,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 7.222395673561666,
+                  "interval_score50": 57.779165388493325
+                },
+                "B1_observed_high": {
+                  "mape": 6.459420970969625,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 3.5015065128145,
+                  "interval_score50": 28.012052102516
+                },
+                "B2_historical": {
+                  "mape": 38.64328853683871,
+                  "coverage50": 0.5,
+                  "width50": 119.38433964545882,
+                  "pinball": 14.511164915045256,
+                  "interval_score50": 139.26027382039968
+                },
+                "M3_neighbors": {
+                  "mape": 35.329058134774016,
+                  "coverage50": 0.5,
+                  "width50": 77.30473031877615,
+                  "pinball": 11.677902548854465,
+                  "interval_score50": 93.99836665701022
+                },
+                "M4_drawdown_regime": {
+                  "mape": 38.64328853683871,
+                  "coverage50": 0.5,
+                  "width50": 107.84541160974673,
+                  "pinball": 13.709035244314986,
+                  "interval_score50": 115.73062759887225
+                }
+              }
+            },
+            {
+              "age": 7,
+              "completed": 22,
+              "censored": 0,
+              "n": 2,
+              "skipped": 4,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 11.716040588591264,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 6.251697986757423,
+                  "interval_score50": 50.01358389405939
+                },
+                "B1_observed_high": {
+                  "mape": 6.459420970969625,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 3.5015065128145,
+                  "interval_score50": 28.012052102516
+                },
+                "B2_historical": {
+                  "mape": 36.40360085642652,
+                  "coverage50": 1,
+                  "width50": 111.12422945586965,
+                  "pinball": 13.164965466331978,
+                  "interval_score50": 118.77284461804066
+                },
+                "M3_neighbors": {
+                  "mape": 46.782987766261115,
+                  "coverage50": 0.5,
+                  "width50": 108.02290361088797,
+                  "pinball": 16.309414986620155,
+                  "interval_score50": 161.49274213808906
+                },
+                "M4_drawdown_regime": {
+                  "mape": 36.40360085642652,
+                  "coverage50": 1,
+                  "width50": 92.42275842486708,
+                  "pinball": 12.37297113118619,
+                  "interval_score50": 98.60722464303147
+                }
+              }
+            },
+            {
+              "age": 14,
+              "completed": 21,
+              "censored": 0,
+              "n": 1,
+              "skipped": 5,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 14.81782328484551,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 8.104442712392828,
+                  "interval_score50": 64.83554169914262
+                },
+                "B1_observed_high": {
+                  "mape": 8.582096198996037,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 4.693881527669519,
+                  "interval_score50": 37.55105222135615
+                },
+                "B2_historical": {
+                  "mape": 20.03961277485784,
+                  "coverage50": 1,
+                  "width50": 88.46013123572092,
+                  "pinball": 10.055461498543657,
+                  "interval_score50": 96.76455875457238
+                },
+                "M3_neighbors": {
+                  "mape": 27.16039984885674,
+                  "coverage50": 1,
+                  "width50": 107.65948017202389,
+                  "pinball": 11.697424127335253,
+                  "interval_score50": 117.7662970771832
+                },
+                "M4_drawdown_regime": {
+                  "mape": 20.03961277485784,
+                  "coverage50": 1,
+                  "width50": 76.93002521111532,
+                  "pinball": 9.724173158436308,
+                  "interval_score50": 84.1520336963474
+                }
+              }
+            },
+            {
+              "age": 21,
+              "completed": 21,
+              "censored": 0,
+              "n": 1,
+              "skipped": 5,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 12.084905357887187,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 6.609703819173807,
+                  "interval_score50": 52.87763055339045
+                },
+                "B1_observed_high": {
+                  "mape": 8.582096198996037,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 4.693881527669519,
+                  "interval_score50": 37.55105222135615
+                },
+                "B2_historical": {
+                  "mape": 17.44857836037086,
+                  "coverage50": 1,
+                  "width50": 82.70324033954846,
+                  "pinball": 9.369874662094716,
+                  "interval_score50": 90.46722458171284
+                },
+                "M3_neighbors": {
+                  "mape": 54.8064077278601,
+                  "coverage50": 0,
+                  "width50": 83.85592494017031,
+                  "pinball": 20.239973947031782,
+                  "interval_score50": 202.45004676944313
+                },
+                "M4_drawdown_regime": {
+                  "mape": 16.429858147957077,
+                  "coverage50": 1,
+                  "width50": 70.79892538528513,
+                  "pinball": 8.926082228841503,
+                  "interval_score50": 77.44536074618198
+                }
+              }
+            },
+            {
+              "age": 28,
+              "completed": 20,
+              "censored": 0,
+              "n": 0,
+              "skipped": 6,
+              "metrics": {}
+            },
+            {
+              "age": 42,
+              "completed": 16,
+              "censored": 0,
+              "n": 0,
+              "skipped": 5,
+              "metrics": {}
+            }
+          ]
+        },
+        "0.4": {
+          "completed": 13,
+          "censored": 0,
+          "prefix_ok": true,
+          "live": null,
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 13,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            },
+            {
+              "age": 3,
+              "completed": 13,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            },
+            {
+              "age": 7,
+              "completed": 13,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            },
+            {
+              "age": 14,
+              "completed": 13,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            },
+            {
+              "age": 21,
+              "completed": 13,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            },
+            {
+              "age": 28,
+              "completed": 13,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            },
+            {
+              "age": 42,
+              "completed": 12,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            }
+          ]
+        },
+        "0.5": {
+          "completed": 9,
+          "censored": 1,
+          "prefix_ok": true,
+          "live": {
+            "age": 98,
+            "observed_high": 2806.89,
+            "confirmed_low": 1505.12,
+            "reference": null
+          },
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 9,
+              "censored": 1,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            },
+            {
+              "age": 3,
+              "completed": 9,
+              "censored": 1,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            },
+            {
+              "age": 7,
+              "completed": 9,
+              "censored": 1,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            },
+            {
+              "age": 14,
+              "completed": 9,
+              "censored": 1,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            },
+            {
+              "age": 21,
+              "completed": 9,
+              "censored": 1,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            },
+            {
+              "age": 28,
+              "completed": 9,
+              "censored": 1,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            },
+            {
+              "age": 42,
+              "completed": 9,
+              "censored": 1,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            }
+          ]
+        }
+      }
+    },
+    "Bithumb_ETHKRW": {
+      "rows": 3666,
+      "invalid": 0,
+      "duplicate": 0,
+      "gaps": 406,
+      "first": "2017-05-22T00:00:00.000Z",
+      "last": "2026-11-25T15:00:00.000Z",
+      "scales": {
+        "0.05": {
+          "completed": 335,
+          "censored": 1,
+          "prefix_ok": true,
+          "live": null,
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 329,
+              "censored": 1,
+              "n": 110,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 7.0133909285318925,
+                  "coverage50": 0.00909090909090909,
+                  "width50": 0,
+                  "pinball": 4.217111877640725,
+                  "interval_score50": 33.7368950211258
+                },
+                "B1_observed_high": {
+                  "mape": 7.0133909285318925,
+                  "coverage50": 0.00909090909090909,
+                  "width50": 0,
+                  "pinball": 4.217111877640725,
+                  "interval_score50": 33.7368950211258
+                },
+                "B2_historical": {
+                  "mape": 5.015456964458239,
+                  "coverage50": 0.5909090909090909,
+                  "width50": 10.499661944738008,
+                  "pinball": 2.3950499593965917,
+                  "interval_score50": 21.269528805437986
+                },
+                "M3_neighbors": {
+                  "mape": 5.337119972930486,
+                  "coverage50": 0.5727272727272728,
+                  "width50": 9.024422305355612,
+                  "pinball": 2.5628425947332247,
+                  "interval_score50": 22.9281207568773
+                },
+                "M4_drawdown_regime": {
+                  "mape": 4.973639360125852,
+                  "coverage50": 0.6,
+                  "width50": 10.589172530883577,
+                  "pinball": 2.3922585907340213,
+                  "interval_score50": 21.28479355866312
+                }
+              }
+            },
+            {
+              "age": 3,
+              "completed": 170,
+              "censored": 1,
+              "n": 73,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 6.992358635365909,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 4.130523883585682,
+                  "interval_score50": 33.04419106868546
+                },
+                "B1_observed_high": {
+                  "mape": 4.5947192936544585,
+                  "coverage50": 0.3561643835616438,
+                  "width50": 0,
+                  "pinball": 2.885037211755116,
+                  "interval_score50": 23.08029769404093
+                },
+                "B2_historical": {
+                  "mape": 4.596013552514067,
+                  "coverage50": 0.8493150684931506,
+                  "width50": 9.783118569276962,
+                  "pinball": 2.2898327311732425,
+                  "interval_score50": 20.53251513048385
+                },
+                "M3_neighbors": {
+                  "mape": 4.801850181352573,
+                  "coverage50": 0.589041095890411,
+                  "width50": 9.57178761998003,
+                  "pinball": 2.3060019957026934,
+                  "interval_score50": 20.102534312979795
+                },
+                "M4_drawdown_regime": {
+                  "mape": 4.598359931492595,
+                  "coverage50": 0.8493150684931506,
+                  "width50": 10.0546798918609,
+                  "pinball": 2.290924490860891,
+                  "interval_score50": 20.542013340265004
+                }
+              }
+            },
+            {
+              "age": 7,
+              "completed": 74,
+              "censored": 1,
+              "n": 36,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 7.867136049374802,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 4.878855004214943,
+                  "interval_score50": 39.03084003371954
+                },
+                "B1_observed_high": {
+                  "mape": 5.168805198590377,
+                  "coverage50": 0.5,
+                  "width50": 0,
+                  "pinball": 3.4646115015509746,
+                  "interval_score50": 27.716892012407797
+                },
+                "B2_historical": {
+                  "mape": 5.65506752219936,
+                  "coverage50": 0.8611111111111112,
+                  "width50": 12.416838128113874,
+                  "pinball": 2.9280522379185756,
+                  "interval_score50": 25.707375600281445
+                },
+                "M3_neighbors": {
+                  "mape": 5.7292910484424535,
+                  "coverage50": 0.5277777777777778,
+                  "width50": 9.682962192155141,
+                  "pinball": 2.9432303043056978,
+                  "interval_score50": 26.18740285019095
+                },
+                "M4_drawdown_regime": {
+                  "mape": 5.644847565288535,
+                  "coverage50": 0.8611111111111112,
+                  "width50": 12.462901780190391,
+                  "pinball": 2.9296189534718433,
+                  "interval_score50": 25.753439252357964
+                }
+              }
+            },
+            {
+              "age": 14,
+              "completed": 23,
+              "censored": 1,
+              "n": 3,
+              "skipped": 10,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 12.731665524021587,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 8.948123473543292,
+                  "interval_score50": 71.58498778834634
+                },
+                "B1_observed_high": {
+                  "mape": 10.478563670053031,
+                  "coverage50": 0.6666666666666666,
+                  "width50": 0,
+                  "pinball": 7.641412729475353,
+                  "interval_score50": 61.13130183580282
+                },
+                "B2_historical": {
+                  "mape": 12.433349909142018,
+                  "coverage50": 0,
+                  "width50": 12.008507913078118,
+                  "pinball": 6.540877892323592,
+                  "interval_score50": 57.6746888581377
+                },
+                "M3_neighbors": {
+                  "mape": 12.732851600157183,
+                  "coverage50": 0,
+                  "width50": 8.948315029932546,
+                  "pinball": 6.643149485245961,
+                  "interval_score50": 63.36161606456525
+                },
+                "M4_drawdown_regime": {
+                  "mape": 12.433349909142018,
+                  "coverage50": 0,
+                  "width50": 12.008507913078118,
+                  "pinball": 6.540877892323592,
+                  "interval_score50": 57.6746888581377
+                }
+              }
+            },
+            {
+              "age": 21,
+              "completed": 6,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            },
+            {
+              "age": 28,
+              "completed": 2,
+              "censored": 0,
+              "n": 0,
+              "skipped": 2,
+              "metrics": {}
+            },
+            {
+              "age": 42,
+              "completed": 1,
+              "censored": 0,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            }
+          ]
+        },
+        "0.1": {
+          "completed": 127,
+          "censored": 3,
+          "prefix_ok": true,
+          "live": {
+            "age": 3,
+            "observed_high": 2446000,
+            "confirmed_low": 2126000,
+            "reference": {
+              "landmark_age": 3,
+              "asof": "2026-11-26T15:00:00.000Z",
+              "train": 102,
+              "observed_high": 2446000,
+              "confirmed_low": 2126000,
+              "prices": {
+                "B0_current_close": [
+                  2302000,
+                  2302000,
+                  2302000,
+                  2302000,
+                  2302000
+                ],
+                "B1_observed_high": [
+                  2446000,
+                  2446000,
+                  2446000,
+                  2446000,
+                  2446000
+                ],
+                "B2_historical": [
+                  2446000,
+                  2446000,
+                  2562999.02,
+                  2926037.5,
+                  3542273.61
+                ],
+                "M3_neighbors": [
+                  2446000,
+                  2446000,
+                  2478265.04,
+                  2601651.51,
+                  3795380.56
+                ],
+                "M4_drawdown_regime": [
+                  2446000,
+                  2446000,
+                  2446000,
+                  2474203.35,
+                  2630002.63
+                ]
+              }
+            }
+          },
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 123,
+              "censored": 3,
+              "n": 32,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 14.007886199933209,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 9.742465011209129,
+                  "interval_score50": 77.93972008967303
+                },
+                "B1_observed_high": {
+                  "mape": 14.007886199933209,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 9.742465011209129,
+                  "interval_score50": 77.93972008967303
+                },
+                "B2_historical": {
+                  "mape": 9.820227231536407,
+                  "coverage50": 0.625,
+                  "width50": 17.38713530209332,
+                  "pinball": 5.407529365012703,
+                  "interval_score50": 49.446472762624076
+                },
+                "M3_neighbors": {
+                  "mape": 9.859566492776988,
+                  "coverage50": 0.53125,
+                  "width50": 17.03878182913848,
+                  "pinball": 5.12537115228228,
+                  "interval_score50": 48.18371818626531
+                },
+                "M4_drawdown_regime": {
+                  "mape": 9.829536652977803,
+                  "coverage50": 0.5625,
+                  "width50": 17.03811447364912,
+                  "pinball": 5.2165253011591055,
+                  "interval_score50": 47.28342818533539
+                }
+              }
+            },
+            {
+              "age": 3,
+              "completed": 102,
+              "censored": 3,
+              "n": 28,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 14.388615910979068,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 9.781674371925345,
+                  "interval_score50": 78.25339497540276
+                },
+                "B1_observed_high": {
+                  "mape": 11.184256698460569,
+                  "coverage50": 0.14285714285714285,
+                  "width50": 0,
+                  "pinball": 7.999341527512944,
+                  "interval_score50": 63.99473222010355
+                },
+                "B2_historical": {
+                  "mape": 10.105817806466815,
+                  "coverage50": 0.75,
+                  "width50": 17.49720779800664,
+                  "pinball": 5.447487063241687,
+                  "interval_score50": 49.42781137863037
+                },
+                "M3_neighbors": {
+                  "mape": 12.385601223580924,
+                  "coverage50": 0.5,
+                  "width50": 16.549370316572094,
+                  "pinball": 6.029104990882513,
+                  "interval_score50": 51.67779434008463
+                },
+                "M4_drawdown_regime": {
+                  "mape": 10.344433759325295,
+                  "coverage50": 0.7142857142857143,
+                  "width50": 17.09491305614699,
+                  "pinball": 5.477885537360781,
+                  "interval_score50": 49.722242239423956
+                }
+              }
+            },
+            {
+              "age": 7,
+              "completed": 80,
+              "censored": 1,
+              "n": 26,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 12.462226336433343,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 8.516605142420564,
+                  "interval_score50": 68.13284113936452
+                },
+                "B1_observed_high": {
+                  "mape": 9.320848814072361,
+                  "coverage50": 0.23076923076923078,
+                  "width50": 0,
+                  "pinball": 6.7645105641883365,
+                  "interval_score50": 54.11608451350669
+                },
+                "B2_historical": {
+                  "mape": 9.191506152426928,
+                  "coverage50": 0.8076923076923077,
+                  "width50": 13.800724079765773,
+                  "pinball": 5.065889325419743,
+                  "interval_score50": 45.98166376719034
+                },
+                "M3_neighbors": {
+                  "mape": 9.267458216627325,
+                  "coverage50": 0.5769230769230769,
+                  "width50": 10.595482636536644,
+                  "pinball": 5.489941845489707,
+                  "interval_score50": 48.08351898648631
+                },
+                "M4_drawdown_regime": {
+                  "mape": 9.188312074998437,
+                  "coverage50": 0.8076923076923077,
+                  "width50": 13.691118872413828,
+                  "pinball": 5.063866942788298,
+                  "interval_score50": 45.95925520556656
+                }
+              }
+            },
+            {
+              "age": 14,
+              "completed": 41,
+              "censored": 1,
+              "n": 20,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 13.615037005122243,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 9.150981964007766,
+                  "interval_score50": 73.20785571206213
+                },
+                "B1_observed_high": {
+                  "mape": 9.738122596241022,
+                  "coverage50": 0.35,
+                  "width50": 0,
+                  "pinball": 7.032990408033635,
+                  "interval_score50": 56.26392326426908
+                },
+                "B2_historical": {
+                  "mape": 10.242150777592748,
+                  "coverage50": 0.75,
+                  "width50": 20.61535743914147,
+                  "pinball": 5.310297232782476,
+                  "interval_score50": 51.200492515571625
+                },
+                "M3_neighbors": {
+                  "mape": 10.02890565730592,
+                  "coverage50": 0.5,
+                  "width50": 11.691722688755297,
+                  "pinball": 5.492374843572375,
+                  "interval_score50": 50.91314904293247
+                },
+                "M4_drawdown_regime": {
+                  "mape": 10.264047964925767,
+                  "coverage50": 0.75,
+                  "width50": 18.61550703945502,
+                  "pinball": 5.316146972156217,
+                  "interval_score50": 50.74667805767056
+                }
+              }
+            },
+            {
+              "age": 21,
+              "completed": 21,
+              "censored": 0,
+              "n": 1,
+              "skipped": 12,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 26.587301587301592,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 17.478260869565222,
+                  "interval_score50": 139.82608695652178
+                },
+                "B1_observed_high": {
+                  "mape": 23.941798941798943,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 15.739130434782611,
+                  "interval_score50": 125.91304347826089
+                },
+                "B2_historical": {
+                  "mape": 22.550898131168918,
+                  "coverage50": 0,
+                  "width50": 19.056338162382204,
+                  "pinball": 6.422381097012943,
+                  "interval_score50": 50.748217474290726
+                },
+                "M3_neighbors": {
+                  "mape": 23.941798941798943,
+                  "coverage50": 0,
+                  "width50": 6.839525108308905,
+                  "pinball": 9.890138440534542,
+                  "interval_score50": 98.9355774858355
+                },
+                "M4_drawdown_regime": {
+                  "mape": 21.159997320538903,
+                  "coverage50": 0,
+                  "width50": 19.33663256206468,
+                  "pinball": 6.20656146361982,
+                  "interval_score50": 49.642638868238805
+                }
+              }
+            },
+            {
+              "age": 28,
+              "completed": 12,
+              "censored": 0,
+              "n": 0,
+              "skipped": 9,
+              "metrics": {}
+            },
+            {
+              "age": 42,
+              "completed": 9,
+              "censored": 0,
+              "n": 0,
+              "skipped": 6,
+              "metrics": {}
+            }
+          ]
+        },
+        "0.15": {
+          "completed": 69,
+          "censored": 1,
+          "prefix_ok": true,
+          "live": null,
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 67,
+              "censored": 1,
+              "n": 17,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 18.087708326653097,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 13.827356283861748,
+                  "interval_score50": 110.61885027089399
+                },
+                "B1_observed_high": {
+                  "mape": 18.087708326653097,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 13.827356283861748,
+                  "interval_score50": 110.61885027089399
+                },
+                "B2_historical": {
+                  "mape": 15.282282694669076,
+                  "coverage50": 0.4117647058823529,
+                  "width50": 27.826543554307253,
+                  "pinball": 7.829944010113165,
+                  "interval_score50": 74.08356491713448
+                },
+                "M3_neighbors": {
+                  "mape": 18.801472084331653,
+                  "coverage50": 0.47058823529411764,
+                  "width50": 39.87034236670323,
+                  "pinball": 7.80595196691799,
+                  "interval_score50": 72.70480492158146
+                },
+                "M4_drawdown_regime": {
+                  "mape": 15.21637660616623,
+                  "coverage50": 0.5294117647058824,
+                  "width50": 36.90676319721343,
+                  "pinball": 7.07774081668472,
+                  "interval_score50": 62.88624664250055
+                }
+              }
+            },
+            {
+              "age": 3,
+              "completed": 63,
+              "censored": 1,
+              "n": 17,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 18.674735948566596,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 13.751757338025016,
+                  "interval_score50": 110.01405870420012
+                },
+                "B1_observed_high": {
+                  "mape": 15.367176308863423,
+                  "coverage50": 0.17647058823529413,
+                  "width50": 0,
+                  "pinball": 11.830503326599727,
+                  "interval_score50": 94.64402661279782
+                },
+                "B2_historical": {
+                  "mape": 15.977161447886331,
+                  "coverage50": 0.7058823529411765,
+                  "width50": 31.71293509450912,
+                  "pinball": 7.530593515173243,
+                  "interval_score50": 70.72756433375268
+                },
+                "M3_neighbors": {
+                  "mape": 19.928993592613722,
+                  "coverage50": 0.35294117647058826,
+                  "width50": 34.14107438868285,
+                  "pinball": 8.241163471781114,
+                  "interval_score50": 73.95446554095545
+                },
+                "M4_drawdown_regime": {
+                  "mape": 16.16823007231349,
+                  "coverage50": 0.7058823529411765,
+                  "width50": 35.12126878455267,
+                  "pinball": 7.1393027866801555,
+                  "interval_score50": 63.600901162301895
+                }
+              }
+            },
+            {
+              "age": 7,
+              "completed": 55,
+              "censored": 1,
+              "n": 17,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 18.48862615465278,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 13.089752518350465,
+                  "interval_score50": 104.71802014680371
+                },
+                "B1_observed_high": {
+                  "mape": 14.300047353980684,
+                  "coverage50": 0.4117647058823529,
+                  "width50": 0,
+                  "pinball": 10.806093018924972,
+                  "interval_score50": 86.44874415139978
+                },
+                "B2_historical": {
+                  "mape": 16.08380788550531,
+                  "coverage50": 0.5882352941176471,
+                  "width50": 27.16568129019151,
+                  "pinball": 6.928410936486242,
+                  "interval_score50": 64.42211448533068
+                },
+                "M3_neighbors": {
+                  "mape": 12.305301011157018,
+                  "coverage50": 0.5882352941176471,
+                  "width50": 28.660170011001764,
+                  "pinball": 5.943848022383539,
+                  "interval_score50": 55.51780935613358
+                },
+                "M4_drawdown_regime": {
+                  "mape": 15.269095204214121,
+                  "coverage50": 0.5882352941176471,
+                  "width50": 27.014548086365224,
+                  "pinball": 6.726223559039463,
+                  "interval_score50": 64.19757641982912
+                }
+              }
+            },
+            {
+              "age": 14,
+              "completed": 40,
+              "censored": 1,
+              "n": 15,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 18.85896562700548,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 12.637236629850545,
+                  "interval_score50": 101.09789303880436
+                },
+                "B1_observed_high": {
+                  "mape": 13.075145770519505,
+                  "coverage50": 0.4666666666666667,
+                  "width50": 0,
+                  "pinball": 9.356715879631944,
+                  "interval_score50": 74.85372703705555
+                },
+                "B2_historical": {
+                  "mape": 14.605211402907315,
+                  "coverage50": 0.5333333333333333,
+                  "width50": 20.6947530996384,
+                  "pinball": 6.004679198004037,
+                  "interval_score50": 57.02176597829302
+                },
+                "M3_neighbors": {
+                  "mape": 11.489503406531659,
+                  "coverage50": 0.6666666666666666,
+                  "width50": 16.48318502166504,
+                  "pinball": 5.96613772445232,
+                  "interval_score50": 55.59275516876683
+                },
+                "M4_drawdown_regime": {
+                  "mape": 15.14439560312662,
+                  "coverage50": 0.4666666666666667,
+                  "width50": 25.564734291320853,
+                  "pinball": 5.83888796349076,
+                  "interval_score50": 53.996653566195874
+                }
+              }
+            },
+            {
+              "age": 21,
+              "completed": 30,
+              "censored": 1,
+              "n": 10,
+              "skipped": 3,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 21.817444588442967,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 14.5010314125067,
+                  "interval_score50": 116.00825130005362
+                },
+                "B1_observed_high": {
+                  "mape": 15.378812529049194,
+                  "coverage50": 0.3,
+                  "width50": 0,
+                  "pinball": 10.871496353200035,
+                  "interval_score50": 86.97197082560028
+                },
+                "B2_historical": {
+                  "mape": 15.508410859768954,
+                  "coverage50": 0.5,
+                  "width50": 20.853164869009277,
+                  "pinball": 6.67079773319993,
+                  "interval_score50": 59.38082541591111
+                },
+                "M3_neighbors": {
+                  "mape": 12.100395088466682,
+                  "coverage50": 0.5,
+                  "width50": 18.6382125897526,
+                  "pinball": 5.98792621814702,
+                  "interval_score50": 53.0246438028762
+                },
+                "M4_drawdown_regime": {
+                  "mape": 14.428726748341802,
+                  "coverage50": 0.5,
+                  "width50": 22.996470859836514,
+                  "pinball": 6.081801411242771,
+                  "interval_score50": 55.00147189808363
+                }
+              }
+            },
+            {
+              "age": 28,
+              "completed": 20,
+              "censored": 0,
+              "n": 0,
+              "skipped": 11,
+              "metrics": {}
+            },
+            {
+              "age": 42,
+              "completed": 15,
+              "censored": 0,
+              "n": 0,
+              "skipped": 10,
+              "metrics": {}
+            }
+          ]
+        },
+        "0.2": {
+          "completed": 41,
+          "censored": 1,
+          "prefix_ok": true,
+          "live": null,
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 40,
+              "censored": 1,
+              "n": 10,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 25.901170392474548,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 22.059109320423808,
+                  "interval_score50": 176.47287456339046
+                },
+                "B1_observed_high": {
+                  "mape": 25.901170392474548,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 22.059109320423808,
+                  "interval_score50": 176.47287456339046
+                },
+                "B2_historical": {
+                  "mape": 21.87067261889202,
+                  "coverage50": 0.5,
+                  "width50": 49.27467765154748,
+                  "pinball": 11.196619905810396,
+                  "interval_score50": 101.70772553415004
+                },
+                "M3_neighbors": {
+                  "mape": 22.353605014526416,
+                  "coverage50": 0.6,
+                  "width50": 55.86807563957127,
+                  "pinball": 10.36974496498887,
+                  "interval_score50": 97.44235448847269
+                },
+                "M4_drawdown_regime": {
+                  "mape": 24.352038011951908,
+                  "coverage50": 0.3,
+                  "width50": 39.462090638269046,
+                  "pinball": 10.561176131545386,
+                  "interval_score50": 96.54933359627769
+                }
+              }
+            },
+            {
+              "age": 3,
+              "completed": 38,
+              "censored": 1,
+              "n": 10,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 26.976593938680804,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 21.626974250811507,
+                  "interval_score50": 173.01579400649206
+                },
+                "B1_observed_high": {
+                  "mape": 23.14970089980532,
+                  "coverage50": 0.2,
+                  "width50": 0,
+                  "pinball": 19.268600939747195,
+                  "interval_score50": 154.14880751797756
+                },
+                "B2_historical": {
+                  "mape": 21.26026062229154,
+                  "coverage50": 0.7,
+                  "width50": 47.95847181990049,
+                  "pinball": 10.39521373516594,
+                  "interval_score50": 89.8466674605359
+                },
+                "M3_neighbors": {
+                  "mape": 22.654883261517405,
+                  "coverage50": 0.5,
+                  "width50": 45.9797486029088,
+                  "pinball": 10.152887039672539,
+                  "interval_score50": 94.91608562601084
+                },
+                "M4_drawdown_regime": {
+                  "mape": 22.00805135954868,
+                  "coverage50": 0.4,
+                  "width50": 42.355050723340604,
+                  "pinball": 10.700060301617508,
+                  "interval_score50": 90.23050509134154
+                }
+              }
+            },
+            {
+              "age": 7,
+              "completed": 33,
+              "censored": 1,
+              "n": 10,
+              "skipped": 0,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 26.160179643060314,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 20.59236686020145,
+                  "interval_score50": 164.7389348816116
+                },
+                "B1_observed_high": {
+                  "mape": 22.139503775603888,
+                  "coverage50": 0.3,
+                  "width50": 0,
+                  "pinball": 18.169799615330195,
+                  "interval_score50": 145.35839692264156
+                },
+                "B2_historical": {
+                  "mape": 20.38842999714604,
+                  "coverage50": 0.4,
+                  "width50": 39.33613720526288,
+                  "pinball": 10.053440039745137,
+                  "interval_score50": 86.35485454007171
+                },
+                "M3_neighbors": {
+                  "mape": 18.712951762133823,
+                  "coverage50": 0.5,
+                  "width50": 47.34639894574048,
+                  "pinball": 10.69531693822693,
+                  "interval_score50": 104.2762643709217
+                },
+                "M4_drawdown_regime": {
+                  "mape": 20.1161408162142,
+                  "coverage50": 0.4,
+                  "width50": 37.46695154560504,
+                  "pinball": 9.824382177035144,
+                  "interval_score50": 86.17492799119142
+                }
+              }
+            },
+            {
+              "age": 14,
+              "completed": 28,
+              "censored": 1,
+              "n": 8,
+              "skipped": 2,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 23.715384945423907,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 15.840716600622734,
+                  "interval_score50": 126.72573280498187
+                },
+                "B1_observed_high": {
+                  "mape": 16.27380997078148,
+                  "coverage50": 0.375,
+                  "width50": 0,
+                  "pinball": 11.630090183075945,
+                  "interval_score50": 93.04072146460756
+                },
+                "B2_historical": {
+                  "mape": 16.11346013671499,
+                  "coverage50": 0.75,
+                  "width50": 37.39554294729885,
+                  "pinball": 6.129617338353212,
+                  "interval_score50": 56.160478356328746
+                },
+                "M3_neighbors": {
+                  "mape": 11.266169408078925,
+                  "coverage50": 0.875,
+                  "width50": 38.81996445977636,
+                  "pinball": 6.412178176110905,
+                  "interval_score50": 58.12180806882442
+                },
+                "M4_drawdown_regime": {
+                  "mape": 18.134587797402492,
+                  "coverage50": 0.875,
+                  "width50": 39.582859123737876,
+                  "pinball": 6.749088103783331,
+                  "interval_score50": 61.78729566131719
+                }
+              }
+            },
+            {
+              "age": 21,
+              "completed": 24,
+              "censored": 1,
+              "n": 4,
+              "skipped": 5,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 21.83820688522267,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 13.216718896212653,
+                  "interval_score50": 105.73375116970122
+                },
+                "B1_observed_high": {
+                  "mape": 14.412521198164406,
+                  "coverage50": 0.25,
+                  "width50": 0,
+                  "pinball": 9.109775682848388,
+                  "interval_score50": 72.87820546278711
+                },
+                "B2_historical": {
+                  "mape": 10.055333425213988,
+                  "coverage50": 0.75,
+                  "width50": 27.599012102348027,
+                  "pinball": 4.178207333513314,
+                  "interval_score50": 33.520287995814776
+                },
+                "M3_neighbors": {
+                  "mape": 5.599854520304917,
+                  "coverage50": 1,
+                  "width50": 46.31443584423437,
+                  "pinball": 5.732447030554252,
+                  "interval_score50": 54.959011012120015
+                },
+                "M4_drawdown_regime": {
+                  "mape": 11.309384909705727,
+                  "coverage50": 1,
+                  "width50": 43.938062592623325,
+                  "pinball": 5.211280031332709,
+                  "interval_score50": 50.43224180257244
+                }
+              }
+            },
+            {
+              "age": 28,
+              "completed": 22,
+              "censored": 1,
+              "n": 2,
+              "skipped": 7,
+              "metrics": {
+                "B0_current_close": {
+                  "mape": 25.299457726843617,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 15.713548404705367,
+                  "interval_score50": 125.70838723764294
+                },
+                "B1_observed_high": {
+                  "mape": 17.904509429405696,
+                  "coverage50": 0,
+                  "width50": 0,
+                  "pinball": 11.235855236223696,
+                  "interval_score50": 89.88684188978957
+                },
+                "B2_historical": {
+                  "mape": 7.7529002396260145,
+                  "coverage50": 0.5,
+                  "width50": 25.46157325554411,
+                  "pinball": 3.8871565077089882,
+                  "interval_score50": 33.74823757903308
+                },
+                "M3_neighbors": {
+                  "mape": 4.9055887272056395,
+                  "coverage50": 1,
+                  "width50": 32.456634736501925,
+                  "pinball": 4.900549960249069,
+                  "interval_score50": 39.760863114957886
+                },
+                "M4_drawdown_regime": {
+                  "mape": 9.253509053728347,
+                  "coverage50": 1,
+                  "width50": 31.80236701631506,
+                  "pinball": 4.216291395189328,
+                  "interval_score50": 38.622499931598675
+                }
+              }
+            },
+            {
+              "age": 42,
+              "completed": 17,
+              "censored": 1,
+              "n": 0,
+              "skipped": 9,
+              "metrics": {}
+            }
+          ]
+        },
+        "0.3": {
+          "completed": 19,
+          "censored": 2,
+          "prefix_ok": true,
+          "live": null,
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 18,
+              "censored": 2,
+              "n": 0,
+              "skipped": 5,
+              "metrics": {}
+            },
+            {
+              "age": 3,
+              "completed": 18,
+              "censored": 2,
+              "n": 0,
+              "skipped": 5,
+              "metrics": {}
+            },
+            {
+              "age": 7,
+              "completed": 18,
+              "censored": 2,
+              "n": 0,
+              "skipped": 5,
+              "metrics": {}
+            },
+            {
+              "age": 14,
+              "completed": 18,
+              "censored": 2,
+              "n": 0,
+              "skipped": 5,
+              "metrics": {}
+            },
+            {
+              "age": 21,
+              "completed": 18,
+              "censored": 2,
+              "n": 0,
+              "skipped": 5,
+              "metrics": {}
+            },
+            {
+              "age": 28,
+              "completed": 16,
+              "censored": 2,
+              "n": 0,
+              "skipped": 5,
+              "metrics": {}
+            },
+            {
+              "age": 42,
+              "completed": 15,
+              "censored": 1,
+              "n": 0,
+              "skipped": 5,
+              "metrics": {}
+            }
+          ]
+        },
+        "0.4": {
+          "completed": 14,
+          "censored": 2,
+          "prefix_ok": true,
+          "live": null,
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 14,
+              "censored": 2,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            },
+            {
+              "age": 3,
+              "completed": 14,
+              "censored": 2,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            },
+            {
+              "age": 7,
+              "completed": 14,
+              "censored": 2,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            },
+            {
+              "age": 14,
+              "completed": 14,
+              "censored": 2,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            },
+            {
+              "age": 21,
+              "completed": 13,
+              "censored": 2,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            },
+            {
+              "age": 28,
+              "completed": 13,
+              "censored": 1,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            },
+            {
+              "age": 42,
+              "completed": 11,
+              "censored": 0,
+              "n": 0,
+              "skipped": 4,
+              "metrics": {}
+            }
+          ]
+        },
+        "0.5": {
+          "completed": 7,
+          "censored": 3,
+          "prefix_ok": true,
+          "live": {
+            "age": 94,
+            "observed_high": 3780000,
+            "confirmed_low": 2300000,
+            "reference": null
+          },
+          "evaluations": [
+            {
+              "age": 0,
+              "completed": 7,
+              "censored": 3,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            },
+            {
+              "age": 3,
+              "completed": 7,
+              "censored": 3,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            },
+            {
+              "age": 7,
+              "completed": 7,
+              "censored": 3,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            },
+            {
+              "age": 14,
+              "completed": 7,
+              "censored": 3,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            },
+            {
+              "age": 21,
+              "completed": 7,
+              "censored": 3,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            },
+            {
+              "age": 28,
+              "completed": 7,
+              "censored": 1,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            },
+            {
+              "age": 42,
+              "completed": 6,
+              "censored": 1,
+              "n": 0,
+              "skipped": 1,
+              "metrics": {}
+            }
+          ]
+        }
+      }
+    }
+  }
+}
