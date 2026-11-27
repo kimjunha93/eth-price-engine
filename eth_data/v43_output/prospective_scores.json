@@ -1,0 +1,47 @@
+{
+  "version": "v43-prospective-monitor-1",
+  "generated_utc": "2026-11-27T05:57:38.268Z",
+  "activated_at": "2026-11-27T05:57:38.268Z",
+  "registered": 0,
+  "primary": {
+    "registered": 0,
+    "confirmed": 0,
+    "cohort_n": 0,
+    "quarters": 0,
+    "metrics": {
+      "B0": null,
+      "B1": null,
+      "M_swing": null,
+      "M_volatility": null,
+      "M_price": null,
+      "M_all": null
+    },
+    "review": "insufficient_prospective_events",
+    "promotion": "blocked"
+  },
+  "statuses": {
+    "Upbit_ETHKRW|0.05": "initialized_no_backfill",
+    "Upbit_ETHKRW|0.1": "initialized_no_backfill",
+    "Upbit_ETHKRW|0.15": "initialized_no_backfill",
+    "Upbit_ETHKRW|0.2": "initialized_no_backfill",
+    "Upbit_ETHKRW|0.3": "initialized_no_backfill",
+    "Upbit_ETHKRW|0.4": "initialized_no_backfill",
+    "Upbit_ETHKRW|0.5": "initialized_no_backfill",
+    "Bithumb_ETHKRW|0.05": "initialized_no_backfill",
+    "Bithumb_ETHKRW|0.1": "initialized_no_backfill",
+    "Bithumb_ETHKRW|0.15": "initialized_no_backfill",
+    "Bithumb_ETHKRW|0.2": "initialized_no_backfill",
+    "Bithumb_ETHKRW|0.3": "initialized_no_backfill",
+    "Bithumb_ETHKRW|0.4": "initialized_no_backfill",
+    "Bithumb_ETHKRW|0.5": "initialized_no_backfill",
+    "Bitstamp_ETHUSD|0.05": "initialized_no_backfill",
+    "Bitstamp_ETHUSD|0.1": "initialized_no_backfill",
+    "Bitstamp_ETHUSD|0.15": "initialized_no_backfill",
+    "Bitstamp_ETHUSD|0.2": "initialized_no_backfill",
+    "Bitstamp_ETHUSD|0.3": "initialized_no_backfill",
+    "Bitstamp_ETHUSD|0.4": "initialized_no_backfill",
+    "Bitstamp_ETHUSD|0.5": "initialized_no_backfill"
+  },
+  "scores": [],
+  "policy": "Daily close features only; issuance within one hour of confirmation, entire following daily bar included in statistical label, not executable trading P/L. No historical forecast backfill; no path or first-touch promotion; gap/open separately reported."
+}

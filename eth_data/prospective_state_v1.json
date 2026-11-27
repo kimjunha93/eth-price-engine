@@ -1,0 +1,114 @@
+{
+  "version": "v43-prospective-state-1",
+  "activated_at": "2026-11-27T05:57:38.268Z",
+  "policy_sha256": "3204ddfff7aa6969a1c1eb16e9754c18e7518ef05a60b3b61b8c5c530185b195",
+  "code_sha256": "46c4a73f84a32795f694a058b38beb207e96b8931151fb47d9371c78c2d0ef88",
+  "checkpoints": {
+    "Upbit_ETHKRW|0.05": {
+      "rows": 3347,
+      "last_closed": 1795737600000,
+      "prefix_sha256": "4c9ac1385c5eecc3ac4d9128361884c02442c7785b292c53d601874274f54931"
+    },
+    "Upbit_ETHKRW|0.1": {
+      "rows": 3347,
+      "last_closed": 1795737600000,
+      "prefix_sha256": "4c9ac1385c5eecc3ac4d9128361884c02442c7785b292c53d601874274f54931"
+    },
+    "Upbit_ETHKRW|0.15": {
+      "rows": 3347,
+      "last_closed": 1795737600000,
+      "prefix_sha256": "4c9ac1385c5eecc3ac4d9128361884c02442c7785b292c53d601874274f54931"
+    },
+    "Upbit_ETHKRW|0.2": {
+      "rows": 3347,
+      "last_closed": 1795737600000,
+      "prefix_sha256": "4c9ac1385c5eecc3ac4d9128361884c02442c7785b292c53d601874274f54931"
+    },
+    "Upbit_ETHKRW|0.3": {
+      "rows": 3347,
+      "last_closed": 1795737600000,
+      "prefix_sha256": "4c9ac1385c5eecc3ac4d9128361884c02442c7785b292c53d601874274f54931"
+    },
+    "Upbit_ETHKRW|0.4": {
+      "rows": 3347,
+      "last_closed": 1795737600000,
+      "prefix_sha256": "4c9ac1385c5eecc3ac4d9128361884c02442c7785b292c53d601874274f54931"
+    },
+    "Upbit_ETHKRW|0.5": {
+      "rows": 3347,
+      "last_closed": 1795737600000,
+      "prefix_sha256": "4c9ac1385c5eecc3ac4d9128361884c02442c7785b292c53d601874274f54931"
+    },
+    "Bithumb_ETHKRW|0.05": {
+      "rows": 3666,
+      "last_closed": 1795705200000,
+      "prefix_sha256": "e3db67fafa100a35f617db1acced8ea339228feca5e13f0209eb8319a4551f44"
+    },
+    "Bithumb_ETHKRW|0.1": {
+      "rows": 3666,
+      "last_closed": 1795705200000,
+      "prefix_sha256": "e3db67fafa100a35f617db1acced8ea339228feca5e13f0209eb8319a4551f44"
+    },
+    "Bithumb_ETHKRW|0.15": {
+      "rows": 3666,
+      "last_closed": 1795705200000,
+      "prefix_sha256": "e3db67fafa100a35f617db1acced8ea339228feca5e13f0209eb8319a4551f44"
+    },
+    "Bithumb_ETHKRW|0.2": {
+      "rows": 3666,
+      "last_closed": 1795705200000,
+      "prefix_sha256": "e3db67fafa100a35f617db1acced8ea339228feca5e13f0209eb8319a4551f44"
+    },
+    "Bithumb_ETHKRW|0.3": {
+      "rows": 3666,
+      "last_closed": 1795705200000,
+      "prefix_sha256": "e3db67fafa100a35f617db1acced8ea339228feca5e13f0209eb8319a4551f44"
+    },
+    "Bithumb_ETHKRW|0.4": {
+      "rows": 3666,
+      "last_closed": 1795705200000,
+      "prefix_sha256": "e3db67fafa100a35f617db1acced8ea339228feca5e13f0209eb8319a4551f44"
+    },
+    "Bithumb_ETHKRW|0.5": {
+      "rows": 3666,
+      "last_closed": 1795705200000,
+      "prefix_sha256": "e3db67fafa100a35f617db1acced8ea339228feca5e13f0209eb8319a4551f44"
+    },
+    "Bitstamp_ETHUSD|0.05": {
+      "rows": 3305,
+      "last_closed": 1795737600000,
+      "prefix_sha256": "c1b1a408ac3c3cdac39d4c83321383fe59dd2f1a314bfcae8dc1abeba08b06ce"
+    },
+    "Bitstamp_ETHUSD|0.1": {
+      "rows": 3305,
+      "last_closed": 1795737600000,
+      "prefix_sha256": "c1b1a408ac3c3cdac39d4c83321383fe59dd2f1a314bfcae8dc1abeba08b06ce"
+    },
+    "Bitstamp_ETHUSD|0.15": {
+      "rows": 3305,
+      "last_closed": 1795737600000,
+      "prefix_sha256": "c1b1a408ac3c3cdac39d4c83321383fe59dd2f1a314bfcae8dc1abeba08b06ce"
+    },
+    "Bitstamp_ETHUSD|0.2": {
+      "rows": 3305,
+      "last_closed": 1795737600000,
+      "prefix_sha256": "c1b1a408ac3c3cdac39d4c83321383fe59dd2f1a314bfcae8dc1abeba08b06ce"
+    },
+    "Bitstamp_ETHUSD|0.3": {
+      "rows": 3305,
+      "last_closed": 1795737600000,
+      "prefix_sha256": "c1b1a408ac3c3cdac39d4c83321383fe59dd2f1a314bfcae8dc1abeba08b06ce"
+    },
+    "Bitstamp_ETHUSD|0.4": {
+      "rows": 3305,
+      "last_closed": 1795737600000,
+      "prefix_sha256": "c1b1a408ac3c3cdac39d4c83321383fe59dd2f1a314bfcae8dc1abeba08b06ce"
+    },
+    "Bitstamp_ETHUSD|0.5": {
+      "rows": 3305,
+      "last_closed": 1795737600000,
+      "prefix_sha256": "c1b1a408ac3c3cdac39d4c83321383fe59dd2f1a314bfcae8dc1abeba08b06ce"
+    }
+  },
+  "records": []
+}
