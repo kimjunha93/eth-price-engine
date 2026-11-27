@@ -1,0 +1,57 @@
+{
+  "version": "v43-kraken-early-archive-1",
+  "source": "Kraken ETHUSD public Trades API; user-collected OHLCV aggregated by UTC",
+  "date": "2026-11-27",
+  "daily": {
+    "rows": 873,
+    "first": "2015-08-07",
+    "last": "2017-12-31",
+    "missing_days": [
+      "2015-08-09",
+      "2015-08-10",
+      "2015-09-04",
+      "2015-09-21",
+      "2015-10-10"
+    ],
+    "blob": "e4ff8f864d12492b8e8b2ed8790b663e4f5ab9b6",
+    "sha256": "c19cc43601c5a5e7edc640cb506c4f083eaaef2c344a2989fcd8d2491ee9101b"
+  },
+  "hourly": {
+    "rows": 17647,
+    "first": "2015-08-07T14:00:00Z",
+    "last": "2017-12-31T23:00:00Z",
+    "missing_hours": 3411,
+    "missing_by_year": {
+      "2015": 2746,
+      "2016": 612,
+      "2017": 53
+    },
+    "blob": "9bf5a1d8cd63eb65be33589ac19147ace3fa464a",
+    "sha256": "8949688211777944dbd3652496ea1fdfdf3609ca86c840fb941aad0de103ebc4"
+  },
+  "both": {
+    "duplicates": 0,
+    "nulls": 0,
+    "invalid_ohlcv": 0,
+    "reported_trades": 4615767,
+    "daily_hourly_all_fields_match": 873,
+    "tolerance": {
+      "rtol": 1e-9,
+      "atol": 1e-8
+    }
+  },
+  "bitstamp_overlap": {
+    "start": "2017-11-09",
+    "end": "2017-12-31",
+    "n": 53,
+    "median_absolute_close_pct": 0.53608485,
+    "p90": 1.2198849,
+    "max": 2.96960522,
+    "log_return_correlation": 0.98650566,
+    "n_returns": 52,
+    "bitstamp_blob": "bdef4c90c035a139a18ee85167365c11817545d9",
+    "additional_pre_bitstamp_daily": 820,
+    "additional_pre_bitstamp_hourly": 16375
+  },
+  "policy": "Archive separate markets; no imputation, no volume pooling, no event crossing exchange boundary. Missing slots unresolved (no-trade vs missing); raw trade IDs not independently verified; same-origin aggregation agreement does not establish API completeness. Bitstamp hourly overlap not verified. No automatic promotion of models."
+}
