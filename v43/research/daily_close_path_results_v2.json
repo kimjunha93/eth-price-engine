@@ -1,0 +1,422 @@
+{
+  "version": "daily-close-path-sensitivity-2",
+  "status": "exploratory_reused_history",
+  "markets": {
+    "Upbit_ETHKRW": {
+      "rows": 3347,
+      "scales": {
+        "0.05": {
+          "pivots": 375,
+          "events": 187,
+          "complete": 67,
+          "censored": 120,
+          "overlap_excluded": 119,
+          "right_censored": 1,
+          "independent_complete": 43,
+          "hold": 25,
+          "fail": 18,
+          "evaluated": 16,
+          "evaluation_censored": 23,
+          "insufficient_train": 0,
+          "prefix": true,
+          "scores": {
+            "flat": {
+              "mape": 13.366864869732304,
+              "legs": [
+                11.540489210861294,
+                9.93040640347369,
+                18.629698994861933
+              ]
+            },
+            "median": {
+              "mape": 10.58043639724097,
+              "legs": [
+                6.4193302456401335,
+                9.46611758397443,
+                15.85586136210835
+              ]
+            },
+            "medoid": {
+              "mape": 11.02558304819251,
+              "legs": [
+                7.449162846826529,
+                9.63017082559906,
+                15.997415472151944
+              ]
+            },
+            "neighbor": {
+              "mape": 11.704694206525035,
+              "legs": [
+                7.719610208636406,
+                11.020186867213784,
+                16.37428554372491
+              ]
+            }
+          }
+        },
+        "0.1": {
+          "pivots": 181,
+          "events": 90,
+          "complete": 37,
+          "censored": 53,
+          "overlap_excluded": 52,
+          "right_censored": 1,
+          "independent_complete": 22,
+          "hold": 14,
+          "fail": 8,
+          "evaluated": 2,
+          "evaluation_censored": 12,
+          "insufficient_train": 5,
+          "prefix": true,
+          "scores": {
+            "flat": {
+              "mape": 25.850879491320867,
+              "legs": [
+                7.907252885621629,
+                37.605308376290814,
+                32.040077212050164
+              ]
+            },
+            "median": {
+              "mape": 45.848903505640685,
+              "legs": [
+                19.43512177968011,
+                38.30997291662916,
+                79.80161582061278
+              ]
+            },
+            "medoid": {
+              "mape": 52.6431884817257,
+              "legs": [
+                21.015019283581836,
+                48.19844012031014,
+                88.71610604128514
+              ]
+            },
+            "neighbor": {
+              "mape": 52.6431884817257,
+              "legs": [
+                21.015019283581836,
+                48.19844012031014,
+                88.71610604128514
+              ]
+            }
+          }
+        },
+        "0.15": {
+          "pivots": 97,
+          "events": 48,
+          "complete": 24,
+          "censored": 24,
+          "overlap_excluded": 23,
+          "right_censored": 1,
+          "independent_complete": 16,
+          "hold": 5,
+          "fail": 11,
+          "evaluated": 0,
+          "evaluation_censored": 1,
+          "insufficient_train": 6,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        },
+        "0.2": {
+          "pivots": 55,
+          "events": 27,
+          "complete": 22,
+          "censored": 5,
+          "overlap_excluded": 4,
+          "right_censored": 1,
+          "independent_complete": 12,
+          "hold": 5,
+          "fail": 7,
+          "evaluated": 0,
+          "evaluation_censored": 1,
+          "insufficient_train": 3,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        },
+        "0.3": {
+          "pivots": 35,
+          "events": 17,
+          "complete": 9,
+          "censored": 8,
+          "overlap_excluded": 7,
+          "right_censored": 1,
+          "independent_complete": 6,
+          "hold": 3,
+          "fail": 3,
+          "evaluated": 0,
+          "evaluation_censored": 2,
+          "insufficient_train": 1,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        },
+        "0.4": {
+          "pivots": 23,
+          "events": 11,
+          "complete": 10,
+          "censored": 1,
+          "overlap_excluded": 0,
+          "right_censored": 1,
+          "independent_complete": 5,
+          "hold": 2,
+          "fail": 3,
+          "evaluated": 0,
+          "evaluation_censored": 0,
+          "insufficient_train": 2,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        },
+        "0.5": {
+          "pivots": 16,
+          "events": 8,
+          "complete": 6,
+          "censored": 2,
+          "overlap_excluded": 0,
+          "right_censored": 2,
+          "independent_complete": 3,
+          "hold": 0,
+          "fail": 3,
+          "evaluated": 0,
+          "evaluation_censored": 1,
+          "insufficient_train": 0,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        }
+      }
+    },
+    "Bitstamp_ETHUSD": {
+      "rows": 3305,
+      "scales": {
+        "0.05": {
+          "pivots": 459,
+          "events": 229,
+          "complete": 79,
+          "censored": 150,
+          "overlap_excluded": 149,
+          "right_censored": 1,
+          "independent_complete": 52,
+          "hold": 27,
+          "fail": 25,
+          "evaluated": 18,
+          "evaluation_censored": 30,
+          "insufficient_train": 0,
+          "prefix": true,
+          "scores": {
+            "flat": {
+              "mape": 11.39079783852357,
+              "legs": [
+                7.94066242294052,
+                11.579889426550688,
+                14.651841666079491
+              ]
+            },
+            "median": {
+              "mape": 9.059636256045454,
+              "legs": [
+                6.74992560360929,
+                6.769157955916463,
+                13.65982520861061
+              ]
+            },
+            "medoid": {
+              "mape": 9.109886376767472,
+              "legs": [
+                7.126032858383245,
+                6.616796353028628,
+                13.586829918890544
+              ]
+            },
+            "neighbor": {
+              "mape": 9.436491089608822,
+              "legs": [
+                7.548256337221506,
+                7.239284023104285,
+                13.521932908500673
+              ]
+            }
+          }
+        },
+        "0.1": {
+          "pivots": 215,
+          "events": 107,
+          "complete": 47,
+          "censored": 60,
+          "overlap_excluded": 59,
+          "right_censored": 1,
+          "independent_complete": 30,
+          "hold": 18,
+          "fail": 12,
+          "evaluated": 10,
+          "evaluation_censored": 10,
+          "insufficient_train": 0,
+          "prefix": true,
+          "scores": {
+            "flat": {
+              "mape": 15.119731838723402,
+              "legs": [
+                8.536850560396013,
+                18.205464809098576,
+                18.616880146675623
+              ]
+            },
+            "median": {
+              "mape": 16.35090575128215,
+              "legs": [
+                9.818654819469808,
+                11.47719433471485,
+                27.756868099661794
+              ]
+            },
+            "medoid": {
+              "mape": 13.887057985096794,
+              "legs": [
+                6.593275206494982,
+                10.150305319681573,
+                24.917593429113815
+              ]
+            },
+            "neighbor": {
+              "mape": 19.93870231187478,
+              "legs": [
+                14.376762076577569,
+                19.240011540877713,
+                26.199333318169078
+              ]
+            }
+          }
+        },
+        "0.15": {
+          "pivots": 115,
+          "events": 57,
+          "complete": 32,
+          "censored": 25,
+          "overlap_excluded": 24,
+          "right_censored": 1,
+          "independent_complete": 19,
+          "hold": 9,
+          "fail": 10,
+          "evaluated": 0,
+          "evaluation_censored": 4,
+          "insufficient_train": 6,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        },
+        "0.2": {
+          "pivots": 69,
+          "events": 34,
+          "complete": 23,
+          "censored": 11,
+          "overlap_excluded": 10,
+          "right_censored": 1,
+          "independent_complete": 13,
+          "hold": 4,
+          "fail": 9,
+          "evaluated": 0,
+          "evaluation_censored": 2,
+          "insufficient_train": 4,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        },
+        "0.3": {
+          "pivots": 41,
+          "events": 20,
+          "complete": 7,
+          "censored": 13,
+          "overlap_excluded": 12,
+          "right_censored": 1,
+          "independent_complete": 5,
+          "hold": 2,
+          "fail": 3,
+          "evaluated": 0,
+          "evaluation_censored": 2,
+          "insufficient_train": 1,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        },
+        "0.4": {
+          "pivots": 25,
+          "events": 12,
+          "complete": 8,
+          "censored": 4,
+          "overlap_excluded": 3,
+          "right_censored": 1,
+          "independent_complete": 5,
+          "hold": 3,
+          "fail": 2,
+          "evaluated": 0,
+          "evaluation_censored": 0,
+          "insufficient_train": 2,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        },
+        "0.5": {
+          "pivots": 16,
+          "events": 8,
+          "complete": 5,
+          "censored": 3,
+          "overlap_excluded": 1,
+          "right_censored": 2,
+          "independent_complete": 3,
+          "hold": 2,
+          "fail": 1,
+          "evaluated": 0,
+          "evaluation_censored": 1,
+          "insufficient_train": 0,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        }
+      }
+    }
+  }
+}
