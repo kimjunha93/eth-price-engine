@@ -1,0 +1,1149 @@
+{
+  "version": "regime-ensemble-v1",
+  "status": "exploratory_reused_history",
+  "markets": {
+    "Upbit_ETHKRW": {
+      "rows": 3347,
+      "prefix": {
+        "5": true,
+        "10": true,
+        "20": true,
+        "30": true,
+        "50": true
+      },
+      "counts": {
+        "grid": 158,
+        "missing_state": 0,
+        "invalid_lower": 0,
+        "censored": 1
+      },
+      "all_classes": {
+        "up": 69,
+        "down": 61,
+        "no_touch": 27,
+        "ambiguous": 0
+      },
+      "evaluation": {
+        "n": 71,
+        "skipped": 0,
+        "fallback": {
+          "same_regime": 46,
+          "same_trend": 19,
+          "baseline": 6
+        },
+        "weights": {
+          "0.75,0.25,0": 10,
+          "0.5,0.5,0": 27,
+          "0.25,0.75,0": 20,
+          "0,1,0": 13,
+          "0,0.75,0.25": 1
+        },
+        "regimes": {
+          "-1:0": [
+            11,
+            4,
+            3,
+            0
+          ],
+          "0:0": [
+            2,
+            5,
+            3,
+            0
+          ],
+          "1:0": [
+            8,
+            11,
+            2,
+            0
+          ],
+          "1:1": [
+            5,
+            5,
+            3,
+            0
+          ],
+          "0:1": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "-1:1": [
+            2,
+            2,
+            3,
+            0
+          ]
+        },
+        "reliability": {
+          "B1": [
+            [
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 71,
+                "mean_p": 0.44757315077858034,
+                "observed": 0.39436619718309857
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 71,
+                "mean_p": 0.37498687156805954,
+                "observed": 0.39436619718309857
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 71,
+                "mean_p": 0.1691942112987859,
+                "observed": 0.2112676056338028
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 71,
+                "mean_p": 0.008245766354574156,
+                "observed": 0
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ]
+          ],
+          "B2": [
+            [
+              {
+                "n": 1,
+                "mean_p": 0.22692307692307692,
+                "observed": 0
+              },
+              {
+                "n": 66,
+                "mean_p": 0.3928904428904428,
+                "observed": 0.4090909090909091
+              },
+              {
+                "n": 4,
+                "mean_p": 0.5182692307692307,
+                "observed": 0.25
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 8,
+                "mean_p": 0.21634615384615385,
+                "observed": 0.5
+              },
+              {
+                "n": 60,
+                "mean_p": 0.3762179487179488,
+                "observed": 0.36666666666666664
+              },
+              {
+                "n": 3,
+                "mean_p": 0.5384615384615384,
+                "observed": 0.6666666666666666
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 42,
+                "mean_p": 0.13891941391941398,
+                "observed": 0.16666666666666666
+              },
+              {
+                "n": 26,
+                "mean_p": 0.34866863905325446,
+                "observed": 0.23076923076923078
+              },
+              {
+                "n": 3,
+                "mean_p": 0.558974358974359,
+                "observed": 0.6666666666666666
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 71,
+                "mean_p": 0.0038461538461538386,
+                "observed": 0
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ]
+          ],
+          "M4": [
+            [
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 71,
+                "mean_p": 0.439368806590403,
+                "observed": 0.39436619718309857
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 1,
+                "mean_p": 0.24,
+                "observed": 0
+              },
+              {
+                "n": 70,
+                "mean_p": 0.37094303185168837,
+                "observed": 0.4
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 69,
+                "mean_p": 0.16107828097321844,
+                "observed": 0.2028985507246377
+              },
+              {
+                "n": 2,
+                "mean_p": 0.2858333333333334,
+                "observed": 0.5
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 71,
+                "mean_p": 0.026939921811893752,
+                "observed": 0
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ]
+          ],
+          "M9": [
+            [
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 70,
+                "mean_p": 0.41360989953619515,
+                "observed": 0.4
+              },
+              {
+                "n": 1,
+                "mean_p": 0.5423076923076923,
+                "observed": 0
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 1,
+                "mean_p": 0.23076923076923078,
+                "observed": 0
+              },
+              {
+                "n": 70,
+                "mean_p": 0.3724798838833287,
+                "observed": 0.4
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 52,
+                "mean_p": 0.16467379173349586,
+                "observed": 0.19230769230769232
+              },
+              {
+                "n": 18,
+                "mean_p": 0.3180878668002653,
+                "observed": 0.2222222222222222
+              },
+              {
+                "n": 1,
+                "mean_p": 0.5038461538461538,
+                "observed": 1
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 71,
+                "mean_p": 0.0057489198755449914,
+                "observed": 0
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ]
+          ]
+        },
+        "censored": 1,
+        "actual": {
+          "up": 28,
+          "down": 28,
+          "no_touch": 15,
+          "ambiguous": 0
+        },
+        "scores": {
+          "B1": {
+            "brier": 0.6555773113029176,
+            "logloss": 1.090695342903773,
+            "accuracy": 0.39436619718309857,
+            "confusion": [
+              [
+                28,
+                0,
+                0,
+                0
+              ],
+              [
+                28,
+                0,
+                0,
+                0
+              ],
+              [
+                15,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "B2": {
+            "brier": 0.6424293691140929,
+            "logloss": 1.065878748506058,
+            "accuracy": 0.4647887323943662,
+            "confusion": [
+              [
+                18,
+                6,
+                4,
+                0
+              ],
+              [
+                12,
+                10,
+                6,
+                0
+              ],
+              [
+                10,
+                0,
+                5,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "M4": {
+            "brier": 0.6582371770116364,
+            "logloss": 1.110795524106085,
+            "accuracy": 0.38028169014084506,
+            "confusion": [
+              [
+                26,
+                2,
+                0,
+                0
+              ],
+              [
+                27,
+                1,
+                0,
+                0
+              ],
+              [
+                14,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "M9": {
+            "brier": 0.6449729955152845,
+            "logloss": 1.0702460935495808,
+            "accuracy": 0.49295774647887325,
+            "confusion": [
+              [
+                25,
+                2,
+                1,
+                0
+              ],
+              [
+                18,
+                8,
+                2,
+                0
+              ],
+              [
+                13,
+                0,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          }
+        }
+      }
+    },
+    "Bitstamp_ETHUSD": {
+      "rows": 3305,
+      "prefix": {
+        "5": true,
+        "10": true,
+        "20": true,
+        "30": true,
+        "50": true
+      },
+      "counts": {
+        "grid": 157,
+        "missing_state": 0,
+        "invalid_lower": 0,
+        "censored": 1
+      },
+      "all_classes": {
+        "up": 65,
+        "down": 67,
+        "no_touch": 24,
+        "ambiguous": 0
+      },
+      "evaluation": {
+        "n": 71,
+        "skipped": 0,
+        "fallback": {
+          "same_regime": 48,
+          "same_trend": 14,
+          "baseline": 9
+        },
+        "weights": {
+          "0,1,0": 12,
+          "0.25,0.75,0": 5,
+          "0.5,0.5,0": 12,
+          "0.75,0.25,0": 26,
+          "1,0,0": 15,
+          "0.75,0,0.25": 1
+        },
+        "regimes": {
+          "-1:0": [
+            11,
+            5,
+            2,
+            0
+          ],
+          "1:0": [
+            7,
+            10,
+            2,
+            0
+          ],
+          "0:0": [
+            1,
+            5,
+            3,
+            0
+          ],
+          "0:1": [
+            3,
+            2,
+            0,
+            0
+          ],
+          "1:1": [
+            7,
+            5,
+            1,
+            0
+          ],
+          "-1:1": [
+            2,
+            3,
+            2,
+            0
+          ]
+        },
+        "reliability": {
+          "B1": [
+            [
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 71,
+                "mean_p": 0.39784837172517157,
+                "observed": 0.43661971830985913
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 71,
+                "mean_p": 0.42488302651669896,
+                "observed": 0.4225352112676056
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 71,
+                "mean_p": 0.1689609442099713,
+                "observed": 0.14084507042253522
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 71,
+                "mean_p": 0.008307657548158124,
+                "observed": 0
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ]
+          ],
+          "B2": [
+            [
+              {
+                "n": 1,
+                "mean_p": 0.13846153846153847,
+                "observed": 0
+              },
+              {
+                "n": 63,
+                "mean_p": 0.3916971916971915,
+                "observed": 0.4603174603174603
+              },
+              {
+                "n": 7,
+                "mean_p": 0.5219780219780219,
+                "observed": 0.2857142857142857
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 4,
+                "mean_p": 0.1923076923076923,
+                "observed": 0.5
+              },
+              {
+                "n": 67,
+                "mean_p": 0.37158438576349023,
+                "observed": 0.417910447761194
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 41,
+                "mean_p": 0.14296435272045024,
+                "observed": 0.14634146341463414
+              },
+              {
+                "n": 27,
+                "mean_p": 0.3317663817663818,
+                "observed": 0.07407407407407407
+              },
+              {
+                "n": 3,
+                "mean_p": 0.591025641025641,
+                "observed": 0.6666666666666666
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 71,
+                "mean_p": 0.0038461538461538386,
+                "observed": 0
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ]
+          ],
+          "M4": [
+            [
+              {
+                "n": 1,
+                "mean_p": 0.24,
+                "observed": 1
+              },
+              {
+                "n": 69,
+                "mean_p": 0.4123798332944489,
+                "observed": 0.43478260869565216
+              },
+              {
+                "n": 1,
+                "mean_p": 0.5,
+                "observed": 0
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 66,
+                "mean_p": 0.4035897723993658,
+                "observed": 0.42424242424242425
+              },
+              {
+                "n": 5,
+                "mean_p": 0.504,
+                "observed": 0.4
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 69,
+                "mean_p": 0.14611551608409235,
+                "observed": 0.13043478260869565
+              },
+              {
+                "n": 2,
+                "mean_p": 0.2916666666666667,
+                "observed": 0.5
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 71,
+                "mean_p": 0.02793750114350965,
+                "observed": 0
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ]
+          ],
+          "M9": [
+            [
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 71,
+                "mean_p": 0.4092836432009323,
+                "observed": 0.43661971830985913
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 71,
+                "mean_p": 0.4083165129231864,
+                "observed": 0.4225352112676056
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 65,
+                "mean_p": 0.1639165834210398,
+                "observed": 0.13846153846153847
+              },
+              {
+                "n": 6,
+                "mean_p": 0.30906360705815533,
+                "observed": 0.16666666666666666
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ],
+            [
+              {
+                "n": 71,
+                "mean_p": 0.006217314795367034,
+                "observed": 0
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              },
+              {
+                "n": 0,
+                "mean_p": null,
+                "observed": null
+              }
+            ]
+          ]
+        },
+        "censored": 1,
+        "actual": {
+          "up": 31,
+          "down": 30,
+          "no_touch": 10,
+          "ambiguous": 0
+        },
+        "scores": {
+          "B1": {
+            "brier": 0.6178332699309088,
+            "logloss": 1.0212723922095133,
+            "accuracy": 0.4225352112676056,
+            "confusion": [
+              [
+                0,
+                31,
+                0,
+                0
+              ],
+              [
+                0,
+                30,
+                0,
+                0
+              ],
+              [
+                0,
+                10,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "B2": {
+            "brier": 0.6391828485707144,
+            "logloss": 1.0677959497332445,
+            "accuracy": 0.43661971830985913,
+            "confusion": [
+              [
+                23,
+                5,
+                3,
+                0
+              ],
+              [
+                18,
+                6,
+                6,
+                0
+              ],
+              [
+                5,
+                3,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "M4": {
+            "brier": 0.6235076092837292,
+            "logloss": 1.0507831949510698,
+            "accuracy": 0.4084507042253521,
+            "confusion": [
+              [
+                18,
+                13,
+                0,
+                0
+              ],
+              [
+                19,
+                11,
+                0,
+                0
+              ],
+              [
+                5,
+                5,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "M9": {
+            "brier": 0.6270201685450897,
+            "logloss": 1.042745007541854,
+            "accuracy": 0.3380281690140845,
+            "confusion": [
+              [
+                9,
+                22,
+                0,
+                0
+              ],
+              [
+                14,
+                15,
+                1,
+                0
+              ],
+              [
+                4,
+                6,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          }
+        }
+      }
+    }
+  }
+}
