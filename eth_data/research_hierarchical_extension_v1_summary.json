@@ -1,0 +1,250 @@
+{
+  "version": "hierarchical-extension-and-parent-v1",
+  "status": "retrospective_research_only_no_promotion",
+  "source": {
+    "file": "Upbit_ETHKRW_1d.csv",
+    "sha256": "44991322abdc79e5fd7d440632155e0d0a7c7f5bcc3ed0c66368bcdca41fbf12",
+    "rows": 3346,
+    "first": "2017-09-25",
+    "last": "2026-11-25",
+    "gap_breaks": 1
+  },
+  "protocol": {
+    "pairs": [
+      [
+        0.05,
+        0.2
+      ],
+      [
+        0.1,
+        0.3
+      ],
+      [
+        0.15,
+        0.4
+      ],
+      [
+        0.2,
+        0.5
+      ]
+    ],
+    "extension": "Lower close DC up confirmation fixes observed closing trough; first close >= trough*(1+upper) vs <= trough; third outcome neither by cap; exclude already reached upper",
+    "parent": "Separate experiment restricted to parent DC down at lower up confirmation; actual parent DC up confirmation vs close <= original lower trough; excludes parent not down",
+    "cap": 180,
+    "sensitivity_caps": [
+      90,
+      365
+    ],
+    "features": [
+      "ATR14/close",
+      "90-day drawdown",
+      "7/30-day log returns",
+      "MA60 distance",
+      "confirmed rebound magnitude",
+      "prior peak-to-trough ratio",
+      "parent direction",
+      "distance from parent running extremum"
+    ],
+    "models": [
+      "B1 Laplace frequency",
+      "parent state shrinkage",
+      "KNN8 50% blend",
+      "regularized logistic C=.3 50% blend"
+    ],
+    "validation": "nonoverlap within pair; min10 prior labels strictly ended; 2020–22 selection and 2023+ reused evaluation; min10 tune and >=5% Brier/logloss improvement; diagnostic >=30 eval and >=5% both with positive block CI; no independent promotion"
+  },
+  "extension": {
+    "columns": [
+      "lower",
+      "upper",
+      "all_up",
+      "all_down",
+      "all_neither",
+      "censored",
+      "tune_n",
+      "test_n",
+      "test_up",
+      "test_down",
+      "test_neither",
+      "up_with_lower_pullback",
+      "B1_test_brier",
+      "parent_test_brier",
+      "knn_test_brier",
+      "logistic_test_brier"
+    ],
+    "rows": [
+      [
+        0.05,
+        0.2,
+        58,
+        75,
+        0,
+        1,
+        57,
+        41,
+        15,
+        26,
+        0,
+        16,
+        0.483,
+        0.4974,
+        0.4979,
+        0.4706
+      ],
+      [
+        0.1,
+        0.3,
+        34,
+        39,
+        0,
+        0,
+        28,
+        22,
+        10,
+        12,
+        0,
+        7,
+        0.5045,
+        0.5156,
+        0.5184,
+        0.5154
+      ],
+      [
+        0.15,
+        0.4,
+        20,
+        21,
+        0,
+        0,
+        16,
+        12,
+        6,
+        6,
+        0,
+        2,
+        0.5149,
+        0.5412,
+        0.5381,
+        0.5368
+      ],
+      [
+        0.2,
+        0.5,
+        14,
+        11,
+        0,
+        0,
+        8,
+        7,
+        5,
+        2,
+        0,
+        0,
+        0.4997,
+        0.5103,
+        0.5165,
+        0.4751
+      ]
+    ]
+  },
+  "parent": {
+    "columns": [
+      "lower",
+      "upper",
+      "all_up",
+      "all_down",
+      "all_neither",
+      "censored",
+      "tune_n",
+      "test_n",
+      "test_up",
+      "test_down",
+      "test_neither",
+      "B1_test_brier",
+      "knn_test_brier",
+      "logistic_test_brier"
+    ],
+    "rows": [
+      [
+        0.05,
+        0.2,
+        24,
+        36,
+        0,
+        1,
+        20,
+        17,
+        7,
+        10,
+        0,
+        0.4941,
+        0.5129,
+        0.4954
+      ],
+      [
+        0.1,
+        0.3,
+        17,
+        21,
+        0,
+        0,
+        13,
+        10,
+        5,
+        5,
+        0,
+        0.5219,
+        0.5271,
+        0.5452
+      ],
+      [
+        0.15,
+        0.4,
+        11,
+        12,
+        0,
+        0,
+        7,
+        6,
+        4,
+        2,
+        0,
+        0.5613,
+        0.584,
+        0.5836
+      ],
+      [
+        0.2,
+        0.5,
+        7,
+        6,
+        0,
+        0,
+        0,
+        3,
+        2,
+        1,
+        0,
+        0.5324,
+        0.5548,
+        0.4666
+      ]
+    ],
+    "note": "parent-state model equals B1 because all start in same parent state"
+  },
+  "sensitivity": "90-day cap changes only 20->50 fixed amplitude from [14,11,0] to [14,10,1]; 365 unchanged; exact parent experiment counts unchanged; B1 selected in all 24 pair/endpoint/cap experiments, zero gates",
+  "limitations": [
+    "Archived daily closes only, not latest data or intraday execution",
+    "Cross-scale overlapping events not independent",
+    "Fixed amplitude attainment not synonymous with parent DC confirmation",
+    "No USD replication, full chain joint probability, cycle high forecast, or prospective holdout",
+    "Summary values rounded; local scripts/results linked in conversation, not uploaded by this commit"
+  ],
+  "artifacts": {
+    "extension_code": "50f7a4e50ffc8440618d96f8f746606bb4d9fdcee105113983dddad0df772e42",
+    "extension_result": "d8f449efa2f107db4178c8efe68889f95207624c4fdc6ca509e206dc00cd3f05",
+    "parent_code": "1092cf5b4cc10d6da0baf266aed1bb9c15397ffc7452848455fdb849449f58a7",
+    "parent_result": "c2ce88acecebdf0d30c0f6c9f0e2ce869ee4fc228e01640ad38913b240b5c664"
+  },
+  "production": "unchanged"
+}
