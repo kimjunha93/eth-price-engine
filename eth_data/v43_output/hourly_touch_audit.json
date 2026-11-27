@@ -1,0 +1,825 @@
+{
+  "version": "v43-hourly-touch-audit-1",
+  "market": "Upbit_ETHKRW",
+  "daily_rows": 3347,
+  "hourly_rows": 80151,
+  "daily_last": "2026-11-26 00:00:00+00:00",
+  "hourly_last": "2026-11-27 04:00:00+00:00",
+  "complete_day_overlap": 3279,
+  "exact_ohlc_days": 3279,
+  "mismatch_days": 0,
+  "input_sha256": {
+    "Upbit_ETHKRW_1d.csv": "0c326279c5723282a73eadd40314905e18a83532cb5d2b4da60442ad1477a662",
+    "Upbit_ETHKRW_1h.csv": "9691d4410e86e84d35bc40249f1fea20cb26cba9e87bc9da16f3822492d6aa96"
+  },
+  "policy": "Only resolve ambiguous daily hits using complete 24-hour OHLC-matched days; remaining same-hour double touch remains ambiguous; no model promotion; counts across pairs overlap; 30/90/180 caps are for validation, not prediction dates.",
+  "results": [
+    {
+      "up": 0.05,
+      "down": 0.05,
+      "cap": 30,
+      "daily": {
+        "up": 213,
+        "down": 181,
+        "neither": 2,
+        "ambiguous": 8,
+        "censored": 1
+      },
+      "hourly": {
+        "up": 217,
+        "down": 185,
+        "neither": 2,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "resolutions": {
+        "up": 4,
+        "down": 4,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 162,
+      "transitions": [
+        {
+          "day": "2018-01-12 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "down"
+        },
+        {
+          "day": "2018-12-07 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "down"
+        },
+        {
+          "day": "2018-12-21 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "up"
+        },
+        {
+          "day": "2020-03-13 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "up"
+        },
+        {
+          "day": "2020-03-20 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "up"
+        },
+        {
+          "day": "2021-01-08 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "down"
+        },
+        {
+          "day": "2021-01-22 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "down"
+        },
+        {
+          "day": "2021-05-21 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "up"
+        }
+      ]
+    },
+    {
+      "up": 0.05,
+      "down": 0.05,
+      "cap": 90,
+      "daily": {
+        "up": 214,
+        "down": 181,
+        "neither": 0,
+        "ambiguous": 8,
+        "censored": 1
+      },
+      "hourly": {
+        "up": 218,
+        "down": 185,
+        "neither": 0,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "resolutions": {
+        "up": 4,
+        "down": 4,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 161,
+      "transitions": [
+        {
+          "day": "2018-01-12 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "down"
+        },
+        {
+          "day": "2018-12-07 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "down"
+        },
+        {
+          "day": "2018-12-21 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "up"
+        },
+        {
+          "day": "2020-03-13 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "up"
+        },
+        {
+          "day": "2020-03-20 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "up"
+        },
+        {
+          "day": "2021-01-08 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "down"
+        },
+        {
+          "day": "2021-01-22 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "down"
+        },
+        {
+          "day": "2021-05-21 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "up"
+        }
+      ]
+    },
+    {
+      "up": 0.05,
+      "down": 0.05,
+      "cap": 180,
+      "daily": {
+        "up": 214,
+        "down": 181,
+        "neither": 0,
+        "ambiguous": 8,
+        "censored": 1
+      },
+      "hourly": {
+        "up": 218,
+        "down": 185,
+        "neither": 0,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "resolutions": {
+        "up": 4,
+        "down": 4,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 161,
+      "transitions": [
+        {
+          "day": "2018-01-12 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "down"
+        },
+        {
+          "day": "2018-12-07 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "down"
+        },
+        {
+          "day": "2018-12-21 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "up"
+        },
+        {
+          "day": "2020-03-13 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "up"
+        },
+        {
+          "day": "2020-03-20 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "up"
+        },
+        {
+          "day": "2021-01-08 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "down"
+        },
+        {
+          "day": "2021-01-22 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "down"
+        },
+        {
+          "day": "2021-05-21 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "up"
+        }
+      ]
+    },
+    {
+      "up": 0.1,
+      "down": 0.1,
+      "cap": 30,
+      "daily": {
+        "up": 122,
+        "down": 117,
+        "neither": 14,
+        "ambiguous": 1,
+        "censored": 1
+      },
+      "hourly": {
+        "up": 122,
+        "down": 117,
+        "neither": 14,
+        "ambiguous": 1,
+        "censored": 1
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 0,
+        "same_hour": 1,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 85,
+      "transitions": [
+        {
+          "day": "2020-03-13 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "ambiguous"
+        }
+      ]
+    },
+    {
+      "up": 0.1,
+      "down": 0.1,
+      "cap": 90,
+      "daily": {
+        "up": 124,
+        "down": 119,
+        "neither": 0,
+        "ambiguous": 1,
+        "censored": 1
+      },
+      "hourly": {
+        "up": 124,
+        "down": 119,
+        "neither": 0,
+        "ambiguous": 1,
+        "censored": 1
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 0,
+        "same_hour": 1,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 76,
+      "transitions": [
+        {
+          "day": "2020-03-13 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "ambiguous"
+        }
+      ]
+    },
+    {
+      "up": 0.1,
+      "down": 0.1,
+      "cap": 180,
+      "daily": {
+        "up": 124,
+        "down": 119,
+        "neither": 0,
+        "ambiguous": 1,
+        "censored": 1
+      },
+      "hourly": {
+        "up": 124,
+        "down": 119,
+        "neither": 0,
+        "ambiguous": 1,
+        "censored": 1
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 0,
+        "same_hour": 1,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 76,
+      "transitions": [
+        {
+          "day": "2020-03-13 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "ambiguous"
+        }
+      ]
+    },
+    {
+      "up": 0.2,
+      "down": 0.1,
+      "cap": 30,
+      "daily": {
+        "up": 58,
+        "down": 109,
+        "neither": 28,
+        "ambiguous": 1,
+        "censored": 1
+      },
+      "hourly": {
+        "up": 58,
+        "down": 110,
+        "neither": 28,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 1,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 67,
+      "transitions": [
+        {
+          "day": "2020-03-13 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "down"
+        }
+      ]
+    },
+    {
+      "up": 0.2,
+      "down": 0.1,
+      "cap": 90,
+      "daily": {
+        "up": 64,
+        "down": 105,
+        "neither": 0,
+        "ambiguous": 1,
+        "censored": 1
+      },
+      "hourly": {
+        "up": 64,
+        "down": 106,
+        "neither": 0,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 1,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 48,
+      "transitions": [
+        {
+          "day": "2020-03-13 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "down"
+        }
+      ]
+    },
+    {
+      "up": 0.2,
+      "down": 0.1,
+      "cap": 180,
+      "daily": {
+        "up": 64,
+        "down": 105,
+        "neither": 0,
+        "ambiguous": 1,
+        "censored": 1
+      },
+      "hourly": {
+        "up": 64,
+        "down": 106,
+        "neither": 0,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 1,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 48,
+      "transitions": [
+        {
+          "day": "2020-03-13 00:00:00+00:00",
+          "daily": "ambiguous",
+          "hourly": "down"
+        }
+      ]
+    },
+    {
+      "up": 0.3,
+      "down": 0.1,
+      "cap": 30,
+      "daily": {
+        "up": 35,
+        "down": 104,
+        "neither": 36,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "hourly": {
+        "up": 35,
+        "down": 104,
+        "neither": 36,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 0,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 59,
+      "transitions": []
+    },
+    {
+      "up": 0.3,
+      "down": 0.1,
+      "cap": 90,
+      "daily": {
+        "up": 45,
+        "down": 105,
+        "neither": 2,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "hourly": {
+        "up": 45,
+        "down": 105,
+        "neither": 2,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 0,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 42,
+      "transitions": []
+    },
+    {
+      "up": 0.3,
+      "down": 0.1,
+      "cap": 180,
+      "daily": {
+        "up": 45,
+        "down": 105,
+        "neither": 1,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "hourly": {
+        "up": 45,
+        "down": 105,
+        "neither": 1,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 0,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 41,
+      "transitions": []
+    },
+    {
+      "up": 0.3,
+      "down": 0.2,
+      "cap": 30,
+      "daily": {
+        "up": 32,
+        "down": 42,
+        "neither": 54,
+        "ambiguous": 0,
+        "censored": 2
+      },
+      "hourly": {
+        "up": 32,
+        "down": 42,
+        "neither": 54,
+        "ambiguous": 0,
+        "censored": 2
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 0,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 45,
+      "transitions": []
+    },
+    {
+      "up": 0.3,
+      "down": 0.2,
+      "cap": 90,
+      "daily": {
+        "up": 45,
+        "down": 48,
+        "neither": 4,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "hourly": {
+        "up": 45,
+        "down": 48,
+        "neither": 4,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 0,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 28,
+      "transitions": []
+    },
+    {
+      "up": 0.3,
+      "down": 0.2,
+      "cap": 180,
+      "daily": {
+        "up": 45,
+        "down": 47,
+        "neither": 1,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "hourly": {
+        "up": 45,
+        "down": 47,
+        "neither": 1,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 0,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 24,
+      "transitions": []
+    },
+    {
+      "up": 0.4,
+      "down": 0.2,
+      "cap": 30,
+      "daily": {
+        "up": 18,
+        "down": 40,
+        "neither": 60,
+        "ambiguous": 0,
+        "censored": 2
+      },
+      "hourly": {
+        "up": 18,
+        "down": 40,
+        "neither": 60,
+        "ambiguous": 0,
+        "censored": 2
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 0,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 44,
+      "transitions": []
+    },
+    {
+      "up": 0.4,
+      "down": 0.2,
+      "cap": 90,
+      "daily": {
+        "up": 28,
+        "down": 45,
+        "neither": 9,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "hourly": {
+        "up": 28,
+        "down": 45,
+        "neither": 9,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 0,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 26,
+      "transitions": []
+    },
+    {
+      "up": 0.4,
+      "down": 0.2,
+      "cap": 180,
+      "daily": {
+        "up": 29,
+        "down": 43,
+        "neither": 1,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "hourly": {
+        "up": 29,
+        "down": 43,
+        "neither": 1,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 0,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 17,
+      "transitions": []
+    },
+    {
+      "up": 0.2,
+      "down": 0.2,
+      "cap": 30,
+      "daily": {
+        "up": 53,
+        "down": 44,
+        "neither": 44,
+        "ambiguous": 0,
+        "censored": 2
+      },
+      "hourly": {
+        "up": 53,
+        "down": 44,
+        "neither": 44,
+        "ambiguous": 0,
+        "censored": 2
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 0,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 48,
+      "transitions": []
+    },
+    {
+      "up": 0.2,
+      "down": 0.2,
+      "cap": 90,
+      "daily": {
+        "up": 60,
+        "down": 48,
+        "neither": 3,
+        "ambiguous": 0,
+        "censored": 2
+      },
+      "hourly": {
+        "up": 60,
+        "down": 48,
+        "neither": 3,
+        "ambiguous": 0,
+        "censored": 2
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 0,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 30,
+      "transitions": []
+    },
+    {
+      "up": 0.2,
+      "down": 0.2,
+      "cap": 180,
+      "daily": {
+        "up": 61,
+        "down": 48,
+        "neither": 1,
+        "ambiguous": 0,
+        "censored": 2
+      },
+      "hourly": {
+        "up": 61,
+        "down": 48,
+        "neither": 1,
+        "ambiguous": 0,
+        "censored": 2
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 0,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 29,
+      "transitions": []
+    },
+    {
+      "up": 0.1,
+      "down": 0.2,
+      "cap": 30,
+      "daily": {
+        "up": 112,
+        "down": 49,
+        "neither": 32,
+        "ambiguous": 0,
+        "censored": 2
+      },
+      "hourly": {
+        "up": 112,
+        "down": 49,
+        "neither": 32,
+        "ambiguous": 0,
+        "censored": 2
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 0,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 63,
+      "transitions": []
+    },
+    {
+      "up": 0.1,
+      "down": 0.2,
+      "cap": 90,
+      "daily": {
+        "up": 114,
+        "down": 53,
+        "neither": 2,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "hourly": {
+        "up": 114,
+        "down": 53,
+        "neither": 2,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 0,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 49,
+      "transitions": []
+    },
+    {
+      "up": 0.1,
+      "down": 0.2,
+      "cap": 180,
+      "daily": {
+        "up": 114,
+        "down": 54,
+        "neither": 0,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "hourly": {
+        "up": 114,
+        "down": 54,
+        "neither": 0,
+        "ambiguous": 0,
+        "censored": 1
+      },
+      "resolutions": {
+        "up": 0,
+        "down": 0,
+        "same_hour": 0,
+        "unmatched_day": 0
+      },
+      "evaluated_eligible_after_2023": 48,
+      "transitions": []
+    }
+  ]
+}

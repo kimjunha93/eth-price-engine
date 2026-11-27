@@ -1,6 +1,6 @@
 {
   "version": "extrema-exploratory-0.1",
-  "generated_utc": "2026-11-27 05:29:03.323949+00:00",
+  "generated_utc": "2026-11-27 05:30:22.692466+00:00",
   "limitations": "Daily intraday extrema within close-confirmed legs; boundary candle shared, no hourly order resolution; fixed split exploratory, no forecast.",
   "markets": {
     "Upbit_ETHKRW": {
