@@ -1,30 +1,30 @@
 {
   "version": "v43-structure-1",
-  "generated_utc": "2026-11-27 05:57:13.601307+00:00",
+  "generated_utc": "2026-11-27 09:38:54.498015+00:00",
   "status": "descriptive_only",
   "model_policy": "historical median reference; no calibrated probability or full-cycle path; no live forecast registration",
   "markets": {
     "Upbit_ETHKRW": {
-      "last_hour_close": 2347000.0,
-      "last_hour_closed": "2026-11-27 05:00:00+00:00",
+      "last_hour_close": 2342000.0,
+      "last_hour_closed": "2026-11-27 09:00:00+00:00",
       "fresh_hourly": true,
       "last_day_close": 2293000.0,
       "last_day_closed": "2026-11-27 00:00:00+00:00",
       "fresh_daily": true,
       "scales": {
         "1h": {
-          "last_closed": "2026-11-27 05:00:00+00:00",
-          "data_age_hours": 0.9537781408333333,
+          "last_closed": "2026-11-27 09:00:00+00:00",
+          "data_age_hours": 0.6484716708333333,
           "states": {
             "0.05": {
               "state": "active_high",
               "start_available": "2026-11-26 02:00:00+00:00",
-              "elapsed_bars": 27,
-              "observed_extreme": 2359000.0,
+              "elapsed_bars": 31,
+              "observed_extreme": 2377000.0,
               "n_history": 734,
               "censored_history": 27,
               "reference_q25_q50_q75": [
-                2359000.0,
+                2377000.0,
                 2405788.1701279427,
                 2515006.4298194526
               ],
@@ -56,7 +56,7 @@
             "0.1": {
               "state": "active_low",
               "start_available": "2026-11-25 03:00:00+00:00",
-              "elapsed_bars": 50,
+              "elapsed_bars": 54,
               "observed_extreme": 2198000.0,
               "n_history": 174,
               "censored_history": 25,
@@ -93,7 +93,7 @@
             "0.15": {
               "state": "active_high",
               "start_available": "2026-11-23 14:00:00+00:00",
-              "elapsed_bars": 87,
+              "elapsed_bars": 91,
               "observed_extreme": 2505000.0,
               "n_history": 62,
               "censored_history": 28,
@@ -124,18 +124,18 @@
           }
         },
         "4h": {
-          "last_closed": "2026-11-27 04:00:00+00:00",
-          "data_age_hours": 1.9537781408333332,
+          "last_closed": "2026-11-27 08:00:00+00:00",
+          "data_age_hours": 1.6484716708333333,
           "states": {
             "0.05": {
               "state": "active_high",
               "start_available": "2026-11-26 20:00:00+00:00",
-              "elapsed_bars": 2,
-              "observed_extreme": 2355000.0,
+              "elapsed_bars": 3,
+              "observed_extreme": 2377000.0,
               "n_history": 538,
               "censored_history": 30,
               "reference_q25_q50_q75": [
-                2355000.0,
+                2377000.0,
                 2424290.4654795215,
                 2547730.5510737733
               ],
@@ -167,7 +167,7 @@
             "0.1": {
               "state": "active_low",
               "start_available": "2026-11-25 08:00:00+00:00",
-              "elapsed_bars": 11,
+              "elapsed_bars": 12,
               "observed_extreme": 2198000.0,
               "n_history": 141,
               "censored_history": 24,
@@ -220,7 +220,7 @@
         },
         "1d": {
           "last_closed": "2026-11-27 00:00:00+00:00",
-          "data_age_hours": 5.953778140833333,
+          "data_age_hours": 9.648471670833333,
           "states": {
             "0.05": {
               "state": "active_low",
@@ -423,31 +423,31 @@
         }
       },
       "input_sha256": {
-        "1h": "9691d4410e86e84d35bc40249f1fea20cb26cba9e87bc9da16f3822492d6aa96",
+        "1h": "6bd90209908bb250d7c57a01c3458f607262bbf4ae210d54a37445d76a381e9c",
         "1d": "0c326279c5723282a73eadd40314905e18a83532cb5d2b4da60442ad1477a662"
       }
     },
     "Bitstamp_ETHUSD": {
-      "last_hour_close": 1729.98,
-      "last_hour_closed": "2026-11-27 05:00:00+00:00",
+      "last_hour_close": 1729.17,
+      "last_hour_closed": "2026-11-27 09:00:00+00:00",
       "fresh_hourly": true,
       "last_day_close": 1687.48,
       "last_day_closed": "2026-11-27 00:00:00+00:00",
       "fresh_daily": true,
       "scales": {
         "1h": {
-          "last_closed": "2026-11-27 05:00:00+00:00",
-          "data_age_hours": 0.9537781408333333,
+          "last_closed": "2026-11-27 09:00:00+00:00",
+          "data_age_hours": 0.6484716708333333,
           "states": {
             "0.05": {
               "state": "active_high",
               "start_available": "2026-11-25 21:00:00+00:00",
-              "elapsed_bars": 32,
-              "observed_extreme": 1738.71,
+              "elapsed_bars": 36,
+              "observed_extreme": 1752.74,
               "n_history": 799,
               "censored_history": 0,
               "reference_q25_q50_q75": [
-                1738.71,
+                1752.74,
                 1757.3167843873757,
                 1831.2815639611133
               ],
@@ -479,7 +479,7 @@
             "0.1": {
               "state": "active_low",
               "start_available": "2026-11-25 02:00:00+00:00",
-              "elapsed_bars": 51,
+              "elapsed_bars": 55,
               "observed_extreme": 1606.59,
               "n_history": 221,
               "censored_history": 2,
@@ -516,7 +516,7 @@
             "0.15": {
               "state": "active_high",
               "start_available": "2026-11-23 14:00:00+00:00",
-              "elapsed_bars": 87,
+              "elapsed_bars": 91,
               "observed_extreme": 1842.94,
               "n_history": 106,
               "censored_history": 1,
@@ -553,7 +553,7 @@
             "0.2": {
               "state": "active_low",
               "start_available": "2026-10-30 01:00:00+00:00",
-              "elapsed_bars": 676,
+              "elapsed_bars": 680,
               "observed_extreme": 1536.0,
               "n_history": 60,
               "censored_history": 0,
@@ -590,7 +590,7 @@
             "0.3": {
               "state": "active_low",
               "start_available": "2026-11-13 04:00:00+00:00",
-              "elapsed_bars": 337,
+              "elapsed_bars": 341,
               "observed_extreme": 1536.0,
               "n_history": 21,
               "censored_history": 0,
@@ -615,18 +615,18 @@
           }
         },
         "4h": {
-          "last_closed": "2026-11-27 04:00:00+00:00",
-          "data_age_hours": 1.9537781408333332,
+          "last_closed": "2026-11-27 08:00:00+00:00",
+          "data_age_hours": 1.6484716708333333,
           "states": {
             "0.05": {
               "state": "active_high",
               "start_available": "2026-11-26 00:00:00+00:00",
-              "elapsed_bars": 7,
-              "observed_extreme": 1736.46,
+              "elapsed_bars": 8,
+              "observed_extreme": 1752.74,
               "n_history": 636,
               "censored_history": 0,
               "reference_q25_q50_q75": [
-                1736.46,
+                1752.74,
                 1765.2781122016802,
                 1860.8397907331034
               ],
@@ -658,7 +658,7 @@
             "0.1": {
               "state": "active_low",
               "start_available": "2026-11-25 08:00:00+00:00",
-              "elapsed_bars": 11,
+              "elapsed_bars": 12,
               "observed_extreme": 1606.59,
               "n_history": 195,
               "censored_history": 2,
@@ -695,7 +695,7 @@
             "0.15": {
               "state": "active_high",
               "start_available": "2026-11-23 16:00:00+00:00",
-              "elapsed_bars": 21,
+              "elapsed_bars": 22,
               "observed_extreme": 1776.71,
               "n_history": 99,
               "censored_history": 1,
@@ -732,7 +732,7 @@
             "0.2": {
               "state": "active_low",
               "start_available": "2026-10-30 04:00:00+00:00",
-              "elapsed_bars": 168,
+              "elapsed_bars": 169,
               "observed_extreme": 1536.0,
               "n_history": 54,
               "censored_history": 0,
@@ -769,7 +769,7 @@
             "0.3": {
               "state": "active_low",
               "start_available": "2026-11-13 04:00:00+00:00",
-              "elapsed_bars": 84,
+              "elapsed_bars": 85,
               "observed_extreme": 1536.0,
               "n_history": 20,
               "censored_history": 0,
@@ -788,7 +788,7 @@
             "0.4": {
               "state": "active_low",
               "start_available": "2026-11-20 16:00:00+00:00",
-              "elapsed_bars": 39,
+              "elapsed_bars": 40,
               "observed_extreme": 1536.0,
               "n_history": 10,
               "censored_history": 1,
@@ -807,7 +807,7 @@
         },
         "1d": {
           "last_closed": "2026-11-27 00:00:00+00:00",
-          "data_age_hours": 5.953778140833333,
+          "data_age_hours": 9.648471670833333,
           "states": {
             "0.05": {
               "state": "active_high",
@@ -1010,7 +1010,7 @@
         }
       },
       "input_sha256": {
-        "1h": "c47bc4bd294c2ab3ece429539ea48b5a11aa92081caa17902a1a9a85373b5700",
+        "1h": "274f3e9fbd5aa632d82e2f205fb5faf28a5182c41b577e0c175c6457a0f6c3b7",
         "1d": "f3ccef28364872f8549e4b16b3d2d116fbff289c7790c87266ed3b6e66cfa040"
       }
     }
