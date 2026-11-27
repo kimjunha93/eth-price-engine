@@ -1,0 +1,216 @@
+{
+  "version": "atr-extrema-v1",
+  "status": "exploratory_reused_history",
+  "markets": {
+    "Upbit_ETHKRW": {
+      "rows": 3347,
+      "pivots": {
+        "fixed5": 375,
+        "fixed10": 181,
+        "fixed15": 97,
+        "atr2": 129,
+        "atr3": 71,
+        "atr4": 45
+      },
+      "prefix": {
+        "fixed5": true,
+        "fixed10": true,
+        "fixed15": true,
+        "atr2": true,
+        "atr3": true,
+        "atr4": true
+      },
+      "counts": {
+        "all": 181,
+        "overlap_excluded": 42,
+        "right_censored": 1,
+        "missing_states": 6
+      },
+      "direction": {
+        "low": {
+          "evaluated": 20,
+          "skipped": 0,
+          "eligible": 68,
+          "scores": {
+            "flat": {
+              "mape": 17.53189431052647,
+              "median_ape": 11.42899523076395
+            },
+            "median": {
+              "mape": 11.54176650104375,
+              "median_ape": 7.17073282791661
+            },
+            "fixed5": {
+              "mape": 11.444118414445416,
+              "median_ape": 6.7002321205939905
+            },
+            "fixed10": {
+              "mape": 11.475494139558545,
+              "median_ape": 8.407128743362374
+            },
+            "fixed15": {
+              "mape": 11.507747230473258,
+              "median_ape": 7.872363347348982
+            },
+            "atr2": {
+              "mape": 12.17948186737642,
+              "median_ape": 7.210976251706058
+            },
+            "atr3": {
+              "mape": 12.118806556627415,
+              "median_ape": 7.852311068229966
+            },
+            "atr4": {
+              "mape": 12.106336367506803,
+              "median_ape": 7.019041765822815
+            }
+          }
+        },
+        "high": {
+          "evaluated": 21,
+          "skipped": 0,
+          "eligible": 64,
+          "scores": {
+            "flat": {
+              "mape": 15.494983759164798,
+              "median_ape": 7.3840445269016675
+            },
+            "median": {
+              "mape": 14.592722023309063,
+              "median_ape": 13.08475050752762
+            },
+            "fixed5": {
+              "mape": 14.852408702188516,
+              "median_ape": 16.374152690482113
+            },
+            "fixed10": {
+              "mape": 13.551391969054432,
+              "median_ape": 12.215215494328401
+            },
+            "fixed15": {
+              "mape": 15.029598803991732,
+              "median_ape": 16.19742260100232
+            },
+            "atr2": {
+              "mape": 15.238274783476093,
+              "median_ape": 16.03013036460197
+            },
+            "atr3": {
+              "mape": 14.546793141996412,
+              "median_ape": 12.655071887233582
+            },
+            "atr4": {
+              "mape": 13.37983173799437,
+              "median_ape": 14.626855122493287
+            }
+          }
+        }
+      }
+    },
+    "Bitstamp_ETHUSD": {
+      "rows": 3305,
+      "pivots": {
+        "fixed5": 459,
+        "fixed10": 215,
+        "fixed15": 115,
+        "atr2": 133,
+        "atr3": 67,
+        "atr4": 41
+      },
+      "prefix": {
+        "fixed5": true,
+        "fixed10": true,
+        "fixed15": true,
+        "atr2": true,
+        "atr3": true,
+        "atr4": true
+      },
+      "counts": {
+        "all": 215,
+        "overlap_excluded": 47,
+        "right_censored": 1,
+        "missing_states": 8
+      },
+      "direction": {
+        "low": {
+          "evaluated": 26,
+          "skipped": 0,
+          "eligible": 80,
+          "scores": {
+            "flat": {
+              "mape": 14.670528899645127,
+              "median_ape": 9.522421559333749
+            },
+            "median": {
+              "mape": 9.891502153445257,
+              "median_ape": 5.983232717760351
+            },
+            "fixed5": {
+              "mape": 10.604344861910365,
+              "median_ape": 6.01414597498292
+            },
+            "fixed10": {
+              "mape": 10.83435446259564,
+              "median_ape": 6.036862415563493
+            },
+            "fixed15": {
+              "mape": 9.697960182374496,
+              "median_ape": 6.65352033128665
+            },
+            "atr2": {
+              "mape": 10.203667374257293,
+              "median_ape": 6.212259873578824
+            },
+            "atr3": {
+              "mape": 10.280181003980722,
+              "median_ape": 5.673251886697517
+            },
+            "atr4": {
+              "mape": 9.9939791169706,
+              "median_ape": 5.357538159179336
+            }
+          }
+        },
+        "high": {
+          "evaluated": 26,
+          "skipped": 0,
+          "eligible": 79,
+          "scores": {
+            "flat": {
+              "mape": 14.132366650369041,
+              "median_ape": 7.322089401571791
+            },
+            "median": {
+              "mape": 12.726816583375417,
+              "median_ape": 9.746617496686383
+            },
+            "fixed5": {
+              "mape": 14.725275845963226,
+              "median_ape": 14.993852500972915
+            },
+            "fixed10": {
+              "mape": 14.535666004001857,
+              "median_ape": 14.805676635371457
+            },
+            "fixed15": {
+              "mape": 13.000874105558317,
+              "median_ape": 9.655274738169094
+            },
+            "atr2": {
+              "mape": 13.561928678640218,
+              "median_ape": 14.264087866689469
+            },
+            "atr3": {
+              "mape": 13.494656968936281,
+              "median_ape": 12.822444011134571
+            },
+            "atr4": {
+              "mape": 12.321653055432764,
+              "median_ape": 7.8189035242847815
+            }
+          }
+        }
+      }
+    }
+  }
+}
