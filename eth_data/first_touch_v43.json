@@ -1,0 +1,3840 @@
+{
+  "version": "v43-first-touch-1",
+  "rules": {
+    "pairs": [
+      [
+        0.05,
+        0.05
+      ],
+      [
+        0.1,
+        0.1
+      ],
+      [
+        0.2,
+        0.1
+      ],
+      [
+        0.3,
+        0.1
+      ],
+      [
+        0.3,
+        0.2
+      ],
+      [
+        0.4,
+        0.2
+      ],
+      [
+        0.2,
+        0.2
+      ],
+      [
+        0.1,
+        0.2
+      ]
+    ],
+    "horizons": [
+      30,
+      90,
+      180
+    ],
+    "cut": "2023-01-01",
+    "schedule": "every 7th available daily row, close; no current partial candle; per target pair greedily select nonoverlapping observation windows, next decision at or after previous outcome known",
+    "min_train": 30,
+    "neighbors": 20,
+    "labels": [
+      "up",
+      "down",
+      "neither",
+      "ambiguous"
+    ],
+    "ordering": "same-day double touch ambiguous unless opening already outside one barrier; no intraday reconstruction",
+    "censor": "missing next day or end before outcome/window; kept separately, excluded from scored outcomes",
+    "metrics": "four-class summed Brier, logloss, accuracy; Laplace smoothing; no independent final holdout or probability promotion",
+    "features": [
+      "7d and 28d log return",
+      "distance to 60d high and low",
+      "ATR14/close",
+      "relative volume20"
+    ],
+    "status": "exploratory; finite windows solely for censoring and validation, not a target date; no personal cost basis in model grid"
+  },
+  "markets": {
+    "Upbit_ETHKRW": {
+      "rows": 3347,
+      "invalid": 0,
+      "duplicates": 0,
+      "gaps": 1,
+      "last": "2026-11-27T00:00:00.000Z",
+      "prefix_ok": true,
+      "results": [
+        {
+          "up": 0.05,
+          "down": 0.05,
+          "horizon": 30,
+          "raw": 466,
+          "independent": 405,
+          "censored": 1,
+          "counts": {
+            "up": 213,
+            "down": 181,
+            "neither": 2,
+            "ambiguous": 8
+          },
+          "evaluated": 162,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5183633210227528,
+              "logloss": 0.7914054075651238,
+              "accuracy": 0.5
+            },
+            "M3_neighbors": {
+              "brier": 0.5481610082304526,
+              "logloss": 0.8538387586124643,
+              "accuracy": 0.5061728395061729
+            },
+            "M4_regime": {
+              "brier": 0.5321496668790839,
+              "logloss": 0.8090220586129385,
+              "accuracy": 0.5123456790123457
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2407650,
+            "lower": 2178350,
+            "n": 404,
+            "counts": {
+              "up": 213,
+              "down": 181,
+              "neither": 2,
+              "ambiguous": 8
+            },
+            "regime_counts": {
+              "up": 42,
+              "down": 55,
+              "neither": 0,
+              "ambiguous": 3
+            }
+          }
+        },
+        {
+          "up": 0.05,
+          "down": 0.05,
+          "horizon": 90,
+          "raw": 466,
+          "independent": 404,
+          "censored": 1,
+          "counts": {
+            "up": 214,
+            "down": 181,
+            "neither": 0,
+            "ambiguous": 8
+          },
+          "evaluated": 161,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5059450072861086,
+              "logloss": 0.7299753664946931,
+              "accuracy": 0.5093167701863354
+            },
+            "M3_neighbors": {
+              "brier": 0.5350888543823324,
+              "logloss": 0.8179010916109226,
+              "accuracy": 0.5031055900621118
+            },
+            "M4_regime": {
+              "brier": 0.517515290921527,
+              "logloss": 0.7559688468506075,
+              "accuracy": 0.5217391304347826
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2407650,
+            "lower": 2178350,
+            "n": 403,
+            "counts": {
+              "up": 214,
+              "down": 181,
+              "neither": 0,
+              "ambiguous": 8
+            },
+            "regime_counts": {
+              "up": 42,
+              "down": 55,
+              "neither": 0,
+              "ambiguous": 3
+            }
+          }
+        },
+        {
+          "up": 0.05,
+          "down": 0.05,
+          "horizon": 180,
+          "raw": 466,
+          "independent": 404,
+          "censored": 1,
+          "counts": {
+            "up": 214,
+            "down": 181,
+            "neither": 0,
+            "ambiguous": 8
+          },
+          "evaluated": 161,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5059450072861086,
+              "logloss": 0.7299753664946931,
+              "accuracy": 0.5093167701863354
+            },
+            "M3_neighbors": {
+              "brier": 0.5350888543823324,
+              "logloss": 0.8179010916109226,
+              "accuracy": 0.5031055900621118
+            },
+            "M4_regime": {
+              "brier": 0.517515290921527,
+              "logloss": 0.7559688468506075,
+              "accuracy": 0.5217391304347826
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2407650,
+            "lower": 2178350,
+            "n": 403,
+            "counts": {
+              "up": 214,
+              "down": 181,
+              "neither": 0,
+              "ambiguous": 8
+            },
+            "regime_counts": {
+              "up": 42,
+              "down": 55,
+              "neither": 0,
+              "ambiguous": 3
+            }
+          }
+        },
+        {
+          "up": 0.1,
+          "down": 0.1,
+          "horizon": 30,
+          "raw": 466,
+          "independent": 255,
+          "censored": 1,
+          "counts": {
+            "up": 122,
+            "down": 117,
+            "neither": 14,
+            "ambiguous": 1
+          },
+          "evaluated": 85,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.6173502308617671,
+              "logloss": 1.0708801287728424,
+              "accuracy": 0.4588235294117647
+            },
+            "M3_neighbors": {
+              "brier": 0.6108660130718957,
+              "logloss": 1.0275624012625453,
+              "accuracy": 0.4117647058823529
+            },
+            "M4_regime": {
+              "brier": 0.6190680644376031,
+              "logloss": 1.0718873482195161,
+              "accuracy": 0.4588235294117647
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2522300,
+            "lower": 2063700,
+            "n": 254,
+            "counts": {
+              "up": 122,
+              "down": 117,
+              "neither": 14,
+              "ambiguous": 1
+            },
+            "regime_counts": {
+              "up": 29,
+              "down": 43,
+              "neither": 2,
+              "ambiguous": 1
+            }
+          }
+        },
+        {
+          "up": 0.1,
+          "down": 0.1,
+          "horizon": 90,
+          "raw": 466,
+          "independent": 245,
+          "censored": 1,
+          "counts": {
+            "up": 124,
+            "down": 119,
+            "neither": 0,
+            "ambiguous": 1
+          },
+          "evaluated": 76,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.502007648829242,
+              "logloss": 0.7095484879827175,
+              "accuracy": 0.5263157894736842
+            },
+            "M3_neighbors": {
+              "brier": 0.5298336988304094,
+              "logloss": 0.8069199619800024,
+              "accuracy": 0.39473684210526316
+            },
+            "M4_regime": {
+              "brier": 0.5108320641720505,
+              "logloss": 0.7440162921996781,
+              "accuracy": 0.5131578947368421
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2522300,
+            "lower": 2063700,
+            "n": 244,
+            "counts": {
+              "up": 124,
+              "down": 119,
+              "neither": 0,
+              "ambiguous": 1
+            },
+            "regime_counts": {
+              "up": 30,
+              "down": 43,
+              "neither": 0,
+              "ambiguous": 1
+            }
+          }
+        },
+        {
+          "up": 0.1,
+          "down": 0.1,
+          "horizon": 180,
+          "raw": 466,
+          "independent": 245,
+          "censored": 1,
+          "counts": {
+            "up": 124,
+            "down": 119,
+            "neither": 0,
+            "ambiguous": 1
+          },
+          "evaluated": 76,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.502007648829242,
+              "logloss": 0.7095484879827175,
+              "accuracy": 0.5263157894736842
+            },
+            "M3_neighbors": {
+              "brier": 0.5298336988304094,
+              "logloss": 0.8069199619800024,
+              "accuracy": 0.39473684210526316
+            },
+            "M4_regime": {
+              "brier": 0.5108320641720505,
+              "logloss": 0.7440162921996781,
+              "accuracy": 0.5131578947368421
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2522300,
+            "lower": 2063700,
+            "n": 244,
+            "counts": {
+              "up": 124,
+              "down": 119,
+              "neither": 0,
+              "ambiguous": 1
+            },
+            "regime_counts": {
+              "up": 30,
+              "down": 43,
+              "neither": 0,
+              "ambiguous": 1
+            }
+          }
+        },
+        {
+          "up": 0.2,
+          "down": 0.1,
+          "horizon": 30,
+          "raw": 466,
+          "independent": 197,
+          "censored": 1,
+          "counts": {
+            "up": 58,
+            "down": 109,
+            "neither": 28,
+            "ambiguous": 1
+          },
+          "evaluated": 67,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.6958610869905061,
+              "logloss": 1.214517143629969,
+              "accuracy": 0.4626865671641791
+            },
+            "M3_neighbors": {
+              "brier": 0.6925787728026532,
+              "logloss": 1.1999337803888521,
+              "accuracy": 0.373134328358209
+            },
+            "M4_regime": {
+              "brier": 0.6921454099961655,
+              "logloss": 1.211989047883929,
+              "accuracy": 0.4626865671641791
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2751600,
+            "lower": 2063700,
+            "n": 196,
+            "counts": {
+              "up": 58,
+              "down": 109,
+              "neither": 28,
+              "ambiguous": 1
+            },
+            "regime_counts": {
+              "up": 11,
+              "down": 46,
+              "neither": 10,
+              "ambiguous": 1
+            }
+          }
+        },
+        {
+          "up": 0.2,
+          "down": 0.1,
+          "horizon": 90,
+          "raw": 466,
+          "independent": 171,
+          "censored": 1,
+          "counts": {
+            "up": 64,
+            "down": 105,
+            "neither": 0,
+            "ambiguous": 1
+          },
+          "evaluated": 48,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.4931664190137237,
+              "logloss": 0.7071665866473885,
+              "accuracy": 0.5833333333333334
+            },
+            "M3_neighbors": {
+              "brier": 0.5044849537037038,
+              "logloss": 0.7809985703507664,
+              "accuracy": 0.5208333333333334
+            },
+            "M4_regime": {
+              "brier": 0.4898215257410146,
+              "logloss": 0.737331451121103,
+              "accuracy": 0.5833333333333334
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2751600,
+            "lower": 2063700,
+            "n": 170,
+            "counts": {
+              "up": 64,
+              "down": 105,
+              "neither": 0,
+              "ambiguous": 1
+            },
+            "regime_counts": {
+              "up": 16,
+              "down": 49,
+              "neither": 0,
+              "ambiguous": 1
+            }
+          }
+        },
+        {
+          "up": 0.2,
+          "down": 0.1,
+          "horizon": 180,
+          "raw": 466,
+          "independent": 171,
+          "censored": 1,
+          "counts": {
+            "up": 64,
+            "down": 105,
+            "neither": 0,
+            "ambiguous": 1
+          },
+          "evaluated": 48,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.4931664190137237,
+              "logloss": 0.7071665866473885,
+              "accuracy": 0.5833333333333334
+            },
+            "M3_neighbors": {
+              "brier": 0.5044849537037038,
+              "logloss": 0.7809985703507664,
+              "accuracy": 0.5208333333333334
+            },
+            "M4_regime": {
+              "brier": 0.4898215257410146,
+              "logloss": 0.737331451121103,
+              "accuracy": 0.5833333333333334
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2751600,
+            "lower": 2063700,
+            "n": 170,
+            "counts": {
+              "up": 64,
+              "down": 105,
+              "neither": 0,
+              "ambiguous": 1
+            },
+            "regime_counts": {
+              "up": 16,
+              "down": 49,
+              "neither": 0,
+              "ambiguous": 1
+            }
+          }
+        },
+        {
+          "up": 0.3,
+          "down": 0.1,
+          "horizon": 30,
+          "raw": 466,
+          "independent": 176,
+          "censored": 1,
+          "counts": {
+            "up": 35,
+            "down": 104,
+            "neither": 36,
+            "ambiguous": 0
+          },
+          "evaluated": 59,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.6843252078083936,
+              "logloss": 1.1535466660575622,
+              "accuracy": 0.4745762711864407
+            },
+            "M3_neighbors": {
+              "brier": 0.6628413370998117,
+              "logloss": 1.1403158902649302,
+              "accuracy": 0.4745762711864407
+            },
+            "M4_regime": {
+              "brier": 0.6798322466002674,
+              "logloss": 1.159458538897423,
+              "accuracy": 0.4745762711864407
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2980900,
+            "lower": 2063700,
+            "n": 175,
+            "counts": {
+              "up": 35,
+              "down": 104,
+              "neither": 36,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 8,
+              "down": 48,
+              "neither": 11,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.3,
+          "down": 0.1,
+          "horizon": 90,
+          "raw": 466,
+          "independent": 153,
+          "censored": 1,
+          "counts": {
+            "up": 45,
+            "down": 105,
+            "neither": 2,
+            "ambiguous": 0
+          },
+          "evaluated": 42,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.4767948039009565,
+              "logloss": 0.82342063038317,
+              "accuracy": 0.6666666666666666
+            },
+            "M3_neighbors": {
+              "brier": 0.47817460317460314,
+              "logloss": 0.835706549580896,
+              "accuracy": 0.6666666666666666
+            },
+            "M4_regime": {
+              "brier": 0.48394281440019865,
+              "logloss": 0.8228316323802497,
+              "accuracy": 0.5952380952380952
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2980900,
+            "lower": 2063700,
+            "n": 152,
+            "counts": {
+              "up": 45,
+              "down": 105,
+              "neither": 2,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 13,
+              "down": 52,
+              "neither": 0,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.3,
+          "down": 0.1,
+          "horizon": 180,
+          "raw": 466,
+          "independent": 152,
+          "censored": 1,
+          "counts": {
+            "up": 45,
+            "down": 105,
+            "neither": 1,
+            "ambiguous": 0
+          },
+          "evaluated": 41,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.4510466563446296,
+              "logloss": 0.737399720481313,
+              "accuracy": 0.6829268292682927
+            },
+            "M3_neighbors": {
+              "brier": 0.4485941734417343,
+              "logloss": 0.7607898203950529,
+              "accuracy": 0.6829268292682927
+            },
+            "M4_regime": {
+              "brier": 0.45861429178735114,
+              "logloss": 0.7541790829327827,
+              "accuracy": 0.6097560975609756
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2980900,
+            "lower": 2063700,
+            "n": 151,
+            "counts": {
+              "up": 45,
+              "down": 105,
+              "neither": 1,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 13,
+              "down": 52,
+              "neither": 0,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.3,
+          "down": 0.2,
+          "horizon": 30,
+          "raw": 466,
+          "independent": 130,
+          "censored": 2,
+          "counts": {
+            "up": 32,
+            "down": 42,
+            "neither": 54,
+            "ambiguous": 0
+          },
+          "evaluated": 45,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.6422886571287438,
+              "logloss": 1.0709222013383906,
+              "accuracy": 0.4666666666666667
+            },
+            "M3_neighbors": {
+              "brier": 0.5368827160493828,
+              "logloss": 0.9372883870143369,
+              "accuracy": 0.6222222222222222
+            },
+            "M4_regime": {
+              "brier": 0.6466245719151065,
+              "logloss": 1.08917283578166,
+              "accuracy": 0.4222222222222222
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2980900,
+            "lower": 1834400,
+            "n": 128,
+            "counts": {
+              "up": 32,
+              "down": 42,
+              "neither": 54,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 8,
+              "down": 23,
+              "neither": 11,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.3,
+          "down": 0.2,
+          "horizon": 90,
+          "raw": 466,
+          "independent": 98,
+          "censored": 1,
+          "counts": {
+            "up": 45,
+            "down": 48,
+            "neither": 4,
+            "ambiguous": 0
+          },
+          "evaluated": 28,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.6017134679547109,
+              "logloss": 1.0338117843005397,
+              "accuracy": 0.42857142857142855
+            },
+            "M3_neighbors": {
+              "brier": 0.605406746031746,
+              "logloss": 1.0656150839721485,
+              "accuracy": 0.4642857142857143
+            },
+            "M4_regime": {
+              "brier": 0.6125300211388048,
+              "logloss": 1.050196135969141,
+              "accuracy": 0.5
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2980900,
+            "lower": 1834400,
+            "n": 97,
+            "counts": {
+              "up": 45,
+              "down": 48,
+              "neither": 4,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 14,
+              "down": 26,
+              "neither": 1,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.3,
+          "down": 0.2,
+          "horizon": 180,
+          "raw": 466,
+          "independent": 94,
+          "censored": 1,
+          "counts": {
+            "up": 45,
+            "down": 47,
+            "neither": 1,
+            "ambiguous": 0
+          },
+          "evaluated": 24,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5457885605314631,
+              "logloss": 0.8829735154109883,
+              "accuracy": 0.3333333333333333
+            },
+            "M3_neighbors": {
+              "brier": 0.5598958333333335,
+              "logloss": 0.924920129415863,
+              "accuracy": 0.5416666666666666
+            },
+            "M4_regime": {
+              "brier": 0.5590100273534382,
+              "logloss": 0.8902365127257569,
+              "accuracy": 0.5
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2980900,
+            "lower": 1834400,
+            "n": 93,
+            "counts": {
+              "up": 45,
+              "down": 47,
+              "neither": 1,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 15,
+              "down": 26,
+              "neither": 0,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.4,
+          "down": 0.2,
+          "horizon": 30,
+          "raw": 466,
+          "independent": 120,
+          "censored": 2,
+          "counts": {
+            "up": 18,
+            "down": 40,
+            "neither": 60,
+            "ambiguous": 0
+          },
+          "evaluated": 44,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5501147267375078,
+              "logloss": 0.9222776655201688,
+              "accuracy": 0.6363636363636364
+            },
+            "M3_neighbors": {
+              "brier": 0.46322601010101017,
+              "logloss": 0.8518495816749684,
+              "accuracy": 0.7045454545454546
+            },
+            "M4_regime": {
+              "brier": 0.5584262026394725,
+              "logloss": 0.9601903602324068,
+              "accuracy": 0.7045454545454546
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 3210200,
+            "lower": 1834400,
+            "n": 118,
+            "counts": {
+              "up": 18,
+              "down": 40,
+              "neither": 60,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 5,
+              "down": 23,
+              "neither": 13,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.4,
+          "down": 0.2,
+          "horizon": 90,
+          "raw": 466,
+          "independent": 83,
+          "censored": 1,
+          "counts": {
+            "up": 28,
+            "down": 45,
+            "neither": 9,
+            "ambiguous": 0
+          },
+          "evaluated": 26,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.6478248640474384,
+              "logloss": 1.1450935618192117,
+              "accuracy": 0.5384615384615384
+            },
+            "M3_neighbors": {
+              "brier": 0.6431623931623931,
+              "logloss": 1.1696869784943922,
+              "accuracy": 0.5384615384615384
+            },
+            "M4_regime": {
+              "brier": 0.6481164461431104,
+              "logloss": 1.200391019220586,
+              "accuracy": 0.5384615384615384
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 3210200,
+            "lower": 1834400,
+            "n": 82,
+            "counts": {
+              "up": 28,
+              "down": 45,
+              "neither": 9,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 10,
+              "down": 26,
+              "neither": 2,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.4,
+          "down": 0.2,
+          "horizon": 180,
+          "raw": 466,
+          "independent": 74,
+          "censored": 1,
+          "counts": {
+            "up": 29,
+            "down": 43,
+            "neither": 1,
+            "ambiguous": 0
+          },
+          "evaluated": 17,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5195071187952633,
+              "logloss": 0.8964632388341618,
+              "accuracy": 0.6470588235294118
+            },
+            "M3_neighbors": {
+              "brier": 0.5482026143790851,
+              "logloss": 0.9144702688246082,
+              "accuracy": 0.5294117647058824
+            },
+            "M4_regime": {
+              "brier": 0.5250068002020019,
+              "logloss": 0.8885726875722305,
+              "accuracy": 0.6470588235294118
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 3210200,
+            "lower": 1834400,
+            "n": 73,
+            "counts": {
+              "up": 29,
+              "down": 43,
+              "neither": 1,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 10,
+              "down": 24,
+              "neither": 1,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.2,
+          "down": 0.2,
+          "horizon": 30,
+          "raw": 466,
+          "independent": 143,
+          "censored": 2,
+          "counts": {
+            "up": 53,
+            "down": 44,
+            "neither": 44,
+            "ambiguous": 0
+          },
+          "evaluated": 48,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.7586080196950401,
+              "logloss": 1.2606214900519608,
+              "accuracy": 0.1875
+            },
+            "M3_neighbors": {
+              "brier": 0.632957175925926,
+              "logloss": 1.0711096473531236,
+              "accuracy": 0.3958333333333333
+            },
+            "M4_regime": {
+              "brier": 0.7442653246093583,
+              "logloss": 1.2474412361525158,
+              "accuracy": 0.2708333333333333
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2751600,
+            "lower": 1834400,
+            "n": 141,
+            "counts": {
+              "up": 53,
+              "down": 44,
+              "neither": 44,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 11,
+              "down": 23,
+              "neither": 9,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.2,
+          "down": 0.2,
+          "horizon": 90,
+          "raw": 466,
+          "independent": 113,
+          "censored": 2,
+          "counts": {
+            "up": 60,
+            "down": 48,
+            "neither": 3,
+            "ambiguous": 0
+          },
+          "evaluated": 30,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5663154835488238,
+              "logloss": 0.9352231491353888,
+              "accuracy": 0.5
+            },
+            "M3_neighbors": {
+              "brier": 0.5604166666666666,
+              "logloss": 0.950042086223718,
+              "accuracy": 0.5333333333333333
+            },
+            "M4_regime": {
+              "brier": 0.5685194593869116,
+              "logloss": 0.9390022990809931,
+              "accuracy": 0.5333333333333333
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2751600,
+            "lower": 1834400,
+            "n": 111,
+            "counts": {
+              "up": 60,
+              "down": 48,
+              "neither": 3,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 15,
+              "down": 25,
+              "neither": 0,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.2,
+          "down": 0.2,
+          "horizon": 180,
+          "raw": 466,
+          "independent": 112,
+          "censored": 2,
+          "counts": {
+            "up": 61,
+            "down": 48,
+            "neither": 1,
+            "ambiguous": 0
+          },
+          "evaluated": 29,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.537647629514052,
+              "logloss": 0.8562076905934828,
+              "accuracy": 0.5172413793103449
+            },
+            "M3_neighbors": {
+              "brier": 0.5264607279693486,
+              "logloss": 0.8644356764125921,
+              "accuracy": 0.5172413793103449
+            },
+            "M4_regime": {
+              "brier": 0.5362422139162576,
+              "logloss": 0.8540412638206052,
+              "accuracy": 0.5517241379310345
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2751600,
+            "lower": 1834400,
+            "n": 110,
+            "counts": {
+              "up": 61,
+              "down": 48,
+              "neither": 1,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 15,
+              "down": 25,
+              "neither": 0,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.1,
+          "down": 0.2,
+          "horizon": 30,
+          "raw": 466,
+          "independent": 195,
+          "censored": 2,
+          "counts": {
+            "up": 112,
+            "down": 49,
+            "neither": 32,
+            "ambiguous": 0
+          },
+          "evaluated": 63,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.6903918660272347,
+              "logloss": 1.1860384843165606,
+              "accuracy": 0.47619047619047616
+            },
+            "M3_neighbors": {
+              "brier": 0.6110008818342153,
+              "logloss": 1.0693282094420034,
+              "accuracy": 0.5079365079365079
+            },
+            "M4_regime": {
+              "brier": 0.6607212273170207,
+              "logloss": 1.13322010313965,
+              "accuracy": 0.47619047619047616
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2522300,
+            "lower": 1834400,
+            "n": 193,
+            "counts": {
+              "up": 112,
+              "down": 49,
+              "neither": 32,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 26,
+              "down": 23,
+              "neither": 2,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.1,
+          "down": 0.2,
+          "horizon": 90,
+          "raw": 466,
+          "independent": 170,
+          "censored": 1,
+          "counts": {
+            "up": 114,
+            "down": 53,
+            "neither": 2,
+            "ambiguous": 0
+          },
+          "evaluated": 49,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.48245998665889356,
+              "logloss": 0.8130951100086663,
+              "accuracy": 0.6530612244897959
+            },
+            "M3_neighbors": {
+              "brier": 0.49418934240362844,
+              "logloss": 0.8339113760129149,
+              "accuracy": 0.6326530612244898
+            },
+            "M4_regime": {
+              "brier": 0.4553135617049506,
+              "logloss": 0.7736132256275531,
+              "accuracy": 0.6122448979591837
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2522300,
+            "lower": 1834400,
+            "n": 169,
+            "counts": {
+              "up": 114,
+              "down": 53,
+              "neither": 2,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 25,
+              "down": 25,
+              "neither": 0,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.1,
+          "down": 0.2,
+          "horizon": 180,
+          "raw": 466,
+          "independent": 169,
+          "censored": 1,
+          "counts": {
+            "up": 114,
+            "down": 54,
+            "neither": 0,
+            "ambiguous": 0
+          },
+          "evaluated": 48,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.447808425517608,
+              "logloss": 0.6541318551584763,
+              "accuracy": 0.6666666666666666
+            },
+            "M3_neighbors": {
+              "brier": 0.4702690972222223,
+              "logloss": 0.756009909109154,
+              "accuracy": 0.6458333333333334
+            },
+            "M4_regime": {
+              "brier": 0.42222471177902543,
+              "logloss": 0.6466266306696303,
+              "accuracy": 0.625
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 2293000,
+            "upper": 2522300,
+            "lower": 1834400,
+            "n": 168,
+            "counts": {
+              "up": 114,
+              "down": 54,
+              "neither": 0,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 25,
+              "down": 25,
+              "neither": 0,
+              "ambiguous": 0
+            }
+          }
+        }
+      ]
+    },
+    "Bitstamp_ETHUSD": {
+      "rows": 3305,
+      "invalid": 0,
+      "duplicates": 0,
+      "gaps": 0,
+      "last": "2026-11-27T00:00:00.000Z",
+      "prefix_ok": true,
+      "results": [
+        {
+          "up": 0.05,
+          "down": 0.05,
+          "horizon": 30,
+          "raw": 464,
+          "independent": 434,
+          "censored": 1,
+          "counts": {
+            "up": 221,
+            "down": 204,
+            "neither": 0,
+            "ambiguous": 8
+          },
+          "evaluated": 180,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5013428383223025,
+              "logloss": 0.7233311551955036,
+              "accuracy": 0.5277777777777778
+            },
+            "M3_neighbors": {
+              "brier": 0.5080246913580243,
+              "logloss": 0.7836438972619807,
+              "accuracy": 0.49444444444444446
+            },
+            "M4_regime": {
+              "brier": 0.5006317625067035,
+              "logloss": 0.7327554736661548,
+              "accuracy": 0.5055555555555555
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 1771.854,
+            "lower": 1603.106,
+            "n": 433,
+            "counts": {
+              "up": 221,
+              "down": 204,
+              "neither": 0,
+              "ambiguous": 8
+            },
+            "regime_counts": {
+              "up": 39,
+              "down": 55,
+              "neither": 0,
+              "ambiguous": 5
+            }
+          }
+        },
+        {
+          "up": 0.05,
+          "down": 0.05,
+          "horizon": 90,
+          "raw": 464,
+          "independent": 434,
+          "censored": 1,
+          "counts": {
+            "up": 221,
+            "down": 204,
+            "neither": 0,
+            "ambiguous": 8
+          },
+          "evaluated": 180,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5013428383223025,
+              "logloss": 0.7233311551955036,
+              "accuracy": 0.5277777777777778
+            },
+            "M3_neighbors": {
+              "brier": 0.5080246913580243,
+              "logloss": 0.7836438972619807,
+              "accuracy": 0.49444444444444446
+            },
+            "M4_regime": {
+              "brier": 0.5006317625067035,
+              "logloss": 0.7327554736661548,
+              "accuracy": 0.5055555555555555
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 1771.854,
+            "lower": 1603.106,
+            "n": 433,
+            "counts": {
+              "up": 221,
+              "down": 204,
+              "neither": 0,
+              "ambiguous": 8
+            },
+            "regime_counts": {
+              "up": 39,
+              "down": 55,
+              "neither": 0,
+              "ambiguous": 5
+            }
+          }
+        },
+        {
+          "up": 0.05,
+          "down": 0.05,
+          "horizon": 180,
+          "raw": 464,
+          "independent": 434,
+          "censored": 1,
+          "counts": {
+            "up": 221,
+            "down": 204,
+            "neither": 0,
+            "ambiguous": 8
+          },
+          "evaluated": 180,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5013428383223025,
+              "logloss": 0.7233311551955036,
+              "accuracy": 0.5277777777777778
+            },
+            "M3_neighbors": {
+              "brier": 0.5080246913580243,
+              "logloss": 0.7836438972619807,
+              "accuracy": 0.49444444444444446
+            },
+            "M4_regime": {
+              "brier": 0.5006317625067035,
+              "logloss": 0.7327554736661548,
+              "accuracy": 0.5055555555555555
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 1771.854,
+            "lower": 1603.106,
+            "n": 433,
+            "counts": {
+              "up": 221,
+              "down": 204,
+              "neither": 0,
+              "ambiguous": 8
+            },
+            "regime_counts": {
+              "up": 39,
+              "down": 55,
+              "neither": 0,
+              "ambiguous": 5
+            }
+          }
+        },
+        {
+          "up": 0.1,
+          "down": 0.1,
+          "horizon": 30,
+          "raw": 464,
+          "independent": 282,
+          "censored": 1,
+          "counts": {
+            "up": 140,
+            "down": 131,
+            "neither": 8,
+            "ambiguous": 2
+          },
+          "evaluated": 95,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5605144105786878,
+              "logloss": 0.9268727213259457,
+              "accuracy": 0.49473684210526314
+            },
+            "M3_neighbors": {
+              "brier": 0.5755482456140351,
+              "logloss": 0.9506664980136983,
+              "accuracy": 0.5052631578947369
+            },
+            "M4_regime": {
+              "brier": 0.5666481823244747,
+              "logloss": 0.9351895255827383,
+              "accuracy": 0.47368421052631576
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 1856.228,
+            "lower": 1518.732,
+            "n": 281,
+            "counts": {
+              "up": 140,
+              "down": 131,
+              "neither": 8,
+              "ambiguous": 2
+            },
+            "regime_counts": {
+              "up": 34,
+              "down": 42,
+              "neither": 1,
+              "ambiguous": 1
+            }
+          }
+        },
+        {
+          "up": 0.1,
+          "down": 0.1,
+          "horizon": 90,
+          "raw": 464,
+          "independent": 277,
+          "censored": 1,
+          "counts": {
+            "up": 142,
+            "down": 132,
+            "neither": 0,
+            "ambiguous": 2
+          },
+          "evaluated": 91,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5012642722689608,
+              "logloss": 0.7115664252271258,
+              "accuracy": 0.5274725274725275
+            },
+            "M3_neighbors": {
+              "brier": 0.5357524420024419,
+              "logloss": 0.8148239660376563,
+              "accuracy": 0.4835164835164835
+            },
+            "M4_regime": {
+              "brier": 0.5098108680814187,
+              "logloss": 0.739173646291311,
+              "accuracy": 0.5054945054945055
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 1856.228,
+            "lower": 1518.732,
+            "n": 276,
+            "counts": {
+              "up": 142,
+              "down": 132,
+              "neither": 0,
+              "ambiguous": 2
+            },
+            "regime_counts": {
+              "up": 35,
+              "down": 42,
+              "neither": 0,
+              "ambiguous": 1
+            }
+          }
+        },
+        {
+          "up": 0.1,
+          "down": 0.1,
+          "horizon": 180,
+          "raw": 464,
+          "independent": 277,
+          "censored": 1,
+          "counts": {
+            "up": 142,
+            "down": 132,
+            "neither": 0,
+            "ambiguous": 2
+          },
+          "evaluated": 91,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5012642722689608,
+              "logloss": 0.7115664252271258,
+              "accuracy": 0.5274725274725275
+            },
+            "M3_neighbors": {
+              "brier": 0.5357524420024419,
+              "logloss": 0.8148239660376563,
+              "accuracy": 0.4835164835164835
+            },
+            "M4_regime": {
+              "brier": 0.5098108680814187,
+              "logloss": 0.739173646291311,
+              "accuracy": 0.5054945054945055
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 1856.228,
+            "lower": 1518.732,
+            "n": 276,
+            "counts": {
+              "up": 142,
+              "down": 132,
+              "neither": 0,
+              "ambiguous": 2
+            },
+            "regime_counts": {
+              "up": 35,
+              "down": 42,
+              "neither": 0,
+              "ambiguous": 1
+            }
+          }
+        },
+        {
+          "up": 0.2,
+          "down": 0.1,
+          "horizon": 30,
+          "raw": 464,
+          "independent": 212,
+          "censored": 1,
+          "counts": {
+            "up": 68,
+            "down": 119,
+            "neither": 23,
+            "ambiguous": 1
+          },
+          "evaluated": 68,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.6692079077682582,
+              "logloss": 1.1922166955330318,
+              "accuracy": 0.5
+            },
+            "M3_neighbors": {
+              "brier": 0.654667075163399,
+              "logloss": 1.1491207412992948,
+              "accuracy": 0.45588235294117646
+            },
+            "M4_regime": {
+              "brier": 0.665724351663902,
+              "logloss": 1.1804610694712392,
+              "accuracy": 0.5
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 2024.9759999999999,
+            "lower": 1518.732,
+            "n": 211,
+            "counts": {
+              "up": 68,
+              "down": 119,
+              "neither": 23,
+              "ambiguous": 1
+            },
+            "regime_counts": {
+              "up": 21,
+              "down": 44,
+              "neither": 4,
+              "ambiguous": 1
+            }
+          }
+        },
+        {
+          "up": 0.2,
+          "down": 0.1,
+          "horizon": 90,
+          "raw": 464,
+          "independent": 198,
+          "censored": 1,
+          "counts": {
+            "up": 73,
+            "down": 123,
+            "neither": 0,
+            "ambiguous": 1
+          },
+          "evaluated": 57,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.4685889407595164,
+              "logloss": 0.6789249404571133,
+              "accuracy": 0.631578947368421
+            },
+            "M3_neighbors": {
+              "brier": 0.47691276803118904,
+              "logloss": 0.749627534363141,
+              "accuracy": 0.6140350877192983
+            },
+            "M4_regime": {
+              "brier": 0.48569786422201094,
+              "logloss": 0.7229104795985399,
+              "accuracy": 0.631578947368421
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 2024.9759999999999,
+            "lower": 1518.732,
+            "n": 197,
+            "counts": {
+              "up": 73,
+              "down": 123,
+              "neither": 0,
+              "ambiguous": 1
+            },
+            "regime_counts": {
+              "up": 23,
+              "down": 45,
+              "neither": 0,
+              "ambiguous": 1
+            }
+          }
+        },
+        {
+          "up": 0.2,
+          "down": 0.1,
+          "horizon": 180,
+          "raw": 464,
+          "independent": 198,
+          "censored": 1,
+          "counts": {
+            "up": 73,
+            "down": 123,
+            "neither": 0,
+            "ambiguous": 1
+          },
+          "evaluated": 57,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.4685889407595164,
+              "logloss": 0.6789249404571133,
+              "accuracy": 0.631578947368421
+            },
+            "M3_neighbors": {
+              "brier": 0.47691276803118904,
+              "logloss": 0.749627534363141,
+              "accuracy": 0.6140350877192983
+            },
+            "M4_regime": {
+              "brier": 0.48569786422201094,
+              "logloss": 0.7229104795985399,
+              "accuracy": 0.631578947368421
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 2024.9759999999999,
+            "lower": 1518.732,
+            "n": 197,
+            "counts": {
+              "up": 73,
+              "down": 123,
+              "neither": 0,
+              "ambiguous": 1
+            },
+            "regime_counts": {
+              "up": 23,
+              "down": 45,
+              "neither": 0,
+              "ambiguous": 1
+            }
+          }
+        },
+        {
+          "up": 0.3,
+          "down": 0.1,
+          "horizon": 30,
+          "raw": 464,
+          "independent": 178,
+          "censored": 1,
+          "counts": {
+            "up": 36,
+            "down": 105,
+            "neither": 35,
+            "ambiguous": 1
+          },
+          "evaluated": 57,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.6917009961524286,
+              "logloss": 1.1828283008197997,
+              "accuracy": 0.47368421052631576
+            },
+            "M3_neighbors": {
+              "brier": 0.6663620857699807,
+              "logloss": 1.1640636419427306,
+              "accuracy": 0.47368421052631576
+            },
+            "M4_regime": {
+              "brier": 0.6815693258968025,
+              "logloss": 1.17773462922521,
+              "accuracy": 0.47368421052631576
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 2193.724,
+            "lower": 1518.732,
+            "n": 177,
+            "counts": {
+              "up": 36,
+              "down": 105,
+              "neither": 35,
+              "ambiguous": 1
+            },
+            "regime_counts": {
+              "up": 11,
+              "down": 45,
+              "neither": 10,
+              "ambiguous": 1
+            }
+          }
+        },
+        {
+          "up": 0.3,
+          "down": 0.1,
+          "horizon": 90,
+          "raw": 464,
+          "independent": 156,
+          "censored": 1,
+          "counts": {
+            "up": 46,
+            "down": 105,
+            "neither": 3,
+            "ambiguous": 1
+          },
+          "evaluated": 42,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5078127341321991,
+              "logloss": 0.9160347195238662,
+              "accuracy": 0.6428571428571429
+            },
+            "M3_neighbors": {
+              "brier": 0.5351355820105821,
+              "logloss": 0.9322649437961007,
+              "accuracy": 0.5238095238095238
+            },
+            "M4_regime": {
+              "brier": 0.5182405847618357,
+              "logloss": 0.9172845323591796,
+              "accuracy": 0.6428571428571429
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 2193.724,
+            "lower": 1518.732,
+            "n": 155,
+            "counts": {
+              "up": 46,
+              "down": 105,
+              "neither": 3,
+              "ambiguous": 1
+            },
+            "regime_counts": {
+              "up": 15,
+              "down": 48,
+              "neither": 1,
+              "ambiguous": 1
+            }
+          }
+        },
+        {
+          "up": 0.3,
+          "down": 0.1,
+          "horizon": 180,
+          "raw": 464,
+          "independent": 153,
+          "censored": 1,
+          "counts": {
+            "up": 46,
+            "down": 104,
+            "neither": 1,
+            "ambiguous": 1
+          },
+          "evaluated": 39,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.46423774824665814,
+              "logloss": 0.7628328511221321,
+              "accuracy": 0.6666666666666666
+            },
+            "M3_neighbors": {
+              "brier": 0.4734686609686611,
+              "logloss": 0.7911956232539011,
+              "accuracy": 0.5641025641025641
+            },
+            "M4_regime": {
+              "brier": 0.4689138497296172,
+              "logloss": 0.7717175211181624,
+              "accuracy": 0.6666666666666666
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 2193.724,
+            "lower": 1518.732,
+            "n": 152,
+            "counts": {
+              "up": 46,
+              "down": 104,
+              "neither": 1,
+              "ambiguous": 1
+            },
+            "regime_counts": {
+              "up": 15,
+              "down": 49,
+              "neither": 0,
+              "ambiguous": 1
+            }
+          }
+        },
+        {
+          "up": 0.3,
+          "down": 0.2,
+          "horizon": 30,
+          "raw": 464,
+          "independent": 135,
+          "censored": 2,
+          "counts": {
+            "up": 32,
+            "down": 49,
+            "neither": 52,
+            "ambiguous": 0
+          },
+          "evaluated": 47,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.6613116610879631,
+              "logloss": 1.095287672353873,
+              "accuracy": 0.2127659574468085
+            },
+            "M3_neighbors": {
+              "brier": 0.6295065011820333,
+              "logloss": 1.0862045779397043,
+              "accuracy": 0.44680851063829785
+            },
+            "M4_regime": {
+              "brier": 0.6606657881663897,
+              "logloss": 1.1049296009381568,
+              "accuracy": 0.2765957446808511
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 2193.724,
+            "lower": 1349.9840000000002,
+            "n": 133,
+            "counts": {
+              "up": 32,
+              "down": 49,
+              "neither": 52,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 7,
+              "down": 21,
+              "neither": 12,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.3,
+          "down": 0.2,
+          "horizon": 90,
+          "raw": 464,
+          "independent": 103,
+          "censored": 2,
+          "counts": {
+            "up": 42,
+            "down": 53,
+            "neither": 6,
+            "ambiguous": 0
+          },
+          "evaluated": 29,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.6144210627095551,
+              "logloss": 1.065697620211708,
+              "accuracy": 0.5172413793103449
+            },
+            "M3_neighbors": {
+              "brier": 0.635536398467433,
+              "logloss": 1.1122507448021064,
+              "accuracy": 0.41379310344827586
+            },
+            "M4_regime": {
+              "brier": 0.6394955500986792,
+              "logloss": 1.1111831337960993,
+              "accuracy": 0.4482758620689655
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 2193.724,
+            "lower": 1349.9840000000002,
+            "n": 101,
+            "counts": {
+              "up": 42,
+              "down": 53,
+              "neither": 6,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 13,
+              "down": 23,
+              "neither": 3,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.3,
+          "down": 0.2,
+          "horizon": 180,
+          "raw": 464,
+          "independent": 95,
+          "censored": 2,
+          "counts": {
+            "up": 42,
+            "down": 51,
+            "neither": 0,
+            "ambiguous": 0
+          },
+          "evaluated": 23,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.49882675816655675,
+              "logloss": 0.7154453106813286,
+              "accuracy": 0.5652173913043478
+            },
+            "M3_neighbors": {
+              "brier": 0.558876811594203,
+              "logloss": 0.8422567588460208,
+              "accuracy": 0.4782608695652174
+            },
+            "M4_regime": {
+              "brier": 0.5314558948209605,
+              "logloss": 0.7780968352866932,
+              "accuracy": 0.5217391304347826
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 2193.724,
+            "lower": 1349.9840000000002,
+            "n": 93,
+            "counts": {
+              "up": 42,
+              "down": 51,
+              "neither": 0,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 14,
+              "down": 24,
+              "neither": 0,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.4,
+          "down": 0.2,
+          "horizon": 30,
+          "raw": 464,
+          "independent": 125,
+          "censored": 2,
+          "counts": {
+            "up": 18,
+            "down": 44,
+            "neither": 61,
+            "ambiguous": 0
+          },
+          "evaluated": 46,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5623683231994658,
+              "logloss": 0.9337872884593686,
+              "accuracy": 0.5652173913043478
+            },
+            "M3_neighbors": {
+              "brier": 0.4894323671497585,
+              "logloss": 0.8790454516621259,
+              "accuracy": 0.717391304347826
+            },
+            "M4_regime": {
+              "brier": 0.5787938666179135,
+              "logloss": 0.974306133365215,
+              "accuracy": 0.5869565217391305
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 2362.4719999999998,
+            "lower": 1349.9840000000002,
+            "n": 123,
+            "counts": {
+              "up": 18,
+              "down": 44,
+              "neither": 61,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 5,
+              "down": 21,
+              "neither": 16,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.4,
+          "down": 0.2,
+          "horizon": 90,
+          "raw": 464,
+          "independent": 91,
+          "censored": 1,
+          "counts": {
+            "up": 31,
+            "down": 51,
+            "neither": 8,
+            "ambiguous": 0
+          },
+          "evaluated": 27,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.6564943547362033,
+              "logloss": 1.1810265072321104,
+              "accuracy": 0.5185185185185185
+            },
+            "M3_neighbors": {
+              "brier": 0.6184413580246914,
+              "logloss": 1.140230528041855,
+              "accuracy": 0.5555555555555556
+            },
+            "M4_regime": {
+              "brier": 0.6719349016419977,
+              "logloss": 1.204567791629456,
+              "accuracy": 0.37037037037037035
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 2362.4719999999998,
+            "lower": 1349.9840000000002,
+            "n": 90,
+            "counts": {
+              "up": 31,
+              "down": 51,
+              "neither": 8,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 12,
+              "down": 25,
+              "neither": 4,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.4,
+          "down": 0.2,
+          "horizon": 180,
+          "raw": 464,
+          "independent": 83,
+          "censored": 1,
+          "counts": {
+            "up": 30,
+            "down": 49,
+            "neither": 3,
+            "ambiguous": 0
+          },
+          "evaluated": 21,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5652786523912641,
+              "logloss": 0.9771404822032439,
+              "accuracy": 0.5714285714285714
+            },
+            "M3_neighbors": {
+              "brier": 0.5624999999999998,
+              "logloss": 0.9932137678877462,
+              "accuracy": 0.5238095238095238
+            },
+            "M4_regime": {
+              "brier": 0.5879524414976014,
+              "logloss": 1.014219835324886,
+              "accuracy": 0.42857142857142855
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 2362.4719999999998,
+            "lower": 1349.9840000000002,
+            "n": 82,
+            "counts": {
+              "up": 30,
+              "down": 49,
+              "neither": 3,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 11,
+              "down": 26,
+              "neither": 2,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.2,
+          "down": 0.2,
+          "horizon": 30,
+          "raw": 464,
+          "independent": 151,
+          "censored": 2,
+          "counts": {
+            "up": 58,
+            "down": 51,
+            "neither": 40,
+            "ambiguous": 0
+          },
+          "evaluated": 50,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.7713930981134913,
+              "logloss": 1.2944130441618895,
+              "accuracy": 0.24
+            },
+            "M3_neighbors": {
+              "brier": 0.7071527777777777,
+              "logloss": 1.2081130010490602,
+              "accuracy": 0.3
+            },
+            "M4_regime": {
+              "brier": 0.7860053992624982,
+              "logloss": 1.3307671350963783,
+              "accuracy": 0.24
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 2024.9759999999999,
+            "lower": 1349.9840000000002,
+            "n": 149,
+            "counts": {
+              "up": 58,
+              "down": 51,
+              "neither": 40,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 18,
+              "down": 22,
+              "neither": 7,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.2,
+          "down": 0.2,
+          "horizon": 90,
+          "raw": 464,
+          "independent": 122,
+          "censored": 1,
+          "counts": {
+            "up": 62,
+            "down": 53,
+            "neither": 6,
+            "ambiguous": 0
+          },
+          "evaluated": 31,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.6473291343063451,
+              "logloss": 1.1696242781878103,
+              "accuracy": 0.45161290322580644
+            },
+            "M3_neighbors": {
+              "brier": 0.585013440860215,
+              "logloss": 1.0971698292156529,
+              "accuracy": 0.5483870967741935
+            },
+            "M4_regime": {
+              "brier": 0.6345031421413345,
+              "logloss": 1.159639563584401,
+              "accuracy": 0.5161290322580645
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 2024.9759999999999,
+            "lower": 1349.9840000000002,
+            "n": 121,
+            "counts": {
+              "up": 62,
+              "down": 53,
+              "neither": 6,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 20,
+              "down": 23,
+              "neither": 2,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.2,
+          "down": 0.2,
+          "horizon": 180,
+          "raw": 464,
+          "independent": 119,
+          "censored": 1,
+          "counts": {
+            "up": 63,
+            "down": 54,
+            "neither": 1,
+            "ambiguous": 0
+          },
+          "evaluated": 29,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5359328861119338,
+              "logloss": 0.8552275031144467,
+              "accuracy": 0.5172413793103449
+            },
+            "M3_neighbors": {
+              "brier": 0.48862547892720315,
+              "logloss": 0.8189772387223926,
+              "accuracy": 0.6551724137931034
+            },
+            "M4_regime": {
+              "brier": 0.5192662866820368,
+              "logloss": 0.8296989045134152,
+              "accuracy": 0.5517241379310345
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 2024.9759999999999,
+            "lower": 1349.9840000000002,
+            "n": 118,
+            "counts": {
+              "up": 63,
+              "down": 54,
+              "neither": 1,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 21,
+              "down": 24,
+              "neither": 0,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.1,
+          "down": 0.2,
+          "horizon": 30,
+          "raw": 464,
+          "independent": 205,
+          "censored": 2,
+          "counts": {
+            "up": 125,
+            "down": 50,
+            "neither": 28,
+            "ambiguous": 0
+          },
+          "evaluated": 67,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.6473023396918708,
+              "logloss": 1.1347684614929254,
+              "accuracy": 0.5373134328358209
+            },
+            "M3_neighbors": {
+              "brier": 0.6090899668325045,
+              "logloss": 1.0591997432927918,
+              "accuracy": 0.4925373134328358
+            },
+            "M4_regime": {
+              "brier": 0.6477258387718855,
+              "logloss": 1.129062437804708,
+              "accuracy": 0.5373134328358209
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 1856.228,
+            "lower": 1349.9840000000002,
+            "n": 203,
+            "counts": {
+              "up": 125,
+              "down": 50,
+              "neither": 28,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 28,
+              "down": 20,
+              "neither": 5,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.1,
+          "down": 0.2,
+          "horizon": 90,
+          "raw": 464,
+          "independent": 182,
+          "censored": 1,
+          "counts": {
+            "up": 125,
+            "down": 54,
+            "neither": 2,
+            "ambiguous": 0
+          },
+          "evaluated": 53,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.4756775539035329,
+              "logloss": 0.7981436906794603,
+              "accuracy": 0.660377358490566
+            },
+            "M3_neighbors": {
+              "brier": 0.48630765199161435,
+              "logloss": 0.8413479938355478,
+              "accuracy": 0.660377358490566
+            },
+            "M4_regime": {
+              "brier": 0.4769272267470474,
+              "logloss": 0.8000816683329678,
+              "accuracy": 0.660377358490566
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 1856.228,
+            "lower": 1349.9840000000002,
+            "n": 181,
+            "counts": {
+              "up": 125,
+              "down": 54,
+              "neither": 2,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 27,
+              "down": 22,
+              "neither": 1,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.1,
+          "down": 0.2,
+          "horizon": 180,
+          "raw": 464,
+          "independent": 180,
+          "censored": 1,
+          "counts": {
+            "up": 125,
+            "down": 54,
+            "neither": 0,
+            "ambiguous": 0
+          },
+          "evaluated": 51,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.433672968153547,
+              "logloss": 0.6386341348259006,
+              "accuracy": 0.6862745098039216
+            },
+            "M3_neighbors": {
+              "brier": 0.4514569716775601,
+              "logloss": 0.7366610260893685,
+              "accuracy": 0.6862745098039216
+            },
+            "M4_regime": {
+              "brier": 0.44196768376203155,
+              "logloss": 0.6719901545016274,
+              "accuracy": 0.6862745098039216
+            }
+          },
+          "reference": {
+            "asof": "2026-11-27T00:00:00.000Z",
+            "anchor": 1687.48,
+            "upper": 1856.228,
+            "lower": 1349.9840000000002,
+            "n": 179,
+            "counts": {
+              "up": 125,
+              "down": 54,
+              "neither": 0,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 28,
+              "down": 22,
+              "neither": 0,
+              "ambiguous": 0
+            }
+          }
+        }
+      ]
+    },
+    "Bithumb_ETHKRW": {
+      "rows": 3666,
+      "invalid": 0,
+      "duplicates": 0,
+      "gaps": 406,
+      "last": "2026-11-26T15:00:00.000Z",
+      "prefix_ok": true,
+      "results": [
+        {
+          "up": 0.05,
+          "down": 0.05,
+          "horizon": 30,
+          "raw": 426,
+          "independent": 365,
+          "censored": 2,
+          "counts": {
+            "up": 173,
+            "down": 181,
+            "neither": 2,
+            "ambiguous": 7
+          },
+          "evaluated": 161,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5097638856512043,
+              "logloss": 0.7599596351807058,
+              "accuracy": 0.4968944099378882
+            },
+            "M3_neighbors": {
+              "brier": 0.5132634575569356,
+              "logloss": 0.8024494416933307,
+              "accuracy": 0.5590062111801242
+            },
+            "M4_regime": {
+              "brier": 0.5374321457271204,
+              "logloss": 0.7992045564079663,
+              "accuracy": 0.453416149068323
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2417100,
+            "lower": 2186900,
+            "n": 363,
+            "counts": {
+              "up": 173,
+              "down": 181,
+              "neither": 2,
+              "ambiguous": 7
+            },
+            "regime_counts": {
+              "up": 39,
+              "down": 41,
+              "neither": 1,
+              "ambiguous": 4
+            }
+          }
+        },
+        {
+          "up": 0.05,
+          "down": 0.05,
+          "horizon": 90,
+          "raw": 426,
+          "independent": 365,
+          "censored": 2,
+          "counts": {
+            "up": 173,
+            "down": 183,
+            "neither": 0,
+            "ambiguous": 7
+          },
+          "evaluated": 161,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.503573869024763,
+              "logloss": 0.7283113566336621,
+              "accuracy": 0.5031055900621118
+            },
+            "M3_neighbors": {
+              "brier": 0.5082384403036573,
+              "logloss": 0.7840284967685474,
+              "accuracy": 0.546583850931677
+            },
+            "M4_regime": {
+              "brier": 0.5313030742939534,
+              "logloss": 0.7707475395630479,
+              "accuracy": 0.45962732919254656
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2417100,
+            "lower": 2186900,
+            "n": 363,
+            "counts": {
+              "up": 173,
+              "down": 183,
+              "neither": 0,
+              "ambiguous": 7
+            },
+            "regime_counts": {
+              "up": 39,
+              "down": 42,
+              "neither": 0,
+              "ambiguous": 4
+            }
+          }
+        },
+        {
+          "up": 0.05,
+          "down": 0.05,
+          "horizon": 180,
+          "raw": 426,
+          "independent": 365,
+          "censored": 2,
+          "counts": {
+            "up": 173,
+            "down": 183,
+            "neither": 0,
+            "ambiguous": 7
+          },
+          "evaluated": 161,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.503573869024763,
+              "logloss": 0.7283113566336621,
+              "accuracy": 0.5031055900621118
+            },
+            "M3_neighbors": {
+              "brier": 0.5082384403036573,
+              "logloss": 0.7840284967685474,
+              "accuracy": 0.546583850931677
+            },
+            "M4_regime": {
+              "brier": 0.5313030742939534,
+              "logloss": 0.7707475395630479,
+              "accuracy": 0.45962732919254656
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2417100,
+            "lower": 2186900,
+            "n": 363,
+            "counts": {
+              "up": 173,
+              "down": 183,
+              "neither": 0,
+              "ambiguous": 7
+            },
+            "regime_counts": {
+              "up": 39,
+              "down": 42,
+              "neither": 0,
+              "ambiguous": 4
+            }
+          }
+        },
+        {
+          "up": 0.1,
+          "down": 0.1,
+          "horizon": 30,
+          "raw": 426,
+          "independent": 238,
+          "censored": 3,
+          "counts": {
+            "up": 105,
+            "down": 116,
+            "neither": 10,
+            "ambiguous": 4
+          },
+          "evaluated": 89,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5784164055284051,
+              "logloss": 0.970097857578413,
+              "accuracy": 0.449438202247191
+            },
+            "M3_neighbors": {
+              "brier": 0.5863373907615483,
+              "logloss": 0.9965345543084203,
+              "accuracy": 0.43820224719101125
+            },
+            "M4_regime": {
+              "brier": 0.5956918038457024,
+              "logloss": 1.0098261306261653,
+              "accuracy": 0.4943820224719101
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2532200,
+            "lower": 2071800,
+            "n": 235,
+            "counts": {
+              "up": 105,
+              "down": 116,
+              "neither": 10,
+              "ambiguous": 4
+            },
+            "regime_counts": {
+              "up": 23,
+              "down": 39,
+              "neither": 2,
+              "ambiguous": 2
+            }
+          }
+        },
+        {
+          "up": 0.1,
+          "down": 0.1,
+          "horizon": 90,
+          "raw": 426,
+          "independent": 232,
+          "censored": 3,
+          "counts": {
+            "up": 106,
+            "down": 119,
+            "neither": 0,
+            "ambiguous": 4
+          },
+          "evaluated": 83,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5053502717737333,
+              "logloss": 0.7299145705307042,
+              "accuracy": 0.5060240963855421
+            },
+            "M3_neighbors": {
+              "brier": 0.5021335341365459,
+              "logloss": 0.7831242280226723,
+              "accuracy": 0.5421686746987951
+            },
+            "M4_regime": {
+              "brier": 0.524406359849673,
+              "logloss": 0.779625272540754,
+              "accuracy": 0.5301204819277109
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2532200,
+            "lower": 2071800,
+            "n": 229,
+            "counts": {
+              "up": 106,
+              "down": 119,
+              "neither": 0,
+              "ambiguous": 4
+            },
+            "regime_counts": {
+              "up": 23,
+              "down": 40,
+              "neither": 0,
+              "ambiguous": 2
+            }
+          }
+        },
+        {
+          "up": 0.1,
+          "down": 0.1,
+          "horizon": 180,
+          "raw": 426,
+          "independent": 232,
+          "censored": 3,
+          "counts": {
+            "up": 106,
+            "down": 119,
+            "neither": 0,
+            "ambiguous": 4
+          },
+          "evaluated": 83,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5053502717737333,
+              "logloss": 0.7299145705307042,
+              "accuracy": 0.5060240963855421
+            },
+            "M3_neighbors": {
+              "brier": 0.5021335341365459,
+              "logloss": 0.7831242280226723,
+              "accuracy": 0.5421686746987951
+            },
+            "M4_regime": {
+              "brier": 0.524406359849673,
+              "logloss": 0.779625272540754,
+              "accuracy": 0.5301204819277109
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2532200,
+            "lower": 2071800,
+            "n": 229,
+            "counts": {
+              "up": 106,
+              "down": 119,
+              "neither": 0,
+              "ambiguous": 4
+            },
+            "regime_counts": {
+              "up": 23,
+              "down": 40,
+              "neither": 0,
+              "ambiguous": 2
+            }
+          }
+        },
+        {
+          "up": 0.2,
+          "down": 0.1,
+          "horizon": 30,
+          "raw": 426,
+          "independent": 187,
+          "censored": 4,
+          "counts": {
+            "up": 53,
+            "down": 108,
+            "neither": 20,
+            "ambiguous": 2
+          },
+          "evaluated": 67,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.6616455890234485,
+              "logloss": 1.1846151415349344,
+              "accuracy": 0.5074626865671642
+            },
+            "M3_neighbors": {
+              "brier": 0.6512748756218905,
+              "logloss": 1.156389704005231,
+              "accuracy": 0.4925373134328358
+            },
+            "M4_regime": {
+              "brier": 0.6654545112013066,
+              "logloss": 1.1981850464321222,
+              "accuracy": 0.5074626865671642
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2762400,
+            "lower": 2071800,
+            "n": 183,
+            "counts": {
+              "up": 53,
+              "down": 108,
+              "neither": 20,
+              "ambiguous": 2
+            },
+            "regime_counts": {
+              "up": 13,
+              "down": 40,
+              "neither": 5,
+              "ambiguous": 1
+            }
+          }
+        },
+        {
+          "up": 0.2,
+          "down": 0.1,
+          "horizon": 90,
+          "raw": 426,
+          "independent": 168,
+          "censored": 4,
+          "counts": {
+            "up": 55,
+            "down": 106,
+            "neither": 1,
+            "ambiguous": 2
+          },
+          "evaluated": 51,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.47393605328263183,
+              "logloss": 0.7608647231378198,
+              "accuracy": 0.6470588235294118
+            },
+            "M3_neighbors": {
+              "brier": 0.48937908496732024,
+              "logloss": 0.8056010034538893,
+              "accuracy": 0.6274509803921569
+            },
+            "M4_regime": {
+              "brier": 0.47465716956159365,
+              "logloss": 0.7905521230528865,
+              "accuracy": 0.6470588235294118
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2762400,
+            "lower": 2071800,
+            "n": 164,
+            "counts": {
+              "up": 55,
+              "down": 106,
+              "neither": 1,
+              "ambiguous": 2
+            },
+            "regime_counts": {
+              "up": 15,
+              "down": 42,
+              "neither": 0,
+              "ambiguous": 1
+            }
+          }
+        },
+        {
+          "up": 0.2,
+          "down": 0.1,
+          "horizon": 180,
+          "raw": 426,
+          "independent": 167,
+          "censored": 4,
+          "counts": {
+            "up": 55,
+            "down": 106,
+            "neither": 0,
+            "ambiguous": 2
+          },
+          "evaluated": 50,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.4531382720393495,
+              "logloss": 0.6737221413522414,
+              "accuracy": 0.66
+            },
+            "M3_neighbors": {
+              "brier": 0.4745138888888889,
+              "logloss": 0.7494272115805097,
+              "accuracy": 0.6
+            },
+            "M4_regime": {
+              "brier": 0.4513912025239489,
+              "logloss": 0.6985048049773123,
+              "accuracy": 0.66
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2762400,
+            "lower": 2071800,
+            "n": 163,
+            "counts": {
+              "up": 55,
+              "down": 106,
+              "neither": 0,
+              "ambiguous": 2
+            },
+            "regime_counts": {
+              "up": 15,
+              "down": 42,
+              "neither": 0,
+              "ambiguous": 1
+            }
+          }
+        },
+        {
+          "up": 0.3,
+          "down": 0.1,
+          "horizon": 30,
+          "raw": 426,
+          "independent": 159,
+          "censored": 4,
+          "counts": {
+            "up": 28,
+            "down": 96,
+            "neither": 31,
+            "ambiguous": 0
+          },
+          "evaluated": 61,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.6973123562505198,
+              "logloss": 1.1755198049803288,
+              "accuracy": 0.47540983606557374
+            },
+            "M3_neighbors": {
+              "brier": 0.6383765938069217,
+              "logloss": 1.1101561958811588,
+              "accuracy": 0.47540983606557374
+            },
+            "M4_regime": {
+              "brier": 0.6857920432998758,
+              "logloss": 1.1828050149766258,
+              "accuracy": 0.47540983606557374
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2992600,
+            "lower": 2071800,
+            "n": 155,
+            "counts": {
+              "up": 28,
+              "down": 96,
+              "neither": 31,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 8,
+              "down": 40,
+              "neither": 7,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.3,
+          "down": 0.1,
+          "horizon": 90,
+          "raw": 426,
+          "independent": 132,
+          "censored": 4,
+          "counts": {
+            "up": 34,
+            "down": 91,
+            "neither": 3,
+            "ambiguous": 0
+          },
+          "evaluated": 43,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5037604116641279,
+              "logloss": 0.8904242022803245,
+              "accuracy": 0.6511627906976745
+            },
+            "M3_neighbors": {
+              "brier": 0.5011304909560721,
+              "logloss": 0.8759772911755036,
+              "accuracy": 0.6511627906976745
+            },
+            "M4_regime": {
+              "brier": 0.5139714193516729,
+              "logloss": 0.9275265925835608,
+              "accuracy": 0.6511627906976745
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2992600,
+            "lower": 2071800,
+            "n": 128,
+            "counts": {
+              "up": 34,
+              "down": 91,
+              "neither": 3,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 9,
+              "down": 43,
+              "neither": 0,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.3,
+          "down": 0.1,
+          "horizon": 180,
+          "raw": 426,
+          "independent": 128,
+          "censored": 4,
+          "counts": {
+            "up": 33,
+            "down": 91,
+            "neither": 0,
+            "ambiguous": 0
+          },
+          "evaluated": 39,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.4094492002264734,
+              "logloss": 0.6192765705117983,
+              "accuracy": 0.717948717948718
+            },
+            "M3_neighbors": {
+              "brier": 0.41390669515669526,
+              "logloss": 0.6857513503013355,
+              "accuracy": 0.7435897435897436
+            },
+            "M4_regime": {
+              "brier": 0.43209407782750847,
+              "logloss": 0.6700383735832479,
+              "accuracy": 0.717948717948718
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2992600,
+            "lower": 2071800,
+            "n": 124,
+            "counts": {
+              "up": 33,
+              "down": 91,
+              "neither": 0,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 9,
+              "down": 43,
+              "neither": 0,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.3,
+          "down": 0.2,
+          "horizon": 30,
+          "raw": 426,
+          "independent": 119,
+          "censored": 3,
+          "counts": {
+            "up": 30,
+            "down": 34,
+            "neither": 52,
+            "ambiguous": 0
+          },
+          "evaluated": 48,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.6318599617343751,
+              "logloss": 1.0594060710388244,
+              "accuracy": 0.5416666666666666
+            },
+            "M3_neighbors": {
+              "brier": 0.5517216435185185,
+              "logloss": 0.9696275046585635,
+              "accuracy": 0.6041666666666666
+            },
+            "M4_regime": {
+              "brier": 0.6232811487422123,
+              "logloss": 1.0578224048576292,
+              "accuracy": 0.4583333333333333
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2992600,
+            "lower": 1841600,
+            "n": 116,
+            "counts": {
+              "up": 30,
+              "down": 34,
+              "neither": 52,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 11,
+              "down": 14,
+              "neither": 14,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.3,
+          "down": 0.2,
+          "horizon": 90,
+          "raw": 426,
+          "independent": 82,
+          "censored": 3,
+          "counts": {
+            "up": 34,
+            "down": 39,
+            "neither": 6,
+            "ambiguous": 0
+          },
+          "evaluated": 25,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.6374011566317361,
+              "logloss": 1.1016358518531442,
+              "accuracy": 0.4
+            },
+            "M3_neighbors": {
+              "brier": 0.6130555555555557,
+              "logloss": 1.0865065988267062,
+              "accuracy": 0.6
+            },
+            "M4_regime": {
+              "brier": 0.627347478003224,
+              "logloss": 1.1006889489783651,
+              "accuracy": 0.44
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2992600,
+            "lower": 1841600,
+            "n": 79,
+            "counts": {
+              "up": 34,
+              "down": 39,
+              "neither": 6,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 12,
+              "down": 17,
+              "neither": 4,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.3,
+          "down": 0.2,
+          "horizon": 180,
+          "raw": 426,
+          "independent": 78,
+          "censored": 3,
+          "counts": {
+            "up": 35,
+            "down": 40,
+            "neither": 0,
+            "ambiguous": 0
+          },
+          "evaluated": 23,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.507799849492692,
+              "logloss": 0.7309505029119354,
+              "accuracy": 0.43478260869565216
+            },
+            "M3_neighbors": {
+              "brier": 0.5279287439613527,
+              "logloss": 0.8093163515074977,
+              "accuracy": 0.5217391304347826
+            },
+            "M4_regime": {
+              "brier": 0.5219499178185973,
+              "logloss": 0.7730628853630783,
+              "accuracy": 0.43478260869565216
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2992600,
+            "lower": 1841600,
+            "n": 75,
+            "counts": {
+              "up": 35,
+              "down": 40,
+              "neither": 0,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 14,
+              "down": 20,
+              "neither": 0,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.4,
+          "down": 0.2,
+          "horizon": 30,
+          "raw": 426,
+          "independent": 111,
+          "censored": 4,
+          "counts": {
+            "up": 13,
+            "down": 33,
+            "neither": 61,
+            "ambiguous": 0
+          },
+          "evaluated": 45,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.48840301922401624,
+              "logloss": 0.8328686108187368,
+              "accuracy": 0.7555555555555555
+            },
+            "M3_neighbors": {
+              "brier": 0.44660493827160513,
+              "logloss": 0.8136024597066336,
+              "accuracy": 0.7111111111111111
+            },
+            "M4_regime": {
+              "brier": 0.4772069962460375,
+              "logloss": 0.8344357773967989,
+              "accuracy": 0.7555555555555555
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 3222800,
+            "lower": 1841600,
+            "n": 107,
+            "counts": {
+              "up": 13,
+              "down": 33,
+              "neither": 61,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 5,
+              "down": 12,
+              "neither": 20,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.4,
+          "down": 0.2,
+          "horizon": 90,
+          "raw": 426,
+          "independent": 76,
+          "censored": 4,
+          "counts": {
+            "up": 23,
+            "down": 38,
+            "neither": 11,
+            "ambiguous": 0
+          },
+          "evaluated": 24,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.7296639130031903,
+              "logloss": 1.2745918189008434,
+              "accuracy": 0.4166666666666667
+            },
+            "M3_neighbors": {
+              "brier": 0.7026909722222224,
+              "logloss": 1.2266450517637084,
+              "accuracy": 0.375
+            },
+            "M4_regime": {
+              "brier": 0.7143071743056543,
+              "logloss": 1.2630956502849557,
+              "accuracy": 0.4166666666666667
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 3222800,
+            "lower": 1841600,
+            "n": 72,
+            "counts": {
+              "up": 23,
+              "down": 38,
+              "neither": 11,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 11,
+              "down": 16,
+              "neither": 4,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.4,
+          "down": 0.2,
+          "horizon": 180,
+          "raw": 426,
+          "independent": 66,
+          "censored": 4,
+          "counts": {
+            "up": 24,
+            "down": 37,
+            "neither": 1,
+            "ambiguous": 0
+          },
+          "evaluated": 16,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5506576465124143,
+              "logloss": 0.9341680811566745,
+              "accuracy": 0.5625
+            },
+            "M3_neighbors": {
+              "brier": 0.5839843750000001,
+              "logloss": 0.9843084633759394,
+              "accuracy": 0.5625
+            },
+            "M4_regime": {
+              "brier": 0.5638530901540655,
+              "logloss": 0.9683870014945158,
+              "accuracy": 0.5625
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 3222800,
+            "lower": 1841600,
+            "n": 62,
+            "counts": {
+              "up": 24,
+              "down": 37,
+              "neither": 1,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 12,
+              "down": 18,
+              "neither": 0,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.2,
+          "down": 0.2,
+          "horizon": 30,
+          "raw": 426,
+          "independent": 137,
+          "censored": 4,
+          "counts": {
+            "up": 49,
+            "down": 43,
+            "neither": 41,
+            "ambiguous": 0
+          },
+          "evaluated": 50,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.7686862557841652,
+              "logloss": 1.2866298482801815,
+              "accuracy": 0.2
+            },
+            "M3_neighbors": {
+              "brier": 0.6309027777777778,
+              "logloss": 1.0725340621898705,
+              "accuracy": 0.42
+            },
+            "M4_regime": {
+              "brier": 0.7780307397734694,
+              "logloss": 1.317171572418225,
+              "accuracy": 0.2
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2762400,
+            "lower": 1841600,
+            "n": 133,
+            "counts": {
+              "up": 49,
+              "down": 43,
+              "neither": 41,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 13,
+              "down": 14,
+              "neither": 9,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.2,
+          "down": 0.2,
+          "horizon": 90,
+          "raw": 426,
+          "independent": 109,
+          "censored": 4,
+          "counts": {
+            "up": 53,
+            "down": 47,
+            "neither": 5,
+            "ambiguous": 0
+          },
+          "evaluated": 30,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.6273566523140384,
+              "logloss": 1.0996474380192898,
+              "accuracy": 0.43333333333333335
+            },
+            "M3_neighbors": {
+              "brier": 0.6353009259259258,
+              "logloss": 1.1086157224171451,
+              "accuracy": 0.5333333333333333
+            },
+            "M4_regime": {
+              "brier": 0.6172617239616531,
+              "logloss": 1.0774915388894124,
+              "accuracy": 0.4
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2762400,
+            "lower": 1841600,
+            "n": 105,
+            "counts": {
+              "up": 53,
+              "down": 47,
+              "neither": 5,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 16,
+              "down": 15,
+              "neither": 3,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.2,
+          "down": 0.2,
+          "horizon": 180,
+          "raw": 426,
+          "independent": 106,
+          "censored": 4,
+          "counts": {
+            "up": 54,
+            "down": 47,
+            "neither": 1,
+            "ambiguous": 0
+          },
+          "evaluated": 28,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.5402373534708108,
+              "logloss": 0.8616514467067095,
+              "accuracy": 0.5
+            },
+            "M3_neighbors": {
+              "brier": 0.5540674603174602,
+              "logloss": 0.9058209970735794,
+              "accuracy": 0.5357142857142857
+            },
+            "M4_regime": {
+              "brier": 0.534512669589822,
+              "logloss": 0.8535264758854454,
+              "accuracy": 0.42857142857142855
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2762400,
+            "lower": 1841600,
+            "n": 102,
+            "counts": {
+              "up": 54,
+              "down": 47,
+              "neither": 1,
+              "ambiguous": 0
+            },
+            "regime_counts": {
+              "up": 17,
+              "down": 17,
+              "neither": 0,
+              "ambiguous": 0
+            }
+          }
+        },
+        {
+          "up": 0.1,
+          "down": 0.2,
+          "horizon": 30,
+          "raw": 426,
+          "independent": 179,
+          "censored": 3,
+          "counts": {
+            "up": 99,
+            "down": 43,
+            "neither": 33,
+            "ambiguous": 1
+          },
+          "evaluated": 65,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.675329540430604,
+              "logloss": 1.1694588333207419,
+              "accuracy": 0.49230769230769234
+            },
+            "M3_neighbors": {
+              "brier": 0.6260149572649572,
+              "logloss": 1.0697241047368817,
+              "accuracy": 0.49230769230769234
+            },
+            "M4_regime": {
+              "brier": 0.6420852175255027,
+              "logloss": 1.1134954219634388,
+              "accuracy": 0.5538461538461539
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2532200,
+            "lower": 1841600,
+            "n": 176,
+            "counts": {
+              "up": 99,
+              "down": 43,
+              "neither": 33,
+              "ambiguous": 1
+            },
+            "regime_counts": {
+              "up": 20,
+              "down": 13,
+              "neither": 6,
+              "ambiguous": 1
+            }
+          }
+        },
+        {
+          "up": 0.1,
+          "down": 0.2,
+          "horizon": 90,
+          "raw": 426,
+          "independent": 156,
+          "censored": 3,
+          "counts": {
+            "up": 102,
+            "down": 49,
+            "neither": 1,
+            "ambiguous": 1
+          },
+          "evaluated": 49,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.43163055594878325,
+              "logloss": 0.7119293189251376,
+              "accuracy": 0.7142857142857143
+            },
+            "M3_neighbors": {
+              "brier": 0.4619472789115645,
+              "logloss": 0.7757694360685874,
+              "accuracy": 0.7346938775510204
+            },
+            "M4_regime": {
+              "brier": 0.4369925693578764,
+              "logloss": 0.7252094124544431,
+              "accuracy": 0.7142857142857143
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2532200,
+            "lower": 1841600,
+            "n": 153,
+            "counts": {
+              "up": 102,
+              "down": 49,
+              "neither": 1,
+              "ambiguous": 1
+            },
+            "regime_counts": {
+              "up": 24,
+              "down": 12,
+              "neither": 0,
+              "ambiguous": 1
+            }
+          }
+        },
+        {
+          "up": 0.1,
+          "down": 0.2,
+          "horizon": 180,
+          "raw": 426,
+          "independent": 154,
+          "censored": 3,
+          "counts": {
+            "up": 101,
+            "down": 49,
+            "neither": 0,
+            "ambiguous": 1
+          },
+          "evaluated": 47,
+          "skipped": 0,
+          "metrics": {
+            "B1_empirical": {
+              "brier": 0.4127746302405898,
+              "logloss": 0.6258771982222812,
+              "accuracy": 0.723404255319149
+            },
+            "M3_neighbors": {
+              "brier": 0.4387559101654846,
+              "logloss": 0.7094250656884672,
+              "accuracy": 0.7446808510638298
+            },
+            "M4_regime": {
+              "brier": 0.41714346339167657,
+              "logloss": 0.6534155315755986,
+              "accuracy": 0.723404255319149
+            }
+          },
+          "reference": {
+            "asof": "2026-11-26T15:00:00.000Z",
+            "anchor": 2302000,
+            "upper": 2532200,
+            "lower": 1841600,
+            "n": 151,
+            "counts": {
+              "up": 101,
+              "down": 49,
+              "neither": 0,
+              "ambiguous": 1
+            },
+            "regime_counts": {
+              "up": 24,
+              "down": 12,
+              "neither": 0,
+              "ambiguous": 1
+            }
+          }
+        }
+      ]
+    }
+  }
+}
