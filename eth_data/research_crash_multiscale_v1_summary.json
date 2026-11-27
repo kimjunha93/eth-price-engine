@@ -1,0 +1,118 @@
+{
+  "version": "crash_multiscale_research_v1",
+  "status": "exploratory_no_production_change",
+  "source": {
+    "file": "Upbit_ETHKRW_1d.csv",
+    "sha256": "44991322abdc79e5fd7d440632155e0d0a7c7f5bcc3ed0c66368bcdca41fbf12",
+    "rows": 3346,
+    "start": "2017-09-25",
+    "end": "2026-11-25",
+    "gap_breaks": 1
+  },
+  "crash": {
+    "label": "90-day closing drawdown threshold, RSI<=30; future running close rebound 15%; following correction 10%; high measured after rebound confirmation day; nonoverlap; 180 calendar day cap; strict historical completion",
+    "thresholds": [
+      {
+        "dd": 0.15,
+        "complete": 18,
+        "censored": 1,
+        "test_n": 9,
+        "baseline_rel_mae": 0.1461,
+        "atr_rel_mae": 0.1389
+      },
+      {
+        "dd": 0.2,
+        "complete": 17,
+        "censored": 1,
+        "test_n": 8,
+        "baseline_rel_mae": 0.1307,
+        "atr_rel_mae": 0.1237,
+        "baseline_max_event_error": 0.2684,
+        "atr_max_event_error": 0.2318,
+        "conditional_high_rel_mae": 0.17580882244059895
+      },
+      {
+        "dd": 0.25,
+        "complete": 15,
+        "censored": 1,
+        "test_n": 6,
+        "baseline_rel_mae": 0.112,
+        "atr_rel_mae": 0.1258
+      }
+    ],
+    "models": [
+      "B0",
+      "B1",
+      "ATR",
+      "KNN5",
+      "regime",
+      "joint"
+    ],
+    "chosen": "B1 at all thresholds; insufficient selection/test samples; ATR worse in selection period"
+  },
+  "multiscale": {
+    "label": "close-confirmed directional change, future daily-leg intraday extremes after each prior confirmation; low/high/low/high; nonoverlapping within scale; gaps split; strict historical completion",
+    "results": [
+      {
+        "threshold": 0.05,
+        "complete": 89,
+        "censored": 1,
+        "test_n": 29,
+        "base_mae": 0.1223,
+        "all4_within20": 18
+      },
+      {
+        "threshold": 0.1,
+        "complete": 42,
+        "censored": 1,
+        "test_n": 13,
+        "base_mae": 0.1747,
+        "all4_within20": 3
+      },
+      {
+        "threshold": 0.15,
+        "complete": 22,
+        "censored": 1,
+        "test_n": 5,
+        "base_mae": 0.3889,
+        "all4_within20": 1
+      },
+      {
+        "threshold": 0.2,
+        "complete": 12,
+        "censored": 1,
+        "test_n": 2,
+        "base_mae": 0.3075,
+        "all4_within20": 1
+      },
+      {
+        "threshold": 0.3,
+        "complete": 8,
+        "censored": 1,
+        "test_n": 2,
+        "base_mae": 0.3773,
+        "all4_within20": 0
+      },
+      {
+        "threshold": 0.4,
+        "complete": 5,
+        "censored": 1,
+        "test_n": 0
+      },
+      {
+        "threshold": 0.5,
+        "complete": 3,
+        "censored": 1,
+        "test_n": 0
+      }
+    ],
+    "chosen": "B1; no model promotion"
+  },
+  "limitations": [
+    "2020–2022 model selection and 2023+ retrospective evaluation reused historical periods already viewed in previous research",
+    "daily leg extremes are not proof of intraday price ordering across a confirmation boundary",
+    "not a full V4.3 model evaluation; no independent forward test, no execution or current VP test",
+    "source is local archived snapshot, not refreshed market data",
+    "rounded metrics in this summary; scripts and full event logs provided separately in chat, not uploaded in this commit"
+  ]
+}
