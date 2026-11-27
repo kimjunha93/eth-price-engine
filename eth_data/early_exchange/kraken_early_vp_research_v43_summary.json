@@ -1,0 +1,72 @@
+{
+  "version": "early-vp-research-1",
+  "date": "2026-11-27",
+  "source": "User-provided Kraken ETHUSD early trade profile ZIP; aggregated from local SQLite, not raw trades independently inspected",
+  "file": "eth_data/early_exchange/Kraken_ETHUSD_early_daily_price_buckets.csv",
+  "git_blob": "8df14509ef34eb12e486dcc25433c30d7e8748f9",
+  "sha256": "3aa885cc5dbce57d78fe54f61f7a2a1d5a44da49e52e1a6c84c6a7e933bb5d00",
+  "quality": {
+    "days": 873,
+    "buckets": 8824,
+    "trades": 4615767,
+    "volume_eth": 38089719.225868635,
+    "notional_usd": 5027828073.916086,
+    "matched_daily_count_volume_low_high": 873,
+    "duplicates": 0,
+    "missing_values": 0,
+    "price_bucket_errors": 0
+  },
+  "profiles": {
+    "year2015": {
+      "poc": [
+        1.3,
+        1.31
+      ],
+      "val": 0.8,
+      "vah": 1.53,
+      "vwap": 1.02
+    },
+    "year2016": {
+      "poc": [
+        11.91,
+        12.03
+      ],
+      "val": 8.75,
+      "vah": 14.83,
+      "vwap": 10.93
+    },
+    "year2017": {
+      "poc": [
+        299.33,
+        302.32
+      ],
+      "val": 85.44,
+      "vah": 850.93,
+      "vwap": 201.81
+    },
+    "all": {
+      "poc": [
+        299.33,
+        302.32
+      ],
+      "val": 12.52,
+      "vah": 850.93,
+      "vwap": 132
+    }
+  },
+  "test": {
+    "description": "Exploratory 30-day trailing volume profile high/low-volume price bucket matched on price distance, both levels touched, neighboring events excluded, next-day close on opposite side of approach; no intraday sequence inference",
+    "paired_nonoverlap_events": 37,
+    "hvn_reactions": 19,
+    "lvn_reactions": 19,
+    "observed_frequency": 0.5135135135135135,
+    "adoption": "not adopted; no superiority demonstrated"
+  },
+  "limitations": [
+    "Same-origin consistency not proof of raw trade completeness or independent deduplication.",
+    "Daily aggregation does not identify intraday sequence.",
+    "Early archive does not represent current liquidity.",
+    "No out-of-sample validation or probability calibration."
+  ],
+  "production": "unchanged"
+}
