@@ -1,0 +1,15 @@
+'use strict';
+const fs=require('node:fs'),crypto=require('node:crypto'),cp=require('node:child_process');
+const sha=b=>crypto.createHash('sha256').update(b).digest('hex'),root='eth_data',dest=root+'/v43_output';
+const modules=["bottom_landmarks","rebound_landmarks","correction_landmarks","readvance_landmarks","large_cycle","first_touch"],markets=['Upbit_ETHKRW','Bitstamp_ETHUSD','Bithumb_ETHKRW'];
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const input=Object.fromEntries(markets.map(m=>[m,sha(fs.readFileSync(root+'/'+m+'_1d.csv'))]));
+const versions=Object.fromEntries(modules.map(m=>[m,sha(fs.readFileSync('v43/'+m+'.cjs'))]));
+fs.mkdirSync(dest,{recursive:true});
+const out=dest+'/learning_monitor.json',previous=fs.existsSync(out)?read(out):null;
+const unchanged=previous&&JSON.stringify(previous.input_sha256)===JSON.stringify(input)&&JSON.stringify(previous.code_sha256)===JSON.stringify(versions)&&modules.every(m=>fs.existsSync(root+'/'+m+'_v43.json')&&previous.modules?.[m]?.sha256===sha(fs.readFileSync(root+'/'+m+'_v43.json')));
+if(!unchanged)for(const m of modules)cp.execFileSync(process.execPath,['v43/'+m+'.cjs'],{stdio:'inherit'});
+const checks={};for(const m of modules){const raw=fs.readFileSync(root+'/'+m+'_v43.json'),j=JSON.parse(raw);if(!j.version||!j.markets||!markets.every(n=>j.markets[n]))throw Error('missing market '+m);for(const n of markets){const v=j.markets[n];if(v.prefix_ok===false||Object.values(v.scales??{}).some(x=>x.prefix_ok!==true)||Object.values(v.frames??{}).some(f=>Object.values(f.scales).some(x=>x.prefix_ok!==true)))throw Error('prefix check '+m+' '+n);if(!Number.isInteger(v.rows)||v.rows<=0)throw Error('rows '+m+' '+n)}checks[m]={version:j.version,sha256:sha(raw),rows:Object.fromEntries(markets.map(n=>[n,j.markets[n].rows]))}}
+const extreme=read(dest+'/extreme_scores.json'),paths=read(dest+'/path_scores.json'),barriers=read(dest+'/operations.json');
+const report={version:'v43-learning-monitor-1',generated_utc:new Date().toISOString(),input_sha256:input,code_sha256:versions,modules:checks,live:{extreme_registered:extreme.registered,path_registered:paths.registered,barrier_registered:barriers.registered_live,extreme_groups:extreme.groups},policy:'rerun exploratory research only on changed daily inputs, code, or report integrity; preserve previous Git commits; never promote models or auto-register descriptive references; live samples may overlap; independent adjudication required',promotion:'blocked_pending_independent_validation',review_reason:!extreme.registered&&!paths.registered&&!barriers.registered_live?'no_registered_live_forecasts':'manual_review_only'};
+if(unchanged&&previous&&JSON.stringify({...previous,generated_utc:null})===JSON.stringify({...report,generated_utc:null})){console.log('learning reports unchanged');}else{fs.writeFileSync(out+'.tmp',JSON.stringify(report,null,2)+'\n');fs.renameSync(out+'.tmp',out);console.log(JSON.stringify(report));}
