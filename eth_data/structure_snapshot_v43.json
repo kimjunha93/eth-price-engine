@@ -1,6 +1,6 @@
 {
   "version": "v43-structure-1",
-  "generated_utc": "2026-11-27 05:30:47.848875+00:00",
+  "generated_utc": "2026-11-27 05:39:56.932752+00:00",
   "status": "descriptive_only",
   "model_policy": "historical median reference; no calibrated probability or full-cycle path; no live forecast registration",
   "markets": {
@@ -14,7 +14,7 @@
       "scales": {
         "1h": {
           "last_closed": "2026-11-27 05:00:00+00:00",
-          "data_age_hours": 0.5132913541666667,
+          "data_age_hours": 0.6658146533333333,
           "states": {
             "0.05": {
               "state": "active_high",
@@ -125,7 +125,7 @@
         },
         "4h": {
           "last_closed": "2026-11-27 04:00:00+00:00",
-          "data_age_hours": 1.5132913541666666,
+          "data_age_hours": 1.6658146533333333,
           "states": {
             "0.05": {
               "state": "active_high",
@@ -220,7 +220,7 @@
         },
         "1d": {
           "last_closed": "2026-11-27 00:00:00+00:00",
-          "data_age_hours": 5.513291354166666,
+          "data_age_hours": 5.665814653333333,
           "states": {
             "0.05": {
               "state": "active_low",
@@ -437,7 +437,7 @@
       "scales": {
         "1h": {
           "last_closed": "2026-11-27 05:00:00+00:00",
-          "data_age_hours": 0.5132913541666667,
+          "data_age_hours": 0.6658146533333333,
           "states": {
             "0.05": {
               "state": "active_high",
@@ -616,7 +616,7 @@
         },
         "4h": {
           "last_closed": "2026-11-27 04:00:00+00:00",
-          "data_age_hours": 1.5132913541666666,
+          "data_age_hours": 1.6658146533333333,
           "states": {
             "0.05": {
               "state": "active_high",
@@ -807,7 +807,7 @@
         },
         "1d": {
           "last_closed": "2026-11-27 00:00:00+00:00",
-          "data_age_hours": 5.513291354166666,
+          "data_age_hours": 5.665814653333333,
           "states": {
             "0.05": {
               "state": "active_high",

@@ -1,6 +1,6 @@
 {
   "version": "v43-learning-monitor-1",
-  "generated_utc": "2026-11-27T05:28:12.875Z",
+  "generated_utc": "2026-11-27T05:40:12.266Z",
   "input_sha256": {
     "Upbit_ETHKRW": "0c326279c5723282a73eadd40314905e18a83532cb5d2b4da60442ad1477a662",
     "Bitstamp_ETHUSD": "f3ccef28364872f8549e4b16b3d2d116fbff289c7790c87266ed3b6e66cfa040",
@@ -12,7 +12,8 @@
     "correction_landmarks": "201054c4df2a9f23fe19caa7cd94a825c66a7782ea30e4ce98e4c1377dec3ad3",
     "readvance_landmarks": "c091f6abf6e5285059a52f82b97db2253c8d706961f92530f20034ca4aa8fed9",
     "large_cycle": "043c8ebfc656c8bc1e1fc31e72ec4afdee1e6e13001714312e602e5ee0f381e8",
-    "first_touch": "177c9caee4507cccd5e32282a58d3bd063a70badd6819ab8676d91e59f7aa715"
+    "first_touch": "177c9caee4507cccd5e32282a58d3bd063a70badd6819ab8676d91e59f7aa715",
+    "hierarchy_audit": "34e7cdc16eb1b267dd4becc38f145ddd37ac07ff2fe9a066df9091dc64b8667f"
   },
   "modules": {
     "bottom_landmarks": {
@@ -63,6 +64,15 @@
     "first_touch": {
       "version": "v43-first-touch-1",
       "sha256": "57a2c378f5076aa03d2e332d7a14836f666145a60c67282e32116f6bf58dc191",
+      "rows": {
+        "Upbit_ETHKRW": 3347,
+        "Bitstamp_ETHUSD": 3305,
+        "Bithumb_ETHKRW": 3666
+      }
+    },
+    "hierarchy_audit": {
+      "version": "v43-hierarchy-audit-1",
+      "sha256": "88852bcbd2417e8f6132387e3c7d089d2914ca36adedad44ea8ec42e56b0a19f",
       "rows": {
         "Upbit_ETHKRW": 3347,
         "Bitstamp_ETHUSD": 3305,
