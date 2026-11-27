@@ -1,0 +1,34 @@
+{
+  "version": "v43-early-bitfinex-1",
+  "source": "https://api-pub.bitfinex.com/v2/candles/trade:{tf}:tETHUSD/hist",
+  "requested_start": "2015-08-01T00:00:00+00:00",
+  "requested_end_exclusive": "2019-01-01T00:00:00+00:00",
+  "daily": {
+    "rows": 1021,
+    "first": "2016-03-09T00:00:00+00:00",
+    "last": "2018-12-31T00:00:00+00:00",
+    "missing_slots": 7,
+    "zero_volume": 0,
+    "sha256": "bbbf9d3ed5a12fed3bc19d4fecf85d237a0ab659bdb876248c91cc97a95c8e0d"
+  },
+  "hourly": {
+    "rows": 24248,
+    "first": "2016-03-09T16:00:00+00:00",
+    "last": "2018-12-31T23:00:00+00:00",
+    "missing_slots": 408,
+    "zero_volume": 0,
+    "sha256": "13bd384c6d67963eabb9a3990a2508f6c9034254e7e36dceb5a506b99066d2b7"
+  },
+  "daily_hourly": {
+    "complete_days": 930,
+    "ohlc_matches": 930,
+    "max_relative_volume_error": 3.69727155306993e-06
+  },
+  "bitstamp_overlap": {
+    "n": 418,
+    "median_abs_close_pct": 0.20398251578436222,
+    "max_abs_close_pct": 6.1506513684713715
+  },
+  "status": "isolated_archive_pending_review",
+  "policy": "No imputation, no cross-exchange merge, no automatic model promotion; earliest returned bar is not proof of first-ever ETH trade."
+}
