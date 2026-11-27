@@ -1,0 +1,152 @@
+{
+  "version": "kraken-early-sensitivity-1",
+  "design": "Daily close-only directional change, fixed 20/30/40/50% thresholds; estimate next close pivot relative to observed confirmation close with median log ratio by direction; use only completed training events strictly before prediction; min 5 Bitstamp training cases per direction; early archive before 2017-11-09; evaluate identical Bitstamp events starting 2020-01-01 or later; break on missing calendar days and invalid OHLC; no concatenation or volume features; last unconfirmed event censored. Exploratory retrospective test, not production promotion.",
+  "early": {
+    "rows": 820,
+    "invalid": 0,
+    "gaps": 4
+  },
+  "bitstamp": {
+    "rows": 3305,
+    "invalid": 0,
+    "gaps": 0
+  },
+  "results": [
+    {
+      "threshold": 0.2,
+      "early_completed": 42,
+      "early_censored": 5,
+      "bitstamp_completed": 69,
+      "bitstamp_censored": 1,
+      "early_up": 21,
+      "early_down": 21,
+      "overall": {
+        "n": 49,
+        "current_log_mae": 0.2966852466167344,
+        "baseline_log_mae": 0.29077939376043765,
+        "augmented_log_mae": 0.2716660763979895,
+        "baseline_relative_mae": 0.2784625826425135,
+        "augmented_relative_mae": 0.26284962887644897
+      },
+      "up": {
+        "n": 25,
+        "current_log_mae": 0.3768838765344478,
+        "baseline_log_mae": 0.35619379602608825,
+        "augmented_log_mae": 0.3429629021262122,
+        "baseline_relative_mae": 0.30473240634508164,
+        "augmented_relative_mae": 0.28256004031595944
+      },
+      "down": {
+        "n": 24,
+        "current_log_mae": 0.21314500711911613,
+        "baseline_log_mae": 0.222639391400385,
+        "augmented_log_mae": 0.1973985495977577,
+        "baseline_relative_mae": 0.2510981829523385,
+        "augmented_relative_mae": 0.2423179502936255
+      }
+    },
+    {
+      "threshold": 0.3,
+      "early_completed": 19,
+      "early_censored": 5,
+      "bitstamp_completed": 41,
+      "bitstamp_censored": 1,
+      "early_up": 9,
+      "early_down": 10,
+      "overall": {
+        "n": 27,
+        "current_log_mae": 0.40906421685862,
+        "baseline_log_mae": 0.3555178516935616,
+        "augmented_log_mae": 0.3410141631071717,
+        "baseline_relative_mae": 0.3212708533673511,
+        "augmented_relative_mae": 0.33748893228440047
+      },
+      "up": {
+        "n": 14,
+        "current_log_mae": 0.5481039934420889,
+        "baseline_log_mae": 0.4324336329267404,
+        "augmented_log_mae": 0.43516406995374746,
+        "baseline_relative_mae": 0.357072832100792,
+        "augmented_relative_mae": 0.3935633567781048
+      },
+      "down": {
+        "n": 13,
+        "current_log_mae": 0.2593290728456536,
+        "baseline_log_mae": 0.27268547190398434,
+        "augmented_log_mae": 0.23962195573393633,
+        "baseline_relative_mae": 0.2827148762697997,
+        "augmented_relative_mae": 0.27710109052194964
+      }
+    },
+    {
+      "threshold": 0.4,
+      "early_completed": 13,
+      "early_censored": 3,
+      "bitstamp_completed": 25,
+      "bitstamp_censored": 1,
+      "early_up": 7,
+      "early_down": 6,
+      "overall": {
+        "n": 15,
+        "current_log_mae": 0.5700208915792481,
+        "baseline_log_mae": 0.4693260697344759,
+        "augmented_log_mae": 0.4535893807310513,
+        "baseline_relative_mae": 0.3748032501439826,
+        "augmented_relative_mae": 0.3740472302021305
+      },
+      "up": {
+        "n": 8,
+        "current_log_mae": 0.7878181603284994,
+        "baseline_log_mae": 0.6457837707610313,
+        "augmented_log_mae": 0.622671050481471,
+        "baseline_relative_mae": 0.4625898989007494,
+        "augmented_relative_mae": 0.43227621015340933
+      },
+      "down": {
+        "n": 7,
+        "current_log_mae": 0.32110972729438964,
+        "baseline_log_mae": 0.26766012570412695,
+        "augmented_log_mae": 0.2603531867305718,
+        "baseline_relative_mae": 0.2744756515648204,
+        "augmented_relative_mae": 0.30749982454352615
+      }
+    },
+    {
+      "threshold": 0.5,
+      "early_completed": 6,
+      "early_censored": 3,
+      "bitstamp_completed": 16,
+      "bitstamp_censored": 1,
+      "early_up": 3,
+      "early_down": 3,
+      "overall": {
+        "n": 6,
+        "current_log_mae": 0.63152458326988,
+        "baseline_log_mae": 0.23804633734440694,
+        "augmented_log_mae": 0.24149595775185753,
+        "baseline_relative_mae": 0.27355421527151164,
+        "augmented_relative_mae": 0.30481568096378325
+      },
+      "up": {
+        "n": 3,
+        "current_log_mae": 0.7651866750535068,
+        "baseline_log_mae": 0.24270754522416205,
+        "augmented_log_mae": 0.20394345407394796,
+        "baseline_relative_mae": 0.26925223786377644,
+        "augmented_relative_mae": 0.24709787756301482
+      },
+      "down": {
+        "n": 3,
+        "current_log_mae": 0.49786249148625344,
+        "baseline_log_mae": 0.23338512946465184,
+        "augmented_log_mae": 0.2790484614297671,
+        "baseline_relative_mae": 0.2778561926792469,
+        "augmented_relative_mae": 0.36253348436455163
+      }
+    }
+  ],
+  "sources": {
+    "kraken": "e4ff8f864d12492b8e8b2ed8790b663e4f5ab9b6",
+    "bitstamp": "bdef4c90c035a139a18ee85167365c11817545d9"
+  }
+}
