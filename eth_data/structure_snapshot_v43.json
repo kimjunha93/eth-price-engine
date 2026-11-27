@@ -1,6 +1,6 @@
 {
   "version": "v43-structure-1",
-  "generated_utc": "2026-11-27 05:27:53.452577+00:00",
+  "generated_utc": "2026-11-27 05:29:23.552715+00:00",
   "status": "descriptive_only",
   "model_policy": "historical median reference; no calibrated probability or full-cycle path; no live forecast registration",
   "markets": {
@@ -14,7 +14,7 @@
       "scales": {
         "1h": {
           "last_closed": "2026-11-27 05:00:00+00:00",
-          "data_age_hours": 0.4648479380555556,
+          "data_age_hours": 0.4898757541666667,
           "states": {
             "0.05": {
               "state": "active_high",
@@ -125,7 +125,7 @@
         },
         "4h": {
           "last_closed": "2026-11-27 04:00:00+00:00",
-          "data_age_hours": 1.4648479380555555,
+          "data_age_hours": 1.4898757541666667,
           "states": {
             "0.05": {
               "state": "active_high",
@@ -220,7 +220,7 @@
         },
         "1d": {
           "last_closed": "2026-11-27 00:00:00+00:00",
-          "data_age_hours": 5.464847938055556,
+          "data_age_hours": 5.4898757541666665,
           "states": {
             "0.05": {
               "state": "active_low",
@@ -437,7 +437,7 @@
       "scales": {
         "1h": {
           "last_closed": "2026-11-27 05:00:00+00:00",
-          "data_age_hours": 0.4648479380555556,
+          "data_age_hours": 0.4898757541666667,
           "states": {
             "0.05": {
               "state": "active_high",
@@ -616,7 +616,7 @@
         },
         "4h": {
           "last_closed": "2026-11-27 04:00:00+00:00",
-          "data_age_hours": 1.4648479380555555,
+          "data_age_hours": 1.4898757541666667,
           "states": {
             "0.05": {
               "state": "active_high",
@@ -807,7 +807,7 @@
         },
         "1d": {
           "last_closed": "2026-11-27 00:00:00+00:00",
-          "data_age_hours": 5.464847938055556,
+          "data_age_hours": 5.4898757541666665,
           "states": {
             "0.05": {
               "state": "active_high",
