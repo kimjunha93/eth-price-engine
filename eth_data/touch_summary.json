@@ -1,6 +1,6 @@
 {
   "version": "touch-exploratory-0.1",
-  "generated_utc": "2026-11-26 17:21:00.153694+00:00",
+  "generated_utc": "2026-11-27 00:30:27.389233+00:00",
   "status": "symmetric benchmark only, not current target probabilities",
   "markets": {
     "Upbit_ETHKRW": {
@@ -51,14 +51,14 @@
           "gap": 0
         },
         "test": {
-          "up": 19,
+          "up": 20,
           "down": 17,
           "neither": 0,
           "unknown": 0,
           "gap": 0
         },
-        "empirical_baseline_multiclass_brier": 0.49861133365379484,
-        "test_scored": 36
+        "empirical_baseline_multiclass_brier": 0.49764200989966095,
+        "test_scored": 37
       },
       "0.1": {
         "train": {
@@ -70,13 +70,13 @@
         },
         "test": {
           "up": 22,
-          "down": 12,
+          "down": 13,
           "neither": 2,
           "unknown": 0,
           "gap": 0
         },
-        "empirical_baseline_multiclass_brier": 0.5448611111111112,
-        "test_scored": 36
+        "empirical_baseline_multiclass_brier": 0.544560810810811,
+        "test_scored": 37
       }
     }
   }

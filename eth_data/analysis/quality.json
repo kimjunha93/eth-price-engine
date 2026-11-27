@@ -2,7 +2,7 @@
   {
     "market": "Upbit",
     "tf": "1d",
-    "rows": 3346,
+    "rows": 3347,
     "invalid": 0,
     "duplicates": 0,
     "volume_excluded": false
@@ -10,17 +10,17 @@
   {
     "market": "Upbit",
     "derived": "4h",
-    "rows": 19979
+    "rows": 19981
   },
   {
     "market": "Upbit",
     "derived": "1d",
-    "rows": 3278
+    "rows": 3279
   },
   {
     "market": "Upbit",
     "tf": "1h",
-    "rows": 80139,
+    "rows": 80146,
     "invalid": 0,
     "duplicates": 0,
     "volume_excluded": false
@@ -28,17 +28,17 @@
   {
     "market": "Bithumb",
     "derived": "4h",
-    "rows": 20556
+    "rows": 20558
   },
   {
     "market": "Bithumb",
     "derived": "1d",
-    "rows": 3398
+    "rows": 3399
   },
   {
     "market": "Bithumb",
     "tf": "1h",
-    "rows": 82311,
+    "rows": 82318,
     "invalid": 0,
     "duplicates": 0,
     "volume_excluded": false
@@ -46,7 +46,7 @@
   {
     "market": "Bitstamp",
     "tf": "1d",
-    "rows": 3304,
+    "rows": 3305,
     "invalid": 0,
     "duplicates": 0,
     "volume_excluded": true
@@ -54,17 +54,17 @@
   {
     "market": "Bitstamp",
     "derived": "4h",
-    "rows": 18656
+    "rows": 18658
   },
   {
     "market": "Bitstamp",
     "derived": "1d",
-    "rows": 3108
+    "rows": 3109
   },
   {
     "market": "Bitstamp",
     "tf": "1h",
-    "rows": 74635,
+    "rows": 74642,
     "invalid": 0,
     "duplicates": 0,
     "volume_excluded": true
@@ -72,25 +72,25 @@
   {
     "market": "Kraken",
     "tf": "1d",
-    "rows": 720,
-    "invalid": 0,
-    "duplicates": 0,
-    "volume_excluded": false
-  },
-  {
-    "market": "Kraken",
-    "derived": "4h",
-    "rows": 180
-  },
-  {
-    "market": "Kraken",
-    "derived": "1d",
-    "rows": 29
-  },
-  {
-    "market": "Kraken",
-    "tf": "1h",
     "rows": 721,
+    "invalid": 0,
+    "duplicates": 0,
+    "volume_excluded": false
+  },
+  {
+    "market": "Kraken",
+    "derived": "4h",
+    "rows": 182
+  },
+  {
+    "market": "Kraken",
+    "derived": "1d",
+    "rows": 30
+  },
+  {
+    "market": "Kraken",
+    "tf": "1h",
+    "rows": 728,
     "invalid": 0,
     "duplicates": 0,
     "volume_excluded": false

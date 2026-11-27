@@ -1,0 +1,804 @@
+{
+  "version": "v4.3-path-audit-1",
+  "generated_utc": "2026-11-27 00:30:29.918987+00:00",
+  "status": "exploratory_only",
+  "markets": {
+    "Upbit_ETHKRW": {
+      "1h": {
+        "bars": 80146,
+        "last_closed": "2026-11-27 00:00:00+00:00",
+        "scales": {
+          "0.05": {
+            "confirmed_waves": 1472,
+            "complete_paths": 651,
+            "censored_paths": 87,
+            "nonoverlap_complete": 310,
+            "hold_count": 345,
+            "fail_count": 306,
+            "evaluated": 69,
+            "insufficient_train": 0,
+            "evaluation_censored": 15,
+            "mape": {
+              "flat": 9.717241670153214,
+              "marginal": 6.3312331733701175,
+              "medoid": 6.403769886073601,
+              "neighbor_medoid": 6.928292895463228
+            },
+            "prefix_test": true
+          },
+          "0.1": {
+            "confirmed_waves": 349,
+            "complete_paths": 114,
+            "censored_paths": 60,
+            "nonoverlap_complete": 62,
+            "hold_count": 64,
+            "fail_count": 50,
+            "evaluated": 13,
+            "insufficient_train": 0,
+            "evaluation_censored": 11,
+            "mape": {
+              "flat": 16.294444168466512,
+              "marginal": 10.97248721531816,
+              "medoid": 11.183405061686933,
+              "neighbor_medoid": 12.819869229007216
+            },
+            "prefix_test": true
+          },
+          "0.15": {
+            "confirmed_waves": 131,
+            "complete_paths": 33,
+            "censored_paths": 36,
+            "nonoverlap_complete": 18,
+            "hold_count": 16,
+            "fail_count": 17,
+            "evaluated": 0,
+            "insufficient_train": 0,
+            "evaluation_censored": 10,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          },
+          "0.2": {
+            "confirmed_waves": 45,
+            "complete_paths": 10,
+            "censored_paths": 14,
+            "nonoverlap_complete": 6,
+            "hold_count": 3,
+            "fail_count": 7,
+            "evaluated": 0,
+            "insufficient_train": 0,
+            "evaluation_censored": 2,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          },
+          "0.3": {
+            "confirmed_waves": 16,
+            "complete_paths": 5,
+            "censored_paths": 4,
+            "nonoverlap_complete": 3,
+            "hold_count": 1,
+            "fail_count": 4,
+            "evaluated": 0,
+            "insufficient_train": 0,
+            "evaluation_censored": 0,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          },
+          "0.4": {
+            "confirmed_waves": 8,
+            "complete_paths": 2,
+            "censored_paths": 3,
+            "nonoverlap_complete": 1,
+            "hold_count": 0,
+            "fail_count": 2,
+            "evaluated": 0,
+            "insufficient_train": 0,
+            "evaluation_censored": 0,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          },
+          "0.5": {
+            "confirmed_waves": 7,
+            "complete_paths": 1,
+            "censored_paths": 4,
+            "nonoverlap_complete": 1,
+            "hold_count": 0,
+            "fail_count": 1,
+            "evaluated": 0,
+            "insufficient_train": 0,
+            "evaluation_censored": 0,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          }
+        }
+      },
+      "4h": {
+        "bars": 19981,
+        "last_closed": "2026-11-27 00:00:00+00:00",
+        "scales": {
+          "0.05": {
+            "confirmed_waves": 1079,
+            "complete_paths": 459,
+            "censored_paths": 82,
+            "nonoverlap_complete": 238,
+            "hold_count": 246,
+            "fail_count": 213,
+            "evaluated": 59,
+            "insufficient_train": 0,
+            "evaluation_censored": 13,
+            "mape": {
+              "flat": 9.765719868090486,
+              "marginal": 6.407023558972901,
+              "medoid": 6.407305208438392,
+              "neighbor_medoid": 6.392802764034234
+            },
+            "prefix_test": true
+          },
+          "0.1": {
+            "confirmed_waves": 284,
+            "complete_paths": 86,
+            "censored_paths": 55,
+            "nonoverlap_complete": 50,
+            "hold_count": 45,
+            "fail_count": 41,
+            "evaluated": 11,
+            "insufficient_train": 0,
+            "evaluation_censored": 10,
+            "mape": {
+              "flat": 16.049249361425527,
+              "marginal": 10.734499116595485,
+              "medoid": 10.89238825683844,
+              "neighbor_medoid": 9.98804145290695
+            },
+            "prefix_test": true
+          },
+          "0.15": {
+            "confirmed_waves": 107,
+            "complete_paths": 23,
+            "censored_paths": 33,
+            "nonoverlap_complete": 13,
+            "hold_count": 11,
+            "fail_count": 12,
+            "evaluated": 0,
+            "insufficient_train": 0,
+            "evaluation_censored": 9,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          },
+          "0.2": {
+            "confirmed_waves": 40,
+            "complete_paths": 9,
+            "censored_paths": 13,
+            "nonoverlap_complete": 5,
+            "hold_count": 3,
+            "fail_count": 6,
+            "evaluated": 0,
+            "insufficient_train": 0,
+            "evaluation_censored": 1,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          },
+          "0.3": {
+            "confirmed_waves": 14,
+            "complete_paths": 4,
+            "censored_paths": 4,
+            "nonoverlap_complete": 2,
+            "hold_count": 0,
+            "fail_count": 4,
+            "evaluated": 0,
+            "insufficient_train": 0,
+            "evaluation_censored": 0,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          },
+          "0.4": {
+            "confirmed_waves": 8,
+            "complete_paths": 2,
+            "censored_paths": 3,
+            "nonoverlap_complete": 1,
+            "hold_count": 0,
+            "fail_count": 2,
+            "evaluated": 0,
+            "insufficient_train": 0,
+            "evaluation_censored": 0,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          },
+          "0.5": {
+            "confirmed_waves": 7,
+            "complete_paths": 1,
+            "censored_paths": 4,
+            "nonoverlap_complete": 1,
+            "hold_count": 0,
+            "fail_count": 1,
+            "evaluated": 0,
+            "insufficient_train": 0,
+            "evaluation_censored": 0,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          }
+        }
+      },
+      "1d": {
+        "bars": 3347,
+        "last_closed": "2026-11-27 00:00:00+00:00",
+        "scales": {
+          "0.05": {
+            "confirmed_waves": 713,
+            "complete_paths": 354,
+            "censored_paths": 3,
+            "nonoverlap_complete": 178,
+            "hold_count": 190,
+            "fail_count": 164,
+            "evaluated": 55,
+            "insufficient_train": 0,
+            "evaluation_censored": 0,
+            "mape": {
+              "flat": 13.332453945715995,
+              "marginal": 9.590568954640895,
+              "medoid": 9.504849022228642,
+              "neighbor_medoid": 10.08747669021525
+            },
+            "prefix_test": true
+          },
+          "0.1": {
+            "confirmed_waves": 283,
+            "complete_paths": 140,
+            "censored_paths": 2,
+            "nonoverlap_complete": 70,
+            "hold_count": 72,
+            "fail_count": 68,
+            "evaluated": 19,
+            "insufficient_train": 0,
+            "evaluation_censored": 1,
+            "mape": {
+              "flat": 21.432920592791817,
+              "marginal": 17.990665560424684,
+              "medoid": 17.683194859299707,
+              "neighbor_medoid": 19.06730255689298
+            },
+            "prefix_test": true
+          },
+          "0.15": {
+            "confirmed_waves": 152,
+            "complete_paths": 75,
+            "censored_paths": 1,
+            "nonoverlap_complete": 38,
+            "hold_count": 34,
+            "fail_count": 41,
+            "evaluated": 9,
+            "insufficient_train": 0,
+            "evaluation_censored": 0,
+            "mape": {
+              "flat": 24.26552560639572,
+              "marginal": 18.576476642179742,
+              "medoid": 19.4514321481238,
+              "neighbor_medoid": 19.407610437830428
+            },
+            "prefix_test": true
+          },
+          "0.2": {
+            "confirmed_waves": 94,
+            "complete_paths": 46,
+            "censored_paths": 1,
+            "nonoverlap_complete": 23,
+            "hold_count": 23,
+            "fail_count": 23,
+            "evaluated": 3,
+            "insufficient_train": 3,
+            "evaluation_censored": 0,
+            "mape": {
+              "flat": 30.88125139721752,
+              "marginal": 20.700701181356006,
+              "medoid": 21.920241281988734,
+              "neighbor_medoid": 21.653887945811757
+            },
+            "prefix_test": true
+          },
+          "0.3": {
+            "confirmed_waves": 44,
+            "complete_paths": 21,
+            "censored_paths": 1,
+            "nonoverlap_complete": 11,
+            "hold_count": 9,
+            "fail_count": 12,
+            "evaluated": 0,
+            "insufficient_train": 2,
+            "evaluation_censored": 1,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          },
+          "0.4": {
+            "confirmed_waves": 28,
+            "complete_paths": 13,
+            "censored_paths": 1,
+            "nonoverlap_complete": 7,
+            "hold_count": 6,
+            "fail_count": 7,
+            "evaluated": 0,
+            "insufficient_train": 2,
+            "evaluation_censored": 0,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          },
+          "0.5": {
+            "confirmed_waves": 17,
+            "complete_paths": 7,
+            "censored_paths": 2,
+            "nonoverlap_complete": 4,
+            "hold_count": 3,
+            "fail_count": 4,
+            "evaluated": 0,
+            "insufficient_train": 0,
+            "evaluation_censored": 1,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          }
+        }
+      }
+    },
+    "Bitstamp_ETHUSD": {
+      "1h": {
+        "bars": 74642,
+        "last_closed": "2026-11-27 00:00:00+00:00",
+        "scales": {
+          "0.05": {
+            "confirmed_waves": 1596,
+            "complete_paths": 787,
+            "censored_paths": 10,
+            "nonoverlap_complete": 119,
+            "hold_count": 409,
+            "fail_count": 378,
+            "evaluated": 110,
+            "insufficient_train": 0,
+            "evaluation_censored": 3,
+            "mape": {
+              "flat": 9.548476828583633,
+              "marginal": 5.966953880322074,
+              "medoid": 6.012331037593393,
+              "neighbor_medoid": 6.341294287399022
+            },
+            "prefix_test": true
+          },
+          "0.1": {
+            "confirmed_waves": 444,
+            "complete_paths": 218,
+            "censored_paths": 3,
+            "nonoverlap_complete": 110,
+            "hold_count": 118,
+            "fail_count": 100,
+            "evaluated": 31,
+            "insufficient_train": 0,
+            "evaluation_censored": 0,
+            "mape": {
+              "flat": 18.73527759291452,
+              "marginal": 13.840375573301747,
+              "medoid": 14.313704720331847,
+              "neighbor_medoid": 14.610257756956672
+            },
+            "prefix_test": true
+          },
+          "0.15": {
+            "confirmed_waves": 212,
+            "complete_paths": 102,
+            "censored_paths": 4,
+            "nonoverlap_complete": 51,
+            "hold_count": 50,
+            "fail_count": 52,
+            "evaluated": 12,
+            "insufficient_train": 0,
+            "evaluation_censored": 2,
+            "mape": {
+              "flat": 24.063274115492646,
+              "marginal": 23.717450841255072,
+              "medoid": 24.97216106624641,
+              "neighbor_medoid": 23.66267570827328
+            },
+            "prefix_test": true
+          },
+          "0.2": {
+            "confirmed_waves": 121,
+            "complete_paths": 58,
+            "censored_paths": 2,
+            "nonoverlap_complete": 29,
+            "hold_count": 29,
+            "fail_count": 29,
+            "evaluated": 7,
+            "insufficient_train": 0,
+            "evaluation_censored": 1,
+            "mape": {
+              "flat": 32.87287515518262,
+              "marginal": 26.81103311100275,
+              "medoid": 28.47921339990299,
+              "neighbor_medoid": 27.819593146064186
+            },
+            "prefix_test": true
+          },
+          "0.3": {
+            "confirmed_waves": 42,
+            "complete_paths": 19,
+            "censored_paths": 2,
+            "nonoverlap_complete": 10,
+            "hold_count": 10,
+            "fail_count": 9,
+            "evaluated": 0,
+            "insufficient_train": 2,
+            "evaluation_censored": 1,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          },
+          "0.4": {
+            "confirmed_waves": 21,
+            "complete_paths": 9,
+            "censored_paths": 1,
+            "nonoverlap_complete": 5,
+            "hold_count": 5,
+            "fail_count": 4,
+            "evaluated": 0,
+            "insufficient_train": 1,
+            "evaluation_censored": 1,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          },
+          "0.5": {
+            "confirmed_waves": 13,
+            "complete_paths": 5,
+            "censored_paths": 1,
+            "nonoverlap_complete": 3,
+            "hold_count": 3,
+            "fail_count": 2,
+            "evaluated": 0,
+            "insufficient_train": 0,
+            "evaluation_censored": 1,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          }
+        }
+      },
+      "4h": {
+        "bars": 18658,
+        "last_closed": "2026-11-27 00:00:00+00:00",
+        "scales": {
+          "0.05": {
+            "confirmed_waves": 1270,
+            "complete_paths": 626,
+            "censored_paths": 8,
+            "nonoverlap_complete": 26,
+            "hold_count": 319,
+            "fail_count": 307,
+            "evaluated": 85,
+            "insufficient_train": 5,
+            "evaluation_censored": 2,
+            "mape": {
+              "flat": 10.229027230356772,
+              "marginal": 6.756320419380998,
+              "medoid": 6.743134239821522,
+              "neighbor_medoid": 6.976837008467563
+            },
+            "prefix_test": true
+          },
+          "0.1": {
+            "confirmed_waves": 392,
+            "complete_paths": 192,
+            "censored_paths": 3,
+            "nonoverlap_complete": 57,
+            "hold_count": 105,
+            "fail_count": 87,
+            "evaluated": 31,
+            "insufficient_train": 0,
+            "evaluation_censored": 0,
+            "mape": {
+              "flat": 18.73024625941438,
+              "marginal": 13.571737691211391,
+              "medoid": 13.730283576977355,
+              "neighbor_medoid": 14.163952848891896
+            },
+            "prefix_test": true
+          },
+          "0.15": {
+            "confirmed_waves": 198,
+            "complete_paths": 94,
+            "censored_paths": 5,
+            "nonoverlap_complete": 48,
+            "hold_count": 48,
+            "fail_count": 46,
+            "evaluated": 11,
+            "insufficient_train": 0,
+            "evaluation_censored": 2,
+            "mape": {
+              "flat": 26.181376188480463,
+              "marginal": 21.38918407569034,
+              "medoid": 22.254856430705914,
+              "neighbor_medoid": 19.337135350182447
+            },
+            "prefix_test": true
+          },
+          "0.2": {
+            "confirmed_waves": 109,
+            "complete_paths": 52,
+            "censored_paths": 2,
+            "nonoverlap_complete": 26,
+            "hold_count": 24,
+            "fail_count": 28,
+            "evaluated": 6,
+            "insufficient_train": 1,
+            "evaluation_censored": 1,
+            "mape": {
+              "flat": 32.2218651611132,
+              "marginal": 26.613820543786044,
+              "medoid": 28.021693970914338,
+              "neighbor_medoid": 28.680548250497868
+            },
+            "prefix_test": true
+          },
+          "0.3": {
+            "confirmed_waves": 40,
+            "complete_paths": 18,
+            "censored_paths": 2,
+            "nonoverlap_complete": 9,
+            "hold_count": 9,
+            "fail_count": 9,
+            "evaluated": 0,
+            "insufficient_train": 2,
+            "evaluation_censored": 1,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          },
+          "0.4": {
+            "confirmed_waves": 21,
+            "complete_paths": 9,
+            "censored_paths": 1,
+            "nonoverlap_complete": 5,
+            "hold_count": 5,
+            "fail_count": 4,
+            "evaluated": 0,
+            "insufficient_train": 1,
+            "evaluation_censored": 1,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          },
+          "0.5": {
+            "confirmed_waves": 13,
+            "complete_paths": 5,
+            "censored_paths": 1,
+            "nonoverlap_complete": 3,
+            "hold_count": 3,
+            "fail_count": 2,
+            "evaluated": 0,
+            "insufficient_train": 0,
+            "evaluation_censored": 1,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          }
+        }
+      },
+      "1d": {
+        "bars": 3305,
+        "last_closed": "2026-11-27 00:00:00+00:00",
+        "scales": {
+          "0.05": {
+            "confirmed_waves": 866,
+            "complete_paths": 429,
+            "censored_paths": 4,
+            "nonoverlap_complete": 166,
+            "hold_count": 236,
+            "fail_count": 193,
+            "evaluated": 14,
+            "insufficient_train": 0,
+            "evaluation_censored": 1,
+            "mape": {
+              "flat": 13.426563320915873,
+              "marginal": 8.941280269366938,
+              "medoid": 9.47060311148222,
+              "neighbor_medoid": 8.972080773431061
+            },
+            "prefix_test": true
+          },
+          "0.1": {
+            "confirmed_waves": 331,
+            "complete_paths": 164,
+            "censored_paths": 2,
+            "nonoverlap_complete": 82,
+            "hold_count": 92,
+            "fail_count": 72,
+            "evaluated": 24,
+            "insufficient_train": 0,
+            "evaluation_censored": 1,
+            "mape": {
+              "flat": 19.912230552746145,
+              "marginal": 16.01449886848073,
+              "medoid": 16.03671343723916,
+              "neighbor_medoid": 15.672230265933628
+            },
+            "prefix_test": true
+          },
+          "0.15": {
+            "confirmed_waves": 182,
+            "complete_paths": 90,
+            "censored_paths": 1,
+            "nonoverlap_complete": 45,
+            "hold_count": 45,
+            "fail_count": 45,
+            "evaluated": 11,
+            "insufficient_train": 0,
+            "evaluation_censored": 1,
+            "mape": {
+              "flat": 26.776228662109542,
+              "marginal": 20.140652087979575,
+              "medoid": 20.572874026004747,
+              "neighbor_medoid": 20.36008679369044
+            },
+            "prefix_test": true
+          },
+          "0.2": {
+            "confirmed_waves": 108,
+            "complete_paths": 53,
+            "censored_paths": 1,
+            "nonoverlap_complete": 27,
+            "hold_count": 22,
+            "fail_count": 31,
+            "evaluated": 6,
+            "insufficient_train": 1,
+            "evaluation_censored": 1,
+            "mape": {
+              "flat": 28.37885990312788,
+              "marginal": 30.149450649733918,
+              "medoid": 23.95440337323737,
+              "neighbor_medoid": 23.95440337323737
+            },
+            "prefix_test": true
+          },
+          "0.3": {
+            "confirmed_waves": 44,
+            "complete_paths": 21,
+            "censored_paths": 1,
+            "nonoverlap_complete": 11,
+            "hold_count": 10,
+            "fail_count": 11,
+            "evaluated": 0,
+            "insufficient_train": 3,
+            "evaluation_censored": 0,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          },
+          "0.4": {
+            "confirmed_waves": 26,
+            "complete_paths": 12,
+            "censored_paths": 1,
+            "nonoverlap_complete": 6,
+            "hold_count": 6,
+            "fail_count": 6,
+            "evaluated": 0,
+            "insufficient_train": 2,
+            "evaluation_censored": 0,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          },
+          "0.5": {
+            "confirmed_waves": 19,
+            "complete_paths": 8,
+            "censored_paths": 2,
+            "nonoverlap_complete": 4,
+            "hold_count": 4,
+            "fail_count": 4,
+            "evaluated": 0,
+            "insufficient_train": 0,
+            "evaluation_censored": 1,
+            "mape": {
+              "flat": null,
+              "marginal": null,
+              "medoid": null,
+              "neighbor_medoid": null
+            },
+            "prefix_test": true
+          }
+        }
+      }
+    }
+  },
+  "limitations": "2023+ reused evaluation; within-scale nonoverlap only; no calibrated probability, live forecast, or full-cycle validation."
+}

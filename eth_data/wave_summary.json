@@ -1,10 +1,10 @@
 {
   "version": "wave-exploratory-0.1",
-  "generated_utc": "2026-11-26 17:20:59.316420+00:00",
+  "generated_utc": "2026-11-27 00:30:26.441173+00:00",
   "status": "descriptive_close_pivots_only",
   "markets": {
     "Upbit_ETHKRW": {
-      "rows": 3346,
+      "rows": 3347,
       "models": {
         "DC_5pct": {
           "pivot_count": 378,
@@ -870,7 +870,7 @@
       }
     },
     "Bitstamp_ETHUSD": {
-      "rows": 3304,
+      "rows": 3305,
       "models": {
         "DC_5pct": {
           "pivot_count": 457,
