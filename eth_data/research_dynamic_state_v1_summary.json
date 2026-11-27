@@ -1,0 +1,234 @@
+{
+  "version": "dynamic-state-v1",
+  "status": "retrospective_research_only_no_promotion",
+  "date": "2026-11-28",
+  "data": {
+    "file": "Upbit_ETHKRW_1d.csv",
+    "sha256": "44991322abdc79e5fd7d440632155e0d0a7c7f5bcc3ed0c66368bcdca41fbf12",
+    "rows": 3346,
+    "first": "2017-09-25",
+    "last": "2026-11-25"
+  },
+  "protocol": {
+    "origin": "5/10/15% closing drawdown; same origins as crash regime research; 90-day warmup; 15% closing rebound confirmation, 120 calendar day cap; gaps censored",
+    "states": [
+      "accelerating_low",
+      "decelerating_low",
+      "rebound",
+      "failed_rebound",
+      "consolidation"
+    ],
+    "prediction": "Future-origin intraday minimum through rebound confirmation inclusive. Compare frozen historical median, frozen clipped at observed minimum, same-state historical median shrunk to clipped, and state ATR-scaled median. Minimum 5 completed prior episodes; no future outcomes in training; ATR scaling 0.5–2; shrinkage n/(n+10).",
+    "evaluation": "First state per episode plus separate all-daily sensitivity; equal episode weights; 2020–22 selection, 2023+ retrospective evaluation; no independent holdout. Require >=30 evaluation episodes, >=5% gain in both losses and positive block CI, no worse P90."
+  },
+  "columns": [
+    "trigger",
+    "complete",
+    "censored",
+    "test_episodes",
+    "test_checkpoints",
+    "frozen_relative_mae",
+    "clipped_relative_mae",
+    "state_relative_mae",
+    "state_atr_relative_mae",
+    "state_atr_paired_block_ci_vs_clipped"
+  ],
+  "first_state": [
+    [
+      0.05,
+      85,
+      1,
+      25,
+      106,
+      0.14479200678240464,
+      0.12355283355605884,
+      0.12551561963978275,
+      0.1169332449627473,
+      [
+        -0.006386250675663526,
+        0.019687141358155174
+      ]
+    ],
+    [
+      0.1,
+      63,
+      1,
+      20,
+      80,
+      0.15485026438413776,
+      0.13925431548651254,
+      0.1328607352479247,
+      0.12440934219787392,
+      [
+        -0.001842343386471741,
+        0.03225625269105653
+      ]
+    ],
+    [
+      0.15,
+      44,
+      1,
+      12,
+      50,
+      0.16733074664317363,
+      0.14871392695303995,
+      0.13786562173293718,
+      0.12986347806290796,
+      [
+        -0.002821431897223203,
+        0.03864819927662331
+      ]
+    ]
+  ],
+  "daily_sensitivity": [
+    [
+      0.05,
+      85,
+      1,
+      25,
+      1001,
+      0.14479200678240467,
+      0.086338383047194,
+      0.0849734433735868,
+      0.07623039996467897,
+      [
+        -0.0009429844361806537,
+        0.021913314014477794
+      ]
+    ],
+    [
+      0.1,
+      63,
+      1,
+      20,
+      715,
+      0.1548502643841377,
+      0.0985313754479438,
+      0.09127763321406626,
+      0.07756695350818636,
+      [
+        0.00597976238950419,
+        0.03641793365965011
+      ]
+    ],
+    [
+      0.15,
+      44,
+      1,
+      12,
+      430,
+      0.1673307466431737,
+      0.09800095904351307,
+      0.09505374708387761,
+      0.07752913525014758,
+      [
+        -0.00007670460083398074,
+        0.04265126334486375
+      ]
+    ]
+  ],
+  "pre_low_diagnostic": {
+    "note": "post-hoc filter using actual low date solely for evaluation; percentage values rounded; not a live selection rule",
+    "columns": [
+      "trigger",
+      "episodes",
+      "checkpoints",
+      "frozen_pct",
+      "clipped_pct",
+      "state_pct",
+      "state_atr_pct"
+    ],
+    "rows": [
+      [
+        0.05,
+        25,
+        651,
+        14.4792,
+        11.429,
+        11.1042,
+        10.6582
+      ],
+      [
+        0.1,
+        14,
+        423,
+        17.1944,
+        13.4983,
+        11.7616,
+        12.8608
+      ],
+      [
+        0.15,
+        10,
+        230,
+        17.7505,
+        14.2684,
+        11.4039,
+        11.7588
+      ]
+    ]
+  },
+  "round4_overlap": {
+    "trigger": 0.15,
+    "start": "2022-04-26",
+    "end": "2022-06-24",
+    "actual_low": 1201500,
+    "rows": [
+      [
+        "2022-05-09",
+        3025000,
+        2818229
+      ],
+      [
+        "2022-05-12",
+        2450000,
+        2361511
+      ],
+      [
+        "2022-06-12",
+        1855000,
+        1699874
+      ],
+      [
+        "2022-06-15",
+        1350000,
+        1266213
+      ],
+      [
+        "2022-06-18",
+        1201500,
+        1062946
+      ]
+    ],
+    "columns": [
+      "date",
+      "observed_low",
+      "state_atr_prediction"
+    ],
+    "note": "different origin and label vs game; retrospective replay not direct model comparison"
+  },
+  "selected_first_state": [
+    "clipped",
+    "clipped",
+    "clipped"
+  ],
+  "selected_daily": [
+    "state",
+    "clipped",
+    "clipped"
+  ],
+  "promotion_gates_passed": 0,
+  "limitations": [
+    "No independent prospective test; overlapping scales and repeated checkpoints not independent",
+    "Later checkpoints partially observe target; pre-low analysis is retrospective only",
+    "Daily close states not intraday order or full-cycle bottom",
+    "No USD replication or rebound high prediction in this experiment",
+    "Full code and event logs saved as conversation files, not committed by this write"
+  ],
+  "artifact_sha256": {
+    "code": "991a64f2bcf840e3a3e660b805914099584716f385e1ffed956d7e20f799485b",
+    "daily_code": "5d94d2f7ab1f04d3105f5a90bb276a5e19c792012c26dda55ffdb043440eb372",
+    "results": "0e91121a29b872356f42c880118a053b3e050099d227ec8265700604a4c3d17f",
+    "daily_results": "8cda8566f73d3a3b4fd1632eb20f3bed93a466282ce74a379d17a7f879df6bdc"
+  }
+}
