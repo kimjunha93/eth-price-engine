@@ -34,7 +34,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install requests pandas
+        run: pip install requests pandas matplotlib
 
       - name: Collect ETH data
         run: python eth_collect_v12.py
@@ -65,6 +65,9 @@ jobs:
 
       - name: Generate V4.3 guarded structure snapshot
         run: python v43/structure_snapshot.py
+
+      - name: Generate V4.3 charts and score registered forecasts
+        run: python v43/operations.py
 
       - name: Save updated data
         run: |
