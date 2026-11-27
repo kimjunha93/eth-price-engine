@@ -1,0 +1,1019 @@
+{
+  "version": "v43-structure-1",
+  "generated_utc": "2026-11-27 00:58:41.987448+00:00",
+  "status": "descriptive_only",
+  "model_policy": "historical median reference; no calibrated probability or full-cycle path; no live forecast registration",
+  "markets": {
+    "Upbit_ETHKRW": {
+      "last_hour_close": 2293000.0,
+      "last_hour_closed": "2026-11-27 00:00:00+00:00",
+      "fresh_hourly": true,
+      "last_day_close": 2293000.0,
+      "last_day_closed": "2026-11-27 00:00:00+00:00",
+      "fresh_daily": true,
+      "scales": {
+        "1h": {
+          "last_closed": "2026-11-27 00:00:00+00:00",
+          "data_age_hours": 0.9783298466666667,
+          "states": {
+            "0.05": {
+              "state": "active_high",
+              "start_available": "2026-11-26 02:00:00+00:00",
+              "elapsed_bars": 22,
+              "observed_extreme": 2321000.0,
+              "n_history": 734,
+              "censored_history": 27,
+              "reference_q25_q50_q75": [
+                2347818.302917667,
+                2405788.1701279427,
+                2515006.4298194526
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 310,
+                "censored": 47,
+                "status": "conditional_reference_only",
+                "ratios_q25_q50_q75": {
+                  "h1": [
+                    1.0775766176273502,
+                    1.108693765139642,
+                    1.157832167832168
+                  ],
+                  "l2": [
+                    0.954301472026517,
+                    1.0025882974754383,
+                    1.048781173682266
+                  ],
+                  "h2": [
+                    1.0545532613620672,
+                    1.1202488261091235,
+                    1.2092765370164886
+                  ]
+                },
+                "low_held_count": 162
+              }
+            },
+            "0.1": {
+              "state": "active_low",
+              "start_available": "2026-11-25 03:00:00+00:00",
+              "elapsed_bars": 45,
+              "observed_extreme": 2198000.0,
+              "n_history": 174,
+              "censored_history": 25,
+              "reference_q25_q50_q75": [
+                1915561.45600793,
+                2092985.9154716155,
+                2197500.403638998
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 62,
+                "censored": 34,
+                "status": "conditional_reference_only",
+                "ratios_q25_q50_q75": {
+                  "h1": [
+                    1.1638495897108985,
+                    1.2330822111309916,
+                    1.3916840220483957
+                  ],
+                  "l2": [
+                    0.8918659072282926,
+                    1.0168719787930764,
+                    1.134551748661312
+                  ],
+                  "h2": [
+                    1.0918368355180819,
+                    1.2007503460333648,
+                    1.405428185945929
+                  ]
+                },
+                "low_held_count": 34
+              }
+            },
+            "0.15": {
+              "state": "active_high",
+              "start_available": "2026-11-23 14:00:00+00:00",
+              "elapsed_bars": 82,
+              "observed_extreme": 2505000.0,
+              "n_history": 62,
+              "censored_history": 28,
+              "reference_q25_q50_q75": [
+                2581445.9860350653,
+                2718937.857259256,
+                3049129.0485186377
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 18,
+                "censored": 28,
+                "status": "conditional_reference_only"
+              }
+            },
+            "0.2": {
+              "state": "unresolved_after_gap"
+            },
+            "0.3": {
+              "state": "unresolved_after_gap"
+            },
+            "0.4": {
+              "state": "unresolved_after_gap"
+            },
+            "0.5": {
+              "state": "unresolved_after_gap"
+            }
+          }
+        },
+        "4h": {
+          "last_closed": "2026-11-27 00:00:00+00:00",
+          "data_age_hours": 0.9783298466666667,
+          "states": {
+            "0.05": {
+              "state": "active_high",
+              "start_available": "2026-11-26 20:00:00+00:00",
+              "elapsed_bars": 1,
+              "observed_extreme": 2319000.0,
+              "n_history": 538,
+              "censored_history": 30,
+              "reference_q25_q50_q75": [
+                2351788.8729034946,
+                2424290.4654795215,
+                2547730.5510737733
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 238,
+                "censored": 44,
+                "status": "conditional_reference_only",
+                "ratios_q25_q50_q75": {
+                  "h1": [
+                    1.077196359541535,
+                    1.1150892556943837,
+                    1.1825706644331424
+                  ],
+                  "l2": [
+                    0.9536723683605276,
+                    1.0014873003115745,
+                    1.0633217292850632
+                  ],
+                  "h2": [
+                    1.0619511807968394,
+                    1.1403975417706933,
+                    1.2480222119031035
+                  ]
+                },
+                "low_held_count": 123
+              }
+            },
+            "0.1": {
+              "state": "active_low",
+              "start_available": "2026-11-25 08:00:00+00:00",
+              "elapsed_bars": 10,
+              "observed_extreme": 2198000.0,
+              "n_history": 141,
+              "censored_history": 24,
+              "reference_q25_q50_q75": [
+                1884692.3296264615,
+                2061195.2038369305,
+                2183100.2824858758
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 50,
+                "censored": 32,
+                "status": "conditional_reference_only",
+                "ratios_q25_q50_q75": {
+                  "h1": [
+                    1.1597416649759924,
+                    1.2330822111309916,
+                    1.4079493298959729
+                  ],
+                  "l2": [
+                    0.8962225146089301,
+                    1.0068042689894914,
+                    1.0925620950952677
+                  ],
+                  "h2": [
+                    1.0632084394665866,
+                    1.2133426866823451,
+                    1.495885481289673
+                  ]
+                },
+                "low_held_count": 27
+              }
+            },
+            "0.15": {
+              "state": "unresolved_after_gap"
+            },
+            "0.2": {
+              "state": "unresolved_after_gap"
+            },
+            "0.3": {
+              "state": "unresolved_after_gap"
+            },
+            "0.4": {
+              "state": "unresolved_after_gap"
+            },
+            "0.5": {
+              "state": "unresolved_after_gap"
+            }
+          }
+        },
+        "1d": {
+          "last_closed": "2026-11-27 00:00:00+00:00",
+          "data_age_hours": 0.9783298466666667,
+          "states": {
+            "0.05": {
+              "state": "active_low",
+              "start_available": "2026-11-24 00:00:00+00:00",
+              "elapsed_bars": 3,
+              "observed_extreme": 2198000.0,
+              "n_history": 357,
+              "censored_history": 0,
+              "reference_q25_q50_q75": [
+                2067967.6300578034,
+                2198000.0,
+                2198000.0
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 178,
+                "censored": 1,
+                "status": "conditional_reference_only",
+                "ratios_q25_q50_q75": {
+                  "h1": [
+                    1.1039863214920183,
+                    1.1449625189071653,
+                    1.24974531164187
+                  ],
+                  "l2": [
+                    0.9413965701875537,
+                    1.010050505050505,
+                    1.0877615276737447
+                  ],
+                  "h2": [
+                    1.0785015812043113,
+                    1.167294435020262,
+                    1.319308093421244
+                  ]
+                },
+                "low_held_count": 99
+              }
+            },
+            "0.1": {
+              "state": "active_high",
+              "start_available": "2026-11-23 00:00:00+00:00",
+              "elapsed_bars": 4,
+              "observed_extreme": 2505000.0,
+              "n_history": 141,
+              "censored_history": 0,
+              "reference_q25_q50_q75": [
+                2505000.0,
+                2568084.8056537104,
+                2943004.1802136553
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 70,
+                "censored": 0,
+                "status": "conditional_reference_only",
+                "ratios_q25_q50_q75": {
+                  "h1": [
+                    1.200114341486116,
+                    1.3151531491263713,
+                    1.507473695489656
+                  ],
+                  "l2": [
+                    0.8937113495487005,
+                    1.0102579673415444,
+                    1.2616666666666667
+                  ],
+                  "h2": [
+                    1.0821826609360397,
+                    1.2851305406644844,
+                    1.8423130277442703
+                  ]
+                },
+                "low_held_count": 41
+              }
+            },
+            "0.15": {
+              "state": "active_low",
+              "start_available": "2026-10-23 00:00:00+00:00",
+              "elapsed_bars": 35,
+              "observed_extreme": 2125000.0,
+              "n_history": 76,
+              "censored_history": 0,
+              "reference_q25_q50_q75": [
+                2125000.0,
+                2125000.0,
+                2125000.0
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 38,
+                "censored": 0,
+                "status": "conditional_reference_only",
+                "ratios_q25_q50_q75": {
+                  "h1": [
+                    1.2145757863262607,
+                    1.3413491399931656,
+                    1.5661242893931298
+                  ],
+                  "l2": [
+                    0.8782690027682658,
+                    0.9795735233703371,
+                    1.1148410171329353
+                  ],
+                  "h2": [
+                    1.2342825237297599,
+                    1.520122685386747,
+                    1.947781898683227
+                  ]
+                },
+                "low_held_count": 16
+              }
+            },
+            "0.2": {
+              "state": "active_low",
+              "start_available": "2026-10-31 00:00:00+00:00",
+              "elapsed_bars": 27,
+              "observed_extreme": 2125000.0,
+              "n_history": 47,
+              "censored_history": 0,
+              "reference_q25_q50_q75": [
+                2064216.3082925712,
+                2125000.0,
+                2125000.0
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 23,
+                "censored": 0,
+                "status": "conditional_reference_only",
+                "ratios_q25_q50_q75": {
+                  "h1": [
+                    1.3403837533736103,
+                    1.6046831955922864,
+                    2.3723785752833244
+                  ],
+                  "l2": [
+                    0.7946500000000001,
+                    0.9273182957393483,
+                    1.6474423529842976
+                  ],
+                  "h2": [
+                    1.2042155388471176,
+                    1.6151401329095638,
+                    2.2876022643728864
+                  ]
+                },
+                "low_held_count": 11
+              }
+            },
+            "0.3": {
+              "state": "active_low",
+              "start_available": "2026-11-14 00:00:00+00:00",
+              "elapsed_bars": 13,
+              "observed_extreme": 2125000.0,
+              "n_history": 22,
+              "censored_history": 0,
+              "reference_q25_q50_q75": [
+                1419090.8467037485,
+                1953358.1912795163,
+                2125000.0
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 11,
+                "censored": 0,
+                "status": "conditional_reference_only"
+              }
+            },
+            "0.4": {
+              "state": "active_low",
+              "start_available": "2026-11-21 00:00:00+00:00",
+              "elapsed_bars": 6,
+              "observed_extreme": 2125000.0,
+              "n_history": 14,
+              "censored_history": 0,
+              "reference_q25_q50_q75": null,
+              "range_status": "insufficient_history",
+              "path": {
+                "n": 7,
+                "censored": 0,
+                "status": "conditional_reference_only"
+              }
+            },
+            "0.5": {
+              "state": "active_high",
+              "start_available": "2026-08-22 00:00:00+00:00",
+              "elapsed_bars": 97,
+              "observed_extreme": 3777000.0,
+              "n_history": 8,
+              "censored_history": 0,
+              "reference_q25_q50_q75": null,
+              "range_status": "insufficient_history",
+              "path": {
+                "n": 4,
+                "censored": 0,
+                "status": "conditional_reference_only"
+              }
+            }
+          }
+        }
+      },
+      "input_sha256": {
+        "1h": "0a6718086983edc7a3fa53c91a96146a6f7bf5ac3ee8fa7f4437e5e33c3005ab",
+        "1d": "0c326279c5723282a73eadd40314905e18a83532cb5d2b4da60442ad1477a662"
+      }
+    },
+    "Bitstamp_ETHUSD": {
+      "last_hour_close": 1687.48,
+      "last_hour_closed": "2026-11-27 00:00:00+00:00",
+      "fresh_hourly": true,
+      "last_day_close": 1687.48,
+      "last_day_closed": "2026-11-27 00:00:00+00:00",
+      "fresh_daily": true,
+      "scales": {
+        "1h": {
+          "last_closed": "2026-11-27 00:00:00+00:00",
+          "data_age_hours": 0.9783298466666667,
+          "states": {
+            "0.05": {
+              "state": "active_high",
+              "start_available": "2026-11-25 21:00:00+00:00",
+              "elapsed_bars": 27,
+              "observed_extreme": 1727.72,
+              "n_history": 799,
+              "censored_history": 0,
+              "reference_q25_q50_q75": [
+                1727.72,
+                1757.3167843873757,
+                1831.2815639611133
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 119,
+                "censored": 2,
+                "status": "conditional_reference_only",
+                "ratios_q25_q50_q75": {
+                  "h1": [
+                    1.0808302537963843,
+                    1.1037640482844742,
+                    1.146908232551786
+                  ],
+                  "l2": [
+                    0.9451145689604803,
+                    1.0108387096774194,
+                    1.0555370440031364
+                  ],
+                  "h2": [
+                    1.052682819469649,
+                    1.1303346764246363,
+                    1.2023330832095032
+                  ]
+                },
+                "low_held_count": 65
+              }
+            },
+            "0.1": {
+              "state": "active_low",
+              "start_available": "2026-11-25 02:00:00+00:00",
+              "elapsed_bars": 46,
+              "observed_extreme": 1606.59,
+              "n_history": 221,
+              "censored_history": 2,
+              "reference_q25_q50_q75": [
+                1401.6764306181879,
+                1531.1390123336894,
+                1604.7502417564347
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 110,
+                "censored": 1,
+                "status": "conditional_reference_only",
+                "ratios_q25_q50_q75": {
+                  "h1": [
+                    1.1737040860746075,
+                    1.230035002108102,
+                    1.335914089273186
+                  ],
+                  "l2": [
+                    0.8909704512410641,
+                    1.0162503873493112,
+                    1.141741852990078
+                  ],
+                  "h2": [
+                    1.0844819252422964,
+                    1.2421644254582034,
+                    1.4772315975911012
+                  ]
+                },
+                "low_held_count": 58
+              }
+            },
+            "0.15": {
+              "state": "active_high",
+              "start_available": "2026-11-23 14:00:00+00:00",
+              "elapsed_bars": 82,
+              "observed_extreme": 1842.94,
+              "n_history": 106,
+              "censored_history": 1,
+              "reference_q25_q50_q75": [
+                1898.8669029627583,
+                2024.9742577486618,
+                2379.588931167419
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 51,
+                "censored": 1,
+                "status": "conditional_reference_only",
+                "ratios_q25_q50_q75": {
+                  "h1": [
+                    1.2506772714675982,
+                    1.3354640151515151,
+                    1.6672638157894735
+                  ],
+                  "l2": [
+                    0.9141808467673029,
+                    1.0319255665654248,
+                    1.2716455991679372
+                  ],
+                  "h2": [
+                    1.2293472890806156,
+                    1.418383233532934,
+                    1.7730263778550148
+                  ]
+                },
+                "low_held_count": 31
+              }
+            },
+            "0.2": {
+              "state": "active_low",
+              "start_available": "2026-10-30 01:00:00+00:00",
+              "elapsed_bars": 671,
+              "observed_extreme": 1536.0,
+              "n_history": 60,
+              "censored_history": 0,
+              "reference_q25_q50_q75": [
+                1536.0,
+                1536.0,
+                1536.0
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 29,
+                "censored": 1,
+                "status": "conditional_reference_only",
+                "ratios_q25_q50_q75": {
+                  "h1": [
+                    1.2986750212127145,
+                    1.5024663295758531,
+                    1.837279245283019
+                  ],
+                  "l2": [
+                    0.8275405157476302,
+                    1.0101,
+                    1.2682539682539682
+                  ],
+                  "h2": [
+                    1.2649851924975322,
+                    1.6216216216216217,
+                    2.2491160899981093
+                  ]
+                },
+                "low_held_count": 15
+              }
+            },
+            "0.3": {
+              "state": "active_low",
+              "start_available": "2026-11-13 04:00:00+00:00",
+              "elapsed_bars": 332,
+              "observed_extreme": 1536.0,
+              "n_history": 21,
+              "censored_history": 0,
+              "reference_q25_q50_q75": [
+                1226.3750675723315,
+                1512.291852236096,
+                1536.0
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 10,
+                "censored": 1,
+                "status": "conditional_reference_only"
+              }
+            },
+            "0.4": {
+              "state": "unresolved_after_gap"
+            },
+            "0.5": {
+              "state": "unresolved_after_gap"
+            }
+          }
+        },
+        "4h": {
+          "last_closed": "2026-11-27 00:00:00+00:00",
+          "data_age_hours": 0.9783298466666667,
+          "states": {
+            "0.05": {
+              "state": "active_high",
+              "start_available": "2026-11-26 00:00:00+00:00",
+              "elapsed_bars": 6,
+              "observed_extreme": 1727.72,
+              "n_history": 636,
+              "censored_history": 0,
+              "reference_q25_q50_q75": [
+                1727.72,
+                1765.2781122016802,
+                1860.8397907331034
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 26,
+                "censored": 1,
+                "status": "conditional_reference_only",
+                "ratios_q25_q50_q75": {
+                  "h1": [
+                    1.084963254257752,
+                    1.1158341276882722,
+                    1.154292692917057
+                  ],
+                  "l2": [
+                    0.9366061413470973,
+                    1.0019951797979378,
+                    1.0629425765594485
+                  ],
+                  "h2": [
+                    1.0360351078288383,
+                    1.0863522445535299,
+                    1.215025686111717
+                  ]
+                },
+                "low_held_count": 14
+              }
+            },
+            "0.1": {
+              "state": "active_low",
+              "start_available": "2026-11-25 08:00:00+00:00",
+              "elapsed_bars": 10,
+              "observed_extreme": 1606.59,
+              "n_history": 195,
+              "censored_history": 2,
+              "reference_q25_q50_q75": [
+                1379.8476510775338,
+                1505.9744226471319,
+                1584.0452157400223
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 57,
+                "censored": 1,
+                "status": "conditional_reference_only",
+                "ratios_q25_q50_q75": {
+                  "h1": [
+                    1.1816615890889928,
+                    1.2158831433258321,
+                    1.2969169689246152
+                  ],
+                  "l2": [
+                    0.8835072418626383,
+                    1.000521077588453,
+                    1.0362601407377525
+                  ],
+                  "h2": [
+                    1.1467934643860096,
+                    1.2472727272727273,
+                    1.5322754491017962
+                  ]
+                },
+                "low_held_count": 29
+              }
+            },
+            "0.15": {
+              "state": "active_high",
+              "start_available": "2026-11-23 16:00:00+00:00",
+              "elapsed_bars": 20,
+              "observed_extreme": 1776.71,
+              "n_history": 99,
+              "censored_history": 1,
+              "reference_q25_q50_q75": [
+                1859.7159274503852,
+                1968.5360445854676,
+                2348.747394016048
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 48,
+                "censored": 1,
+                "status": "conditional_reference_only",
+                "ratios_q25_q50_q75": {
+                  "h1": [
+                    1.2205884893708354,
+                    1.3119791215724783,
+                    1.5443767295266766
+                  ],
+                  "l2": [
+                    0.8961360566506316,
+                    1.0096428201421515,
+                    1.1694704213885918
+                  ],
+                  "h2": [
+                    1.1812842627960276,
+                    1.4132520236392048,
+                    1.951621390735063
+                  ]
+                },
+                "low_held_count": 28
+              }
+            },
+            "0.2": {
+              "state": "active_low",
+              "start_available": "2026-10-30 04:00:00+00:00",
+              "elapsed_bars": 167,
+              "observed_extreme": 1536.0,
+              "n_history": 54,
+              "censored_history": 0,
+              "reference_q25_q50_q75": [
+                1536.0,
+                1536.0,
+                1536.0
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 26,
+                "censored": 1,
+                "status": "conditional_reference_only",
+                "ratios_q25_q50_q75": {
+                  "h1": [
+                    1.2674052778575682,
+                    1.3787112099917929,
+                    1.6247241174912663
+                  ],
+                  "l2": [
+                    0.815194886368608,
+                    0.9362790348918586,
+                    1.1401950029937131
+                  ],
+                  "h2": [
+                    1.1888643426435515,
+                    1.525944773892325,
+                    2.2937222043177092
+                  ]
+                },
+                "low_held_count": 10
+              }
+            },
+            "0.3": {
+              "state": "active_low",
+              "start_available": "2026-11-13 04:00:00+00:00",
+              "elapsed_bars": 83,
+              "observed_extreme": 1536.0,
+              "n_history": 20,
+              "censored_history": 0,
+              "reference_q25_q50_q75": [
+                1234.2864700876642,
+                1493.355029630455,
+                1536.0
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 9,
+                "censored": 1,
+                "status": "conditional_reference_only"
+              }
+            },
+            "0.4": {
+              "state": "active_low",
+              "start_available": "2026-11-20 16:00:00+00:00",
+              "elapsed_bars": 38,
+              "observed_extreme": 1536.0,
+              "n_history": 10,
+              "censored_history": 1,
+              "reference_q25_q50_q75": null,
+              "range_status": "insufficient_history",
+              "path": {
+                "n": 5,
+                "censored": 0,
+                "status": "conditional_reference_only"
+              }
+            },
+            "0.5": {
+              "state": "unresolved_after_gap"
+            }
+          }
+        },
+        "1d": {
+          "last_closed": "2026-11-27 00:00:00+00:00",
+          "data_age_hours": 0.9783298466666667,
+          "states": {
+            "0.05": {
+              "state": "active_high",
+              "start_available": "2026-11-26 00:00:00+00:00",
+              "elapsed_bars": 1,
+              "observed_extreme": 1727.72,
+              "n_history": 433,
+              "censored_history": 0,
+              "reference_q25_q50_q75": [
+                1728.3484198003414,
+                1779.0392234461228,
+                1894.1751824817516
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 215,
+                "censored": 0,
+                "status": "conditional_reference_only",
+                "ratios_q25_q50_q75": {
+                  "h1": [
+                    1.1090206909831681,
+                    1.1569247329554548,
+                    1.2420057153227861
+                  ],
+                  "l2": [
+                    0.9412871508986034,
+                    1.0202442886224836,
+                    1.0868556593977154
+                  ],
+                  "h2": [
+                    1.0738638806661007,
+                    1.1770220301025989,
+                    1.278998147109501
+                  ]
+                },
+                "low_held_count": 123
+              }
+            },
+            "0.1": {
+              "state": "active_high",
+              "start_available": "2026-11-23 00:00:00+00:00",
+              "elapsed_bars": 4,
+              "observed_extreme": 1842.94,
+              "n_history": 165,
+              "censored_history": 0,
+              "reference_q25_q50_q75": [
+                1842.94,
+                1886.530845985001,
+                2099.765048815335
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 82,
+                "censored": 0,
+                "status": "conditional_reference_only",
+                "ratios_q25_q50_q75": {
+                  "h1": [
+                    1.1920121826219574,
+                    1.2431209034210189,
+                    1.368913261233625
+                  ],
+                  "l2": [
+                    0.9010161128244458,
+                    1.0096428201421515,
+                    1.1097805657978532
+                  ],
+                  "h2": [
+                    1.128710815291269,
+                    1.3330129251515017,
+                    1.5851358346493378
+                  ]
+                },
+                "low_held_count": 45
+              }
+            },
+            "0.15": {
+              "state": "active_low",
+              "start_available": "2026-10-24 00:00:00+00:00",
+              "elapsed_bars": 34,
+              "observed_extreme": 1536.0,
+              "n_history": 91,
+              "censored_history": 0,
+              "reference_q25_q50_q75": [
+                1536.0,
+                1536.0,
+                1536.0
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 45,
+                "censored": 0,
+                "status": "conditional_reference_only",
+                "ratios_q25_q50_q75": {
+                  "h1": [
+                    1.239437314906219,
+                    1.3242217391304347,
+                    1.7403716814159291
+                  ],
+                  "l2": [
+                    0.8381051835284831,
+                    1.0027064862342512,
+                    1.3265339056902172
+                  ],
+                  "h2": [
+                    1.1789355269633692,
+                    1.4814949996350097,
+                    1.9516542876434844
+                  ]
+                },
+                "low_held_count": 25
+              }
+            },
+            "0.2": {
+              "state": "active_low",
+              "start_available": "2026-10-31 00:00:00+00:00",
+              "elapsed_bars": 27,
+              "observed_extreme": 1536.0,
+              "n_history": 54,
+              "censored_history": 0,
+              "reference_q25_q50_q75": [
+                1536.0,
+                1536.0,
+                1536.0
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 27,
+                "censored": 0,
+                "status": "conditional_reference_only",
+                "ratios_q25_q50_q75": {
+                  "h1": [
+                    1.3196933329328138,
+                    1.4225738023687466,
+                    2.0382676213012516
+                  ],
+                  "l2": [
+                    0.805973229191537,
+                    0.9305708348612638,
+                    1.3460513261744662
+                  ],
+                  "h2": [
+                    1.2277680875844397,
+                    1.6217510957088983,
+                    2.038287158895106
+                  ]
+                },
+                "low_held_count": 11
+              }
+            },
+            "0.3": {
+              "state": "active_low",
+              "start_available": "2026-11-14 00:00:00+00:00",
+              "elapsed_bars": 13,
+              "observed_extreme": 1536.0,
+              "n_history": 22,
+              "censored_history": 0,
+              "reference_q25_q50_q75": [
+                1092.198227576592,
+                1428.0104997957242,
+                1536.0
+              ],
+              "range_status": "descriptive_unvalidated_at_current_age",
+              "path": {
+                "n": 11,
+                "censored": 0,
+                "status": "conditional_reference_only"
+              }
+            },
+            "0.4": {
+              "state": "active_low",
+              "start_available": "2026-11-21 00:00:00+00:00",
+              "elapsed_bars": 6,
+              "observed_extreme": 1536.0,
+              "n_history": 13,
+              "censored_history": 0,
+              "reference_q25_q50_q75": null,
+              "range_status": "insufficient_history",
+              "path": {
+                "n": 6,
+                "censored": 0,
+                "status": "conditional_reference_only"
+              }
+            },
+            "0.5": {
+              "state": "active_high",
+              "start_available": "2026-08-21 00:00:00+00:00",
+              "elapsed_bars": 98,
+              "observed_extreme": 2806.89,
+              "n_history": 9,
+              "censored_history": 0,
+              "reference_q25_q50_q75": null,
+              "range_status": "insufficient_history",
+              "path": {
+                "n": 4,
+                "censored": 0,
+                "status": "conditional_reference_only"
+              }
+            }
+          }
+        }
+      },
+      "input_sha256": {
+        "1h": "6f54b04d5ab706b8e3fab98bfeb2528f745f75668041e09d79b5e433c4062a12",
+        "1d": "f3ccef28364872f8549e4b16b3d2d116fbff289c7790c87266ed3b6e66cfa040"
+      }
+    }
+  },
+  "freshness_pass": true
+}
