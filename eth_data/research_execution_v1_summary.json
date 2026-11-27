@@ -1,0 +1,154 @@
+{
+  "version": "execution-research-v1",
+  "status": "retrospective_research_only_no_promotion",
+  "source": {
+    "daily_sha256": "44991322abdc79e5fd7d440632155e0d0a7c7f5bcc3ed0c66368bcdca41fbf12",
+    "hourly_sha256": "dd49b032fbb9d00da52bc027a4ee4ffaedd71bcbdbe7059a02645800786ace0a",
+    "daily": 3346,
+    "hourly": 80137,
+    "matched_24h_ohlc": 3278,
+    "unmatched_days": 68,
+    "hourly_gap_breaks": 67
+  },
+  "protocol": {
+    "trigger": "5/10/15% close drawdown from running peak; nonoverlap within scale; 90 consecutive days warmup",
+    "end": "15% close rebound then 10% close correction, 120 calendar day cap; gaps and incomplete excluded in main",
+    "targets": "median low ratio capped at .95, median high ratio floored at 1.05; Q75 low capped at .95",
+    "first_touch": "historical replay of same relative asymmetric target pair on completed prior episodes; 4-category Laplace baseline versus 50% blend with 8 ATR nearest neighbors; matched complete hourly OHLC only for ambiguous daily order",
+    "execution": "next open market, fee .05% each side, market slippage .05% each side, limit fills assumed at specified price, no same-bar new limit fill and sale, cancel remaining order at sale, no reentry, end close liquidation, close-marked MDD; strict crossing sensitivity",
+    "selection": "2020–22, test 2023+ previously viewed; min10 tune, both Brier and logloss improve 5% for ATR; trade candidate beats cash and market in mean and no higher mean MDD than market in tune"
+  },
+  "columns": [
+    "trigger",
+    "completed",
+    "censored",
+    "tune_n",
+    "test_n",
+    "up",
+    "down",
+    "neither",
+    "unknown",
+    "B1_brier",
+    "ATR_brier",
+    "market_mean_pct",
+    "median_wait_mean_pct",
+    "q75_wait_mean_pct",
+    "half_q75_mean_pct",
+    "selected_trade",
+    "median_wait_fills",
+    "q75_wait_fills"
+  ],
+  "rows": [
+    [
+      0.05,
+      52,
+      3,
+      22,
+      15,
+      1,
+      9,
+      5,
+      0,
+      0.6417945321,
+      0.6573509511,
+      -1.78213,
+      3.87818,
+      3.68396,
+      -0.1105,
+      "q75_wait",
+      9,
+      10
+    ],
+    [
+      0.1,
+      45,
+      2,
+      19,
+      13,
+      3,
+      7,
+      3,
+      0,
+      0.647854298,
+      0.6369386103,
+      -0.39499,
+      0.51652,
+      3.28593,
+      0.42845,
+      "cash",
+      7,
+      11
+    ],
+    [
+      0.15,
+      33,
+      2,
+      14,
+      9,
+      4,
+      4,
+      1,
+      0,
+      0.5671625531,
+      0.5972464534,
+      -5.66348,
+      1.48423,
+      -2.88578,
+      -6.7712,
+      "cash",
+      5,
+      6
+    ]
+  ],
+  "cap_sensitivity": {
+    "columns": [
+      "trigger",
+      "test_n",
+      "market_mean_pct",
+      "median_wait_mean_pct",
+      "q75_wait_mean_pct",
+      "half_q75_mean_pct"
+    ],
+    "rows": [
+      [
+        0.05,
+        17,
+        0.89,
+        5.43,
+        4.94,
+        1.98
+      ],
+      [
+        0.1,
+        14,
+        0.11,
+        2.01,
+        3.93,
+        1.08
+      ],
+      [
+        0.15,
+        10,
+        -3.88,
+        5.52,
+        -0.33,
+        -4.35
+      ]
+    ],
+    "note": "Post-hoc include cap-ended episodes; training unchanged; still exclude end-of-data cases."
+  },
+  "limitations": [
+    "No daily first-touch ambiguity in scored events, so hourly tie-resolution benefit not demonstrated; one Q75 same-bar buy/sell ambiguous per 5% and 10% test (not counted as immediate sale).",
+    "Strict crossing sensitivity unchanged on main test.",
+    "MDD based on daily closing marks, not intraday maximum.",
+    "Limit fills assumed full; no tick rounding, queue, orderbook or liquidity validation.",
+    "Overlapping scales and reused periods; no independent prospective validation; USD/Bithumb not tested.",
+    "No validated probabilities or production changes. Full local scripts/results available in chat; this commit saves summary only."
+  ],
+  "artifacts": {
+    "code": "867f67548fa687c4ba72f5312e4659f8aaab61650031ff5abc7f76a9f2d68ad9",
+    "result": "bc5f2772d9d561ab6c0eb122e180b7bb14b932ed4a3b580e5d2d4b23ee9b5a88",
+    "cap_code": "0d2bd90df62d994e444c4eb70a19cf55e38d898435aebcce4a399f6ef82772cf",
+    "cap_result": "0a2ba097f328aa07967fe28344066d014251d246de5a9bf542f3158995f8390b"
+  }
+}
