@@ -10,7 +10,7 @@
   {
     "market": "Upbit",
     "derived": "4h",
-    "rows": 19981
+    "rows": 19982
   },
   {
     "market": "Upbit",
@@ -20,7 +20,7 @@
   {
     "market": "Upbit",
     "tf": "1h",
-    "rows": 80148,
+    "rows": 80151,
     "invalid": 0,
     "duplicates": 0,
     "volume_excluded": false
@@ -28,7 +28,7 @@
   {
     "market": "Bithumb",
     "derived": "4h",
-    "rows": 20558
+    "rows": 20559
   },
   {
     "market": "Bithumb",
@@ -38,7 +38,7 @@
   {
     "market": "Bithumb",
     "tf": "1h",
-    "rows": 82320,
+    "rows": 82323,
     "invalid": 0,
     "duplicates": 0,
     "volume_excluded": false
@@ -54,7 +54,7 @@
   {
     "market": "Bitstamp",
     "derived": "4h",
-    "rows": 18658
+    "rows": 18659
   },
   {
     "market": "Bitstamp",
@@ -64,7 +64,7 @@
   {
     "market": "Bitstamp",
     "tf": "1h",
-    "rows": 74644,
+    "rows": 74647,
     "invalid": 0,
     "duplicates": 0,
     "volume_excluded": true
@@ -80,7 +80,7 @@
   {
     "market": "Kraken",
     "derived": "4h",
-    "rows": 182
+    "rows": 183
   },
   {
     "market": "Kraken",
@@ -90,7 +90,7 @@
   {
     "market": "Kraken",
     "tf": "1h",
-    "rows": 730,
+    "rows": 733,
     "invalid": 0,
     "duplicates": 0,
     "volume_excluded": false

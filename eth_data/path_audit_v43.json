@@ -1,12 +1,12 @@
 {
   "version": "v4.3-path-audit-1",
-  "generated_utc": "2026-11-27 02:53:57.972151+00:00",
+  "generated_utc": "2026-11-27 05:27:31.545929+00:00",
   "status": "exploratory_only",
   "markets": {
     "Upbit_ETHKRW": {
       "1h": {
-        "bars": 80148,
-        "last_closed": "2026-11-27 02:00:00+00:00",
+        "bars": 80151,
+        "last_closed": "2026-11-27 05:00:00+00:00",
         "scales": {
           "0.05": {
             "confirmed_waves": 1472,
@@ -137,8 +137,8 @@
         }
       },
       "4h": {
-        "bars": 19981,
-        "last_closed": "2026-11-27 00:00:00+00:00",
+        "bars": 19982,
+        "last_closed": "2026-11-27 04:00:00+00:00",
         "scales": {
           "0.05": {
             "confirmed_waves": 1079,
@@ -403,8 +403,8 @@
     },
     "Bitstamp_ETHUSD": {
       "1h": {
-        "bars": 74644,
-        "last_closed": "2026-11-27 02:00:00+00:00",
+        "bars": 74647,
+        "last_closed": "2026-11-27 05:00:00+00:00",
         "scales": {
           "0.05": {
             "confirmed_waves": 1596,
@@ -472,7 +472,7 @@
             "evaluation_censored": 1,
             "mape": {
               "flat": 32.87287515518262,
-              "marginal": 26.811033111002754,
+              "marginal": 26.81103311100275,
               "medoid": 28.47921339990299,
               "neighbor_medoid": 27.819593146064186
             },
@@ -535,8 +535,8 @@
         }
       },
       "4h": {
-        "bars": 18658,
-        "last_closed": "2026-11-27 00:00:00+00:00",
+        "bars": 18659,
+        "last_closed": "2026-11-27 04:00:00+00:00",
         "scales": {
           "0.05": {
             "confirmed_waves": 1270,
@@ -682,7 +682,7 @@
             "evaluation_censored": 1,
             "mape": {
               "flat": 13.426563320915873,
-              "marginal": 8.94128026936694,
+              "marginal": 8.941280269366938,
               "medoid": 9.47060311148222,
               "neighbor_medoid": 8.972080773431061
             },

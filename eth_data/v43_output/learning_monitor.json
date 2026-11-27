@@ -1,0 +1,82 @@
+{
+  "version": "v43-learning-monitor-1",
+  "generated_utc": "2026-11-27T05:28:12.875Z",
+  "input_sha256": {
+    "Upbit_ETHKRW": "0c326279c5723282a73eadd40314905e18a83532cb5d2b4da60442ad1477a662",
+    "Bitstamp_ETHUSD": "f3ccef28364872f8549e4b16b3d2d116fbff289c7790c87266ed3b6e66cfa040",
+    "Bithumb_ETHKRW": "adb519a938b6a6e01a9dacccdde39f6c2d811a13e186e738d2788b4b652aa368"
+  },
+  "code_sha256": {
+    "bottom_landmarks": "2231588bf0bd435270ae154b97ce641653b6ea8e5a0ca41a160950a2d0421f9f",
+    "rebound_landmarks": "01afb0ad807e4f167b95c5888cec4c9e5f382a7ef1641bc8e1efd4b5f2fe5a1e",
+    "correction_landmarks": "201054c4df2a9f23fe19caa7cd94a825c66a7782ea30e4ce98e4c1377dec3ad3",
+    "readvance_landmarks": "c091f6abf6e5285059a52f82b97db2253c8d706961f92530f20034ca4aa8fed9",
+    "large_cycle": "043c8ebfc656c8bc1e1fc31e72ec4afdee1e6e13001714312e602e5ee0f381e8",
+    "first_touch": "177c9caee4507cccd5e32282a58d3bd063a70badd6819ab8676d91e59f7aa715"
+  },
+  "modules": {
+    "bottom_landmarks": {
+      "version": "v43-bottom-landmarks-1",
+      "sha256": "ff0cb5ac1b29e2cceab503eb8893f0195282e682a2dfda3322df2c3385788679",
+      "rows": {
+        "Upbit_ETHKRW": 3347,
+        "Bitstamp_ETHUSD": 3305,
+        "Bithumb_ETHKRW": 3666
+      }
+    },
+    "rebound_landmarks": {
+      "version": "v43-rebound-landmarks-1",
+      "sha256": "463a75ea20f65919c54464ef9f18b7e252c9b0a0960f0b68e1ee8e69ca31efd6",
+      "rows": {
+        "Upbit_ETHKRW": 3347,
+        "Bitstamp_ETHUSD": 3305,
+        "Bithumb_ETHKRW": 3666
+      }
+    },
+    "correction_landmarks": {
+      "version": "v43-correction-landmarks-1",
+      "sha256": "2fc57d34388a4092fb88996e6dead299ad4d45234f5c10f132bc4dcd81b01300",
+      "rows": {
+        "Upbit_ETHKRW": 3347,
+        "Bitstamp_ETHUSD": 3305,
+        "Bithumb_ETHKRW": 3666
+      }
+    },
+    "readvance_landmarks": {
+      "version": "v43-readvance-landmarks-1",
+      "sha256": "0265db993d1b1504a3260a998fb1b5f9099247b8ce27c11083d24b7a24c916f2",
+      "rows": {
+        "Upbit_ETHKRW": 3347,
+        "Bitstamp_ETHUSD": 3305,
+        "Bithumb_ETHKRW": 3666
+      }
+    },
+    "large_cycle": {
+      "version": "v43-large-cycle-1",
+      "sha256": "49781a2b4f62f8388d007fc097a4c249e8fb9365c2e0919f1c37bc33d58d3097",
+      "rows": {
+        "Upbit_ETHKRW": 3347,
+        "Bitstamp_ETHUSD": 3305,
+        "Bithumb_ETHKRW": 3666
+      }
+    },
+    "first_touch": {
+      "version": "v43-first-touch-1",
+      "sha256": "57a2c378f5076aa03d2e332d7a14836f666145a60c67282e32116f6bf58dc191",
+      "rows": {
+        "Upbit_ETHKRW": 3347,
+        "Bitstamp_ETHUSD": 3305,
+        "Bithumb_ETHKRW": 3666
+      }
+    }
+  },
+  "live": {
+    "extreme_registered": 0,
+    "path_registered": 0,
+    "barrier_registered": 0,
+    "extreme_groups": {}
+  },
+  "policy": "rerun exploratory research only on changed daily inputs, code, or report integrity; preserve previous Git commits; never promote models or auto-register descriptive references; live samples may overlap; independent adjudication required",
+  "promotion": "blocked_pending_independent_validation",
+  "review_reason": "no_registered_live_forecasts"
+}
