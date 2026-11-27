@@ -1,0 +1,142 @@
+{
+  "version": "integrated-ensemble-v1",
+  "status": "retrospective_research_only_no_promotion",
+  "source_sha256": "44991322abdc79e5fd7d440632155e0d0a7c7f5bcc3ed0c66368bcdca41fbf12",
+  "input_hashes": {
+    "eth_crash_research_v1": "eb897140a7ffa0e279607dc7750c51566cce18e48187d3e4d389497f63dc78a5",
+    "eth_multiscale_research_v1": "d0ffce96e30006c9166172ae47f932baa25dacedd4001f0fbd2fd4a0dbd836fa",
+    "eth_conditional_path_v1": "5c6f6a411d171ec83ec79f8542b34dae689f6f21b9b189470d8decdf1bc200af",
+    "eth_dynamic_state_v1": "0e91121a29b872356f42c880118a053b3e050099d227ec8265700604a4c3d17f",
+    "eth_crash_regime_v2": "d86a1d2e4cc070a7ee71f4fd90b28588b840533821744fbdd6ca00fcab40eea8",
+    "eth_hierarchical_extension_v1": "d8f449efa2f107db4178c8efe68889f95207624c4fdc6ca509e206dc00cd3f05",
+    "eth_hierarchical_parent_v1": "c2ce88acecebdf0d30c0f6c9f0e2ce869ee4fc228e01640ad38913b240b5c664",
+    "eth_execution_research_v1": "bc5f2772d9d561ab6c0eb122e180b7bb14b932ed4a3b580e5d2d4b23ee9b5a88"
+  },
+  "protocol": "Replay archived walk-forward predictions separately for same endpoint. 50% baseline plus 50% equal or adaptive ensemble; weights exp(-5*mean prior completed episode loss), equal until five prior completed episodes. Prices in log space, probability vectors arithmetic. Equal episode weighting; selection 2020–22, test 2023+ reused, min10 tune and min30 test, >=5% improvement both losses, P90 not worse and multiplicity-adjusted block CI positive. No new production adoption.",
+  "counts": {
+    "groups": 58,
+    "testable": 50,
+    "tune_min10": 27,
+    "test_min30": 4,
+    "chosen_new": 0,
+    "gates_passed": 0,
+    "price": {
+      "testable": 33,
+      "equal_improved": 17,
+      "adaptive_improved": 16,
+      "equal_both5pct": 3,
+      "adaptive_both5pct": 3
+    },
+    "probability": {
+      "testable": 17,
+      "equal_improved": 8,
+      "adaptive_improved": 8,
+      "equal_both5pct": 0,
+      "adaptive_both5pct": 0
+    }
+  },
+  "full_path_pct": {
+    "columns": [
+      "threshold",
+      "n",
+      "baseline",
+      "equal",
+      "adaptive"
+    ],
+    "rows": [
+      [
+        0.05,
+        29,
+        12.23,
+        12.41,
+        12.39
+      ],
+      [
+        0.1,
+        13,
+        17.47,
+        17.07,
+        17.04
+      ],
+      [
+        0.15,
+        5,
+        38.89,
+        38.61,
+        38.63
+      ],
+      [
+        0.2,
+        2,
+        30.75,
+        31.66,
+        31.66
+      ],
+      [
+        0.3,
+        2,
+        37.73,
+        38.58,
+        38.58
+      ],
+      [
+        0.4,
+        0,
+        null,
+        null,
+        null
+      ],
+      [
+        0.5,
+        0,
+        null,
+        null,
+        null
+      ]
+    ]
+  },
+  "dynamic_pct": {
+    "columns": [
+      "threshold",
+      "n",
+      "baseline_clipped",
+      "equal",
+      "adaptive"
+    ],
+    "rows": [
+      [
+        0.05,
+        25,
+        12.36,
+        12.14,
+        12.14
+      ],
+      [
+        0.1,
+        20,
+        13.93,
+        13.27,
+        13.27
+      ],
+      [
+        0.15,
+        12,
+        14.87,
+        14.03,
+        14.03
+      ]
+    ]
+  },
+  "artifacts": {
+    "code_sha256": "f40a98bce3f6b0da55d423dfe157a786637bb68e1e9163956ae99aa61febc395",
+    "result_sha256": "cb8f73f64bbd2fad314c78933981545a9055044503798bbd1c7f36e4ed709bfc"
+  },
+  "limitations": [
+    "Archived predictions reused, base models not independently rerun in this experiment",
+    "Different labels not pooled; counts of groups not independent observations",
+    "No USD replication of ensemble, VP, trade return optimization, live forecast, or prospective test",
+    "Binary probability Brier uses two-class sum, not directly comparable to prior scalar binary scores",
+    "Summary only uploaded; executable and full results are local conversation artifacts"
+  ],
+  "production": "unchanged"
+}
