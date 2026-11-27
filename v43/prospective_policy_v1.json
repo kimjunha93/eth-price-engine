@@ -1,0 +1,41 @@
+{
+  "version": "v43-prospective-policy-1",
+  "status": "registered_policy_no_live_forecasts",
+  "historical_research_cutoff": "2026-11-27T00:00:00Z",
+  "prospective_start_rule": "strictly after policy commit AND actual forecast registration; never reconstruct prior forecasts; daily event predictions only on newly confirmed pivot after registration",
+  "primary_market": "Upbit_ETHKRW",
+  "secondary_markets": [
+    "Bithumb_ETHKRW",
+    "Bitstamp_ETHUSD"
+  ],
+  "primary_threshold": 0.1,
+  "secondary_thresholds": [
+    0.05,
+    0.15,
+    0.2,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "benchmark": "B1 directional historical median, same event and information time",
+  "candidate_models": [
+    "M_swing",
+    "M_volatility",
+    "M_price",
+    "M_all"
+  ],
+  "frozen_reference_code_commit": "3a0aad6f059b6d87776bb7b28a8d71b31f9e2b38",
+  "historical_report_commit": "7ed0e094b4c4c6acd635cc8007e6b640d9853861",
+  "rules": {
+    "minimum_completed_primary_events": 50,
+    "minimum_training_per_direction": 30,
+    "minimum_relative_improvement_normalized_mae": 0.05,
+    "minimum_relative_improvement_pinball": 0.05,
+    "bootstrap": "paired quarterly cluster, 1500 draws, at least 8 nonempty calendar quarters; 90% interval exploratory; prospective familywise correction required across four candidates before promotion",
+    "censoring": "all open/gap events reported; no scoring as completed; same labels and eligibility across models",
+    "evaluation": "freeze all candidates; no interim selection; use first 50 eligible complete primary events or more until required cluster count, whichever later; no double-counting forecast revisions or markets",
+    "promotion": "manual review only; require multiplicity-adjusted paired inference, coverage and width assessment, baseline improvement, documented code version and untouched prospective cohort; no automatic promotion",
+    "retraining": "historical audit updates are descriptive, not permission to tune candidate settings; new versions need fresh cohort"
+  },
+  "limits": "No model predictions registered by this policy. Prospective event collector and scoring integration still need implementation; first_touch and full path require separate protocol. Historical evaluation repeated; no claim of independent performance."
+}
