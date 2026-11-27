@@ -1,0 +1,366 @@
+{
+  "version": "daily-close-path-sensitivity-1",
+  "status": "exploratory_reused_history",
+  "markets": {
+    "Upbit_ETHKRW": {
+      "rows": 3347,
+      "scales": {
+        "0.05": {
+          "pivots": 375,
+          "events": 187,
+          "complete": 67,
+          "censored": 120,
+          "independent_complete": 0,
+          "hold": 0,
+          "fail": 0,
+          "evaluated": 1,
+          "evaluation_censored": 1,
+          "insufficient_train": 0,
+          "prefix": true,
+          "scores": {
+            "flat": {
+              "mape": 22.761109232344904,
+              "legs": [
+                23.913043478260864,
+                17.752234993614312,
+                26.618049225159535
+              ]
+            },
+            "median": {
+              "mape": 15.263551519454552,
+              "legs": [
+                14.367198430257776,
+                22.988594793494233,
+                8.434861334611643
+              ]
+            },
+            "medoid": {
+              "mape": 15.455245589945795,
+              "legs": [
+                20.186787162423315,
+                23.721080393301907,
+                2.4578692141121627
+              ]
+            },
+            "neighbor": {
+              "mape": 13.588535614738944,
+              "legs": [
+                10.773252614199224,
+                15.781560696445041,
+                14.210793533572573
+              ]
+            }
+          }
+        },
+        "0.1": {
+          "pivots": 181,
+          "events": 90,
+          "complete": 37,
+          "censored": 53,
+          "independent_complete": 0,
+          "hold": 0,
+          "fail": 0,
+          "evaluated": 0,
+          "evaluation_censored": 1,
+          "insufficient_train": 2,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        },
+        "0.15": {
+          "pivots": 97,
+          "events": 48,
+          "complete": 24,
+          "censored": 24,
+          "independent_complete": 0,
+          "hold": 0,
+          "fail": 0,
+          "evaluated": 0,
+          "evaluation_censored": 1,
+          "insufficient_train": 3,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        },
+        "0.2": {
+          "pivots": 55,
+          "events": 27,
+          "complete": 22,
+          "censored": 5,
+          "independent_complete": 0,
+          "hold": 0,
+          "fail": 0,
+          "evaluated": 0,
+          "evaluation_censored": 1,
+          "insufficient_train": 3,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        },
+        "0.3": {
+          "pivots": 35,
+          "events": 17,
+          "complete": 9,
+          "censored": 8,
+          "independent_complete": 1,
+          "hold": 0,
+          "fail": 1,
+          "evaluated": 0,
+          "evaluation_censored": 1,
+          "insufficient_train": 1,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        },
+        "0.4": {
+          "pivots": 23,
+          "events": 11,
+          "complete": 10,
+          "censored": 1,
+          "independent_complete": 5,
+          "hold": 2,
+          "fail": 3,
+          "evaluated": 0,
+          "evaluation_censored": 0,
+          "insufficient_train": 2,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        },
+        "0.5": {
+          "pivots": 16,
+          "events": 8,
+          "complete": 6,
+          "censored": 2,
+          "independent_complete": 3,
+          "hold": 0,
+          "fail": 3,
+          "evaluated": 0,
+          "evaluation_censored": 1,
+          "insufficient_train": 0,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        }
+      }
+    },
+    "Bitstamp_ETHUSD": {
+      "rows": 3305,
+      "scales": {
+        "0.05": {
+          "pivots": 459,
+          "events": 229,
+          "complete": 79,
+          "censored": 150,
+          "independent_complete": 1,
+          "hold": 0,
+          "fail": 1,
+          "evaluated": 1,
+          "evaluation_censored": 1,
+          "insufficient_train": 0,
+          "prefix": true,
+          "scores": {
+            "flat": {
+              "mape": 4.746352737387757,
+              "legs": [
+                1.5792307232158964,
+                9.220658523632498,
+                3.439168965314876
+              ]
+            },
+            "median": {
+              "mape": 4.785848576584151,
+              "legs": [
+                6.196837279365974,
+                1.7263672156087706,
+                6.434341234777707
+              ]
+            },
+            "medoid": {
+              "mape": 4.11594171809037,
+              "legs": [
+                6.840095379239641,
+                1.0403513282472687,
+                4.467378446784198
+              ]
+            },
+            "neighbor": {
+              "mape": 4.11594171809037,
+              "legs": [
+                6.840095379239641,
+                1.0403513282472687,
+                4.467378446784198
+              ]
+            }
+          }
+        },
+        "0.1": {
+          "pivots": 215,
+          "events": 107,
+          "complete": 47,
+          "censored": 60,
+          "independent_complete": 0,
+          "hold": 0,
+          "fail": 0,
+          "evaluated": 1,
+          "evaluation_censored": 1,
+          "insufficient_train": 0,
+          "prefix": true,
+          "scores": {
+            "flat": {
+              "mape": 24.469590921578952,
+              "legs": [
+                24.314807206995713,
+                9.912679008033532,
+                39.18128654970761
+              ]
+            },
+            "median": {
+              "mape": 17.48745886897296,
+              "legs": [
+                15.980094370017039,
+                16.952273109677098,
+                19.530009127224744
+              ]
+            },
+            "medoid": {
+              "mape": 21.166166256513975,
+              "legs": [
+                21.288442070824832,
+                20.119633835354755,
+                22.090422863362335
+              ]
+            },
+            "neighbor": {
+              "mape": 21.166166256513975,
+              "legs": [
+                21.288442070824832,
+                20.119633835354755,
+                22.090422863362335
+              ]
+            }
+          }
+        },
+        "0.15": {
+          "pivots": 115,
+          "events": 57,
+          "complete": 32,
+          "censored": 25,
+          "independent_complete": 0,
+          "hold": 0,
+          "fail": 0,
+          "evaluated": 0,
+          "evaluation_censored": 1,
+          "insufficient_train": 1,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        },
+        "0.2": {
+          "pivots": 69,
+          "events": 34,
+          "complete": 23,
+          "censored": 11,
+          "independent_complete": 0,
+          "hold": 0,
+          "fail": 0,
+          "evaluated": 0,
+          "evaluation_censored": 1,
+          "insufficient_train": 0,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        },
+        "0.3": {
+          "pivots": 41,
+          "events": 20,
+          "complete": 7,
+          "censored": 13,
+          "independent_complete": 1,
+          "hold": 0,
+          "fail": 1,
+          "evaluated": 0,
+          "evaluation_censored": 1,
+          "insufficient_train": 1,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        },
+        "0.4": {
+          "pivots": 25,
+          "events": 12,
+          "complete": 8,
+          "censored": 4,
+          "independent_complete": 0,
+          "hold": 0,
+          "fail": 0,
+          "evaluated": 0,
+          "evaluation_censored": 0,
+          "insufficient_train": 2,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        },
+        "0.5": {
+          "pivots": 16,
+          "events": 8,
+          "complete": 5,
+          "censored": 3,
+          "independent_complete": 1,
+          "hold": 0,
+          "fail": 1,
+          "evaluated": 0,
+          "evaluation_censored": 1,
+          "insufficient_train": 0,
+          "prefix": true,
+          "scores": {
+            "flat": null,
+            "median": null,
+            "medoid": null,
+            "neighbor": null
+          }
+        }
+      }
+    }
+  }
+}
