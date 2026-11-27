@@ -67,6 +67,7 @@ jobs:
             node v43/extreme_monitor.cjs --test
             node v43/extreme_monitor.cjs --score
             node v43/learning_monitor.cjs
+            python v43/hourly_touch_audit.py eth_data/Upbit_ETHKRW_1d.csv eth_data/Upbit_ETHKRW_1h.csv eth_data/v43_output/hourly_touch_audit.json
             python -c 'import json; from pathlib import Path; p=Path("eth_data"); a=json.loads((p/"audit.json").read_text()); assert a and not any("error" in x for x in a), "collection error"; s=json.loads((p/"structure_snapshot_v43.json").read_text()); assert s["freshness_pass"], "stale structure snapshot"'
             git add -A -- eth_data ':!eth_data/forecast_ledger_v43.jsonl' ':!eth_data/forecast_ledger_v43.jsonl.lock' ':!eth_data/path_ledger_v43.jsonl' ':!eth_data/path_ledger_v43.jsonl.lock' ':!eth_data/extreme_ledger_v43.jsonl' ':!eth_data/extreme_ledger_v43.jsonl.lock'
             if git diff --cached --quiet; then exit 0; fi
