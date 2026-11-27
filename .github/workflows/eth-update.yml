@@ -58,6 +58,9 @@ jobs:
       - name: Generate guarded forecast diagnostics
         run: python eth_diagnostics_v42.py
 
+      - name: Run V4.3 guarded path audit
+        run: python v43/path_audit.py
+
       - name: Save updated data
         run: |
           git config user.name "github-actions[bot]"
