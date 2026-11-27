@@ -21,7 +21,7 @@
     "missing_slots": 251,
     "invalid": 0,
     "duplicates": 0,
-    "new_rows": 2,
+    "new_rows": 0,
     "zero_volume": 0,
     "note": ""
   },
@@ -47,7 +47,7 @@
     "missing_slots": 135,
     "invalid": 0,
     "duplicates": 0,
-    "new_rows": 2,
+    "new_rows": 0,
     "zero_volume": 3846,
     "note": ""
   },
@@ -73,7 +73,7 @@
     "missing_slots": 184,
     "invalid": 0,
     "duplicates": 0,
-    "new_rows": 2,
+    "new_rows": 0,
     "zero_volume": 17,
     "note": ""
   },
@@ -99,7 +99,7 @@
     "missing_slots": 0,
     "invalid": 0,
     "duplicates": 0,
-    "new_rows": 2,
+    "new_rows": 0,
     "zero_volume": 0,
     "note": "Kraken REST limited to latest 720 candles; historical archive required"
   }
