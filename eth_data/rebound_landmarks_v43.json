@@ -2877,12 +2877,12 @@
       }
     },
     "Bithumb_ETHKRW": {
-      "rows": 3666,
+      "rows": 3667,
       "invalid": 0,
       "duplicate": 0,
       "gaps": 406,
       "first": "2017-05-22T00:00:00.000Z",
-      "last": "2026-11-25T15:00:00.000Z",
+      "last": "2026-11-26T15:00:00.000Z",
       "scales": {
         "0.05": {
           "completed": 335,
@@ -3097,7 +3097,7 @@
           "censored": 3,
           "prefix_ok": true,
           "live": {
-            "age": 3,
+            "age": 4,
             "observed_high": 2446000,
             "confirmed_low": 2126000,
             "reference": {
@@ -4041,7 +4041,7 @@
           "censored": 3,
           "prefix_ok": true,
           "live": {
-            "age": 94,
+            "age": 95,
             "observed_high": 3780000,
             "confirmed_low": 2300000,
             "reference": null

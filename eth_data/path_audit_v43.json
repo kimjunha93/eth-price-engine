@@ -1,28 +1,28 @@
 {
   "version": "v4.3-path-audit-1",
-  "generated_utc": "2026-11-27 09:38:31.709613+00:00",
+  "generated_utc": "2026-11-27 19:26:26.780622+00:00",
   "status": "exploratory_only",
   "markets": {
     "Upbit_ETHKRW": {
       "1h": {
-        "bars": 80155,
-        "last_closed": "2026-11-27 09:00:00+00:00",
+        "bars": 80165,
+        "last_closed": "2026-11-27 19:00:00+00:00",
         "scales": {
           "0.05": {
-            "confirmed_waves": 1472,
-            "complete_paths": 651,
-            "censored_paths": 87,
-            "nonoverlap_complete": 310,
-            "hold_count": 345,
+            "confirmed_waves": 1473,
+            "complete_paths": 652,
+            "censored_paths": 86,
+            "nonoverlap_complete": 311,
+            "hold_count": 346,
             "fail_count": 306,
-            "evaluated": 69,
+            "evaluated": 70,
             "insufficient_train": 0,
-            "evaluation_censored": 15,
+            "evaluation_censored": 14,
             "mape": {
-              "flat": 9.717241670153214,
-              "marginal": 6.3312331733701175,
-              "medoid": 6.403769886073601,
-              "neighbor_medoid": 6.928292895463228
+              "flat": 9.716959457838215,
+              "marginal": 6.284446495563331,
+              "medoid": 6.362771460700745,
+              "neighbor_medoid": 6.868008576595372
             },
             "prefix_test": true
           },
@@ -137,8 +137,8 @@
         }
       },
       "4h": {
-        "bars": 19983,
-        "last_closed": "2026-11-27 08:00:00+00:00",
+        "bars": 19985,
+        "last_closed": "2026-11-27 16:00:00+00:00",
         "scales": {
           "0.05": {
             "confirmed_waves": 1079,
@@ -403,15 +403,15 @@
     },
     "Bitstamp_ETHUSD": {
       "1h": {
-        "bars": 74651,
-        "last_closed": "2026-11-27 09:00:00+00:00",
+        "bars": 74661,
+        "last_closed": "2026-11-27 19:00:00+00:00",
         "scales": {
           "0.05": {
-            "confirmed_waves": 1596,
-            "complete_paths": 787,
-            "censored_paths": 10,
+            "confirmed_waves": 1597,
+            "complete_paths": 788,
+            "censored_paths": 9,
             "nonoverlap_complete": 119,
-            "hold_count": 409,
+            "hold_count": 410,
             "fail_count": 378,
             "evaluated": 110,
             "insufficient_train": 0,
@@ -472,7 +472,7 @@
             "evaluation_censored": 1,
             "mape": {
               "flat": 32.87287515518262,
-              "marginal": 26.81103311100275,
+              "marginal": 26.811033111002754,
               "medoid": 28.47921339990299,
               "neighbor_medoid": 27.819593146064186
             },
@@ -535,8 +535,8 @@
         }
       },
       "4h": {
-        "bars": 18660,
-        "last_closed": "2026-11-27 08:00:00+00:00",
+        "bars": 18662,
+        "last_closed": "2026-11-27 16:00:00+00:00",
         "scales": {
           "0.05": {
             "confirmed_waves": 1270,
@@ -682,7 +682,7 @@
             "evaluation_censored": 1,
             "mape": {
               "flat": 13.426563320915873,
-              "marginal": 8.941280269366938,
+              "marginal": 8.94128026936694,
               "medoid": 9.47060311148222,
               "neighbor_medoid": 8.972080773431061
             },

@@ -1,62 +1,62 @@
 {
   "version": "v43-structure-1",
-  "generated_utc": "2026-11-27 09:38:54.498015+00:00",
+  "generated_utc": "2026-11-27 19:26:38.250962+00:00",
   "status": "descriptive_only",
   "model_policy": "historical median reference; no calibrated probability or full-cycle path; no live forecast registration",
   "markets": {
     "Upbit_ETHKRW": {
-      "last_hour_close": 2342000.0,
-      "last_hour_closed": "2026-11-27 09:00:00+00:00",
+      "last_hour_close": 2264000.0,
+      "last_hour_closed": "2026-11-27 19:00:00+00:00",
       "fresh_hourly": true,
       "last_day_close": 2293000.0,
       "last_day_closed": "2026-11-27 00:00:00+00:00",
       "fresh_daily": true,
       "scales": {
         "1h": {
-          "last_closed": "2026-11-27 09:00:00+00:00",
-          "data_age_hours": 0.6484716708333333,
+          "last_closed": "2026-11-27 19:00:00+00:00",
+          "data_age_hours": 0.4439586005555556,
           "states": {
             "0.05": {
-              "state": "active_high",
-              "start_available": "2026-11-26 02:00:00+00:00",
-              "elapsed_bars": 31,
-              "observed_extreme": 2377000.0,
-              "n_history": 734,
-              "censored_history": 27,
+              "state": "active_low",
+              "start_available": "2026-11-27 15:00:00+00:00",
+              "elapsed_bars": 4,
+              "observed_extreme": 2224000.0,
+              "n_history": 738,
+              "censored_history": 30,
               "reference_q25_q50_q75": [
-                2377000.0,
-                2405788.1701279427,
-                2515006.4298194526
+                2075888.1276267688,
+                2170480.5393665726,
+                2218282.8329626885
               ],
               "range_status": "descriptive_unvalidated_at_current_age",
               "path": {
-                "n": 310,
+                "n": 311,
                 "censored": 47,
                 "status": "conditional_reference_only",
                 "ratios_q25_q50_q75": {
                   "h1": [
-                    1.0775766176273502,
-                    1.108693765139642,
-                    1.157832167832168
+                    1.07762514536706,
+                    1.1093810821331258,
+                    1.1590358960721945
                   ],
                   "l2": [
-                    0.954301472026517,
-                    1.0025882974754383,
-                    1.048781173682266
+                    0.9543285901762946,
+                    1.0031712473572938,
+                    1.0483799414829251
                   ],
                   "h2": [
-                    1.0545532613620672,
-                    1.1202488261091235,
-                    1.2092765370164886
+                    1.0548787661465084,
+                    1.118740795287187,
+                    1.209208959028485
                   ]
                 },
-                "low_held_count": 162
+                "low_held_count": 163
               }
             },
             "0.1": {
               "state": "active_low",
               "start_available": "2026-11-25 03:00:00+00:00",
-              "elapsed_bars": 54,
+              "elapsed_bars": 64,
               "observed_extreme": 2198000.0,
               "n_history": 174,
               "censored_history": 25,
@@ -93,7 +93,7 @@
             "0.15": {
               "state": "active_high",
               "start_available": "2026-11-23 14:00:00+00:00",
-              "elapsed_bars": 91,
+              "elapsed_bars": 101,
               "observed_extreme": 2505000.0,
               "n_history": 62,
               "censored_history": 28,
@@ -124,13 +124,13 @@
           }
         },
         "4h": {
-          "last_closed": "2026-11-27 08:00:00+00:00",
-          "data_age_hours": 1.6484716708333333,
+          "last_closed": "2026-11-27 16:00:00+00:00",
+          "data_age_hours": 3.4439586005555554,
           "states": {
             "0.05": {
               "state": "active_high",
               "start_available": "2026-11-26 20:00:00+00:00",
-              "elapsed_bars": 3,
+              "elapsed_bars": 5,
               "observed_extreme": 2377000.0,
               "n_history": 538,
               "censored_history": 30,
@@ -167,7 +167,7 @@
             "0.1": {
               "state": "active_low",
               "start_available": "2026-11-25 08:00:00+00:00",
-              "elapsed_bars": 12,
+              "elapsed_bars": 14,
               "observed_extreme": 2198000.0,
               "n_history": 141,
               "censored_history": 24,
@@ -220,7 +220,7 @@
         },
         "1d": {
           "last_closed": "2026-11-27 00:00:00+00:00",
-          "data_age_hours": 9.648471670833333,
+          "data_age_hours": 19.443958600555554,
           "states": {
             "0.05": {
               "state": "active_low",
@@ -423,33 +423,33 @@
         }
       },
       "input_sha256": {
-        "1h": "6bd90209908bb250d7c57a01c3458f607262bbf4ae210d54a37445d76a381e9c",
+        "1h": "d273c3d9efcd8f098fbd68c2cdea0c6f0ff7ded3229f21e1d5e03db8616eddb1",
         "1d": "0c326279c5723282a73eadd40314905e18a83532cb5d2b4da60442ad1477a662"
       }
     },
     "Bitstamp_ETHUSD": {
-      "last_hour_close": 1729.17,
-      "last_hour_closed": "2026-11-27 09:00:00+00:00",
+      "last_hour_close": 1669.55,
+      "last_hour_closed": "2026-11-27 19:00:00+00:00",
       "fresh_hourly": true,
       "last_day_close": 1687.48,
       "last_day_closed": "2026-11-27 00:00:00+00:00",
       "fresh_daily": true,
       "scales": {
         "1h": {
-          "last_closed": "2026-11-27 09:00:00+00:00",
-          "data_age_hours": 0.6484716708333333,
+          "last_closed": "2026-11-27 19:00:00+00:00",
+          "data_age_hours": 0.4439586005555556,
           "states": {
             "0.05": {
-              "state": "active_high",
-              "start_available": "2026-11-25 21:00:00+00:00",
-              "elapsed_bars": 36,
-              "observed_extreme": 1752.74,
-              "n_history": 799,
-              "censored_history": 0,
+              "state": "active_low",
+              "start_available": "2026-11-27 15:00:00+00:00",
+              "elapsed_bars": 4,
+              "observed_extreme": 1632.58,
+              "n_history": 797,
+              "censored_history": 2,
               "reference_q25_q50_q75": [
-                1752.74,
-                1757.3167843873757,
-                1831.2815639611133
+                1521.0981063122924,
+                1591.840515289561,
+                1624.3121278462709
               ],
               "range_status": "descriptive_unvalidated_at_current_age",
               "path": {
@@ -479,7 +479,7 @@
             "0.1": {
               "state": "active_low",
               "start_available": "2026-11-25 02:00:00+00:00",
-              "elapsed_bars": 55,
+              "elapsed_bars": 65,
               "observed_extreme": 1606.59,
               "n_history": 221,
               "censored_history": 2,
@@ -516,7 +516,7 @@
             "0.15": {
               "state": "active_high",
               "start_available": "2026-11-23 14:00:00+00:00",
-              "elapsed_bars": 91,
+              "elapsed_bars": 101,
               "observed_extreme": 1842.94,
               "n_history": 106,
               "censored_history": 1,
@@ -553,7 +553,7 @@
             "0.2": {
               "state": "active_low",
               "start_available": "2026-10-30 01:00:00+00:00",
-              "elapsed_bars": 680,
+              "elapsed_bars": 690,
               "observed_extreme": 1536.0,
               "n_history": 60,
               "censored_history": 0,
@@ -590,7 +590,7 @@
             "0.3": {
               "state": "active_low",
               "start_available": "2026-11-13 04:00:00+00:00",
-              "elapsed_bars": 341,
+              "elapsed_bars": 351,
               "observed_extreme": 1536.0,
               "n_history": 21,
               "censored_history": 0,
@@ -615,13 +615,13 @@
           }
         },
         "4h": {
-          "last_closed": "2026-11-27 08:00:00+00:00",
-          "data_age_hours": 1.6484716708333333,
+          "last_closed": "2026-11-27 16:00:00+00:00",
+          "data_age_hours": 3.4439586005555554,
           "states": {
             "0.05": {
               "state": "active_high",
               "start_available": "2026-11-26 00:00:00+00:00",
-              "elapsed_bars": 8,
+              "elapsed_bars": 10,
               "observed_extreme": 1752.74,
               "n_history": 636,
               "censored_history": 0,
@@ -658,7 +658,7 @@
             "0.1": {
               "state": "active_low",
               "start_available": "2026-11-25 08:00:00+00:00",
-              "elapsed_bars": 12,
+              "elapsed_bars": 14,
               "observed_extreme": 1606.59,
               "n_history": 195,
               "censored_history": 2,
@@ -695,7 +695,7 @@
             "0.15": {
               "state": "active_high",
               "start_available": "2026-11-23 16:00:00+00:00",
-              "elapsed_bars": 22,
+              "elapsed_bars": 24,
               "observed_extreme": 1776.71,
               "n_history": 99,
               "censored_history": 1,
@@ -732,7 +732,7 @@
             "0.2": {
               "state": "active_low",
               "start_available": "2026-10-30 04:00:00+00:00",
-              "elapsed_bars": 169,
+              "elapsed_bars": 171,
               "observed_extreme": 1536.0,
               "n_history": 54,
               "censored_history": 0,
@@ -769,7 +769,7 @@
             "0.3": {
               "state": "active_low",
               "start_available": "2026-11-13 04:00:00+00:00",
-              "elapsed_bars": 85,
+              "elapsed_bars": 87,
               "observed_extreme": 1536.0,
               "n_history": 20,
               "censored_history": 0,
@@ -788,7 +788,7 @@
             "0.4": {
               "state": "active_low",
               "start_available": "2026-11-20 16:00:00+00:00",
-              "elapsed_bars": 40,
+              "elapsed_bars": 42,
               "observed_extreme": 1536.0,
               "n_history": 10,
               "censored_history": 1,
@@ -807,7 +807,7 @@
         },
         "1d": {
           "last_closed": "2026-11-27 00:00:00+00:00",
-          "data_age_hours": 9.648471670833333,
+          "data_age_hours": 19.443958600555554,
           "states": {
             "0.05": {
               "state": "active_high",
@@ -1010,7 +1010,7 @@
         }
       },
       "input_sha256": {
-        "1h": "274f3e9fbd5aa632d82e2f205fb5faf28a5182c41b577e0c175c6457a0f6c3b7",
+        "1h": "1448d25667849f7b70bee3f4197fe2cbba35eed4f1c7381bf8cb085eb0153e0d",
         "1d": "f3ccef28364872f8549e4b16b3d2d116fbff289c7790c87266ed3b6e66cfa040"
       }
     }

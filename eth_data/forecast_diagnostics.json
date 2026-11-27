@@ -1,6 +1,6 @@
 {
   "version": "4.2-integration-14",
-  "asof": "2026-11-27 09:38:31.215458+00:00",
+  "asof": "2026-11-27 19:26:26.459041+00:00",
   "forecast_status": "withheld",
   "reason": "No independently validated path model",
   "markets": {
@@ -81,28 +81,28 @@
       ]
     },
     "Bithumb_ETHKRW": {
-      "rows": 2399,
+      "rows": 2400,
       "invalid": 0,
-      "last_closed_start": "2026-11-25 15:00:00+00:00",
-      "close": 2302000.0,
+      "last_closed_start": "2026-11-26 15:00:00+00:00",
+      "close": 2249000.0,
       "stale": false,
-      "sha256": "adb519a938b6a6e01a9dacccdde39f6c2d811a13e186e738d2788b4b652aa368",
+      "sha256": "5475b6321e151c5375b09e7f8b95470d77012530cb489e21fdbf899e0b7ad9c4",
       "states": [
         {
           "scale": 0.05,
           "mode": -1,
-          "age": 17,
+          "age": 18,
           "start": "2026-11-08 15:00:00+00:00",
           "anchor": 2893000.0,
           "observed_extreme": 2126000.0,
-          "matched": 1,
+          "matched": 0,
           "diagnostic_quantiles": null,
           "status": "withheld"
         },
         {
           "scale": 0.1,
           "mode": -1,
-          "age": 43,
+          "age": 44,
           "start": "2026-10-13 15:00:00+00:00",
           "anchor": 3300000.0,
           "observed_extreme": 2126000.0,
