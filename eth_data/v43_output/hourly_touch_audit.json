@@ -1,16 +1,16 @@
 {
   "version": "v43-hourly-touch-audit-1",
   "market": "Upbit_ETHKRW",
-  "daily_rows": 3347,
-  "hourly_rows": 80165,
-  "daily_last": "2026-11-26 00:00:00+00:00",
-  "hourly_last": "2026-11-27 18:00:00+00:00",
-  "complete_day_overlap": 3279,
-  "exact_ohlc_days": 3279,
+  "daily_rows": 3348,
+  "hourly_rows": 80172,
+  "daily_last": "2026-11-27 00:00:00+00:00",
+  "hourly_last": "2026-11-28 01:00:00+00:00",
+  "complete_day_overlap": 3280,
+  "exact_ohlc_days": 3280,
   "mismatch_days": 0,
   "input_sha256": {
-    "Upbit_ETHKRW_1d.csv": "0c326279c5723282a73eadd40314905e18a83532cb5d2b4da60442ad1477a662",
-    "Upbit_ETHKRW_1h.csv": "d273c3d9efcd8f098fbd68c2cdea0c6f0ff7ded3229f21e1d5e03db8616eddb1"
+    "Upbit_ETHKRW_1d.csv": "c1e3b87fb30fcd92fd70cbf7da97ebf18bad4c59c9a88b09f01a3abd64b61e01",
+    "Upbit_ETHKRW_1h.csv": "196cd871553833159651a8bb79fde4437120c13d075361fb7c4af301db5333e5"
   },
   "policy": "Only resolve ambiguous daily hits using complete 24-hour OHLC-matched days; remaining same-hour double touch remains ambiguous; no model promotion; counts across pairs overlap; 30/90/180 caps are for validation, not prediction dates.",
   "results": [
@@ -506,14 +506,14 @@
         "down": 42,
         "neither": 54,
         "ambiguous": 0,
-        "censored": 2
+        "censored": 1
       },
       "hourly": {
         "up": 32,
         "down": 42,
         "neither": 54,
         "ambiguous": 0,
-        "censored": 2
+        "censored": 1
       },
       "resolutions": {
         "up": 0,
@@ -587,14 +587,14 @@
         "down": 40,
         "neither": 60,
         "ambiguous": 0,
-        "censored": 2
+        "censored": 1
       },
       "hourly": {
         "up": 18,
         "down": 40,
         "neither": 60,
         "ambiguous": 0,
-        "censored": 2
+        "censored": 1
       },
       "resolutions": {
         "up": 0,
@@ -668,14 +668,14 @@
         "down": 44,
         "neither": 44,
         "ambiguous": 0,
-        "censored": 2
+        "censored": 1
       },
       "hourly": {
         "up": 53,
         "down": 44,
         "neither": 44,
         "ambiguous": 0,
-        "censored": 2
+        "censored": 1
       },
       "resolutions": {
         "up": 0,
@@ -695,14 +695,14 @@
         "down": 48,
         "neither": 3,
         "ambiguous": 0,
-        "censored": 2
+        "censored": 1
       },
       "hourly": {
         "up": 60,
         "down": 48,
         "neither": 3,
         "ambiguous": 0,
-        "censored": 2
+        "censored": 1
       },
       "resolutions": {
         "up": 0,
@@ -722,14 +722,14 @@
         "down": 48,
         "neither": 1,
         "ambiguous": 0,
-        "censored": 2
+        "censored": 1
       },
       "hourly": {
         "up": 61,
         "down": 48,
         "neither": 1,
         "ambiguous": 0,
-        "censored": 2
+        "censored": 1
       },
       "resolutions": {
         "up": 0,
@@ -749,14 +749,14 @@
         "down": 49,
         "neither": 32,
         "ambiguous": 0,
-        "censored": 2
+        "censored": 1
       },
       "hourly": {
         "up": 112,
         "down": 49,
         "neither": 32,
         "ambiguous": 0,
-        "censored": 2
+        "censored": 1
       },
       "resolutions": {
         "up": 0,

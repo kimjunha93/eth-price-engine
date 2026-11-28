@@ -1,6 +1,6 @@
 {
   "version": "v43-prospective-monitor-1",
-  "generated_utc": "2026-11-27T19:26:52.531Z",
+  "generated_utc": "2026-11-28T02:39:18.093Z",
   "activated_at": "2026-11-27T05:57:38.268Z",
   "registered": 0,
   "primary": {
@@ -34,7 +34,7 @@
     "Bithumb_ETHKRW|0.3": "no_new_eligible_pivot",
     "Bithumb_ETHKRW|0.4": "no_new_eligible_pivot",
     "Bithumb_ETHKRW|0.5": "no_new_eligible_pivot",
-    "Bitstamp_ETHUSD|0.05": "no_new_eligible_pivot",
+    "Bitstamp_ETHUSD|0.05": "late_or_nonlatest_pivot_not_registered",
     "Bitstamp_ETHUSD|0.1": "no_new_eligible_pivot",
     "Bitstamp_ETHUSD|0.15": "no_new_eligible_pivot",
     "Bitstamp_ETHUSD|0.2": "no_new_eligible_pivot",

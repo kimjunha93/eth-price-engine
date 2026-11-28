@@ -1,76 +1,76 @@
 {
   "version": "4.2-integration-14",
-  "asof": "2026-11-27 19:26:26.459041+00:00",
+  "asof": "2026-11-28 02:38:39.377284+00:00",
   "forecast_status": "withheld",
   "reason": "No independently validated path model",
   "markets": {
     "Upbit_ETHKRW": {
-      "rows": 3347,
+      "rows": 3348,
       "invalid": 0,
-      "last_closed_start": "2026-11-26 00:00:00+00:00",
-      "close": 2293000.0,
+      "last_closed_start": "2026-11-27 00:00:00+00:00",
+      "close": 2257000.0,
       "stale": false,
-      "sha256": "0c326279c5723282a73eadd40314905e18a83532cb5d2b4da60442ad1477a662",
+      "sha256": "c1e3b87fb30fcd92fd70cbf7da97ebf18bad4c59c9a88b09f01a3abd64b61e01",
       "states": [
         {
           "scale": 0.05,
           "mode": 1,
-          "age": 4,
+          "age": 5,
           "start": "2026-11-22 00:00:00+00:00",
           "anchor": 2352000.0,
           "observed_extreme": 2505000.0,
-          "matched": 74,
+          "matched": 62,
           "diagnostic_quantiles": [
             2505000.0,
             2505000.0,
-            2587053.5069993916,
-            2913624.102604759,
-            3325606.2221809775
+            2567557.538474116,
+            2850158.2605714416,
+            3228945.900454598
           ],
           "status": "withheld"
         },
         {
           "scale": 0.1,
           "mode": -1,
-          "age": 45,
+          "age": 46,
           "start": "2026-10-12 00:00:00+00:00",
           "anchor": 3315000.0,
           "observed_extreme": 2125000.0,
-          "matched": 2,
+          "matched": 1,
           "diagnostic_quantiles": null,
           "status": "withheld"
         }
       ]
     },
     "Bitstamp_ETHUSD": {
-      "rows": 3305,
+      "rows": 3306,
       "invalid": 0,
-      "last_closed_start": "2026-11-26 00:00:00+00:00",
-      "close": 1687.48,
+      "last_closed_start": "2026-11-27 00:00:00+00:00",
+      "close": 1660.73,
       "stale": false,
-      "sha256": "f3ccef28364872f8549e4b16b3d2d116fbff289c7790c87266ed3b6e66cfa040",
+      "sha256": "4f3e5c3ad2d70a6e1fbbfca4e50930b580c7bbc5b56e390ca6f6415d5e0eb784",
       "states": [
         {
           "scale": 0.05,
           "mode": 1,
-          "age": 4,
+          "age": 5,
           "start": "2026-11-22 00:00:00+00:00",
           "anchor": 1721.67,
           "observed_extreme": 1842.94,
-          "matched": 82,
+          "matched": 67,
           "diagnostic_quantiles": [
             1842.94,
             1842.94,
-            1909.4389052159502,
-            2090.800489784333,
-            2302.693689935076
+            1886.530845985001,
+            2015.045391067422,
+            2256.1550593768948
           ],
           "status": "withheld"
         },
         {
           "scale": 0.1,
           "mode": -1,
-          "age": 49,
+          "age": 50,
           "start": "2026-10-08 00:00:00+00:00",
           "anchor": 2471.78,
           "observed_extreme": 1536.0,

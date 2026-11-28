@@ -63,11 +63,11 @@
   },
   "markets": {
     "Upbit_ETHKRW": {
-      "rows": 3347,
+      "rows": 3348,
       "invalid": 0,
       "duplicates": 0,
       "gaps": 1,
-      "last": "2026-11-27T00:00:00.000Z",
+      "last": "2026-11-28T00:00:00.000Z",
       "prefix_ok": true,
       "results": [
         {
@@ -103,10 +103,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2407650,
-            "lower": 2178350,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2369850,
+            "lower": 2144150,
             "n": 404,
             "counts": {
               "up": 213,
@@ -115,8 +115,8 @@
               "ambiguous": 8
             },
             "regime_counts": {
-              "up": 42,
-              "down": 55,
+              "up": 27,
+              "down": 28,
               "neither": 0,
               "ambiguous": 3
             }
@@ -155,10 +155,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2407650,
-            "lower": 2178350,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2369850,
+            "lower": 2144150,
             "n": 403,
             "counts": {
               "up": 214,
@@ -167,8 +167,8 @@
               "ambiguous": 8
             },
             "regime_counts": {
-              "up": 42,
-              "down": 55,
+              "up": 27,
+              "down": 28,
               "neither": 0,
               "ambiguous": 3
             }
@@ -207,10 +207,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2407650,
-            "lower": 2178350,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2369850,
+            "lower": 2144150,
             "n": 403,
             "counts": {
               "up": 214,
@@ -219,8 +219,8 @@
               "ambiguous": 8
             },
             "regime_counts": {
-              "up": 42,
-              "down": 55,
+              "up": 27,
+              "down": 28,
               "neither": 0,
               "ambiguous": 3
             }
@@ -259,10 +259,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2522300,
-            "lower": 2063700,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2482700,
+            "lower": 2031300,
             "n": 254,
             "counts": {
               "up": 122,
@@ -271,10 +271,10 @@
               "ambiguous": 1
             },
             "regime_counts": {
-              "up": 29,
-              "down": 43,
-              "neither": 2,
-              "ambiguous": 1
+              "up": 22,
+              "down": 15,
+              "neither": 1,
+              "ambiguous": 0
             }
           }
         },
@@ -311,10 +311,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2522300,
-            "lower": 2063700,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2482700,
+            "lower": 2031300,
             "n": 244,
             "counts": {
               "up": 124,
@@ -323,10 +323,10 @@
               "ambiguous": 1
             },
             "regime_counts": {
-              "up": 30,
-              "down": 43,
+              "up": 23,
+              "down": 15,
               "neither": 0,
-              "ambiguous": 1
+              "ambiguous": 0
             }
           }
         },
@@ -363,10 +363,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2522300,
-            "lower": 2063700,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2482700,
+            "lower": 2031300,
             "n": 244,
             "counts": {
               "up": 124,
@@ -375,10 +375,10 @@
               "ambiguous": 1
             },
             "regime_counts": {
-              "up": 30,
-              "down": 43,
+              "up": 23,
+              "down": 15,
               "neither": 0,
-              "ambiguous": 1
+              "ambiguous": 0
             }
           }
         },
@@ -415,10 +415,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2751600,
-            "lower": 2063700,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2708400,
+            "lower": 2031300,
             "n": 196,
             "counts": {
               "up": 58,
@@ -427,10 +427,10 @@
               "ambiguous": 1
             },
             "regime_counts": {
-              "up": 11,
-              "down": 46,
-              "neither": 10,
-              "ambiguous": 1
+              "up": 9,
+              "down": 8,
+              "neither": 0,
+              "ambiguous": 0
             }
           }
         },
@@ -467,10 +467,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2751600,
-            "lower": 2063700,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2708400,
+            "lower": 2031300,
             "n": 170,
             "counts": {
               "up": 64,
@@ -479,10 +479,10 @@
               "ambiguous": 1
             },
             "regime_counts": {
-              "up": 16,
-              "down": 49,
+              "up": 9,
+              "down": 8,
               "neither": 0,
-              "ambiguous": 1
+              "ambiguous": 0
             }
           }
         },
@@ -519,10 +519,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2751600,
-            "lower": 2063700,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2708400,
+            "lower": 2031300,
             "n": 170,
             "counts": {
               "up": 64,
@@ -531,10 +531,10 @@
               "ambiguous": 1
             },
             "regime_counts": {
-              "up": 16,
-              "down": 49,
+              "up": 9,
+              "down": 8,
               "neither": 0,
-              "ambiguous": 1
+              "ambiguous": 0
             }
           }
         },
@@ -571,10 +571,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2980900,
-            "lower": 2063700,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2934100,
+            "lower": 2031300,
             "n": 175,
             "counts": {
               "up": 35,
@@ -583,9 +583,9 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 8,
-              "down": 48,
-              "neither": 11,
+              "up": 5,
+              "down": 9,
+              "neither": 2,
               "ambiguous": 0
             }
           }
@@ -623,10 +623,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2980900,
-            "lower": 2063700,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2934100,
+            "lower": 2031300,
             "n": 152,
             "counts": {
               "up": 45,
@@ -635,8 +635,8 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 13,
-              "down": 52,
+              "up": 6,
+              "down": 7,
               "neither": 0,
               "ambiguous": 0
             }
@@ -675,10 +675,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2980900,
-            "lower": 2063700,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2934100,
+            "lower": 2031300,
             "n": 151,
             "counts": {
               "up": 45,
@@ -687,8 +687,8 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 13,
-              "down": 52,
+              "up": 6,
+              "down": 7,
               "neither": 0,
               "ambiguous": 0
             }
@@ -699,8 +699,8 @@
           "down": 0.2,
           "horizon": 30,
           "raw": 466,
-          "independent": 130,
-          "censored": 2,
+          "independent": 129,
+          "censored": 1,
           "counts": {
             "up": 32,
             "down": 42,
@@ -727,10 +727,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2980900,
-            "lower": 1834400,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2934100,
+            "lower": 1805600,
             "n": 128,
             "counts": {
               "up": 32,
@@ -739,9 +739,9 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 8,
-              "down": 23,
-              "neither": 11,
+              "up": 4,
+              "down": 3,
+              "neither": 5,
               "ambiguous": 0
             }
           }
@@ -779,10 +779,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2980900,
-            "lower": 1834400,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2934100,
+            "lower": 1805600,
             "n": 97,
             "counts": {
               "up": 45,
@@ -791,9 +791,9 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 14,
-              "down": 26,
-              "neither": 1,
+              "up": 5,
+              "down": 4,
+              "neither": 0,
               "ambiguous": 0
             }
           }
@@ -831,10 +831,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2980900,
-            "lower": 1834400,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2934100,
+            "lower": 1805600,
             "n": 93,
             "counts": {
               "up": 45,
@@ -843,8 +843,8 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 15,
-              "down": 26,
+              "up": 5,
+              "down": 4,
               "neither": 0,
               "ambiguous": 0
             }
@@ -855,8 +855,8 @@
           "down": 0.2,
           "horizon": 30,
           "raw": 466,
-          "independent": 120,
-          "censored": 2,
+          "independent": 119,
+          "censored": 1,
           "counts": {
             "up": 18,
             "down": 40,
@@ -883,10 +883,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 3210200,
-            "lower": 1834400,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 3159800,
+            "lower": 1805600,
             "n": 118,
             "counts": {
               "up": 18,
@@ -895,9 +895,9 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 5,
-              "down": 23,
-              "neither": 13,
+              "up": 1,
+              "down": 1,
+              "neither": 6,
               "ambiguous": 0
             }
           }
@@ -935,10 +935,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 3210200,
-            "lower": 1834400,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 3159800,
+            "lower": 1805600,
             "n": 82,
             "counts": {
               "up": 28,
@@ -947,9 +947,9 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 10,
-              "down": 26,
-              "neither": 2,
+              "up": 2,
+              "down": 2,
+              "neither": 1,
               "ambiguous": 0
             }
           }
@@ -987,10 +987,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 3210200,
-            "lower": 1834400,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 3159800,
+            "lower": 1805600,
             "n": 73,
             "counts": {
               "up": 29,
@@ -999,9 +999,9 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 10,
-              "down": 24,
-              "neither": 1,
+              "up": 3,
+              "down": 2,
+              "neither": 0,
               "ambiguous": 0
             }
           }
@@ -1011,8 +1011,8 @@
           "down": 0.2,
           "horizon": 30,
           "raw": 466,
-          "independent": 143,
-          "censored": 2,
+          "independent": 142,
+          "censored": 1,
           "counts": {
             "up": 53,
             "down": 44,
@@ -1039,10 +1039,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2751600,
-            "lower": 1834400,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2708400,
+            "lower": 1805600,
             "n": 141,
             "counts": {
               "up": 53,
@@ -1051,9 +1051,9 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 11,
-              "down": 23,
-              "neither": 9,
+              "up": 10,
+              "down": 2,
+              "neither": 2,
               "ambiguous": 0
             }
           }
@@ -1063,8 +1063,8 @@
           "down": 0.2,
           "horizon": 90,
           "raw": 466,
-          "independent": 113,
-          "censored": 2,
+          "independent": 112,
+          "censored": 1,
           "counts": {
             "up": 60,
             "down": 48,
@@ -1091,10 +1091,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2751600,
-            "lower": 1834400,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2708400,
+            "lower": 1805600,
             "n": 111,
             "counts": {
               "up": 60,
@@ -1103,8 +1103,8 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 15,
-              "down": 25,
+              "up": 9,
+              "down": 4,
               "neither": 0,
               "ambiguous": 0
             }
@@ -1115,8 +1115,8 @@
           "down": 0.2,
           "horizon": 180,
           "raw": 466,
-          "independent": 112,
-          "censored": 2,
+          "independent": 111,
+          "censored": 1,
           "counts": {
             "up": 61,
             "down": 48,
@@ -1143,10 +1143,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2751600,
-            "lower": 1834400,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2708400,
+            "lower": 1805600,
             "n": 110,
             "counts": {
               "up": 61,
@@ -1155,8 +1155,8 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 15,
-              "down": 25,
+              "up": 9,
+              "down": 4,
               "neither": 0,
               "ambiguous": 0
             }
@@ -1167,8 +1167,8 @@
           "down": 0.2,
           "horizon": 30,
           "raw": 466,
-          "independent": 195,
-          "censored": 2,
+          "independent": 194,
+          "censored": 1,
           "counts": {
             "up": 112,
             "down": 49,
@@ -1195,10 +1195,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2522300,
-            "lower": 1834400,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2482700,
+            "lower": 1805600,
             "n": 193,
             "counts": {
               "up": 112,
@@ -1207,8 +1207,8 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 26,
-              "down": 23,
+              "up": 23,
+              "down": 4,
               "neither": 2,
               "ambiguous": 0
             }
@@ -1247,10 +1247,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2522300,
-            "lower": 1834400,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2482700,
+            "lower": 1805600,
             "n": 169,
             "counts": {
               "up": 114,
@@ -1259,8 +1259,8 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 25,
-              "down": 25,
+              "up": 23,
+              "down": 5,
               "neither": 0,
               "ambiguous": 0
             }
@@ -1299,10 +1299,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 2293000,
-            "upper": 2522300,
-            "lower": 1834400,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 2257000,
+            "upper": 2482700,
+            "lower": 1805600,
             "n": 168,
             "counts": {
               "up": 114,
@@ -1311,8 +1311,8 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 25,
-              "down": 25,
+              "up": 23,
+              "down": 5,
               "neither": 0,
               "ambiguous": 0
             }
@@ -1321,11 +1321,11 @@
       ]
     },
     "Bitstamp_ETHUSD": {
-      "rows": 3305,
+      "rows": 3306,
       "invalid": 0,
       "duplicates": 0,
       "gaps": 0,
-      "last": "2026-11-27T00:00:00.000Z",
+      "last": "2026-11-28T00:00:00.000Z",
       "prefix_ok": true,
       "results": [
         {
@@ -1361,10 +1361,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 1771.854,
-            "lower": 1603.106,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 1743.7665000000002,
+            "lower": 1577.6934999999999,
             "n": 433,
             "counts": {
               "up": 221,
@@ -1373,10 +1373,10 @@
               "ambiguous": 8
             },
             "regime_counts": {
-              "up": 39,
-              "down": 55,
+              "up": 32,
+              "down": 32,
               "neither": 0,
-              "ambiguous": 5
+              "ambiguous": 1
             }
           }
         },
@@ -1413,10 +1413,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 1771.854,
-            "lower": 1603.106,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 1743.7665000000002,
+            "lower": 1577.6934999999999,
             "n": 433,
             "counts": {
               "up": 221,
@@ -1425,10 +1425,10 @@
               "ambiguous": 8
             },
             "regime_counts": {
-              "up": 39,
-              "down": 55,
+              "up": 32,
+              "down": 32,
               "neither": 0,
-              "ambiguous": 5
+              "ambiguous": 1
             }
           }
         },
@@ -1465,10 +1465,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 1771.854,
-            "lower": 1603.106,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 1743.7665000000002,
+            "lower": 1577.6934999999999,
             "n": 433,
             "counts": {
               "up": 221,
@@ -1477,10 +1477,10 @@
               "ambiguous": 8
             },
             "regime_counts": {
-              "up": 39,
-              "down": 55,
+              "up": 32,
+              "down": 32,
               "neither": 0,
-              "ambiguous": 5
+              "ambiguous": 1
             }
           }
         },
@@ -1517,10 +1517,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 1856.228,
-            "lower": 1518.732,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 1826.803,
+            "lower": 1494.6570000000002,
             "n": 281,
             "counts": {
               "up": 140,
@@ -1529,9 +1529,9 @@
               "ambiguous": 2
             },
             "regime_counts": {
-              "up": 34,
-              "down": 42,
-              "neither": 1,
+              "up": 25,
+              "down": 17,
+              "neither": 0,
               "ambiguous": 1
             }
           }
@@ -1569,10 +1569,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 1856.228,
-            "lower": 1518.732,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 1826.803,
+            "lower": 1494.6570000000002,
             "n": 276,
             "counts": {
               "up": 142,
@@ -1581,8 +1581,8 @@
               "ambiguous": 2
             },
             "regime_counts": {
-              "up": 35,
-              "down": 42,
+              "up": 25,
+              "down": 17,
               "neither": 0,
               "ambiguous": 1
             }
@@ -1621,10 +1621,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 1856.228,
-            "lower": 1518.732,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 1826.803,
+            "lower": 1494.6570000000002,
             "n": 276,
             "counts": {
               "up": 142,
@@ -1633,8 +1633,8 @@
               "ambiguous": 2
             },
             "regime_counts": {
-              "up": 35,
-              "down": 42,
+              "up": 25,
+              "down": 17,
               "neither": 0,
               "ambiguous": 1
             }
@@ -1673,10 +1673,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 2024.9759999999999,
-            "lower": 1518.732,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 1992.876,
+            "lower": 1494.6570000000002,
             "n": 211,
             "counts": {
               "up": 68,
@@ -1685,10 +1685,10 @@
               "ambiguous": 1
             },
             "regime_counts": {
-              "up": 21,
-              "down": 44,
-              "neither": 4,
-              "ambiguous": 1
+              "up": 8,
+              "down": 11,
+              "neither": 2,
+              "ambiguous": 0
             }
           }
         },
@@ -1725,10 +1725,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 2024.9759999999999,
-            "lower": 1518.732,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 1992.876,
+            "lower": 1494.6570000000002,
             "n": 197,
             "counts": {
               "up": 73,
@@ -1737,10 +1737,10 @@
               "ambiguous": 1
             },
             "regime_counts": {
-              "up": 23,
-              "down": 45,
+              "up": 9,
+              "down": 12,
               "neither": 0,
-              "ambiguous": 1
+              "ambiguous": 0
             }
           }
         },
@@ -1777,10 +1777,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 2024.9759999999999,
-            "lower": 1518.732,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 1992.876,
+            "lower": 1494.6570000000002,
             "n": 197,
             "counts": {
               "up": 73,
@@ -1789,10 +1789,10 @@
               "ambiguous": 1
             },
             "regime_counts": {
-              "up": 23,
-              "down": 45,
+              "up": 9,
+              "down": 12,
               "neither": 0,
-              "ambiguous": 1
+              "ambiguous": 0
             }
           }
         },
@@ -1829,10 +1829,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 2193.724,
-            "lower": 1518.732,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 2158.949,
+            "lower": 1494.6570000000002,
             "n": 177,
             "counts": {
               "up": 36,
@@ -1841,10 +1841,10 @@
               "ambiguous": 1
             },
             "regime_counts": {
-              "up": 11,
-              "down": 45,
-              "neither": 10,
-              "ambiguous": 1
+              "up": 5,
+              "down": 9,
+              "neither": 4,
+              "ambiguous": 0
             }
           }
         },
@@ -1881,10 +1881,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 2193.724,
-            "lower": 1518.732,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 2158.949,
+            "lower": 1494.6570000000002,
             "n": 155,
             "counts": {
               "up": 46,
@@ -1893,10 +1893,10 @@
               "ambiguous": 1
             },
             "regime_counts": {
-              "up": 15,
-              "down": 48,
-              "neither": 1,
-              "ambiguous": 1
+              "up": 7,
+              "down": 10,
+              "neither": 0,
+              "ambiguous": 0
             }
           }
         },
@@ -1933,10 +1933,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 2193.724,
-            "lower": 1518.732,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 2158.949,
+            "lower": 1494.6570000000002,
             "n": 152,
             "counts": {
               "up": 46,
@@ -1945,10 +1945,10 @@
               "ambiguous": 1
             },
             "regime_counts": {
-              "up": 15,
-              "down": 49,
+              "up": 7,
+              "down": 10,
               "neither": 0,
-              "ambiguous": 1
+              "ambiguous": 0
             }
           }
         },
@@ -1957,8 +1957,8 @@
           "down": 0.2,
           "horizon": 30,
           "raw": 464,
-          "independent": 135,
-          "censored": 2,
+          "independent": 134,
+          "censored": 1,
           "counts": {
             "up": 32,
             "down": 49,
@@ -1985,10 +1985,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 2193.724,
-            "lower": 1349.9840000000002,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 2158.949,
+            "lower": 1328.584,
             "n": 133,
             "counts": {
               "up": 32,
@@ -1997,9 +1997,9 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 7,
-              "down": 21,
-              "neither": 12,
+              "up": 5,
+              "down": 3,
+              "neither": 6,
               "ambiguous": 0
             }
           }
@@ -2009,8 +2009,8 @@
           "down": 0.2,
           "horizon": 90,
           "raw": 464,
-          "independent": 103,
-          "censored": 2,
+          "independent": 102,
+          "censored": 1,
           "counts": {
             "up": 42,
             "down": 53,
@@ -2037,10 +2037,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 2193.724,
-            "lower": 1349.9840000000002,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 2158.949,
+            "lower": 1328.584,
             "n": 101,
             "counts": {
               "up": 42,
@@ -2049,9 +2049,9 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 13,
-              "down": 23,
-              "neither": 3,
+              "up": 5,
+              "down": 7,
+              "neither": 0,
               "ambiguous": 0
             }
           }
@@ -2061,8 +2061,8 @@
           "down": 0.2,
           "horizon": 180,
           "raw": 464,
-          "independent": 95,
-          "censored": 2,
+          "independent": 94,
+          "censored": 1,
           "counts": {
             "up": 42,
             "down": 51,
@@ -2089,10 +2089,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 2193.724,
-            "lower": 1349.9840000000002,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 2158.949,
+            "lower": 1328.584,
             "n": 93,
             "counts": {
               "up": 42,
@@ -2101,8 +2101,8 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 14,
-              "down": 24,
+              "up": 5,
+              "down": 7,
               "neither": 0,
               "ambiguous": 0
             }
@@ -2113,8 +2113,8 @@
           "down": 0.2,
           "horizon": 30,
           "raw": 464,
-          "independent": 125,
-          "censored": 2,
+          "independent": 124,
+          "censored": 1,
           "counts": {
             "up": 18,
             "down": 44,
@@ -2141,10 +2141,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 2362.4719999999998,
-            "lower": 1349.9840000000002,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 2325.022,
+            "lower": 1328.584,
             "n": 123,
             "counts": {
               "up": 18,
@@ -2153,9 +2153,9 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 5,
-              "down": 21,
-              "neither": 16,
+              "up": 3,
+              "down": 1,
+              "neither": 6,
               "ambiguous": 0
             }
           }
@@ -2193,10 +2193,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 2362.4719999999998,
-            "lower": 1349.9840000000002,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 2325.022,
+            "lower": 1328.584,
             "n": 90,
             "counts": {
               "up": 31,
@@ -2205,9 +2205,9 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 12,
-              "down": 25,
-              "neither": 4,
+              "up": 3,
+              "down": 3,
+              "neither": 0,
               "ambiguous": 0
             }
           }
@@ -2245,10 +2245,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 2362.4719999999998,
-            "lower": 1349.9840000000002,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 2325.022,
+            "lower": 1328.584,
             "n": 82,
             "counts": {
               "up": 30,
@@ -2257,9 +2257,9 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 11,
-              "down": 26,
-              "neither": 2,
+              "up": 3,
+              "down": 3,
+              "neither": 0,
               "ambiguous": 0
             }
           }
@@ -2269,8 +2269,8 @@
           "down": 0.2,
           "horizon": 30,
           "raw": 464,
-          "independent": 151,
-          "censored": 2,
+          "independent": 150,
+          "censored": 1,
           "counts": {
             "up": 58,
             "down": 51,
@@ -2297,10 +2297,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 2024.9759999999999,
-            "lower": 1349.9840000000002,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 1992.876,
+            "lower": 1328.584,
             "n": 149,
             "counts": {
               "up": 58,
@@ -2309,9 +2309,9 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 18,
-              "down": 22,
-              "neither": 7,
+              "up": 8,
+              "down": 3,
+              "neither": 5,
               "ambiguous": 0
             }
           }
@@ -2349,10 +2349,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 2024.9759999999999,
-            "lower": 1349.9840000000002,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 1992.876,
+            "lower": 1328.584,
             "n": 121,
             "counts": {
               "up": 62,
@@ -2361,9 +2361,9 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 20,
-              "down": 23,
-              "neither": 2,
+              "up": 8,
+              "down": 6,
+              "neither": 1,
               "ambiguous": 0
             }
           }
@@ -2401,10 +2401,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 2024.9759999999999,
-            "lower": 1349.9840000000002,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 1992.876,
+            "lower": 1328.584,
             "n": 118,
             "counts": {
               "up": 63,
@@ -2413,8 +2413,8 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 21,
-              "down": 24,
+              "up": 8,
+              "down": 7,
               "neither": 0,
               "ambiguous": 0
             }
@@ -2425,8 +2425,8 @@
           "down": 0.2,
           "horizon": 30,
           "raw": 464,
-          "independent": 205,
-          "censored": 2,
+          "independent": 204,
+          "censored": 1,
           "counts": {
             "up": 125,
             "down": 50,
@@ -2453,10 +2453,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 1856.228,
-            "lower": 1349.9840000000002,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 1826.803,
+            "lower": 1328.584,
             "n": 203,
             "counts": {
               "up": 125,
@@ -2465,9 +2465,9 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 28,
-              "down": 20,
-              "neither": 5,
+              "up": 25,
+              "down": 7,
+              "neither": 1,
               "ambiguous": 0
             }
           }
@@ -2505,10 +2505,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 1856.228,
-            "lower": 1349.9840000000002,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 1826.803,
+            "lower": 1328.584,
             "n": 181,
             "counts": {
               "up": 125,
@@ -2517,9 +2517,9 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 27,
-              "down": 22,
-              "neither": 1,
+              "up": 24,
+              "down": 8,
+              "neither": 0,
               "ambiguous": 0
             }
           }
@@ -2557,10 +2557,10 @@
             }
           },
           "reference": {
-            "asof": "2026-11-27T00:00:00.000Z",
-            "anchor": 1687.48,
-            "upper": 1856.228,
-            "lower": 1349.9840000000002,
+            "asof": "2026-11-28T00:00:00.000Z",
+            "anchor": 1660.73,
+            "upper": 1826.803,
+            "lower": 1328.584,
             "n": 179,
             "counts": {
               "up": 125,
@@ -2569,8 +2569,8 @@
               "ambiguous": 0
             },
             "regime_counts": {
-              "up": 28,
-              "down": 22,
+              "up": 24,
+              "down": 8,
               "neither": 0,
               "ambiguous": 0
             }

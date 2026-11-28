@@ -1,12 +1,12 @@
 {
   "version": "v4.3-path-audit-1",
-  "generated_utc": "2026-11-27 19:26:26.780622+00:00",
+  "generated_utc": "2026-11-28 02:38:39.796220+00:00",
   "status": "exploratory_only",
   "markets": {
     "Upbit_ETHKRW": {
       "1h": {
-        "bars": 80165,
-        "last_closed": "2026-11-27 19:00:00+00:00",
+        "bars": 80172,
+        "last_closed": "2026-11-28 02:00:00+00:00",
         "scales": {
           "0.05": {
             "confirmed_waves": 1473,
@@ -137,24 +137,24 @@
         }
       },
       "4h": {
-        "bars": 19985,
-        "last_closed": "2026-11-27 16:00:00+00:00",
+        "bars": 19987,
+        "last_closed": "2026-11-28 00:00:00+00:00",
         "scales": {
           "0.05": {
-            "confirmed_waves": 1079,
-            "complete_paths": 459,
-            "censored_paths": 82,
-            "nonoverlap_complete": 238,
-            "hold_count": 246,
+            "confirmed_waves": 1080,
+            "complete_paths": 460,
+            "censored_paths": 81,
+            "nonoverlap_complete": 239,
+            "hold_count": 247,
             "fail_count": 213,
-            "evaluated": 59,
+            "evaluated": 60,
             "insufficient_train": 0,
-            "evaluation_censored": 13,
+            "evaluation_censored": 12,
             "mape": {
-              "flat": 9.765719868090486,
-              "marginal": 6.407023558972901,
-              "medoid": 6.407305208438392,
-              "neighbor_medoid": 6.392802764034234
+              "flat": 9.76458265042403,
+              "marginal": 6.358760649517682,
+              "medoid": 6.357277749609879,
+              "neighbor_medoid": 6.328026396830154
             },
             "prefix_test": true
           },
@@ -269,8 +269,8 @@
         }
       },
       "1d": {
-        "bars": 3347,
-        "last_closed": "2026-11-27 00:00:00+00:00",
+        "bars": 3348,
+        "last_closed": "2026-11-28 00:00:00+00:00",
         "scales": {
           "0.05": {
             "confirmed_waves": 713,
@@ -403,8 +403,8 @@
     },
     "Bitstamp_ETHUSD": {
       "1h": {
-        "bars": 74661,
-        "last_closed": "2026-11-27 19:00:00+00:00",
+        "bars": 74668,
+        "last_closed": "2026-11-28 02:00:00+00:00",
         "scales": {
           "0.05": {
             "confirmed_waves": 1597,
@@ -535,15 +535,15 @@
         }
       },
       "4h": {
-        "bars": 18662,
-        "last_closed": "2026-11-27 16:00:00+00:00",
+        "bars": 18664,
+        "last_closed": "2026-11-28 00:00:00+00:00",
         "scales": {
           "0.05": {
-            "confirmed_waves": 1270,
-            "complete_paths": 626,
-            "censored_paths": 8,
+            "confirmed_waves": 1271,
+            "complete_paths": 627,
+            "censored_paths": 7,
             "nonoverlap_complete": 26,
-            "hold_count": 319,
+            "hold_count": 320,
             "fail_count": 307,
             "evaluated": 85,
             "insufficient_train": 5,
@@ -667,15 +667,15 @@
         }
       },
       "1d": {
-        "bars": 3305,
-        "last_closed": "2026-11-27 00:00:00+00:00",
+        "bars": 3306,
+        "last_closed": "2026-11-28 00:00:00+00:00",
         "scales": {
           "0.05": {
-            "confirmed_waves": 866,
-            "complete_paths": 429,
-            "censored_paths": 4,
+            "confirmed_waves": 867,
+            "complete_paths": 430,
+            "censored_paths": 3,
             "nonoverlap_complete": 166,
-            "hold_count": 236,
+            "hold_count": 237,
             "fail_count": 193,
             "evaluated": 14,
             "insufficient_train": 0,

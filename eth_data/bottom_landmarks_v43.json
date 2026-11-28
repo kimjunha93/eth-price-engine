@@ -32,12 +32,12 @@
   },
   "markets": {
     "Upbit_ETHKRW": {
-      "rows": 3347,
+      "rows": 3348,
       "invalid": 0,
       "dup": 0,
       "gaps": 1,
       "first": "2017-09-25T00:00:00.000Z",
-      "last": "2026-11-26T00:00:00.000Z",
+      "last": "2026-11-27T00:00:00.000Z",
       "scales": {
         "0.1": {
           "completed": 142,
@@ -210,7 +210,7 @@
           "censored": 1,
           "prefix_ok": true,
           "live": {
-            "age": 35,
+            "age": 36,
             "low": 2125000,
             "start": "2026-10-22T00:00:00.000Z",
             "reference": null
@@ -381,7 +381,7 @@
           "censored": 1,
           "prefix_ok": true,
           "live": {
-            "age": 27,
+            "age": 28,
             "low": 2125000,
             "start": "2026-10-30T00:00:00.000Z",
             "reference": null
@@ -535,7 +535,7 @@
             {
               "age": 28,
               "complete": 19,
-              "censored": 0,
+              "censored": 1,
               "n": 0,
               "skipped": 7,
               "metrics": {
@@ -552,7 +552,7 @@
           "censored": 1,
           "prefix_ok": true,
           "live": {
-            "age": 13,
+            "age": 14,
             "low": 2125000,
             "start": "2026-11-13T00:00:00.000Z",
             "reference": null
@@ -620,7 +620,7 @@
             {
               "age": 14,
               "complete": 15,
-              "censored": 0,
+              "censored": 1,
               "n": 0,
               "skipped": 4,
               "metrics": {
@@ -663,7 +663,7 @@
           "censored": 1,
           "prefix_ok": true,
           "live": {
-            "age": 6,
+            "age": 7,
             "low": 2125000,
             "start": "2026-11-20T00:00:00.000Z",
             "reference": null
@@ -698,7 +698,7 @@
             {
               "age": 7,
               "complete": 10,
-              "censored": 0,
+              "censored": 1,
               "n": 0,
               "skipped": 3,
               "metrics": {
@@ -838,12 +838,12 @@
       }
     },
     "Bitstamp_ETHUSD": {
-      "rows": 3305,
+      "rows": 3306,
       "invalid": 0,
       "dup": 0,
       "gaps": 0,
       "first": "2017-11-09T00:00:00.000Z",
-      "last": "2026-11-26T00:00:00.000Z",
+      "last": "2026-11-27T00:00:00.000Z",
       "scales": {
         "0.1": {
           "completed": 166,
@@ -996,7 +996,7 @@
           "censored": 1,
           "prefix_ok": true,
           "live": {
-            "age": 34,
+            "age": 35,
             "low": 1536,
             "start": "2026-10-23T00:00:00.000Z",
             "reference": null
@@ -1167,7 +1167,7 @@
           "censored": 1,
           "prefix_ok": true,
           "live": {
-            "age": 27,
+            "age": 28,
             "low": 1536,
             "start": "2026-10-30T00:00:00.000Z",
             "reference": null
@@ -1321,7 +1321,7 @@
             {
               "age": 28,
               "complete": 13,
-              "censored": 0,
+              "censored": 1,
               "n": 0,
               "skipped": 5,
               "metrics": {
@@ -1338,7 +1338,7 @@
           "censored": 1,
           "prefix_ok": true,
           "live": {
-            "age": 13,
+            "age": 14,
             "low": 1536,
             "start": "2026-11-13T00:00:00.000Z",
             "reference": null
@@ -1426,7 +1426,7 @@
             {
               "age": 14,
               "complete": 16,
-              "censored": 0,
+              "censored": 1,
               "n": 0,
               "skipped": 4,
               "metrics": {
@@ -1469,7 +1469,7 @@
           "censored": 1,
           "prefix_ok": true,
           "live": {
-            "age": 6,
+            "age": 7,
             "low": 1536,
             "start": "2026-11-20T00:00:00.000Z",
             "reference": null
@@ -1504,7 +1504,7 @@
             {
               "age": 7,
               "complete": 10,
-              "censored": 0,
+              "censored": 1,
               "n": 0,
               "skipped": 3,
               "metrics": {

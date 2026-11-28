@@ -45,12 +45,12 @@
   },
   "markets": {
     "Upbit_ETHKRW": {
-      "rows": 3347,
+      "rows": 3348,
       "invalid": 0,
       "duplicates": 0,
       "gaps": 1,
       "first": "2017-09-25T00:00:00.000Z",
-      "last": "2026-11-26T00:00:00.000Z",
+      "last": "2026-11-27T00:00:00.000Z",
       "scales": {
         "0.05": {
           "completed": 354,
@@ -348,7 +348,7 @@
           },
           "prefix_ok": true,
           "live": {
-            "age": 4,
+            "age": 5,
             "base_low": 2958000,
             "prior_peak": 3280000,
             "correction_low": 2125000,
@@ -1799,7 +1799,7 @@
           },
           "prefix_ok": true,
           "live": {
-            "age": 97,
+            "age": 98,
             "base_low": 2096000,
             "prior_peak": 6845000,
             "correction_low": 2300000,
@@ -1875,22 +1875,22 @@
       }
     },
     "Bitstamp_ETHUSD": {
-      "rows": 3305,
+      "rows": 3306,
       "invalid": 0,
       "duplicates": 0,
       "gaps": 0,
       "first": "2017-11-09T00:00:00.000Z",
-      "last": "2026-11-26T00:00:00.000Z",
+      "last": "2026-11-27T00:00:00.000Z",
       "scales": {
         "0.05": {
-          "completed": 432,
-          "censored": 1,
+          "completed": 433,
+          "censored": 0,
           "breakout": {
-            "n": 432,
+            "n": 433,
             "breakouts": 217
           },
           "held": {
-            "n": 238,
+            "n": 239,
             "breakouts": 153
           },
           "failed": {
@@ -1898,119 +1898,63 @@
             "breakouts": 64
           },
           "prefix_ok": true,
-          "live": {
-            "age": 1,
-            "base_low": 1536,
-            "prior_peak": 1842.94,
-            "correction_low": 1606.59,
-            "observed_high": 1727.72,
-            "reference": {
-              "age": 0,
-              "asof": "2026-11-26T00:00:00.000Z",
-              "train": 432,
-              "observed_high": 1691,
-              "prices": {
-                "B0_close": [
-                  1691,
-                  1691,
-                  1691,
-                  1691,
-                  1691
-                ],
-                "B1_observed_high": [
-                  1691,
-                  1691,
-                  1691,
-                  1691,
-                  1691
-                ],
-                "B2_historical": [
-                  1703.92,
-                  1728.25,
-                  1778.7,
-                  1893.55,
-                  2075.26
-                ],
-                "M3_neighbors": [
-                  1702.67,
-                  1707.1,
-                  1746.12,
-                  1833.12,
-                  1850.2
-                ],
-                "M4_low_held_regime": [
-                  1702.46,
-                  1726.71,
-                  1771.97,
-                  1877.29,
-                  2072.3
-                ],
-                "M5_equal_swing": [
-                  1913.53,
-                  1913.53,
-                  1913.53,
-                  1913.53,
-                  1913.53
-                ]
-              }
-            }
-          },
+          "live": null,
           "evaluations": [
             {
               "age": 0,
-              "completed": 432,
-              "censored": 1,
-              "n": 128,
-              "at_risk_breakout": 109,
+              "completed": 433,
+              "censored": 0,
+              "n": 129,
+              "at_risk_breakout": 110,
               "skipped": 0,
               "metrics": {
                 "B0_close": {
-                  "mape": 6.784250657836014,
-                  "coverage50": 0.015625,
+                  "mape": 6.758965651149183,
+                  "coverage50": 0.015503875968992248,
                   "width50": 0,
-                  "pinball": 4.021771449077485,
-                  "interval_score50": 32.17417159261988,
-                  "brier_at_risk": 0.42201834862385323
+                  "pinball": 4.004746453453639,
+                  "interval_score50": 32.03797162762911,
+                  "brier_at_risk": 0.41818181818181815
                 },
                 "B1_observed_high": {
-                  "mape": 6.784250657836014,
-                  "coverage50": 0.015625,
+                  "mape": 6.758965651149183,
+                  "coverage50": 0.015503875968992248,
                   "width50": 0,
-                  "pinball": 4.021771449077485,
-                  "interval_score50": 32.17417159261988,
-                  "brier_at_risk": 0.42201834862385323
+                  "pinball": 4.004746453453639,
+                  "interval_score50": 32.03797162762911,
+                  "brier_at_risk": 0.41818181818181815
                 },
                 "B2_historical": {
-                  "mape": 4.901431371421579,
-                  "coverage50": 0.5859375,
-                  "width50": 9.361257262937764,
-                  "pinball": 2.2458361146530454,
-                  "interval_score50": 19.932903509707998,
-                  "brier_at_risk": 0.2517614783675956
+                  "mape": 4.87491937361503,
+                  "coverage50": 0.5891472868217055,
+                  "width50": 9.36179396114168,
+                  "pinball": 2.2368100839618785,
+                  "interval_score50": 19.85415857891161,
+                  "brier_at_risk": 0.25176645998753544
                 },
                 "M3_neighbors": {
-                  "mape": 5.4258730290167,
-                  "coverage50": 0.453125,
-                  "width50": 9.08438475550102,
-                  "pinball": 2.3954768752418514,
-                  "interval_score50": 21.633968865804544,
-                  "brier_at_risk": 0.20113274667665232
+                  "mape": 5.386741927524322,
+                  "coverage50": 0.4573643410852713,
+                  "width50": 9.06969993457475,
+                  "pinball": 2.3814521760174467,
+                  "interval_score50": 21.524035448870258,
+                  "brier_at_risk": 0.199721706864564
                 },
                 "M4_low_held_regime": {
-                  "mape": 4.969149688746529,
-                  "coverage50": 0.59375,
-                  "width50": 9.227681555926807,
-                  "pinball": 2.255019165281575,
-                  "interval_score50": 19.959567776565464,
-                  "brier_at_risk": 0.23503336513656214
+                  "mape": 4.9391329297132645,
+                  "coverage50": 0.5968992248062015,
+                  "width50": 9.222744005981674,
+                  "pinball": 2.2452620356606277,
+                  "interval_score50": 19.873868751327635,
+                  "brier_at_risk": 0.23663975373633075
                 },
                 "M5_equal_swing": {
-                  "mape": 7.443722301259494,
-                  "coverage50": 0.015625,
+                  "mape": 7.4571324904431995,
+                  "coverage50": 0.015503875968992248,
                   "width50": 0,
-                  "pinball": 4.252547023237172,
-                  "interval_score50": 34.020376185897376,
-                  "brier_at_risk": 0.3761467889908257
+                  "pinball": 4.256436483552411,
+                  "interval_score50": 34.05149186841929,
+                  "brier_at_risk": 0.38181818181818183
                 }
               }
             },
@@ -2185,7 +2129,7 @@
           },
           "prefix_ok": true,
           "live": {
-            "age": 4,
+            "age": 5,
             "base_low": 2170,
             "prior_peak": 2433.78,
             "correction_low": 1536,
@@ -3636,7 +3580,7 @@
           },
           "prefix_ok": true,
           "live": {
-            "age": 98,
+            "age": 99,
             "base_low": 1385.7,
             "prior_peak": 4955.3,
             "correction_low": 1505.12,

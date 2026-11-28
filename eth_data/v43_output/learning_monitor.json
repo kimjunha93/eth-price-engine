@@ -1,9 +1,9 @@
 {
   "version": "v43-learning-monitor-1",
-  "generated_utc": "2026-11-27T19:26:49.305Z",
+  "generated_utc": "2026-11-28T02:39:12.984Z",
   "input_sha256": {
-    "Upbit_ETHKRW": "0c326279c5723282a73eadd40314905e18a83532cb5d2b4da60442ad1477a662",
-    "Bitstamp_ETHUSD": "f3ccef28364872f8549e4b16b3d2d116fbff289c7790c87266ed3b6e66cfa040",
+    "Upbit_ETHKRW": "c1e3b87fb30fcd92fd70cbf7da97ebf18bad4c59c9a88b09f01a3abd64b61e01",
+    "Bitstamp_ETHUSD": "4f3e5c3ad2d70a6e1fbbfca4e50930b580c7bbc5b56e390ca6f6415d5e0eb784",
     "Bithumb_ETHKRW": "5475b6321e151c5375b09e7f8b95470d77012530cb489e21fdbf899e0b7ad9c4"
   },
   "code_sha256": {
@@ -18,64 +18,64 @@
   "modules": {
     "bottom_landmarks": {
       "version": "v43-bottom-landmarks-1",
-      "sha256": "ca54dfe5778cc27c2d2e24e3091644fcd72e5784086c80d1d32b2d6a942c7a5e",
+      "sha256": "54dc8a568b4a89cc4e09fbdb46ac190d167bfa8bed49ee099bf384a7fb80a854",
       "rows": {
-        "Upbit_ETHKRW": 3347,
-        "Bitstamp_ETHUSD": 3305,
+        "Upbit_ETHKRW": 3348,
+        "Bitstamp_ETHUSD": 3306,
         "Bithumb_ETHKRW": 3667
       }
     },
     "rebound_landmarks": {
       "version": "v43-rebound-landmarks-1",
-      "sha256": "1582185b3b7e11579855aa5c88df84b3a3a3f4482eb83479d0ecf351deb7c4aa",
+      "sha256": "b391ff6d992b22c1a7d7eebb694de854254a379440c7ce81bf5d04f278c3c6e6",
       "rows": {
-        "Upbit_ETHKRW": 3347,
-        "Bitstamp_ETHUSD": 3305,
+        "Upbit_ETHKRW": 3348,
+        "Bitstamp_ETHUSD": 3306,
         "Bithumb_ETHKRW": 3667
       }
     },
     "correction_landmarks": {
       "version": "v43-correction-landmarks-1",
-      "sha256": "57c1235bcf82f6466e5bb8e17321fcd26732beed1b17bba32b43865a1a997ff8",
+      "sha256": "a80c3f3a1cce4795038c8009b8d91ddb0e1dc14faf5083799765359a8e26c1bd",
       "rows": {
-        "Upbit_ETHKRW": 3347,
-        "Bitstamp_ETHUSD": 3305,
+        "Upbit_ETHKRW": 3348,
+        "Bitstamp_ETHUSD": 3306,
         "Bithumb_ETHKRW": 3667
       }
     },
     "readvance_landmarks": {
       "version": "v43-readvance-landmarks-1",
-      "sha256": "bbfb66a10a9ddeb485e1d606c067d66be24138dd770aeeb065392306af8b360d",
+      "sha256": "48c801ca5457aa21ade90f0dffc4371d3ea69ab6f0c251195dcc25060dbdf2e3",
       "rows": {
-        "Upbit_ETHKRW": 3347,
-        "Bitstamp_ETHUSD": 3305,
+        "Upbit_ETHKRW": 3348,
+        "Bitstamp_ETHUSD": 3306,
         "Bithumb_ETHKRW": 3667
       }
     },
     "large_cycle": {
       "version": "v43-large-cycle-1",
-      "sha256": "efa385bd23a6e89f19b87cd24c5ece6feef29b8ee4a20e779af558293b2ebc38",
+      "sha256": "ae3a74c6bec4f1c0657f85d902c5ac89362adc2d6f3335d3b995856aaebd6b2f",
       "rows": {
-        "Upbit_ETHKRW": 3347,
-        "Bitstamp_ETHUSD": 3305,
+        "Upbit_ETHKRW": 3348,
+        "Bitstamp_ETHUSD": 3306,
         "Bithumb_ETHKRW": 3667
       }
     },
     "first_touch": {
       "version": "v43-first-touch-1",
-      "sha256": "2ec70317f7c4d330a520273078511d5759c5e3f381b1ffe6de1fadcbe34ca691",
+      "sha256": "89e27657b1b84635f8f01bc69573b827c4fa2b1791e4f1dfa554e02aebc32028",
       "rows": {
-        "Upbit_ETHKRW": 3347,
-        "Bitstamp_ETHUSD": 3305,
+        "Upbit_ETHKRW": 3348,
+        "Bitstamp_ETHUSD": 3306,
         "Bithumb_ETHKRW": 3667
       }
     },
     "hierarchy_audit": {
       "version": "v43-hierarchy-audit-1",
-      "sha256": "fa21266f169b6ebfb6d9d7d077a66a45f8526804886cd8bba755eda2b10789fd",
+      "sha256": "b0a20b626011f0cc0bfa168967c67dc6050f5e55981109f06fd5f95daef8e5de",
       "rows": {
-        "Upbit_ETHKRW": 3347,
-        "Bitstamp_ETHUSD": 3305,
+        "Upbit_ETHKRW": 3348,
+        "Bitstamp_ETHUSD": 3306,
         "Bithumb_ETHKRW": 3667
       }
     }

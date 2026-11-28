@@ -5,39 +5,39 @@
   "code_sha256": "46c4a73f84a32795f694a058b38beb207e96b8931151fb47d9371c78c2d0ef88",
   "checkpoints": {
     "Upbit_ETHKRW|0.05": {
-      "rows": 3347,
-      "last_closed": 1795737600000,
-      "prefix_sha256": "4c9ac1385c5eecc3ac4d9128361884c02442c7785b292c53d601874274f54931"
+      "rows": 3348,
+      "last_closed": 1795824000000,
+      "prefix_sha256": "1ad2a3dae2851ff9b9d811cc64c3a73677270480f49eb9b1be6e09255b9381c6"
     },
     "Upbit_ETHKRW|0.1": {
-      "rows": 3347,
-      "last_closed": 1795737600000,
-      "prefix_sha256": "4c9ac1385c5eecc3ac4d9128361884c02442c7785b292c53d601874274f54931"
+      "rows": 3348,
+      "last_closed": 1795824000000,
+      "prefix_sha256": "1ad2a3dae2851ff9b9d811cc64c3a73677270480f49eb9b1be6e09255b9381c6"
     },
     "Upbit_ETHKRW|0.15": {
-      "rows": 3347,
-      "last_closed": 1795737600000,
-      "prefix_sha256": "4c9ac1385c5eecc3ac4d9128361884c02442c7785b292c53d601874274f54931"
+      "rows": 3348,
+      "last_closed": 1795824000000,
+      "prefix_sha256": "1ad2a3dae2851ff9b9d811cc64c3a73677270480f49eb9b1be6e09255b9381c6"
     },
     "Upbit_ETHKRW|0.2": {
-      "rows": 3347,
-      "last_closed": 1795737600000,
-      "prefix_sha256": "4c9ac1385c5eecc3ac4d9128361884c02442c7785b292c53d601874274f54931"
+      "rows": 3348,
+      "last_closed": 1795824000000,
+      "prefix_sha256": "1ad2a3dae2851ff9b9d811cc64c3a73677270480f49eb9b1be6e09255b9381c6"
     },
     "Upbit_ETHKRW|0.3": {
-      "rows": 3347,
-      "last_closed": 1795737600000,
-      "prefix_sha256": "4c9ac1385c5eecc3ac4d9128361884c02442c7785b292c53d601874274f54931"
+      "rows": 3348,
+      "last_closed": 1795824000000,
+      "prefix_sha256": "1ad2a3dae2851ff9b9d811cc64c3a73677270480f49eb9b1be6e09255b9381c6"
     },
     "Upbit_ETHKRW|0.4": {
-      "rows": 3347,
-      "last_closed": 1795737600000,
-      "prefix_sha256": "4c9ac1385c5eecc3ac4d9128361884c02442c7785b292c53d601874274f54931"
+      "rows": 3348,
+      "last_closed": 1795824000000,
+      "prefix_sha256": "1ad2a3dae2851ff9b9d811cc64c3a73677270480f49eb9b1be6e09255b9381c6"
     },
     "Upbit_ETHKRW|0.5": {
-      "rows": 3347,
-      "last_closed": 1795737600000,
-      "prefix_sha256": "4c9ac1385c5eecc3ac4d9128361884c02442c7785b292c53d601874274f54931"
+      "rows": 3348,
+      "last_closed": 1795824000000,
+      "prefix_sha256": "1ad2a3dae2851ff9b9d811cc64c3a73677270480f49eb9b1be6e09255b9381c6"
     },
     "Bithumb_ETHKRW|0.05": {
       "rows": 3667,
@@ -75,39 +75,39 @@
       "prefix_sha256": "fab177b37b82157b2a88e2c05c4b4b423c51103df5f611b80748cbc18a3c9fad"
     },
     "Bitstamp_ETHUSD|0.05": {
-      "rows": 3305,
-      "last_closed": 1795737600000,
-      "prefix_sha256": "c1b1a408ac3c3cdac39d4c83321383fe59dd2f1a314bfcae8dc1abeba08b06ce"
+      "rows": 3306,
+      "last_closed": 1795824000000,
+      "prefix_sha256": "6674a553af91098521d424d60d6f59a5561a1046706ed8d6acb756c95a0f7fb9"
     },
     "Bitstamp_ETHUSD|0.1": {
-      "rows": 3305,
-      "last_closed": 1795737600000,
-      "prefix_sha256": "c1b1a408ac3c3cdac39d4c83321383fe59dd2f1a314bfcae8dc1abeba08b06ce"
+      "rows": 3306,
+      "last_closed": 1795824000000,
+      "prefix_sha256": "6674a553af91098521d424d60d6f59a5561a1046706ed8d6acb756c95a0f7fb9"
     },
     "Bitstamp_ETHUSD|0.15": {
-      "rows": 3305,
-      "last_closed": 1795737600000,
-      "prefix_sha256": "c1b1a408ac3c3cdac39d4c83321383fe59dd2f1a314bfcae8dc1abeba08b06ce"
+      "rows": 3306,
+      "last_closed": 1795824000000,
+      "prefix_sha256": "6674a553af91098521d424d60d6f59a5561a1046706ed8d6acb756c95a0f7fb9"
     },
     "Bitstamp_ETHUSD|0.2": {
-      "rows": 3305,
-      "last_closed": 1795737600000,
-      "prefix_sha256": "c1b1a408ac3c3cdac39d4c83321383fe59dd2f1a314bfcae8dc1abeba08b06ce"
+      "rows": 3306,
+      "last_closed": 1795824000000,
+      "prefix_sha256": "6674a553af91098521d424d60d6f59a5561a1046706ed8d6acb756c95a0f7fb9"
     },
     "Bitstamp_ETHUSD|0.3": {
-      "rows": 3305,
-      "last_closed": 1795737600000,
-      "prefix_sha256": "c1b1a408ac3c3cdac39d4c83321383fe59dd2f1a314bfcae8dc1abeba08b06ce"
+      "rows": 3306,
+      "last_closed": 1795824000000,
+      "prefix_sha256": "6674a553af91098521d424d60d6f59a5561a1046706ed8d6acb756c95a0f7fb9"
     },
     "Bitstamp_ETHUSD|0.4": {
-      "rows": 3305,
-      "last_closed": 1795737600000,
-      "prefix_sha256": "c1b1a408ac3c3cdac39d4c83321383fe59dd2f1a314bfcae8dc1abeba08b06ce"
+      "rows": 3306,
+      "last_closed": 1795824000000,
+      "prefix_sha256": "6674a553af91098521d424d60d6f59a5561a1046706ed8d6acb756c95a0f7fb9"
     },
     "Bitstamp_ETHUSD|0.5": {
-      "rows": 3305,
-      "last_closed": 1795737600000,
-      "prefix_sha256": "c1b1a408ac3c3cdac39d4c83321383fe59dd2f1a314bfcae8dc1abeba08b06ce"
+      "rows": 3306,
+      "last_closed": 1795824000000,
+      "prefix_sha256": "6674a553af91098521d424d60d6f59a5561a1046706ed8d6acb756c95a0f7fb9"
     }
   },
   "records": []

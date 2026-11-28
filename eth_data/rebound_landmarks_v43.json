@@ -43,12 +43,12 @@
   },
   "markets": {
     "Upbit_ETHKRW": {
-      "rows": 3347,
+      "rows": 3348,
       "invalid": 0,
       "duplicate": 0,
       "gaps": 1,
       "first": "2017-09-25T00:00:00.000Z",
-      "last": "2026-11-26T00:00:00.000Z",
+      "last": "2026-11-27T00:00:00.000Z",
       "scales": {
         "0.05": {
           "completed": 356,
@@ -263,7 +263,7 @@
           "censored": 1,
           "prefix_ok": true,
           "live": {
-            "age": 4,
+            "age": 5,
             "observed_high": 2505000,
             "confirmed_low": 2125000,
             "reference": {
@@ -1351,7 +1351,7 @@
           "censored": 1,
           "prefix_ok": true,
           "live": {
-            "age": 97,
+            "age": 98,
             "observed_high": 3777000,
             "confirmed_low": 2300000,
             "reference": null
@@ -1418,108 +1418,60 @@
       }
     },
     "Bitstamp_ETHUSD": {
-      "rows": 3305,
+      "rows": 3306,
       "invalid": 0,
       "duplicate": 0,
       "gaps": 0,
       "first": "2017-11-09T00:00:00.000Z",
-      "last": "2026-11-26T00:00:00.000Z",
+      "last": "2026-11-27T00:00:00.000Z",
       "scales": {
         "0.05": {
-          "completed": 432,
-          "censored": 1,
+          "completed": 433,
+          "censored": 0,
           "prefix_ok": true,
-          "live": {
-            "age": 1,
-            "observed_high": 1727.72,
-            "confirmed_low": 1606.59,
-            "reference": {
-              "landmark_age": 0,
-              "asof": "2026-11-26T00:00:00.000Z",
-              "train": 432,
-              "observed_high": 1691,
-              "confirmed_low": 1606.59,
-              "prices": {
-                "B0_current_close": [
-                  1691,
-                  1691,
-                  1691,
-                  1691,
-                  1691
-                ],
-                "B1_observed_high": [
-                  1691,
-                  1691,
-                  1691,
-                  1691,
-                  1691
-                ],
-                "B2_historical": [
-                  1703.92,
-                  1728.25,
-                  1778.7,
-                  1893.55,
-                  2075.26
-                ],
-                "M3_neighbors": [
-                  1705.06,
-                  1707.89,
-                  1744.52,
-                  1831.55,
-                  1866.69
-                ],
-                "M4_drawdown_regime": [
-                  1703.92,
-                  1727.93,
-                  1777.45,
-                  1892.13,
-                  2071.49
-                ]
-              }
-            }
-          },
+          "live": null,
           "evaluations": [
             {
               "age": 0,
-              "completed": 432,
-              "censored": 1,
-              "n": 128,
+              "completed": 433,
+              "censored": 0,
+              "n": 129,
               "skipped": 0,
               "metrics": {
                 "B0_current_close": {
-                  "mape": 6.784250657836014,
-                  "coverage50": 0.015625,
+                  "mape": 6.758965651149183,
+                  "coverage50": 0.015503875968992248,
                   "width50": 0,
-                  "pinball": 4.021771449077485,
-                  "interval_score50": 32.17417159261988
+                  "pinball": 4.004746453453639,
+                  "interval_score50": 32.03797162762911
                 },
                 "B1_observed_high": {
-                  "mape": 6.784250657836014,
-                  "coverage50": 0.015625,
+                  "mape": 6.758965651149183,
+                  "coverage50": 0.015503875968992248,
                   "width50": 0,
-                  "pinball": 4.021771449077485,
-                  "interval_score50": 32.17417159261988
+                  "pinball": 4.004746453453639,
+                  "interval_score50": 32.03797162762911
                 },
                 "B2_historical": {
-                  "mape": 4.901431371421579,
-                  "coverage50": 0.5859375,
-                  "width50": 9.361257262937764,
-                  "pinball": 2.2458361146530454,
-                  "interval_score50": 19.932903509707998
+                  "mape": 4.87491937361503,
+                  "coverage50": 0.5891472868217055,
+                  "width50": 9.36179396114168,
+                  "pinball": 2.2368100839618785,
+                  "interval_score50": 19.85415857891161
                 },
                 "M3_neighbors": {
-                  "mape": 5.181852698124903,
-                  "coverage50": 0.4921875,
-                  "width50": 9.25288121589709,
-                  "pinball": 2.3164301950740533,
-                  "interval_score50": 20.739652749059694
+                  "mape": 5.145319735817327,
+                  "coverage50": 0.49612403100775193,
+                  "width50": 9.235846709590263,
+                  "pinball": 2.3031666666700628,
+                  "interval_score50": 20.63557040435437
                 },
                 "M4_drawdown_regime": {
-                  "mape": 4.886229727487868,
-                  "coverage50": 0.59375,
-                  "width50": 9.250637910336449,
-                  "pinball": 2.24236091687786,
-                  "interval_score50": 19.904284671153686
+                  "mape": 4.859282660901417,
+                  "coverage50": 0.5968992248062015,
+                  "width50": 9.25154997739719,
+                  "pinball": 2.233244984278325,
+                  "interval_score50": 19.82526184272882
                 }
               }
             },
@@ -1650,7 +1602,7 @@
           "censored": 1,
           "prefix_ok": true,
           "live": {
-            "age": 4,
+            "age": 5,
             "observed_high": 1842.94,
             "confirmed_low": 1536,
             "reference": {
@@ -2810,7 +2762,7 @@
           "censored": 1,
           "prefix_ok": true,
           "live": {
-            "age": 98,
+            "age": 99,
             "observed_high": 2806.89,
             "confirmed_low": 1505.12,
             "reference": null

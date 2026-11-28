@@ -1,32 +1,32 @@
 {
   "version": "quality-neighbors-0.1",
-  "generated_utc": "2026-11-27 19:26:25.732644+00:00",
+  "generated_utc": "2026-11-28 02:38:38.448799+00:00",
   "quality": {
     "Upbit_ETHKRW": {
       "0": {
-        "daily_rows": 3347,
+        "daily_rows": 3348,
         "missing_daily_slots": 3,
-        "overlap": 3279,
+        "overlap": 3280,
         "metrics": {
           "open": {
-            "n": 3279,
+            "n": 3280,
             "match_fraction": 1.0
           },
           "high": {
-            "n": 3279,
+            "n": 3280,
             "match_fraction": 1.0
           },
           "low": {
-            "n": 3279,
+            "n": 3280,
             "match_fraction": 1.0
           },
           "close": {
-            "n": 3279,
+            "n": 3280,
             "match_fraction": 1.0
           },
           "volume_eth": {
-            "n": 3279,
-            "match_fraction": 0.9911558401951814
+            "n": 3280,
+            "match_fraction": 0.9911585365853659
           }
         }
       }
@@ -89,57 +89,57 @@
     },
     "Bitstamp_ETHUSD": {
       "0": {
-        "daily_rows": 3305,
+        "daily_rows": 3306,
         "missing_daily_slots": 0,
-        "overlap": 3109,
+        "overlap": 3110,
         "metrics": {
           "open": {
-            "n": 3109,
-            "match_fraction": 0.7442907687359279
+            "n": 3110,
+            "match_fraction": 0.7443729903536977
           },
           "high": {
-            "n": 3109,
-            "match_fraction": 0.9948536506915406
+            "n": 3110,
+            "match_fraction": 0.9948553054662379
           },
           "low": {
-            "n": 3109,
-            "match_fraction": 0.9951752975233193
+            "n": 3110,
+            "match_fraction": 0.9951768488745981
           },
           "close": {
-            "n": 3109,
-            "match_fraction": 0.9990350595046639
+            "n": 3110,
+            "match_fraction": 0.9990353697749196
           },
           "volume_eth": {
-            "n": 3109,
-            "match_fraction": 0.7291733676423288
+            "n": 3110,
+            "match_fraction": 0.7292604501607717
           }
         }
       }
     },
     "Kraken_ETHUSD": {
       "0": {
-        "daily_rows": 721,
+        "daily_rows": 722,
         "missing_daily_slots": 0,
-        "overlap": 30,
+        "overlap": 31,
         "metrics": {
           "open": {
-            "n": 30,
+            "n": 31,
             "match_fraction": 1.0
           },
           "high": {
-            "n": 30,
+            "n": 31,
             "match_fraction": 1.0
           },
           "low": {
-            "n": 30,
+            "n": 31,
             "match_fraction": 1.0
           },
           "close": {
-            "n": 30,
+            "n": 31,
             "match_fraction": 1.0
           },
           "volume_eth": {
-            "n": 30,
+            "n": 31,
             "match_fraction": 1.0
           }
         }
