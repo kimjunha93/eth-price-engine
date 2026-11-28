@@ -2,15 +2,15 @@
   "version": "v43-hourly-touch-audit-1",
   "market": "Upbit_ETHKRW",
   "daily_rows": 3348,
-  "hourly_rows": 80172,
+  "hourly_rows": 80181,
   "daily_last": "2026-11-27 00:00:00+00:00",
-  "hourly_last": "2026-11-28 01:00:00+00:00",
+  "hourly_last": "2026-11-28 10:00:00+00:00",
   "complete_day_overlap": 3280,
   "exact_ohlc_days": 3280,
   "mismatch_days": 0,
   "input_sha256": {
     "Upbit_ETHKRW_1d.csv": "c1e3b87fb30fcd92fd70cbf7da97ebf18bad4c59c9a88b09f01a3abd64b61e01",
-    "Upbit_ETHKRW_1h.csv": "196cd871553833159651a8bb79fde4437120c13d075361fb7c4af301db5333e5"
+    "Upbit_ETHKRW_1h.csv": "d16dead0cd846f69d3771bd646ada566e4423965aab94b75495a7a0be0de57c0"
   },
   "policy": "Only resolve ambiguous daily hits using complete 24-hour OHLC-matched days; remaining same-hour double touch remains ambiguous; no model promotion; counts across pairs overlap; 30/90/180 caps are for validation, not prediction dates.",
   "results": [
